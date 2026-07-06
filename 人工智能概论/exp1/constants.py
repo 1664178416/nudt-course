@@ -1,0 +1,68 @@
+# 游戏常量
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+FPS = 60
+
+# 颜色
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+BROWN = (165, 42, 42)
+GOLD = (255, 215, 0)
+GRAY = (128, 128, 128)
+
+# 游戏参数
+INITIAL_TIME = 60  # 初始时间（秒）
+GRAVITY = 0.5
+HOOK_SPEED = 5
+SWING_SPEED = 0.05
+MAX_SWING_ANGLE = 1.2  # 最大摆动角度（弧度）
+
+# 物品类型
+ITEM_GOLD_SMALL = "gold_small"
+ITEM_GOLD_MEDIUM = "gold_medium"
+ITEM_GOLD_LARGE = "gold_large"
+ITEM_STONE_SMALL = "stone_small"
+ITEM_STONE_MEDIUM = "stone_medium"
+ITEM_STONE_LARGE = "stone_large"
+ITEM_DIAMOND = "diamond"
+ITEM_BOMB = "bomb"
+
+# 物品价值
+ITEM_VALUES = {
+    ITEM_GOLD_SMALL: 100,
+    ITEM_GOLD_MEDIUM: 300,
+    ITEM_GOLD_LARGE: 500,
+    ITEM_STONE_SMALL: 10,
+    ITEM_STONE_MEDIUM: 20,
+    ITEM_STONE_LARGE: 30,
+    ITEM_DIAMOND: 1000,
+    ITEM_BOMB: -200  # 炸弹扣分
+}
+
+# 物品重量（影响拉回速度）
+ITEM_WEIGHTS = {
+    ITEM_GOLD_SMALL: 1,
+    ITEM_GOLD_MEDIUM: 2,
+    ITEM_GOLD_LARGE: 3,
+    ITEM_STONE_SMALL: 2,
+    ITEM_STONE_MEDIUM: 3,
+    ITEM_STONE_LARGE: 4,
+    ITEM_DIAMOND: 0.5,
+    ITEM_BOMB: 1
+}
+
+# 物品尺寸
+ITEM_SIZES = {
+    ITEM_GOLD_SMALL: 20,
+    ITEM_GOLD_MEDIUM: 30,
+    ITEM_GOLD_LARGE: 40,
+    ITEM_STONE_SMALL: 20,
+    ITEM_STONE_MEDIUM: 30,
+    ITEM_STONE_LARGE: 40,
+    ITEM_DIAMOND: 15,
+    ITEM_BOMB: 25
+}

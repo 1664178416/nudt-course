@@ -1,0 +1,78 @@
+
+classDiagram
+    class Game {
+        -grid: number[][]   # 4x4网格，存储数字（0表示空格）
+        -score: number
+        -bestScore: number
+        -gameOver: boolean
+        -won: boolean
+        +constructor()
+        +initializeGrid()
+        +addRandomTile() number[]?
+        +move(direction: 'up' | 'down' | 'left' | 'right') boolean
+        +isGameOver() boolean
+        +hasWon() boolean
+        +getScore() number
+        +getBestScore() number
+        +updateBestScore()
+        +resetGame()
+        +getGrid() number[][]  # 用于UI渲染
+    }
+
+    class GameLogic {
+        -grid: number[][]   # 当前操作的网格副本
+        -scoreDelta: number # 本次移动的得分增量
+        +constructor(grid: number[][])
+        +canMove(direction: string) boolean
+        +move(direction: string) 返回: {movedGrid: number[][], scoreDelta: number}
+        -moveLeft()
+        -moveRight()
+        -moveUp()
+        -moveDown()
+        -compressAndMerge(row: number[])
+    }
+
+    class InputHandler {
+        -game: Game
+        -ui: UI
+        +constructor(game: Game, ui: UI)
+        +bindKeyboardEvents()
+        +bindButtonEvents()
+        +bindTouchEvents()
+        -handleMove(direction: string)
+        -handleRestart()
+        -calculateSwipeDirection(touchStartX, touchStartY, touchEndX, touchEndY) string?
+    }
+
+    class UI {
+        -game: Game
+        -gridContainer: HTMLElement
+        -scoreElement: HTMLElement
+        -bestScoreElement: HTMLElement
+        -gameOverMsg: HTMLElement
+        +constructor(game: Game)
+        +updateGrid()
+        +updateScores()
+        +showGameOverMessage()
+        +hideGameOverMessage()
+        +showWinAnimation()
+        -createOrUpdateTile(row: number, col: number, value: number)
+        -getTileColor(value: number) string
+        -getTileTextColor(value: number) string
+    }
+
+    class Main {
+        -game: Game
+        -ui: UI
+        -inputHandler: InputHandler
+        +constructor()
+        +init()
+    }
+
+    Main --> Game
+    Main --> UI
+    Main --> InputHandler
+    InputHandler --> Game
+    InputHandler --> UI
+    UI --> Game
+    Game --> GameLogic   # Game 类在移动时会调用 GameLogic 的方法

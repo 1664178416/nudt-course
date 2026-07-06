@@ -1,0 +1,104 @@
+
+classDiagram
+    class BaseAgent {
+        <<abstract>>
+        +str name
+        +str system_prompt
+        +LLMClient llm_client
+        +list tools
+        +BaseMemory memory
+        +__init__(name: str, system_prompt: str, llm_client: LLMClient, memory: BaseMemory)
+        +async respond(messages: list[Message]) Message
+        +async generate_response(input_text: str, context: list[Message]) Message
+        +add_tool(tool: Callable)
+        +get_available_tools() list
+        +_process_messages(messages: list[Message]) list[Message]
+        +_create_chat_completion(messages: list[Message]) dict
+    }
+    
+    class SimpleAgent {
+        +__init__(name: str, system_prompt: str, llm_client: LLMClient, memory: BaseMemory)
+    }
+    
+    class LLMClient {
+        <<abstract>>
+        +str api_key
+        +str base_url
+        +str model
+        +__init__(api_key: str, base_url: str, model: str)
+        +async chat_completion(messages: list[Message]) dict
+        +async chat_completion_stream(messages: list[Message]) AsyncGenerator
+    }
+    
+    class OpenAIClient {
+        +int max_tokens
+        +float temperature
+        +dict extra_params
+        +__init__(api_key: str, base_url: str, model: str, max_tokens: int, temperature: float)
+        +async chat_completion(messages: list[Message]) dict
+    }
+    
+    class Session {
+        +list agents
+        +list message_history
+        +BaseMemory shared_memory
+        +__init__(agents: list[BaseAgent], shared_memory: BaseMemory)
+        +async run(task: str, max_turns: int) str
+        +async run_stream(task: str, max_turns: int) AsyncGenerator
+        +add_agent(agent: BaseAgent)
+        +get_message_history() list[Message]
+        +clear_history()
+        +_broadcast_to_agents(current_message: Message) list[Message]
+        +_select_next_agent(current_agent: BaseAgent) BaseAgent
+    }
+    
+    class BaseMemory {
+        <<abstract>>
+        +list messages
+        +__init__()
+        +add_message(message: Message)
+        +get_messages(limit: int) list[Message]
+        +clear()
+    }
+    
+    class SimpleMemory {
+        +int max_messages
+        +__init__(max_messages: int)
+        +add_message(message: Message)
+        +get_messages(limit: int) list[Message]
+    }
+    
+    class Message {
+        +str role
+        +str content
+        +str agent_name
+        +datetime timestamp
+        +dict metadata
+        +__init__(role: str, content: str, agent_name: str, metadata: dict)
+        +to_dict() dict
+        +from_dict(data: dict) Message
+    }
+    
+    class ToolRegistry {
+        +dict _tools
+        +register_tool(func: Callable)
+        +get_tool(name: str) Callable
+        +get_tools_descriptions() list[dict]
+    }
+    
+    class AgentException {
+        +str message
+        +__init__(message: str)
+    }
+    
+    BaseAgent <|-- SimpleAgent
+    LLMClient <|-- OpenAIClient
+    BaseMemory <|-- SimpleMemory
+    BaseAgent --> LLMClient
+    BaseAgent --> BaseMemory
+    BaseAgent --> ToolRegistry
+    Session --> BaseAgent
+    Session --> BaseMemory
+    Message <-- Session
+    Message <-- BaseAgent
+    Message <-- BaseMemory

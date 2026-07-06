@@ -1,0 +1,54 @@
+
+sequenceDiagram
+    participant U as User
+    participant UI as UIController
+    participant M as Main
+    participant AD as ArrayData
+    participant SA as SortingAlgorithm
+    participant PC as PlaybackController
+    participant V as Visualizer
+
+    Note over U, V: 页面初始化
+    M->>M: init()
+    M->>AD: new ArrayData()
+    M->>AD: generateRandom(默认大小)
+    M->>V: new Visualizer(canvas)
+    M->>PC: new PlaybackController()
+    M->>UI: new UIController()
+    UI->>UI: bindEvents()
+    M->>V: render(初始数组, [], 初始统计)
+
+    Note over U, V: 用户选择算法并点击“开始”
+    U->>UI: 从下拉菜单选择算法
+    UI->>M: onAlgorithmChange()
+    M->>M: 根据选择实例化对应SortingAlgorithm子类
+    U->>UI: 点击“开始”按钮
+    UI->>M: onPlaybackClick('start')
+    M->>M: runVisualization()
+    M->>SA: sort(AD)
+    SA->>AD: getArray()
+    SA->>SA: 执行排序逻辑，通过step()记录每一步
+    SA-->>M: 返回steps数组
+    M->>PC: loadSteps(steps)
+    PC->>PC: 重置状态
+    PC->>PC: play()
+    loop 动画循环
+        PC->>PC: 获取当前step
+        PC->>V: render(step.array, step.highlights, step.stats)
+        PC->>UI: updateInfoPanel(step)
+        PC->>PC: 等待speed毫秒后更新currentStep
+    end
+
+    Note over U, V: 用户交互（例如暂停、调速）
+    U->>UI: 点击“暂停”
+    UI->>PC: pause()
+    PC->>PC: clearTimeout(timerId)
+    U->>UI: 拖动速度滑块
+    UI->>PC: setSpeed(newSpeed)
+
+    Note over U, V: 用户生成新数据
+    U->>UI: 点击“随机生成”
+    UI->>AD: generateRandom(新大小)
+    UI->>M: 触发重置流程
+    M->>PC: reset()
+    M->>V: render(新数组, [], 新统计)

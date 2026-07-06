@@ -1,0 +1,19 @@
+{
+    "$schema": "https://raw.githubusercontent.com/edosssa/pm2-config/master/pm2config.json",
+    "apps": [
+        {
+            "name": "base",
+            "cwd": "dist/apps",
+            "script": "base/main.js",
+            "autorestart": true,
+            "maxRestarts": 3
+        },
+        {
+            "name": "ai",
+            "cwd": "dist/apps",
+            "script": "ai/main.js",
+            "autorestart": true,
+            "maxRestarts": 3
+        }
+    ]
+}

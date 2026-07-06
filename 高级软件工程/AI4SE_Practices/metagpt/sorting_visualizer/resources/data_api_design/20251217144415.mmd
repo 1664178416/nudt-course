@@ -1,0 +1,120 @@
+
+classDiagram
+    class EventEmitter {
+        +on(event: string, callback: Function)
+        +emit(event: string, ...args)
+    }
+
+    class ArrayData {
+        -array: number[]
+        -size: number
+        -state: string
+        +generateRandom(size: number)
+        +generateReversed(size: number)
+        +setCustomArray(arr: number[])
+        +getArray(): number[]
+        +getSize(): number
+        +swap(i: number, j: number)
+        +setState(state: string)
+        +getState(): string
+    }
+    EventEmitter <|-- ArrayData
+
+    class SortingAlgorithm {
+        <<abstract>>
+        #data: ArrayData
+        -steps: object[]
+        -comparisons: number
+        -swaps: number
+        +sort(data: ArrayData) object[]
+        #step(description: string, highlights: object[])
+        #compare(i: number, j: number) boolean
+        #swap(i: number, j: number)
+    }
+    EventEmitter <|-- SortingAlgorithm
+
+    class BubbleSort {
+        +sort(data: ArrayData) object[]
+    }
+    class SelectionSort {
+        +sort(data: ArrayData) object[]
+    }
+    class InsertionSort {
+        +sort(data: ArrayData) object[]
+    }
+    class QuickSort {
+        +sort(data: ArrayData) object[]
+        -quickSort(low: number, high: number)
+        -partition(low: number, high: number) number
+    }
+    class MergeSort {
+        +sort(data: ArrayData) object[]
+        -mergeSort(low: number, high: number)
+        -merge(low: number, mid: number, high: number)
+    }
+    SortingAlgorithm <|-- BubbleSort
+    SortingAlgorithm <|-- SelectionSort
+    SortingAlgorithm <|-- InsertionSort
+    SortingAlgorithm <|-- QuickSort
+    SortingAlgorithm <|-- MergeSort
+
+    class Visualizer {
+        -canvas: HTMLCanvasElement
+        -ctx: CanvasRenderingContext2D
+        -barWidth: number
+        -maxBarHeight: number
+        -colors: object
+        +render(array: number[], highlights: object[], stats: object)
+        +clear()
+        -drawBar(x: number, value: number, color: string)
+        -drawStats(stats: object)
+    }
+
+    class PlaybackController {
+        -steps: object[]
+        -currentStep: number
+        -speed: number
+        -timerId: number | null
+        -isPlaying: boolean
+        +loadSteps(steps: object[])
+        +play()
+        +pause()
+        +next()
+        +prev()
+        +reset()
+        +setSpeed(speed: number)
+    }
+    EventEmitter <|-- PlaybackController
+
+    class UIController {
+        -algorithmSelect: HTMLSelectElement
+        -sizeSlider: HTMLInputElement
+        -generateButtons: NodeList
+        -playbackButtons: NodeList
+        -speedSlider: HTMLInputElement
+        -infoPanel: HTMLElement
+        +bindEvents()
+        -onAlgorithmChange()
+        -onSizeChange()
+        -onGenerateClick(type: string)
+        -onPlaybackClick(action: string)
+        -onSpeedChange()
+        -updateInfoPanel(step: object)
+    }
+
+    class Main {
+        -arrayData: ArrayData
+        -currentAlgorithm: SortingAlgorithm
+        -visualizer: Visualizer
+        -playbackController: PlaybackController
+        -uiController: UIController
+        +init()
+        -runVisualization()
+    }
+    Main --> ArrayData
+    Main --> SortingAlgorithm
+    Main --> Visualizer
+    Main --> PlaybackController
+    Main --> UIController
+    PlaybackController --> Visualizer
+    UIController --> Main

@@ -1,0 +1,10 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "client", "client.dsp", "{933D912C-4F8E-426B-B1C4-26217764EEAA}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

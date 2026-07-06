@@ -1,0 +1,6 @@
+{
+  "username": "llm-agent-course",
+  "session_storage_path": "./UAVSessions",
+  "template_storage_path": "./templates",
+  "api_key": "admin_secret_key_change_in_production"
+}

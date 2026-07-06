@@ -1,0 +1,309 @@
+## style.css
+```css
+/**
+ * @fileoverview Styles for 2048 game with responsive design and animations.
+ * Follows Google CSS style guide with BEM-like naming convention.
+ */
+
+/* CSS Custom Properties (Variables) */
+:root {
+  /* Color Palette */
+  --color-background: #faf8ef;
+  --color-game-board: #bbada0;
+  --color-empty-cell: #cdc1b4;
+  --color-text-dark: #776e65;
+  --color-text-light: #f9f6f2;
+  --color-button: #8f7a66;
+  --color-button-hover: #9c8a79;
+  --color-game-over-bg: rgba(238, 228, 218, 0.73);
+  
+  /* Tile Colors (based on value) */
+  --tile-2: #eee4da;
+  --tile-4: #ede0c8;
+  --tile-8: #f2b179;
+  --tile-16: #f59563;
+  --tile-32: #f67c5f;
+  --tile-64: #f65e3b;
+  --tile-128: #edcf72;
+  --tile-256: #edcc61;
+  --tile-512: #edc850;
+  --tile-1024: #edc53f;
+  --tile-2048: #edc22e;
+  --tile-super: #3c3a32;
+  
+  /* Sizing & Spacing */
+  --tile-size: 100px;
+  --grid-gap: 15px;
+  --border-radius: 6px;
+  --font-size-large: 55px;
+  --font-size-medium: 25px;
+  --font-size-small: 18px;
+  
+  /* Animation Durations */
+  --transition-duration-fast: 0.1s;
+  --transition-duration-normal: 0.15s;
+  --transition-duration-slow: 0.2s;
+  
+  /* Responsive Breakpoints */
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+}
+
+/* Global Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-dark);
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Game Container */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  line-height: 0.8;
+}
+
+/* Scores Container */
+.scores-container {
+  display: flex;
+  gap: 10px;
+}
+
+.score-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbada0;
+  color: var(--color-text-light);
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  min-width: 100px;
+  text-align: center;
+}
+
+.score-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #eee4da;
+  margin-bottom: 5px;
+}
+
+.score-value {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Score Update Animation */
+.score-box .new-best {
+  animation: scorePop 0.5s ease-out;
+}
+
+/* Game Board */
+.game-board {
+  position: relative;
+  background-color: var(--color-game-board);
+  border-radius: var(--border-radius);
+  padding: var(--grid-gap);
+  width: calc((var(--tile-size) * 4) + (var(--grid-gap) * 5));
+  height: calc((var(--tile-size) * 4) + (var(--grid-gap) * 5));
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: var(--grid-gap);
+  width: 100%;
+  height: 100%;
+}
+
+/* Grid Cells */
+.grid-cell {
+  background-color: var(--color-empty-cell);
+  border-radius: var(--border-radius);
+  width: var(--tile-size);
+  height: var(--tile-size);
+}
+
+/* Tiles Base Styles */
+.tile {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tile-size);
+  height: var(--tile-size);
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  z-index: 10;
+  transition-property: transform, top, left;
+  transition-duration: var(--transition-duration-normal);
+  transition-timing-function: ease-in-out;
+  text-align: center;
+  line-height: var(--tile-size);
+}
+
+/* Tile Value Specific Styles */
+.tile-2 {
+  background-color: var(--tile-2);
+  color: var(--color-text-dark);
+  font-size: var(--font-size-large);
+}
+
+.tile-4 {
+  background-color: var(--tile-4);
+  color: var(--color-text-dark);
+  font-size: var(--font-size-large);
+}
+
+.tile-8 {
+  background-color: var(--tile-8);
+  color: var(--color-text-light);
+  font-size: var(--font-size-large);
+}
+
+.tile-16 {
+  background-color: var(--tile-16);
+  color: var(--color-text-light);
+  font-size: var(--font-size-large);
+}
+
+.tile-32 {
+  background-color: var(--tile-32);
+  color: var(--color-text-light);
+  font-size: var(--font-size-large);
+}
+
+.tile-64 {
+  background-color: var(--tile-64);
+  color: var(--color-text-light);
+  font-size: var(--font-size-large);
+}
+
+.tile-128 {
+  background-color: var(--tile-128);
+  color: var(--color-text-light);
+  font-size: var(--font-size-medium);
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+}
+
+.tile-256 {
+  background-color: var(--tile-256);
+  color: var(--color-text-light);
+  font-size: var(--font-size-medium);
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+}
+
+.tile-512 {
+  background-color: var(--tile-512);
+  color: var(--color-text-light);
+  font-size: var(--font-size-medium);
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+}
+
+.tile-1024 {
+  background-color: var(--tile-1024);
+  color: var(--color-text-light);
+  font-size: var(--font-size-small);
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+}
+
+.tile-2048 {
+  background-color: var(--tile-2048);
+  color: var(--color-text-light);
+  font-size: var(--font-size-small);
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+}
+
+.tile-super {
+  background-color: var(--tile-super);
+  color: var(--color-text-light);
+  font-size: var(--font-size-small);
+}
+
+/* Animation Keyframes */
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+@keyframes scorePop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Tile Animation

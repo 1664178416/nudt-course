@@ -1,0 +1,1354 @@
+[
+  {
+    "idx": 1,
+    "key": "题库二-习题1.1",
+    "source": "题库二：26春研究生课程《博弈论》练习题库（6-9章内容）.pdf",
+    "source_short": "题库二",
+    "question_no": "习题1.1",
+    "question_pdf_page": 1,
+    "title": "1.1 行为策略纳什均衡存在性",
+    "question": "证明：在一个扩展式博弈中，如果所有参与人都有完美记忆，那么这个博弈有行为策略纳什均衡。",
+    "textbook_reference": "第6章 6.3 行为策略均衡；定理6.16",
+    "textbook_locations": [
+      {
+        "title": "6.3  行为策略均衡／199",
+        "pdf_page": 222,
+        "print_page": 199,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 7343,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "教材正文定理；用 Nash 存在性定理 + Kuhn 定理证明。"
+  },
+  {
+    "idx": 2,
+    "key": "题库二-习题1.2",
+    "source": "题库二：26春研究生课程《博弈论》练习题库（6-9章内容）.pdf",
+    "source_short": "题库二",
+    "question_no": "习题1.2",
+    "question_pdf_page": 1,
+    "title": "1.2 正概率子博弈上的均衡限制",
+    "question": "令 $\\sigma^\\ast$ 为扩展式博弈 $\\Gamma$ 的纳什均衡（混合策略或行为策略），令 $\\Gamma(x)$ 是 $\\Gamma$ 的一个子博弈。证明：如果 $P_{\\sigma^\\ast}(x)>0$，那么局限于子博弈 $\\Gamma(x)$ 的策略向量 $\\sigma^\\ast$ 是 $\\Gamma(x)$ 的纳什均衡（混合策略或行为策略）。",
+    "textbook_reference": "第7章 7.1 子博弈完美均衡；定理7.5",
+    "textbook_locations": [
+      {
+        "title": "7.1  子博弈完美均衡／213",
+        "pdf_page": 236,
+        "print_page": 213,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 7831,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "不对应 Solutions 7.5；Solutions 7.5 是另一个讨价还价例题。"
+  },
+  {
+    "idx": 3,
+    "key": "题库二-习题1.3",
+    "source": "题库二：26春研究生课程《博弈论》练习题库（6-9章内容）.pdf",
+    "source_short": "题库二",
+    "question_no": "习题1.3",
+    "question_pdf_page": 1,
+    "title": "1.3 扰动行为策略逼近",
+    "question": "令 $(\\delta^k)_{k\\in\\mathbb N}$ 为一个扰动向量序列，满足 $\\lim_{k\\to\\infty}M(\\delta^k)=0$。证明：对于参与人 $i$ 的每个行为策略 $\\sigma_i\\in\\mathcal B_i$，存在行为策略序列 $(\\sigma_i^k)_{k\\in\\mathbb N}$，满足：\n\n- 对每个 $k\\in\\mathbb N$，$\\sigma_i^k\\in\\mathcal B_i(\\delta_i^k)$；\n- $\\lim_{k\\to\\infty}\\sigma_i^k$ 存在且等于 $\\sigma_i$。",
+    "textbook_reference": "第7章 7.3 完美均衡；定理7.34；教材练习7.34",
+    "textbook_locations": [
+      {
+        "title": "7.3  完美均衡／222",
+        "pdf_page": 245,
+        "print_page": 222,
+        "label": "教材主位置"
+      },
+      {
+        "title": "练习题／239",
+        "pdf_page": 262,
+        "print_page": 239,
+        "label": "教材练习起始"
+      }
+    ],
+    "textbook_ocr_line": 8227,
+    "solution_id": "7.35",
+    "solutions_pdf_page": 168,
+    "solutions_chapter": "Chapter 7: Equilibrium reﬁnements",
+    "solution_text_en": "7.35 Let (δk)k∈N be a sequence of perturbation vectors satisfying limk→∞M(δk) =\n0. Let σi ∈Bi be a behavior strategy of player i. For every information\nset Ui ∈Ui and every action ai ∈A(Ui) set\nσk\ni (ai) = δk\ni (ai) +\n\n1 −∑\na∈A(Ui)\nδk\ni (a)\n\nσi(ai).\nThen, since ∑a∈A(Ui) δk\ni (a) ≤1 and σi(ai) ≥0 one has σk\ni (ai) ≥δk\ni (ai).\nIn addition,\n∑\nai∈A(Ui)\nσk\ni (ai) =\n∑\nai∈A(Ui)\n\n\nδk\ni (ai) +\n\n1 −∑\na∈A(Ui)\nδk\ni (a)\n\nσi(ai)\n\n\n\n=\n∑\nai∈A(Ui)\nδk\ni (ai) +\n\n1 −∑\na∈A(Ui)\nδk\ni (a)\n\n\n∑\nai∈A(Ui)\nσi(ai) = 1,\nwhich derives that σk\ni ∈Bi(δi).\nFinally, since limk→∞M(δk) = 0, for every information set Ui ∈Ui and\n168\n\n--- PDF_PAGE 169 ---\nevery action ai ∈A(Ui), limk→∞σk\ni (ai) = σi(ai). Thus, limk→∞σk\ni exists\nand equals σi.",
+    "notes": "英文 Solutions 编号与中文练习编号有偏移，内容匹配扰动行为策略逼近。"
+  },
+  {
+    "idx": 4,
+    "key": "题库二-习题1.4",
+    "source": "题库二：26春研究生课程《博弈论》练习题库（6-9章内容）.pdf",
+    "source_short": "题库二",
+    "question_no": "习题1.4",
+    "question_pdf_page": 1,
+    "title": "1.4 不完全信息的 Aumann 模型与知识层级",
+    "question": "写出不完全信息 Aumann（奥曼）模型，解释每一个要素的含义，并给出知识层级的概念。",
+    "textbook_reference": "第9章 9.1 不完全信息的奥曼模型以及知识；第11章 11.1 信念层级",
+    "textbook_locations": [
+      {
+        "title": "9.1  不完全信息的奥曼模型以及知识的概念／271",
+        "pdf_page": 294,
+        "print_page": 271,
+        "label": "教材主位置"
+      },
+      {
+        "title": "11.1  信念层级／376",
+        "pdf_page": 399,
+        "print_page": 376,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": 9677,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "正文定义整理。"
+  },
+  {
+    "idx": 5,
+    "key": "题库二-习题1.5",
+    "source": "题库二：26春研究生课程《博弈论》练习题库（6-9章内容）.pdf",
+    "source_short": "题库二",
+    "question_no": "习题1.5",
+    "question_pdf_page": 1,
+    "title": "1.5 不完全信息静态博弈的 Harsanyi 转换",
+    "question": "甲（参与人 I，行参与人）和乙（参与人 II，列参与人）参加一个不完全信息静态博弈，收益函数由两个状态博弈 $G_1$ 或 $G_2$ 之一决定。乙有两个可选行动 $t$ 和 $b$；甲的可选行动由真实状态决定：若博弈处于 $G_1$，甲的可选行动为 $T$ 和 $B$；若博弈处于 $G_2$，甲的可选行动为 $T,C,B$。甲完全知晓真实收益函数（因此明确自身行动集合）；乙仅知道收益函数以概率 $p$ 为 $G_1$、以概率 $1-p$ 为 $G_2$，无法观测真实状态。上述信息结构为共同知识。\n\n状态博弈为\n\n$$\nG_1:\n\\begin{array}{c|cc}\n & t & b\\\\\n\\hline\nT&(1,0)&(0,2)\\\\\nB&(0,3)&(1,0)\n\\end{array}\n\\qquad\nG_2:\n\\begin{array}{c|cc}\n & t & b\\\\\n\\hline\nT&(1,1)&(1,0)\\\\\nC&(0,2)&(1,1)\\\\\nB&(1,0)&(0,2)\n\\end{array}\n$$\n\n请通过 Harsanyi（海萨尼）转换对该不完全信息博弈进行标准化处理，绘制对应的扩展式博弈树，要求清晰标注参与人信息集、行动分支、概率与末端收益。",
+    "textbook_reference": "第9章 9.4 不完全信息博弈的海萨伊模型",
+    "textbook_locations": [
+      {
+        "title": "9.4  不完全信息博弈的海萨伊模型／293",
+        "pdf_page": 316,
+        "print_page": 293,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 10340,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "题库给定两状态收益表，按 Harsanyi 转换直接作答。"
+  },
+  {
+    "idx": 6,
+    "key": "题库一-习题1.1",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题1.1",
+    "question_pdf_page": 1,
+    "title": "1.1 棋类游戏模型与三择一定理",
+    "question": "构建黑白双方规则明确的棋类游戏的博弈模型，陈述并证明三择一定理（数学逻辑的证法）。",
+    "textbook_reference": "第1章 1.1 国际象棋博弈的简要描述；1.2 分析和结果；定理1.4",
+    "textbook_locations": [
+      {
+        "title": "1.1  国际象棋博弈的简要描述／1",
+        "pdf_page": 24,
+        "print_page": 1,
+        "label": "教材主位置"
+      },
+      {
+        "title": "1.2  分析和结果／2",
+        "pdf_page": 25,
+        "print_page": 2,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": 741,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "题干是构建模型并证明三择一定理，不是教材练习1.1。"
+  },
+  {
+    "idx": 7,
+    "key": "题库一-习题1.2",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题1.2",
+    "question_pdf_page": 1,
+    "title": "1.2 有限 $n\\times m$ Chomp 游戏先手必胜",
+    "question": "证明：对每一个有限的 $n\\times m$（$n>1$ 或 $m>1$）Chomp 游戏，先手局中人有必胜策略。",
+    "textbook_reference": "第3章 3.4 大卫·盖尔博弈(Chomp)；定理3.16",
+    "textbook_locations": [
+      {
+        "title": "3.4  大卫·盖尔博弈（Chomp）／40",
+        "pdf_page": 63,
+        "print_page": 40,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 2040,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "正文策略窃取证明。"
+  },
+  {
+    "idx": 8,
+    "key": "题库一-习题2.1",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题2.1",
+    "question_pdf_page": 1,
+    "title": "2.1 正仿射变换仍表示同一偏好",
+    "question": "证明：如果 $u_i$ 是局中人 $i$ 的偏好关系 $\\succeq_i$ 的线性效用函数，那么 $u_i$ 的任意正仿射变换也是此偏好关系的线性效用函数。",
+    "textbook_reference": "第2章 2.5 效用函数和仿射变换",
+    "textbook_locations": [
+      {
+        "title": "2.5  效用函数和仿射变换／19",
+        "pdf_page": 42,
+        "print_page": 19,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 1345,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 9,
+    "key": "题库一-习题2.2",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题2.2",
+    "question_pdf_page": 1,
+    "title": "2.2 vNM 四大公理与线性效用函数",
+    "question": "陈述冯·诺依曼-摩根斯坦效用四大公理，构造出满足四大公理的偏好关系的线性效用函数（不用证明）。",
+    "textbook_reference": "第2章 2.3 效用理论的公理；2.4 效用函数的特征定理",
+    "textbook_locations": [
+      {
+        "title": "2.3  效用理论的公理／13",
+        "pdf_page": 36,
+        "print_page": 13,
+        "label": "教材主位置"
+      },
+      {
+        "title": "2.4  效用函数的特征定理／16",
+        "pdf_page": 39,
+        "print_page": 16,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": 1093,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 10,
+    "key": "题库一-习题2.3",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题2.3",
+    "question_pdf_page": 1,
+    "title": "2.3 两个 vNM 表示只差正仿射变换",
+    "question": "令 $O=\\{A_1,\\ldots,A_m\\}$ 是一个有限的结果集。某局中人在 $O$ 的二阶彩票集 $\\mathcal L^{(2)}$ 上有一个满足冯·诺依曼-摩根斯坦四大公理的偏好关系 $\\succeq$。假设函数 $f,g$ 是偏好关系的两个线性效用函数表示，证明：存在 $\\alpha>0,\\beta\\in\\mathbb R$，使得 $g(\\cdot)=\\alpha f(\\cdot)+\\beta$。",
+    "textbook_reference": "第2章 2.5 效用函数和仿射变换；教材练习2.21/2.22同型",
+    "textbook_locations": [
+      {
+        "title": "2.5  效用函数和仿射变换／19",
+        "pdf_page": 42,
+        "print_page": 19,
+        "label": "教材主位置"
+      },
+      {
+        "title": "练习题／27",
+        "pdf_page": 50,
+        "print_page": 27,
+        "label": "教材练习起始"
+      }
+    ],
+    "textbook_ocr_line": 1723,
+    "solution_id": "2.21",
+    "solutions_pdf_page": 11,
+    "solutions_chapter": "Chapter 2: Utility theory",
+    "solution_text_en": "2.21 Suppose a person’s preferences, which satisﬁes VNM axioms, are rep-\nresentable by two linear utility functions u and v. We prove that v\nis a positive afﬁne transformation of u. If this person is indifference\nbetween each two outcomes, so both utility functions are necessar-\nily constant, and we are done. Otherwise, let A and B be two out-\ncomes such that A ≺B.\nHence, u(A) < u(B) and v(A) < v(B).\nSet a =\nv(B)−v(A)\nu(B)−u(A) > 0 and b = v(A) −a · u(A). We next prove that\nv(·) = a · u(·) + b.\nCase 1:\na · u(A) + b = v(B) −v(A)\nu(B) −u(A)u(A) + v(A) −v(B) −v(A)\nu(B) −u(A)u(A) = v(A).\nCase 2:\na · u(B) + b = v(B) −v(A)\nu(B) −u(A)u(B) + v(A) −v(B) −v(A)\nu(B) −u(A)u(A) = v(B)\nCase 3: A ⪯C ⪯B. By the continuity axiom, there is θ ∈[0, 1] such\nthat C ≈\n\u0002\nθ(B), (1 −θ)(A)\n\u0003\nTherefore\nv(C) = θ · v(B) + (1 −θ)v(A)\n= θ(a · u(B) + b) + (1 −θ)(a · u(A) + b)\n= a(θ · u(B) + (1 −θ)u(A)) + b\n= a · u(C) + b\n11\n\n--- PDF_PAGE 12 ---\n(the proof in case that C ⪯A ≺B and A ≺B ⪯C is similar to Case\n3).",
+    "notes": ""
+  },
+  {
+    "idx": 11,
+    "key": "题库一-习题2.4",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题2.4",
+    "question_pdf_page": 1,
+    "title": "2.4 风险态度模型",
+    "question": "构建局中人的风险态度的数学模型，并用效用函数的凸凹性来刻画局中人的风险态度（需要推导）。",
+    "textbook_reference": "第2章 2.7 风险态度",
+    "textbook_locations": [
+      {
+        "title": "2.7  风险态度／20",
+        "pdf_page": 43,
+        "print_page": 20,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 1399,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 12,
+    "key": "题库一-习题3.1",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题3.1",
+    "question_pdf_page": 1,
+    "title": "3.1 无随机移动且完美信息",
+    "question": "写出不带随机移动和具有完美信息的扩展型博弈的模型，解释每一个要素的含义，并给出局中人策略的定义。",
+    "textbook_reference": "第3章 3.3 博弈树：无随机行动、完美信息扩展式模型",
+    "textbook_locations": [
+      {
+        "title": "3.3  博弈树／37",
+        "pdf_page": 60,
+        "print_page": 37,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 1906,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 13,
+    "key": "题库一-习题3.2",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题3.2",
+    "question_pdf_page": 1,
+    "title": "3.2 有随机移动且完美信息",
+    "question": "写出带有随机移动和具有完美信息的扩展型博弈的模型，解释每一个要素的含义，并给出局中人策略的定义。",
+    "textbook_reference": "第3章 3.5 包含随机行动的博弈；结合3.3模型",
+    "textbook_locations": [
+      {
+        "title": "3.5  包含随机行动的博弈／42",
+        "pdf_page": 65,
+        "print_page": 42,
+        "label": "教材主位置"
+      },
+      {
+        "title": "3.3  博弈树／37",
+        "pdf_page": 60,
+        "print_page": 37,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": 2109,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 14,
+    "key": "题库一-习题3.3",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题3.3",
+    "question_pdf_page": 2,
+    "title": "3.3 无随机移动且不完美信息",
+    "question": "写出不带随机移动和不具有完美信息的扩展型博弈的模型，解释每一个要素的含义，并给出局中人策略的定义。",
+    "textbook_reference": "第3章 3.6 不完全信息博弈；结合3.3模型",
+    "textbook_locations": [
+      {
+        "title": "3.6  不完全信息博弈／45",
+        "pdf_page": 68,
+        "print_page": 45,
+        "label": "教材主位置"
+      },
+      {
+        "title": "3.3  博弈树／37",
+        "pdf_page": 60,
+        "print_page": 37,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": 2177,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 15,
+    "key": "题库一-习题3.4",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题3.4",
+    "question_pdf_page": 2,
+    "title": "3.4 有随机移动且不完美信息",
+    "question": "写出带有随机移动和不具有完美信息的扩展型博弈的模型，解释每一个要素的含义，并给出局中人策略的定义。",
+    "textbook_reference": "第3章 3.5 包含随机行动的博弈；3.6 不完全信息博弈",
+    "textbook_locations": [
+      {
+        "title": "3.5  包含随机行动的博弈／42",
+        "pdf_page": 65,
+        "print_page": 42,
+        "label": "教材主位置"
+      },
+      {
+        "title": "3.6  不完全信息博弈／45",
+        "pdf_page": 68,
+        "print_page": 45,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": 2109,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 16,
+    "key": "题库一-习题4.1",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题4.1",
+    "question_pdf_page": 2,
+    "title": "4.1 三人博弈纯策略纳什均衡",
+    "question": "三人博弈，每个局中人的行动集合分别为\n\n$$\nA_1=\\{T,C,B\\},\\qquad A_2=\\{L,M,R\\},\\qquad A_3=\\{P,Q\\}.\n$$\n\n盈利函数如下图的矩阵表示，其中每个格子的三元组依次为局中人 $1,2,3$ 的收益：\n\n$$\nP:\n\\begin{array}{c|ccc}\n & L&M&R\\\\\n\\hline\nT&(3,10,8)&(8,14,6)&(4,12,7)\\\\\nC&(4,7,2)&(5,5,2)&(2,2,8)\\\\\nB&(3,-5,0)&(0,3,4)&(-3,5,0)\n\\end{array}\n\\qquad\nQ:\n\\begin{array}{c|ccc}\n & L&M&R\\\\\n\\hline\nT&(4,9,3)&(7,8,10)&(5,7,-1)\\\\\nC&(3,4,5)&(17,3,12)&(3,5,2)\\\\\nB&(9,7,2)&(20,0,13)&(0,15,0)\n\\end{array}\n$$\n\n求解博弈的纯策略纳什均衡。",
+    "textbook_reference": "第4章练习4.18 三人博弈",
+    "textbook_locations": [
+      {
+        "title": "练习题／107",
+        "pdf_page": 130,
+        "print_page": 107,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 4367,
+    "solution_id": "4.18",
+    "solutions_pdf_page": 54,
+    "solutions_chapter": "Chapter 4: Strategic-form games",
+    "solution_text_en": "4.18 The next game has no equilibrium.\nL\nM\nR\nL\nM\nR\nT\n3,10,8\n8,14,6\n4,12,7\nT\n4,9,3\n7,8,10\n5,7,-1\nC\n4,7,2\n5,5,2\n2,2,8\nC\n3,4,5\n17,3,12\n3,5,2\nB\n3,-5,0\n0,3,4\n-3,5,0\nB\n9,7,2\n20,0,13\n0,15,0\nP\nQ\n54\n\n--- PDF_PAGE 55 ---",
+    "notes": "Solutions 4.18 内容匹配该三人矩阵，结论无纯策略纳什均衡。"
+  },
+  {
+    "idx": 17,
+    "key": "题库一-习题4.2",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题4.2",
+    "question_pdf_page": 2,
+    "title": "4.2 纳什均衡与有利偏离集合",
+    "question": "假设 $(N,(A_i)_{i\\in N},(f_i)_{i\\in N})$ 是一个完全信息静态博弈，试证明：$a^\\ast\\in A$ 是纳什均衡当且仅当 $\\forall i\\in N,\\ \\operatorname{Prof}_i(a^\\ast)=\\varnothing$。",
+    "textbook_reference": "第4章 4.8 稳定性：纳什均衡；有利偏离集 Prof_i",
+    "textbook_locations": [
+      {
+        "title": "4.8  稳定性：纳什均衡／80",
+        "pdf_page": 103,
+        "print_page": 80,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 3259,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 18,
+    "key": "题库一-习题4.3",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题4.3",
+    "question_pdf_page": 2,
+    "title": "4.3 纳什均衡与最佳反应",
+    "question": "假设 $(N,(A_i)_{i\\in N},(f_i)_{i\\in N})$ 是一个完全信息静态博弈，试证明：$a^\\ast\\in A$ 是纳什均衡当且仅当 $\\forall i\\in N,\\ a_i^\\ast\\in BR_i(a_{-i}^\\ast)$。",
+    "textbook_reference": "第4章 4.8 稳定性：纳什均衡；最佳反应定义；教材练习4.15",
+    "textbook_locations": [
+      {
+        "title": "4.8  稳定性：纳什均衡／80",
+        "pdf_page": 103,
+        "print_page": 80,
+        "label": "教材主位置"
+      },
+      {
+        "title": "练习题／107",
+        "pdf_page": 130,
+        "print_page": 107,
+        "label": "教材练习起始"
+      }
+    ],
+    "textbook_ocr_line": 4319,
+    "solution_id": "4.15",
+    "solutions_pdf_page": 53,
+    "solutions_chapter": "Chapter 4: Strategic-form games",
+    "solution_text_en": "4.15 The strategy vector s∗is a Nash equilibrium according to Deﬁnition\n4.17, if and only if, for each i ∈N and and every strategy si ∈Si one\nhas\nui (s∗) ≥ui\nsi, s∗\n−i\n\u0001\n(8)\nBut Equation (8) holds if and only if, for each i ∈N,\nui\ns∗\ni , s∗\n−i\n\u0001 = ui (s∗) = max\nsi∈Si\nui\nsi, s∗\n−i\n\u0001\n.\nMeaning, s∗\ni is a best reply to s∗\n−i for every player i ∈N, so it a Nash\nequilibrium according to Deﬁnition 4.19.",
+    "notes": ""
+  },
+  {
+    "idx": 19,
+    "key": "题库一-习题4.4",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题4.4",
+    "question_pdf_page": 3,
+    "title": "4.4 删除严格被支配策略不改变纳什均衡",
+    "question": "假设 $G_1=(N,(A_i)_{i\\in N},(f_i)_{i\\in N})$ 是一个完全信息静态博弈，$b_i^\\ast\\in A_i$ 是局中人 $i$ 的严格被支配策略。定义新的博弈\n\n$$\nG_2=(N,(B_i)_{i\\in N},(f_i)_{i\\in N}),\\qquad B_j=A_j,\\ \\forall j\\ne i,\\quad B_i=A_i\\setminus\\{b_i^\\ast\\}.\n$$\n\n试证明：$\\operatorname{NashEqum}(G_2)=\\operatorname{NashEqum}(G_1)$。",
+    "textbook_reference": "第4章 4.11 剔除劣策略的效果；推论4.36",
+    "textbook_locations": [
+      {
+        "title": "4.11  剔除劣策略的效果／89",
+        "pdf_page": 112,
+        "print_page": 89,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 3522,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 20,
+    "key": "题库一-习题4.5",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题4.5",
+    "question_pdf_page": 3,
+    "title": "4.5 Cournot 产量竞争",
+    "question": "市场中有两个寡头通过产量决策进行竞争。厂商一的产量是 $q_1$，总成本为 $C_1(q_1)=\\alpha_1q_1+\\gamma_1$，其中 $\\alpha_1$ 是厂商一的边际成本，$\\gamma_1$ 是厂商一的固定成本；厂商二的产量是 $q_2$，总成本为 $C_2(q_2)=\\alpha_2q_2+\\gamma_2$，其中 $\\alpha_2$ 是厂商二的边际成本，$\\gamma_2$ 是厂商二的固定成本。市场产品总数为 $Q=q_1+q_2$，单个商品的市场价格遵循\n\n$$\nP=A-Q=A-(q_1+q_2),\n$$\n\n其中 $A$ 是外生参数。在这样的设定下，计算两寡头进行产量决策的均衡。",
+    "textbook_reference": "第4章 4.9 纳什均衡的特征；Cournot 双寡头例",
+    "textbook_locations": [
+      {
+        "title": "4.9  纳什均衡的特征／85",
+        "pdf_page": 108,
+        "print_page": 85,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 3396,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 21,
+    "key": "题库一-习题5.1",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题5.1",
+    "question_pdf_page": 3,
+    "title": "5.1 连续策略纳什均衡",
+    "question": "二人博弈，行动集合分别为 $A_1=[0,1]$、$A_2=[0,1]$，二人的盈利函数分别为\n\n$$\nf_1(x,y)=3xy-3x+3y-5,\\qquad f_2(x,y)=7x-8y+12.\n$$\n\n求解该博弈的纳什均衡。",
+    "textbook_reference": "第4章 4.14 单位正方形博弈；连续策略计算",
+    "textbook_locations": [
+      {
+        "title": "4.14  单位正方形博弈／101",
+        "pdf_page": 124,
+        "print_page": 101,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 4585,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 22,
+    "key": "题库一-习题5.2",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题5.2",
+    "question_pdf_page": 3,
+    "title": "5.2 $3\\times3$ 混合策略纳什均衡",
+    "question": "求解如下博弈的混合策略纳什均衡：\n\n$$\n\\begin{array}{c|ccc}\n\\text{策略} & L&C&R\\\\\n\\hline\nT&(6,2)&(0,6)&(4,4)\\\\\nM&(2,12)&(4,3)&(2,5)\\\\\nB&(0,6)&(10,0)&(2,2)\n\\end{array}\n$$",
+    "textbook_reference": "第5章 5.2 计算混合策略均衡",
+    "textbook_locations": [
+      {
+        "title": "5.2  计算混合策略均衡／128",
+        "pdf_page": 151,
+        "print_page": 128,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 6341,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "不对应 Solutions 5.27；该条是另一道2×4支持枚举题。本题按题库矩阵直接求解。"
+  },
+  {
+    "idx": 23,
+    "key": "题库一-习题5.3",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题5.3",
+    "question_pdf_page": 4,
+    "title": "5.3 纯策略与混合策略纳什均衡",
+    "question": "求解如下博弈的纯策略纳什均衡以及混合策略纳什均衡：\n\n$$\n\\begin{array}{c|cc}\n\\text{策略} & L&R\\\\\n\\hline\nT&(2,1)&(2,-20)\\\\\nM&(3,0)&(-10,1)\\\\\nB&(-100,2)&(3,3)\n\\end{array}\n$$",
+    "textbook_reference": "第5章 5.2 计算混合策略均衡；支持枚举法",
+    "textbook_locations": [
+      {
+        "title": "5.2  计算混合策略均衡／128",
+        "pdf_page": 151,
+        "print_page": 128,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 6269,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 24,
+    "key": "题库一-习题5.4",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题5.4",
+    "question_pdf_page": 4,
+    "title": "5.4 二人非零和连续博弈",
+    "question": "二人非零和博弈，局中人 $1$ 和 $2$ 的策略集为 $X=[0,1]$、$Y=[0,1]$，盈利函数分别为\n\n$$\nf_1(x,y)=3xy-2x-2y+2,\\qquad f_2(x,y)=-4xy+2x+y.\n$$\n\n求解这个问题的纳什均衡。",
+    "textbook_reference": "第4章 4.14.2 方格二人非零和博弈",
+    "textbook_locations": [
+      {
+        "title": "4.14  单位正方形博弈／101",
+        "pdf_page": 124,
+        "print_page": 101,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 4577,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "教材正文例题，函数与题库一致；不用 Solutions 4.42。"
+  },
+  {
+    "idx": 25,
+    "key": "题库一-习题5.5",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题5.5",
+    "question_pdf_page": 4,
+    "title": "5.5 二人零和连续博弈",
+    "question": "二人零和博弈，局中人 $1$ 和 $2$ 的策略集分别为 $X=[0,1]$、$Y=[0,1]$，盈利函数为\n\n$$\nf(x,y)=4xy-2x-y+3.\n$$\n\n求解这个博弈的纳什均衡以及均衡值。",
+    "textbook_reference": "第4章 4.14.1 单位正方形二人零和博弈",
+    "textbook_locations": [
+      {
+        "title": "4.14  单位正方形博弈／101",
+        "pdf_page": 124,
+        "print_page": 101,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 4568,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "教材正文例题，函数与题库一致；不用 Solutions 4.41。"
+  },
+  {
+    "idx": 26,
+    "key": "题库一-习题5.6",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题5.6",
+    "question_pdf_page": 4,
+    "title": "5.6 ESS 与纳什均衡关系",
+    "question": "构建进化博弈的模型 $G$，给出 ESS 的定义，并证明\n\n$$\n\\operatorname{StriNashEqum}(G)\\subseteq ESS(G)\\subseteq \\operatorname{NashEqum}(G).\n$$",
+    "textbook_reference": "第5章 5.8 演化稳定策略；定义5.50及ESS性质",
+    "textbook_locations": [
+      {
+        "title": "5.8  演化稳定策略／158",
+        "pdf_page": 181,
+        "print_page": 158,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 5878,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 27,
+    "key": "题库一-习题6.1",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题6.1",
+    "question_pdf_page": 4,
+    "title": "6.1 策略等价是等价关系",
+    "question": "合作博弈 $(N,h)$ 和 $(N,g)$ 称之为策略等价的，如果存在 $\\alpha>0,b\\in\\mathbb R^n$，使得 $g(\\cdot)=\\alpha h(\\cdot)+b(\\cdot)$。证明：策略等价关系是一个等价关系，即它是自反的、对称的和传递的。",
+    "textbook_reference": "第16章 16.2 策略等价",
+    "textbook_locations": [
+      {
+        "title": "16.2  策略等价／569",
+        "pdf_page": 592,
+        "print_page": 569,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 28,
+    "key": "题库一-习题6.2",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题6.2",
+    "question_pdf_page": 5,
+    "title": "6.2 等价于 $0-1$ 规范博弈",
+    "question": "合作博弈 $(N,h)$ 和 $(N,g)$ 称之为策略等价的，如果存在 $\\alpha>0,b\\in\\mathbb R^n$，使得 $g(\\cdot)=\\alpha h(\\cdot)+b(\\cdot)$。一个合作博弈 $(N,r)$ 称之为 $0-1$ 规范的，如果满足\n\n$$\nr(i)=0,\\ \\forall i\\in N;\\qquad r(N)=1.\n$$\n\n证明：一个合作博弈 $(N,f)$ 策略等价于 $0-1$ 规范博弈当且仅当 $f(N)>\\sum_{i\\in N}f(i)$。",
+    "textbook_reference": "第16章 16.4 一类特殊的博弈；0-1规范化",
+    "textbook_locations": [
+      {
+        "title": "16.4  一类特殊的博弈／571",
+        "pdf_page": 594,
+        "print_page": 571,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "题库是一般证明；Solutions 17.16 是具体数值例，不作为主答案。"
+  },
+  {
+    "idx": 29,
+    "key": "题库一-习题6.3",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题6.3",
+    "question_pdf_page": 5,
+    "title": "6.3 等价于 $0-0$ 规范博弈",
+    "question": "合作博弈 $(N,h)$ 和 $(N,g)$ 称之为策略等价的，如果存在 $\\alpha>0,b\\in\\mathbb R^n$，使得 $g(\\cdot)=\\alpha h(\\cdot)+b(\\cdot)$。一个合作博弈 $(N,r)$ 称之为 $0-0$ 规范的，如果满足\n\n$$\nr(i)=0,\\ \\forall i\\in N;\\qquad r(N)=0.\n$$\n\n证明：一个合作博弈 $(N,f)$ 策略等价于 $0-0$ 规范博弈当且仅当 $f(N)=\\sum_{i\\in N}f(i)$。",
+    "textbook_reference": "第16章 16.4 一类特殊的博弈；0-0规范化",
+    "textbook_locations": [
+      {
+        "title": "16.4  一类特殊的博弈／571",
+        "pdf_page": 594,
+        "print_page": 571,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 30,
+    "key": "题库一-习题6.4",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题6.4",
+    "question_pdf_page": 5,
+    "title": "6.4 任意合作博弈等价于 $0$ 规范博弈",
+    "question": "证明：任何一个合作博弈都策略等价于一个 $0$ 规范博弈。",
+    "textbook_reference": "第16章 16.4 一类特殊的博弈；0规范博弈",
+    "textbook_locations": [
+      {
+        "title": "16.4  一类特殊的博弈／571",
+        "pdf_page": 594,
+        "print_page": 571,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 31,
+    "key": "题库一-习题6.5",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题6.5",
+    "question_pdf_page": 5,
+    "title": "6.5 任意合作博弈等价于单调博弈",
+    "question": "证明：每个合作博弈都策略等价于一个单调博弈。",
+    "textbook_reference": "第16章 16.2 策略等价；16.4 规范化与单调化",
+    "textbook_locations": [
+      {
+        "title": "16.2  策略等价／569",
+        "pdf_page": 592,
+        "print_page": 569,
+        "label": "教材主位置"
+      },
+      {
+        "title": "16.4  一类特殊的博弈／571",
+        "pdf_page": 594,
+        "print_page": 571,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 32,
+    "key": "题库一-习题7.1",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题7.1",
+    "question_pdf_page": 5,
+    "title": "7.1 核心与 Bondareva-Shapley 定理",
+    "question": "假设 $(N,f)$ 是一个合作博弈，给出核心 $\\operatorname{Core}(N,f)$ 的定义，并陈述 Bondareva-Shapley 定理的三个表述，并基于线性优化证明全集弱平衡族版本的 Bondareva-Shapley 定理。",
+    "textbook_reference": "第17章 17.1 核的定义；17.2 平衡联盟的组合；17.3 Bondareva-Shapley定理",
+    "textbook_locations": [
+      {
+        "title": "17.1  核的定义／583",
+        "pdf_page": 606,
+        "print_page": 583,
+        "label": "教材主位置"
+      },
+      {
+        "title": "17.3  Bondareva-Shapley定理／590",
+        "pdf_page": 613,
+        "print_page": 590,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 33,
+    "key": "题库一-习题7.2",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题7.2",
+    "question_pdf_page": 5,
+    "title": "7.2 博弈 $f_k$ 的核心",
+    "question": "假设 $(a_i)_{i\\in N}\\ge0$，合作博弈 $(N,f_k,\\{N\\})$ 定义为\n\n$$\nf_k(A)=\n\\begin{cases}\n0,&|A|\\le k,\\\\\n\\sum_{i\\in A}a_i,&|A|>k,\n\\end{cases}\n\\qquad \\forall A\\in2^N.\n$$\n\n对不同的参数 $k=0,1,\\ldots,n$，求解博弈 $(N,f_k,\\{N\\})$ 的核心。",
+    "textbook_reference": "第17章 核；教材练习/英文Solutions第18章 18.8",
+    "textbook_locations": [
+      {
+        "title": "17  核／582",
+        "pdf_page": 605,
+        "print_page": 582,
+        "label": "教材主位置"
+      },
+      {
+        "title": "练习题／623",
+        "pdf_page": 646,
+        "print_page": 623,
+        "label": "教材练习起始"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": "18.8",
+    "solutions_pdf_page": 464,
+    "solutions_chapter": "Chapter 18: The core",
+    "solution_text_en": "18.8 Let (ai)i∈N be nonnegative real numbers.\nFor k = n: v(S) = 0 for every S ⊆N, thus C(N; v) = {(0, 0, ..., 0)}.\nFor k = n −1: v(S) = 0 for every S ⊂N and v(N) = ∑i∈N ai. Hence,\nC(N; v) =\n\b(xi)i∈N : ∀i ∈N, xi ≥0, and ∑i∈N xi = ∑i∈N ai\n\t\n.\nFor 0 < k < n −1: let x ∈C(N; v). Therefore, for every i ∈N,\n0 = v(i) ≤xi = ∑\nj∈N\nxj −∑\nj̸=i\nxj ≤v(N) −v(N \\ {i}) = ai.\nIf, by contradiction, there is a player i such that xi < ai, then ∑j∈N xj <\n∑j∈N aj = v(N), a contradiction. In conclusion, C(N; v) =\n\b(ai)i∈N\n\t\n.\nFor k = 0: v(S) = ∑i∈S ai for every S ⊆N, thus C(N; v) =\n\b(ai)i∈N\n\t\n.",
+    "notes": ""
+  },
+  {
+    "idx": 34,
+    "key": "题库一-习题7.3",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题7.3",
+    "question_pdf_page": 6,
+    "title": "7.3 三人 $0$ 标准化博弈的单调性",
+    "question": "证明：一个核为非空的三人 $0$ 标准化博弈，对每个联盟 $S$ 满足 $v(S)\\ge0$，那么这个博弈是单调的。这对超过三个参与人的博弈也成立吗？解释你的回答。如果没有 $v(S)\\ge0$（对每个联盟 $S$）这个条件的话，结论还成立吗？解释你的回答。",
+    "textbook_reference": "第17章 核；三人0标准化博弈；教材练习/英文Solutions第18章 18.9",
+    "textbook_locations": [
+      {
+        "title": "17.1  核的定义／583",
+        "pdf_page": 606,
+        "print_page": 583,
+        "label": "教材主位置"
+      },
+      {
+        "title": "练习题／623",
+        "pdf_page": 646,
+        "print_page": 623,
+        "label": "教材练习起始"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": "18.9",
+    "solutions_pdf_page": 464,
+    "solutions_chapter": "Chapter 18: The core",
+    "solution_text_en": "18.9 Let (N; v) be a three-player 0-normalized game whose core is nonempty,\nand satisfying v(S) ≥0 for every coalition S. We prove that (N; v) is\nmonotonic, that is, v(S) ≤v(T) for every S ⊂T. For |S| = 1 one has\nv(S) = 0 (since the game is 0-normalized) so by the nonnegativity\nv(T) ≥0 = v(S) for every T such that S ⊂T. Assume else that\n|S| = 2 and T = N. By Bondareva–Shapley condition, since the core\nis not empty, v(N) ≥v(S) + v(N \\ S) = v(S), so the game is indeed\nmonotonic.\nNote that the claim does not hold true without the condition that\nv(S) ≥0 for every coalition, for instance, a three-player 0-normalized\ngame (N; v) where v(N) = 1 and v(i, j) = −1 for every two players\ni, j ∈N is not monotonic, but (1, 0, 0) ∈C(N; v).\nIn addition, the claim is not necessarily true for games with more\nthan three players. Consider, a four-player 0-normalized game (N; v)\n464\n\n--- PDF_PAGE 465 ---\nwhere v(N) = 4, v(S) = 0 for every S where |S| = 3 and v(S) = 1 for\nevery S where |S| = 2. Then, the game is not monotonic, however,\n(1, 1, 1, 1) ∈C(N; v).",
+    "notes": ""
+  },
+  {
+    "idx": 35,
+    "key": "题库一-习题7.4",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题7.4",
+    "question_pdf_page": 6,
+    "title": "7.4 凸合作博弈的核心",
+    "question": "假设 $(N,f)$ 是凸的合作博弈，推导计算其核心 $\\operatorname{Core}(N,f)$。",
+    "textbook_reference": "第17章 17.7 凸博弈；定理17.55/17.58",
+    "textbook_locations": [
+      {
+        "title": "17.7  凸博弈／607",
+        "pdf_page": 630,
+        "print_page": 607,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 36,
+    "key": "题库一-习题7.5",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题7.5",
+    "question_pdf_page": 6,
+    "title": "7.5 核心在策略等价下协变",
+    "question": "证明：合作博弈的核心在策略等价下是协变的，即对于每个 $\\alpha>0$ 和每个 $b\\in\\mathbb R^N$，\n\n$$\n\\operatorname{Core}(N,\\alpha f+b)=\\alpha\\operatorname{Core}(N,f)+b.\n$$",
+    "textbook_reference": "第17章 核在策略等价下的协变；16.2策略等价",
+    "textbook_locations": [
+      {
+        "title": "17.6  核的一致性特征／605",
+        "pdf_page": 628,
+        "print_page": 605,
+        "label": "教材主位置"
+      },
+      {
+        "title": "16.2  策略等价／569",
+        "pdf_page": 592,
+        "print_page": 569,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "Solutions 18.38 不直接匹配本题。"
+  },
+  {
+    "idx": 37,
+    "key": "题库一-习题8.1",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题8.1",
+    "question_pdf_page": 6,
+    "title": "8.1 Shapley 值相关公理",
+    "question": "请给出如下 Shapley（沙普利）值刻画相关的 6 大公理：结构公理、对称公理、零元公理、加法公理、边际公理、线性公理。",
+    "textbook_reference": "第18章 18.1-18.3 沙普利值公理与定义",
+    "textbook_locations": [
+      {
+        "title": "18.1  沙普利特征／633",
+        "pdf_page": 656,
+        "print_page": 633,
+        "label": "教材主位置"
+      },
+      {
+        "title": "18.3  沙普利值的定义和刻画／638",
+        "pdf_page": 661,
+        "print_page": 638,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 38,
+    "key": "题库一-习题8.2",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题8.2",
+    "question_pdf_page": 6,
+    "title": "8.2 $f(A)=\\left(\\sum_{i\\in A}a_i\\right)^2$ 的 Shapley 值",
+    "question": "假设 $a\\in\\mathbb R^N$ 为一个固定向量，$(N,f)$ 为一个合作博弈，函数 $f$ 定义为\n\n$$\nf(A)=\\left(\\sum_{i\\in A}a_i\\right)^2,\\qquad \\forall A\\in2^N.\n$$\n\n求解以上博弈的 Shapley 值。",
+    "textbook_reference": "第18章 沙普利值；英文Solutions第19章 19.14",
+    "textbook_locations": [
+      {
+        "title": "18.3  沙普利值的定义和刻画／638",
+        "pdf_page": 661,
+        "print_page": 638,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 22691,
+    "solution_id": "19.14",
+    "solutions_pdf_page": 504,
+    "solutions_chapter": "Chapter 19: The Shapley value",
+    "solution_text_en": "19.14 Let a ∈RN be a vector. Let (N; v) be a coalitional game deﬁned\nby v(S) = (∑i∈S ai)2 for every S ⊆N. The marginal conribution of\nplayer i ∈N to coalition S ⊆N \\ {i} is\nv(S\n[\n{i}) −v(S) =\n\n∑\nj∈S\naj + ai\n\n\n2\n−\n\n∑\nj∈S\naj\n\n\n2\n=\n\n∑\nj∈S\naj\n\n\n2\n+ 2ai ∑\nj∈S\naj + a2\ni −\n\n∑\nj∈S\naj\n\n\n2\n= a2\ni + 2ai ∑\nj∈S\naj\nNote that, in half of the permutations player j precedes player i so\n∑S⊆N\\{i}\nj∈S\n|S|!(n−|S|−1)!\nn!\n= 1\n2 Therefore,\nSh(N; v) =\n∑\nS⊆N\\{i}\n|S|!(n−|S|−1)!\nn!\n(v(S\n[\n{i}) −v(S))\n=\n∑\nS⊆N\\{i}\n|S|!(n−|S|−1)!\nn!\n\na2\ni + 2ai ∑\nj∈S\naj\n\n\n= a2\ni\n∑\nS⊆N\\{i}\n|S|!(n−|S|−1)!\nn!\n+ 2ai ∑\nj∈N\\{i}\naj\n∑\nS⊆N\\{i}\nj∈S\n|S|!(n−|S|−1)!\nn!\n= a2\ni + ai ∑\nj∈N\\{i}\naj 1\n2 = ai ∑\nj∈N\naj = ai\nq\nv(N).",
+    "notes": ""
+  },
+  {
+    "idx": 39,
+    "key": "题库一-习题8.3",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题8.3",
+    "question_pdf_page": 6,
+    "title": "8.3 三人博弈 Shapley 值",
+    "question": "合作博弈中，参与人集是 $N=\\{1,2,3\\}$，$f(1)=f(2)=f(3)=f(1,2)=0$，$f(1,3)=f(2,3)=f(1,2,3)=1$，求出该博弈的 Shapley 值。",
+    "textbook_reference": "第18章 18.3 沙普利值的定义和刻画；18.4例子",
+    "textbook_locations": [
+      {
+        "title": "18.3  沙普利值的定义和刻画／638",
+        "pdf_page": 661,
+        "print_page": 638,
+        "label": "教材主位置"
+      },
+      {
+        "title": "18.4  例子／642",
+        "pdf_page": 665,
+        "print_page": 642,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 40,
+    "key": "题库一-习题8.4",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题8.4",
+    "question_pdf_page": 6,
+    "title": "8.4 伸缩承载子博弈",
+    "question": "$N$ 是一个非空有限集合，$A\\in\\mathcal P_0(N)$，$\\alpha\\in\\mathbb R$，定义伸缩承载子博弈 $(N,f_{A,\\alpha})$ 为\n\n$$\nf_{A,\\alpha}:\\mathcal P(N)\\to\\mathbb R,\\qquad\nf_{A,\\alpha}(B)=\n\\begin{cases}\n\\alpha,&\\text{如果 }B\\supseteq A,\\\\\n0,&\\text{其它情形}.\n\\end{cases}\n$$\n\n假设 $\\phi$ 是一个点值解概念，满足结构、对称、零元公理，计算 $\\phi(f_{A,\\alpha})$。",
+    "textbook_reference": "第18章 18.3 沙普利值定义；承载子博弈/基底博弈",
+    "textbook_locations": [
+      {
+        "title": "18.3  沙普利值的定义和刻画／638",
+        "pdf_page": 661,
+        "print_page": 638,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "题库定义题直接由承载博弈公式求；Solutions 19.7 是另一道数值分解题。"
+  },
+  {
+    "idx": 41,
+    "key": "题库一-习题8.5",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题8.5",
+    "question_pdf_page": 6,
+    "title": "8.5 凸博弈的 Shapley 值属于核心",
+    "question": "证明：假设 $(N,f)$ 是一个凸的合作博弈，则其 Shapley 值在这个博弈的核心内部。",
+    "textbook_reference": "第18章 18.7 凸博弈；Shapley值属于核心",
+    "textbook_locations": [
+      {
+        "title": "18.7  凸博弈／650",
+        "pdf_page": 673,
+        "print_page": 650,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 42,
+    "key": "题库一-习题9.1",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题9.1",
+    "question_pdf_page": 6,
+    "title": "9.1 异议、反异议、公平异议、谈判集",
+    "question": "假设 $(N,f,\\tau)$ 是带有联盟结构的合作博弈，给出异议、反异议、公平异议、谈判集的完整定义。",
+    "textbook_reference": "第19章 19.1 谈判集的定义",
+    "textbook_locations": [
+      {
+        "title": "19.1  谈判集的定义／665",
+        "pdf_page": 688,
+        "print_page": 665,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 22930,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 43,
+    "key": "题库一-习题9.2",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题9.2",
+    "question_pdf_page": 6,
+    "title": "9.2 $N=\\{1,2\\},\\ \\tau=\\{\\{1\\},\\{2\\}\\}$",
+    "question": "假设局中人集合 $N=\\{1,2\\}$，联盟结构为 $\\tau=\\{\\{1\\},\\{2\\}\\}$，求解讨论合作博弈 $(N,f,\\tau)$ 的谈判集。",
+    "textbook_reference": "第19章 19.1 谈判集定义；单人联盟结构情形",
+    "textbook_locations": [
+      {
+        "title": "19.1  谈判集的定义／665",
+        "pdf_page": 688,
+        "print_page": 665,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 22982,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 44,
+    "key": "题库一-习题9.3",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题9.3",
+    "question_pdf_page": 6,
+    "title": "9.3 $N=\\{1,2\\},\\ \\tau=\\{\\{1,2\\}\\}$",
+    "question": "假设局中人集合 $N=\\{1,2\\}$，联盟结构为 $\\tau=\\{1,2\\}$，求解讨论合作博弈 $(N,f,\\tau)$ 的谈判集。",
+    "textbook_reference": "第19章 19.2 二人博弈中的谈判集",
+    "textbook_locations": [
+      {
+        "title": "19.2  二人博弈中的谈判集／668",
+        "pdf_page": 691,
+        "print_page": 668,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 23028,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 45,
+    "key": "题库一-习题9.4",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题9.4",
+    "question_pdf_page": 7,
+    "title": "9.4 $N=\\{1,2,3\\},\\ \\tau=\\{\\{1,2\\},\\{3\\}\\}$",
+    "question": "假设局中人集合 $N=\\{1,2,3\\}$，联盟结构为 $\\tau=\\{\\{1,2\\},\\{3\\}\\}$，求解讨论合作博弈 $(N,f,\\tau)$ 的谈判集。",
+    "textbook_reference": "第19章 19.3 三人博弈中的谈判集",
+    "textbook_locations": [
+      {
+        "title": "19.3  三人博弈中的谈判集／668",
+        "pdf_page": 691,
+        "print_page": 668,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": 23040,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 46,
+    "key": "题库一-习题9.5",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题9.5",
+    "question_pdf_page": 7,
+    "title": "9.5 $N=\\{1,2,3\\},\\ \\tau=\\{\\{1\\},\\{2\\},\\{3\\}\\}$",
+    "question": "假设局中人集合 $N=\\{1,2,3\\}$，联盟结构为 $\\tau=\\{\\{1\\},\\{2\\},\\{3\\}\\}$，求解讨论合作博弈 $(N,f,\\tau)$ 的谈判集。",
+    "textbook_reference": "第19章 谈判集；单人联盟结构定理",
+    "textbook_locations": [
+      {
+        "title": "19.1  谈判集的定义／665",
+        "pdf_page": 688,
+        "print_page": 665,
+        "label": "教材主位置"
+      },
+      {
+        "title": "19.3  三人博弈中的谈判集／668",
+        "pdf_page": 691,
+        "print_page": 668,
+        "label": "教材辅助位置"
+      }
+    ],
+    "textbook_ocr_line": 22982,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 47,
+    "key": "题库一-习题10.1",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题10.1",
+    "question_pdf_page": 7,
+    "title": "10.1 字典顺序关系",
+    "question": "给出字典顺序关系的定义，并证明字典顺序关系是自反的、传递的和完备的。",
+    "textbook_reference": "第20章 20.1 核仁的定义；字典顺序",
+    "textbook_locations": [
+      {
+        "title": "20.1  核仁的定义／681",
+        "pdf_page": 704,
+        "print_page": 681,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": "21.2",
+    "solutions_pdf_page": 538,
+    "solutions_chapter": "Chapter 21: The nucleolus",
+    "solution_text_en": "21.2 We prove that the lexicographic relation is transitive.\nLet x, y, z ∈Rn such that x ≺L y and y ≺L z. Then, there is k ∈\n{1, 2, ..., n} for which xi = yi for every i < k and xk < yk.\nSim-\nilarly, there is m ∈{1, 2, ..., n} for which yi = zi for every i < m\nand ym < zm. If k ≤m, then xi = yi = zi for every i < k, and\nxk < yk ≤zk, so x ≺L z. If m < k, then xi = yi = zi for every i < m,\nand xm = ym < zm, so x ≺L z, as needed.",
+    "notes": ""
+  },
+  {
+    "idx": 48,
+    "key": "题库一-习题10.2",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题10.2",
+    "question_pdf_page": 7,
+    "title": "10.2 核原与准核原",
+    "question": "给出带有联盟结构的合作博弈 $(N,f,\\tau)$ 的核原和准核原的定义。",
+    "textbook_reference": "第20章 20.1 核仁的定义；核仁/准核仁",
+    "textbook_locations": [
+      {
+        "title": "20.1  核仁的定义／681",
+        "pdf_page": 704,
+        "print_page": 681,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": ""
+  },
+  {
+    "idx": 49,
+    "key": "题库一-习题10.3",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题10.3",
+    "question_pdf_page": 7,
+    "title": "10.3 四人博弈准核原",
+    "question": "假设局中人集合 $N=\\{1,2,3,4\\}$，联盟结构为 $\\tau=\\{\\{1,2,3,4\\}\\}$，联盟财富函数定义为\n\n$$\nf(S)=\n\\begin{cases}\ni,&\\text{如果 }S=\\{i\\},\\\\\n0,&\\text{其它情形}.\n\\end{cases}\n$$\n\n求解合作博弈 $(N,f,\\{N\\})$ 的准核原 $PN(N,f,\\{N\\})$。",
+    "textbook_reference": "第20章 20.4 计算核仁；事前核仁/准核仁",
+    "textbook_locations": [
+      {
+        "title": "20.4  计算核仁／692",
+        "pdf_page": 715,
+        "print_page": 692,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": null,
+    "solutions_pdf_page": null,
+    "solutions_chapter": null,
+    "solution_text_en": null,
+    "notes": "不要直接用 Solutions 21.20：其讨论imputation集为空；本题要求在预分配集上求PN/QN。"
+  },
+  {
+    "idx": 50,
+    "key": "题库一-习题10.4",
+    "source": "题库一：研究生课程《博弈论》练习题库(1).pdf",
+    "source_short": "题库一",
+    "question_no": "习题10.4",
+    "question_pdf_page": 7,
+    "title": "10.4 紧致可行集上的核原非空紧致",
+    "question": "假设 $(N,f)$ 是合作博弈，$K\\subset\\mathbb R^n$ 是非空紧致集合，那么 $\\mathcal N(N,f,K)$ 是非空紧致集合。",
+    "textbook_reference": "第20章 20.1 核仁定义；紧集上字典最小集",
+    "textbook_locations": [
+      {
+        "title": "20.1  核仁的定义／681",
+        "pdf_page": 704,
+        "print_page": 681,
+        "label": "教材主位置"
+      }
+    ],
+    "textbook_ocr_line": null,
+    "solution_id": "21.3",
+    "solutions_pdf_page": 538,
+    "solutions_chapter": "Chapter 21: The nucleolus",
+    "solution_text_en": "21.3 Let K ⊆Rn, and let f : Rn →R be a function. Denote the set of points\nin K at which the minimum of f is attained by arg minx∈K f (x) =\n{y ∈K : f (y) = minz∈K f (z)}.\nWe prove that if K is a compact\nset and f is a continuous function, then the set arg minx∈K f (x) is\ncompact and nonempty.\nWe ﬁrst prove that the function f over K is bounded from below. As-\nsume by contradiction that for every n ∈N there is xn ∈K satisfying\nf (xn) < −n. However, the sequence (xn)n∈N is contained in the com-\npact set K and therefore contains a convergent subsequence (xnk)k∈N\nsuch that limk→∞xnk = x ∈K. Furthermore, by the continuity of f,\n−∞= lim\nk→∞f (xnk) = f ( lim\nk→∞xnk) = f (x),\na contradiction. Therefore, infx∈X f (x) is ﬁnite.\nWe next proof that the set arg minx∈K f (x) is not empty. For every n ∈\nN, there is xn ∈K such that f (xn) −1\nn < infx∈X f (x). The sequence\n(xn)n∈N is contained in the compact set K and therefore contains a\nconvergent subsequence (xnk)k∈N such that limk→∞xnk = x∗∈K.\nThus,\nf (x∗) ≥inf\nx∈X f (x) ≥lim\nk→∞\n\u0010\nf (xnk) −1\nnk\n\u0011\n= f ( lim\nk→∞xk) = f (x∗),\nso f (x∗) = infx∈X f (x) = minx∈X f (x) an therefore arg minx∈K f (x) is\nnot empty.\n538\n\n--- PDF_PAGE 539 ---\nNext, since arg minx∈K f (x) is a nonempty subset of a bounded set, it\nis also bounded.\nWe ﬁnally proved that arg minx∈K f (x) is closed. Let (yn)n∈N be a se-\nquence in arg minx∈K f (x).\nBy the compactness of K, lim yn ∈K.\nIn addition, ( f (yn)n∈N is a constant sequence satisfying f (yn) =\nminz∈K f (z) so it is also the limit of the sequence so f (lim yn) =\nminz∈K f (z), i.e., arg minx∈K f (x) is closed.",
+    "notes": ""
+  }
+]

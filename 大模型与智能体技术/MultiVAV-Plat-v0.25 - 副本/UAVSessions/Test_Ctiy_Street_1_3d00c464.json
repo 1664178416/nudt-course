@@ -1,0 +1,6188 @@
+{
+  "id": "3d00c464",
+  "name": "[Test] Ctiy Street 1",
+  "description": "Ctiy Street covers a 1024×768 m mission zone. It is configured for area search with a time agnostic timeline. Random seeding will create 3 drones, 40 obstacles.",
+  "status": "active",
+  "creator": "生命构造",
+  "time_mode": "time_agnostic",
+  "task_type": "area_search",
+  "task_description": "",
+  "is_distance_3d": false,
+  "canvas_width": 1024.0,
+  "canvas_height": 768.0,
+  "created_at": 1768291949.60624,
+  "last_updated": 1769270708.6769342,
+  "statistics": {
+    "drone_count": 4,
+    "target_count": 8,
+    "obstacle_count": 139,
+    "task_count": 10,
+    "environment_id": "7f4e41b8",
+    "total_commands_executed": 0,
+    "total_flight_time": 0.0,
+    "total_distance_traveled": 0.0,
+    "total_target_reaches": 0,
+    "drones_with_target_reaches": 0,
+    "unique_targets_reached": 0,
+    "session_time": 2.898047924041748,
+    "command_history_size": 0,
+    "task_progress": {
+      "task_type": "area_search",
+      "progress_percentage": 0,
+      "is_completed": false,
+      "status_message": "Task to be Done",
+      "details": {
+        "total_targets": 4
+      },
+      "target_reach_summary": {
+        "total_reaches": 0,
+        "drones_with_reaches": 0,
+        "unique_targets_reached": 0
+      },
+      "area_coverage_summary": {
+        "total_targets_tracked": 0,
+        "average_coverage": 0.0,
+        "fully_covered_targets": 0
+      }
+    }
+  },
+  "drones": [
+    {
+      "id": "71c45c5a",
+      "name": "New Drone 1",
+      "model": "Model-A",
+      "status": "idle",
+      "position": {
+        "x": -1.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 4000.0,
+      "battery_capacity": 4000.0,
+      "max_speed": 20.0,
+      "max_altitude": 120.0,
+      "home_position": {
+        "x": -1.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "created_at": 1768804390.8181741,
+      "last_updated": 1768804390.8181741
+    },
+    {
+      "id": "464b1fad",
+      "name": "New Drone 2",
+      "model": "Model-A",
+      "status": "idle",
+      "position": {
+        "x": -28.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 4000.0,
+      "battery_capacity": 4000.0,
+      "max_speed": 20.0,
+      "max_altitude": 120.0,
+      "home_position": {
+        "x": -28.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "created_at": 1768804390.818201,
+      "last_updated": 1768804390.818201
+    },
+    {
+      "id": "9102382b",
+      "name": "New Drone 3",
+      "model": "Model-A",
+      "status": "idle",
+      "position": {
+        "x": 27.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 4000.0,
+      "battery_capacity": 4000.0,
+      "max_speed": 20.0,
+      "max_altitude": 120.0,
+      "home_position": {
+        "x": 27.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "created_at": 1768804390.818218,
+      "last_updated": 1768804390.818218
+    },
+    {
+      "id": "107a8e80",
+      "name": "New Drone 4",
+      "model": "Model-A",
+      "status": "idle",
+      "position": {
+        "x": 0.0,
+        "y": -30.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 4000.0,
+      "battery_capacity": 4000.0,
+      "max_speed": 20.0,
+      "max_altitude": 120.0,
+      "home_position": {
+        "x": 0.0,
+        "y": -30.0,
+        "z": 0.0
+      },
+      "created_at": 1768804390.8182325,
+      "last_updated": 1768804390.8182325
+    }
+  ],
+  "targets": [
+    {
+      "id": "bce0ee04",
+      "name": "Target 1",
+      "type": "fixed",
+      "position": {
+        "x": 441.0,
+        "y": -18.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 10.0,
+      "created_at": 1768804390.8184018,
+      "last_updated": 1768804390.8184018,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": []
+    },
+    {
+      "id": "47fc7e9c",
+      "name": "Target 2",
+      "type": "polygon",
+      "position": {
+        "x": 316.0,
+        "y": 215.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 1.0,
+      "created_at": 1768804390.818479,
+      "last_updated": 1768804390.818479,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": [],
+      "vertices": [
+        {
+          "x": 396.0,
+          "y": 198.0,
+          "z": 0.0
+        },
+        {
+          "x": 236.0,
+          "y": 198.0,
+          "z": 0.0
+        },
+        {
+          "x": 236.0,
+          "y": 232.0,
+          "z": 0.0
+        },
+        {
+          "x": 396.0,
+          "y": 232.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "d7bab5f0",
+      "name": "Target 3",
+      "type": "polygon",
+      "position": {
+        "x": -238.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 1.0,
+      "created_at": 1768804390.8247833,
+      "last_updated": 1768804390.8247833,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": [],
+      "vertices": [
+        {
+          "x": -193.0,
+          "y": -17.0,
+          "z": 0.0
+        },
+        {
+          "x": -283.0,
+          "y": -17.0,
+          "z": 0.0
+        },
+        {
+          "x": -283.0,
+          "y": 73.0,
+          "z": 0.0
+        },
+        {
+          "x": -193.0,
+          "y": 73.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "3aaefcae",
+      "name": "way point 1",
+      "type": "waypoint",
+      "position": {
+        "x": -2.0,
+        "y": -351.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 10.0,
+      "created_at": 1768804390.824928,
+      "last_updated": 1768804390.824928,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": 25.0,
+      "is_reached": false,
+      "reached_by": []
+    },
+    {
+      "id": "774e44da",
+      "name": "way point 2",
+      "type": "waypoint",
+      "position": {
+        "x": 12.0,
+        "y": 365.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 10.0,
+      "created_at": 1768804390.8249578,
+      "last_updated": 1768804390.8249578,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": 25.0,
+      "is_reached": false,
+      "reached_by": []
+    },
+    {
+      "id": "0b4af166",
+      "name": "way point 3",
+      "type": "waypoint",
+      "position": {
+        "x": 491.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 10.0,
+      "created_at": 1768804390.8249896,
+      "last_updated": 1768804390.8249896,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": 25.0,
+      "is_reached": false,
+      "reached_by": []
+    },
+    {
+      "id": "34b9fa62",
+      "name": "way point 4",
+      "type": "waypoint",
+      "position": {
+        "x": -493.0,
+        "y": -3.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 10.0,
+      "created_at": 1768804390.8250299,
+      "last_updated": 1768804390.8250299,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": 25.0,
+      "is_reached": false,
+      "reached_by": []
+    },
+    {
+      "id": "f4d7b399",
+      "name": "Target 4",
+      "type": "fixed",
+      "position": {
+        "x": -127.0,
+        "y": -124.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 10.0,
+      "created_at": 1768804390.825065,
+      "last_updated": 1768804390.825065,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": []
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "ecf39233",
+      "name": "commercial_shop_1",
+      "type": "polygon",
+      "position": {
+        "x": 140,
+        "y": 101,
+        "z": 0.0
+      },
+      "description": "商业区 - shop",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 114.78753454041271,
+          "y": 70.71135480381531,
+          "z": 0.0
+        },
+        {
+          "x": 164.7875345404127,
+          "y": 70.71135480381531,
+          "z": 0.0
+        },
+        {
+          "x": 164.7875345404127,
+          "y": 130.7113548038153,
+          "z": 0.0
+        },
+        {
+          "x": 114.78753454041271,
+          "y": 130.7113548038153,
+          "z": 0.0
+        }
+      ],
+      "height": 25.13116083365178,
+      "area": 3000.0,
+      "created_at": 1768377056.0873833,
+      "last_updated": 1768377056.0873833
+    },
+    {
+      "id": "3585e392",
+      "name": "commercial_mall_2",
+      "type": "polygon",
+      "position": {
+        "x": 247,
+        "y": 344,
+        "z": 0.0
+      },
+      "description": "商业区 - mall",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 234.2878159774662,
+          "y": 326.4810009972191,
+          "z": 0.0
+        },
+        {
+          "x": 259.2878159774662,
+          "y": 326.4810009972191,
+          "z": 0.0
+        },
+        {
+          "x": 259.2878159774662,
+          "y": 361.4810009972191,
+          "z": 0.0
+        },
+        {
+          "x": 234.2878159774662,
+          "y": 361.4810009972191,
+          "z": 0.0
+        }
+      ],
+      "height": 39.41112394790633,
+      "area": 875.0,
+      "created_at": 1768377058.218582,
+      "last_updated": 1768377058.218582
+    },
+    {
+      "id": "cbe33ef0",
+      "name": "parking_lot_2",
+      "type": "polygon",
+      "position": {
+        "x": 239,
+        "y": 395,
+        "z": 0.0
+      },
+      "description": "Parking lot",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 225.03223336363135,
+          "y": 385.30582060914566,
+          "z": 0.0
+        },
+        {
+          "x": 252.25286299839337,
+          "y": 385.30582060914566,
+          "z": 0.0
+        },
+        {
+          "x": 252.25286299839337,
+          "y": 405.56493602501536,
+          "z": 0.0
+        },
+        {
+          "x": 225.03223336363135,
+          "y": 405.56493602501536,
+          "z": 0.0
+        }
+      ],
+      "height": 0.2,
+      "area": 551.4658774632868,
+      "created_at": 1768377060.34329,
+      "last_updated": 1768377060.34329
+    },
+    {
+      "id": "2e8164a5",
+      "name": "commercial_hotel_4",
+      "type": "polygon",
+      "position": {
+        "x": 456,
+        "y": 58,
+        "z": 0.0
+      },
+      "description": "商业区 - hotel",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 476.34054817188405,
+          "y": 43.166220370929764,
+          "z": 0.0
+        },
+        {
+          "x": 476.34054817188405,
+          "y": 73.16622037092976,
+          "z": 0.0
+        },
+        {
+          "x": 436.34054817188405,
+          "y": 73.16622037092976,
+          "z": 0.0
+        },
+        {
+          "x": 436.34054817188405,
+          "y": 43.166220370929764,
+          "z": 0.0
+        }
+      ],
+      "height": 28.449837501744387,
+      "area": 1200.0,
+      "created_at": 1768377062.482396,
+      "last_updated": 1768377062.482396
+    },
+    {
+      "id": "136a0b0d",
+      "name": "commercial_mall_5",
+      "type": "polygon",
+      "position": {
+        "x": 295,
+        "y": 272,
+        "z": 0.0
+      },
+      "description": "商业区 - mall",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 280.1060001969667,
+          "y": 251.51261686799887,
+          "z": 0.0
+        },
+        {
+          "x": 310.1060001969667,
+          "y": 251.51261686799887,
+          "z": 0.0
+        },
+        {
+          "x": 310.1060001969667,
+          "y": 291.5126168679989,
+          "z": 0.0
+        },
+        {
+          "x": 280.1060001969667,
+          "y": 291.5126168679989,
+          "z": 0.0
+        }
+      ],
+      "height": 36.60129302213168,
+      "area": 1200.0,
+      "created_at": 1768377064.5906448,
+      "last_updated": 1768377064.5906448
+    },
+    {
+      "id": "d713a90e",
+      "name": "commercial_hotel_6",
+      "type": "polygon",
+      "position": {
+        "x": 461,
+        "y": 163,
+        "z": 0.0
+      },
+      "description": "商业区 - hotel",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 450.7205391821881,
+          "y": 148.49242111370373,
+          "z": 0.0
+        },
+        {
+          "x": 470.7205391821881,
+          "y": 148.49242111370373,
+          "z": 0.0
+        },
+        {
+          "x": 470.7205391821881,
+          "y": 178.49242111370373,
+          "z": 0.0
+        },
+        {
+          "x": 450.7205391821881,
+          "y": 178.49242111370373,
+          "z": 0.0
+        }
+      ],
+      "height": 29.3853536657833,
+      "area": 600.0,
+      "created_at": 1768377066.6824417,
+      "last_updated": 1768377066.6824417
+    },
+    {
+      "id": "9c007a67",
+      "name": "fountain_6",
+      "type": "circle",
+      "position": {
+        "x": 437.22660843275423,
+        "y": 192.76094421511215,
+        "z": 0.0
+      },
+      "description": "Decorative fountain",
+      "radius": 5.937003663513791,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 1.5,
+      "area": 110.73489712545133,
+      "created_at": 1768377068.797782,
+      "last_updated": 1768377068.797782
+    },
+    {
+      "id": "ffbf2545",
+      "name": "commercial_mall_8",
+      "type": "polygon",
+      "position": {
+        "x": 418,
+        "y": 255,
+        "z": 0.0
+      },
+      "description": "商业区 - mall",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 405.6604883462914,
+          "y": 237.24912223460015,
+          "z": 0.0
+        },
+        {
+          "x": 430.6604883462914,
+          "y": 237.24912223460015,
+          "z": 0.0
+        },
+        {
+          "x": 430.6604883462914,
+          "y": 272.2491222346001,
+          "z": 0.0
+        },
+        {
+          "x": 405.6604883462914,
+          "y": 272.2491222346001,
+          "z": 0.0
+        }
+      ],
+      "height": 36.600441166337944,
+      "area": 874.9999999999993,
+      "created_at": 1768377070.88779,
+      "last_updated": 1768377070.88779
+    },
+    {
+      "id": "e35f7972",
+      "name": "commercial_mall_9",
+      "type": "polygon",
+      "position": {
+        "x": 81,
+        "y": 295,
+        "z": 0.0
+      },
+      "description": "商业区 - mall",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 66.0,
+          "y": 275.0,
+          "z": 0.0
+        },
+        {
+          "x": 96.0,
+          "y": 275.0,
+          "z": 0.0
+        },
+        {
+          "x": 96.0,
+          "y": 315.0,
+          "z": 0.0
+        },
+        {
+          "x": 66.0,
+          "y": 315.0,
+          "z": 0.0
+        }
+      ],
+      "height": 52.8123570278031,
+      "area": 1200.0,
+      "created_at": 1768377073.0301938,
+      "last_updated": 1768377073.0301938
+    },
+    {
+      "id": "7e881c4b",
+      "name": "commercial_mall_10",
+      "type": "polygon",
+      "position": {
+        "x": 467,
+        "y": 258,
+        "z": 0.0
+      },
+      "description": "商业区 - mall",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 454.8719028785029,
+          "y": 240.90608266356224,
+          "z": 0.0
+        },
+        {
+          "x": 479.8719028785029,
+          "y": 240.90608266356224,
+          "z": 0.0
+        },
+        {
+          "x": 479.8719028785029,
+          "y": 275.90608266356224,
+          "z": 0.0
+        },
+        {
+          "x": 454.8719028785029,
+          "y": 275.90608266356224,
+          "z": 0.0
+        }
+      ],
+      "height": 19.66476270878988,
+      "area": 875.0,
+      "created_at": 1768377075.1488228,
+      "last_updated": 1768377075.1488228
+    },
+    {
+      "id": "dfc7500b",
+      "name": "office_insurance_1",
+      "type": "polygon",
+      "position": {
+        "x": 211,
+        "y": 169,
+        "z": 0.0
+      },
+      "description": "办公区 - insurance",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 231.0,
+          "y": 154.0,
+          "z": 0.0
+        },
+        {
+          "x": 231.0,
+          "y": 184.0,
+          "z": 0.0
+        },
+        {
+          "x": 191.0,
+          "y": 184.0,
+          "z": 0.0
+        },
+        {
+          "x": 191.0,
+          "y": 154.0,
+          "z": 0.0
+        }
+      ],
+      "height": 72.27725359771722,
+      "area": 1200.0,
+      "created_at": 1768377077.2556665,
+      "last_updated": 1768377077.2556665
+    },
+    {
+      "id": "2db42dc1",
+      "name": "office_bank_2",
+      "type": "polygon",
+      "position": {
+        "x": 332,
+        "y": 147,
+        "z": 0.0
+      },
+      "description": "办公区 - bank",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 314.4873065181486,
+          "y": 124.79324086376366,
+          "z": 0.0
+        },
+        {
+          "x": 349.4873065181486,
+          "y": 124.79324086376366,
+          "z": 0.0
+        },
+        {
+          "x": 349.4873065181486,
+          "y": 169.79324086376366,
+          "z": 0.0
+        },
+        {
+          "x": 314.4873065181486,
+          "y": 169.79324086376366,
+          "z": 0.0
+        }
+      ],
+      "height": 45.3839072763887,
+      "area": 1575.0,
+      "created_at": 1768377079.3665705,
+      "last_updated": 1768377079.3665705
+    },
+    {
+      "id": "8f963f9f",
+      "name": "office_bank_3",
+      "type": "polygon",
+      "position": {
+        "x": 166,
+        "y": 211,
+        "z": 0.0
+      },
+      "description": "办公区 - bank",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 183.15892098155192,
+          "y": 198.28581617713314,
+          "z": 0.0
+        },
+        {
+          "x": 183.15892098155192,
+          "y": 223.28581617713314,
+          "z": 0.0
+        },
+        {
+          "x": 148.15892098155192,
+          "y": 223.28581617713314,
+          "z": 0.0
+        },
+        {
+          "x": 148.15892098155192,
+          "y": 198.28581617713314,
+          "z": 0.0
+        }
+      ],
+      "height": 44.79682556932211,
+      "area": 875.0,
+      "created_at": 1768377081.48374,
+      "last_updated": 1768377081.48374
+    },
+    {
+      "id": "98c05db3",
+      "name": "office_insurance_4",
+      "type": "polygon",
+      "position": {
+        "x": 76,
+        "y": 366,
+        "z": 0.0
+      },
+      "description": "办公区 - insurance",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 93.81049097422505,
+          "y": 353.3348237043294,
+          "z": 0.0
+        },
+        {
+          "x": 93.81049097422505,
+          "y": 378.3348237043294,
+          "z": 0.0
+        },
+        {
+          "x": 58.81049097422505,
+          "y": 378.3348237043294,
+          "z": 0.0
+        },
+        {
+          "x": 58.81049097422505,
+          "y": 353.3348237043294,
+          "z": 0.0
+        }
+      ],
+      "height": 33.19704708933444,
+      "area": 875.0,
+      "created_at": 1768377083.5820878,
+      "last_updated": 1768377083.5820878
+    },
+    {
+      "id": "15588386",
+      "name": "office_bank_5",
+      "type": "polygon",
+      "position": {
+        "x": 197,
+        "y": 100,
+        "z": 0.0
+      },
+      "description": "办公区 - bank",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 172.49633239663427,
+          "y": 67.14881512019187,
+          "z": 0.0
+        },
+        {
+          "x": 222.49633239663427,
+          "y": 67.14881512019187,
+          "z": 0.0
+        },
+        {
+          "x": 222.49633239663427,
+          "y": 132.14881512019187,
+          "z": 0.0
+        },
+        {
+          "x": 172.49633239663427,
+          "y": 132.14881512019187,
+          "z": 0.0
+        }
+      ],
+      "height": 89.7431288505351,
+      "area": 3250.0,
+      "created_at": 1768377085.695001,
+      "last_updated": 1768377085.695001
+    },
+    {
+      "id": "1cf5fb11",
+      "name": "office_insurance_6",
+      "type": "polygon",
+      "position": {
+        "x": 438,
+        "y": 343,
+        "z": 0.0
+      },
+      "description": "办公区 - insurance",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 460.1051262384724,
+          "y": 325.0702317532876,
+          "z": 0.0
+        },
+        {
+          "x": 460.1051262384724,
+          "y": 360.0702317532876,
+          "z": 0.0
+        },
+        {
+          "x": 415.1051262384724,
+          "y": 360.0702317532876,
+          "z": 0.0
+        },
+        {
+          "x": 415.1051262384724,
+          "y": 325.0702317532876,
+          "z": 0.0
+        }
+      ],
+      "height": 76.67738436079134,
+      "area": 1575.0,
+      "created_at": 1768377087.804053,
+      "last_updated": 1768377087.804053
+    },
+    {
+      "id": "12d159bc",
+      "name": "office_office_7",
+      "type": "polygon",
+      "position": {
+        "x": 73,
+        "y": 118,
+        "z": 0.0
+      },
+      "description": "办公区 - office",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 105.32409351256473,
+          "y": 93.22087201626661,
+          "z": 0.0
+        },
+        {
+          "x": 105.32409351256473,
+          "y": 143.2208720162666,
+          "z": 0.0
+        },
+        {
+          "x": 40.32409351256473,
+          "y": 143.2208720162666,
+          "z": 0.0
+        },
+        {
+          "x": 40.32409351256473,
+          "y": 93.22087201626661,
+          "z": 0.0
+        }
+      ],
+      "height": 78.02367190534375,
+      "area": 3250.0,
+      "created_at": 1768377089.9360144,
+      "last_updated": 1768377089.9360144
+    },
+    {
+      "id": "11765aa4",
+      "name": "office_bank_8",
+      "type": "polygon",
+      "position": {
+        "x": 282,
+        "y": 51,
+        "z": 0.0
+      },
+      "description": "办公区 - bank",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 306.9359225430136,
+          "y": 31.04163662019033,
+          "z": 0.0
+        },
+        {
+          "x": 306.9359225430136,
+          "y": 71.04163662019033,
+          "z": 0.0
+        },
+        {
+          "x": 256.9359225430136,
+          "y": 71.04163662019033,
+          "z": 0.0
+        },
+        {
+          "x": 256.9359225430136,
+          "y": 31.04163662019033,
+          "z": 0.0
+        }
+      ],
+      "height": 86.60555375112256,
+      "area": 2000.0,
+      "created_at": 1768377092.0330577,
+      "last_updated": 1768377092.0330577
+    },
+    {
+      "id": "986c5646",
+      "name": "office_insurance_9",
+      "type": "polygon",
+      "position": {
+        "x": 388,
+        "y": 308,
+        "z": 0.0
+      },
+      "description": "办公区 - insurance",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 375.91795213293676,
+          "y": 290.92408406688145,
+          "z": 0.0
+        },
+        {
+          "x": 400.91795213293676,
+          "y": 290.92408406688145,
+          "z": 0.0
+        },
+        {
+          "x": 400.91795213293676,
+          "y": 325.92408406688145,
+          "z": 0.0
+        },
+        {
+          "x": 375.91795213293676,
+          "y": 325.92408406688145,
+          "z": 0.0
+        }
+      ],
+      "height": 48.22002028804209,
+      "area": 875.0,
+      "created_at": 1768377094.1337152,
+      "last_updated": 1768377094.1337152
+    },
+    {
+      "id": "c0a32634",
+      "name": "residential_house_1",
+      "type": "polygon",
+      "position": {
+        "x": 370,
+        "y": 265,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 382.4312937745266,
+          "y": 254.53202390372655,
+          "z": 0.0
+        },
+        {
+          "x": 382.4312937745266,
+          "y": 274.53202390372655,
+          "z": 0.0
+        },
+        {
+          "x": 357.4312937745266,
+          "y": 274.53202390372655,
+          "z": 0.0
+        },
+        {
+          "x": 357.4312937745266,
+          "y": 254.53202390372655,
+          "z": 0.0
+        }
+      ],
+      "height": 18.286229055811603,
+      "area": 500.0,
+      "created_at": 1768377096.223727,
+      "last_updated": 1768377096.223727
+    },
+    {
+      "id": "08eeab8e",
+      "name": "residential_townhouse_2",
+      "type": "polygon",
+      "position": {
+        "x": 405,
+        "y": 173,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 399.0184339430738,
+          "y": 164.0528234879529,
+          "z": 0.0
+        },
+        {
+          "x": 411.0184339430738,
+          "y": 164.0528234879529,
+          "z": 0.0
+        },
+        {
+          "x": 411.0184339430738,
+          "y": 182.0528234879529,
+          "z": 0.0
+        },
+        {
+          "x": 399.0184339430738,
+          "y": 182.0528234879529,
+          "z": 0.0
+        }
+      ],
+      "height": 36.297320902444824,
+      "area": 216.0,
+      "created_at": 1768377098.306549,
+      "last_updated": 1768377098.306549
+    },
+    {
+      "id": "8a1528d3",
+      "name": "residential_house_3",
+      "type": "polygon",
+      "position": {
+        "x": 56,
+        "y": 44,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 65.37364644177133,
+          "y": 38.2251464159773,
+          "z": 0.0
+        },
+        {
+          "x": 65.37364644177133,
+          "y": 50.2251464159773,
+          "z": 0.0
+        },
+        {
+          "x": 47.37364644177133,
+          "y": 50.2251464159773,
+          "z": 0.0
+        },
+        {
+          "x": 47.37364644177133,
+          "y": 38.2251464159773,
+          "z": 0.0
+        }
+      ],
+      "height": 20.594911520904493,
+      "area": 216.0,
+      "created_at": 1768377100.4099972,
+      "last_updated": 1768377100.4099972
+    },
+    {
+      "id": "d63cc4a3",
+      "name": "residential_townhouse_4",
+      "type": "polygon",
+      "position": {
+        "x": 158,
+        "y": 301,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 150.64517081352045,
+          "y": 290.6292045579544,
+          "z": 0.0
+        },
+        {
+          "x": 165.64517081352045,
+          "y": 290.6292045579544,
+          "z": 0.0
+        },
+        {
+          "x": 165.64517081352045,
+          "y": 310.6292045579544,
+          "z": 0.0
+        },
+        {
+          "x": 150.64517081352045,
+          "y": 310.6292045579544,
+          "z": 0.0
+        }
+      ],
+      "height": 12.734807114775037,
+      "area": 300.0,
+      "created_at": 1768377102.5121787,
+      "last_updated": 1768377102.5121787
+    },
+    {
+      "id": "c8d30777",
+      "name": "residential_villa_5",
+      "type": "polygon",
+      "position": {
+        "x": 323,
+        "y": 58,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 330.4681889882285,
+          "y": 52.94459191519765,
+          "z": 0.0
+        },
+        {
+          "x": 330.4681889882285,
+          "y": 62.94459191519765,
+          "z": 0.0
+        },
+        {
+          "x": 315.4681889882285,
+          "y": 62.94459191519765,
+          "z": 0.0
+        },
+        {
+          "x": 315.4681889882285,
+          "y": 52.94459191519765,
+          "z": 0.0
+        }
+      ],
+      "height": 37.29739878098286,
+      "area": 150.0,
+      "created_at": 1768377104.6061914,
+      "last_updated": 1768377104.6061914
+    },
+    {
+      "id": "edf4d072",
+      "name": "residential_townhouse_6",
+      "type": "polygon",
+      "position": {
+        "x": 407,
+        "y": 37,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 401.2410662808909,
+          "y": 28.361172677796134,
+          "z": 0.0
+        },
+        {
+          "x": 413.2410662808909,
+          "y": 28.361172677796134,
+          "z": 0.0
+        },
+        {
+          "x": 413.2410662808909,
+          "y": 46.361172677796134,
+          "z": 0.0
+        },
+        {
+          "x": 401.2410662808909,
+          "y": 46.361172677796134,
+          "z": 0.0
+        }
+      ],
+      "height": 23.45639742264441,
+      "area": 216.0,
+      "created_at": 1768377106.71457,
+      "last_updated": 1768377106.71457
+    },
+    {
+      "id": "16ad72b2",
+      "name": "residential_villa_7",
+      "type": "polygon",
+      "position": {
+        "x": 60,
+        "y": 69,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 72.0,
+          "y": 59.0,
+          "z": 0.0
+        },
+        {
+          "x": 72.0,
+          "y": 79.0,
+          "z": 0.0
+        },
+        {
+          "x": 48.0,
+          "y": 79.0,
+          "z": 0.0
+        },
+        {
+          "x": 48.0,
+          "y": 59.0,
+          "z": 0.0
+        }
+      ],
+      "height": 16.444769624053386,
+      "area": 480.0,
+      "created_at": 1768377108.8243396,
+      "last_updated": 1768377108.8243396
+    },
+    {
+      "id": "ca03da8b",
+      "name": "residential_villa_8",
+      "type": "polygon",
+      "position": {
+        "x": 408,
+        "y": 144,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 395.89003884174605,
+          "y": 128.82408027352977,
+          "z": 0.0
+        },
+        {
+          "x": 420.89003884174605,
+          "y": 128.82408027352977,
+          "z": 0.0
+        },
+        {
+          "x": 420.89003884174605,
+          "y": 158.82408027352977,
+          "z": 0.0
+        },
+        {
+          "x": 395.89003884174605,
+          "y": 158.82408027352977,
+          "z": 0.0
+        }
+      ],
+      "height": 15.732595662904682,
+      "area": 750.0,
+      "created_at": 1768377110.919014,
+      "last_updated": 1768377110.919014
+    },
+    {
+      "id": "462ba962",
+      "name": "residential_villa_9",
+      "type": "polygon",
+      "position": {
+        "x": 120,
+        "y": 34,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 115.29856715973347,
+          "y": 26.429701594883497,
+          "z": 0.0
+        },
+        {
+          "x": 125.29856715973347,
+          "y": 26.429701594883497,
+          "z": 0.0
+        },
+        {
+          "x": 125.29856715973347,
+          "y": 41.4297015948835,
+          "z": 0.0
+        },
+        {
+          "x": 115.29856715973347,
+          "y": 41.4297015948835,
+          "z": 0.0
+        }
+      ],
+      "height": 26.199768184754635,
+      "area": 150.0,
+      "created_at": 1768377113.0407836,
+      "last_updated": 1768377113.0407836
+    },
+    {
+      "id": "568db604",
+      "name": "residential_townhouse_10",
+      "type": "polygon",
+      "position": {
+        "x": 193,
+        "y": 35,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 188.29952249272802,
+          "y": 27.247129649599337,
+          "z": 0.0
+        },
+        {
+          "x": 198.29952249272802,
+          "y": 27.247129649599337,
+          "z": 0.0
+        },
+        {
+          "x": 198.29952249272802,
+          "y": 42.24712964959934,
+          "z": 0.0
+        },
+        {
+          "x": 188.29952249272802,
+          "y": 42.24712964959934,
+          "z": 0.0
+        }
+      ],
+      "height": 36.426502364748984,
+      "area": 150.0,
+      "created_at": 1768377115.1490123,
+      "last_updated": 1768377115.1490123
+    },
+    {
+      "id": "f952184f",
+      "name": "residential_villa_11",
+      "type": "polygon",
+      "position": {
+        "x": 115,
+        "y": 221,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 107.13979116614439,
+          "y": 210.98204552610284,
+          "z": 0.0
+        },
+        {
+          "x": 122.13979116614439,
+          "y": 210.98204552610284,
+          "z": 0.0
+        },
+        {
+          "x": 122.13979116614439,
+          "y": 230.98204552610284,
+          "z": 0.0
+        },
+        {
+          "x": 107.13979116614439,
+          "y": 230.98204552610284,
+          "z": 0.0
+        }
+      ],
+      "height": 28.464091765809535,
+      "area": 300.0,
+      "created_at": 1768377117.2574406,
+      "last_updated": 1768377117.2574406
+    },
+    {
+      "id": "f8b67384",
+      "name": "residential_townhouse_12",
+      "type": "polygon",
+      "position": {
+        "x": 345,
+        "y": 372,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 354.9994847966878,
+          "y": 364.208634632583,
+          "z": 0.0
+        },
+        {
+          "x": 354.9994847966878,
+          "y": 379.208634632583,
+          "z": 0.0
+        },
+        {
+          "x": 334.9994847966878,
+          "y": 379.208634632583,
+          "z": 0.0
+        },
+        {
+          "x": 334.9994847966878,
+          "y": 364.208634632583,
+          "z": 0.0
+        }
+      ],
+      "height": 11.282396693473162,
+      "area": 300.0,
+      "created_at": 1768377119.3803127,
+      "last_updated": 1768377119.3803127
+    },
+    {
+      "id": "e82da8c2",
+      "name": "residential_townhouse_13",
+      "type": "polygon",
+      "position": {
+        "x": 222,
+        "y": 292,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 232.4507213615384,
+          "y": 284.5931282828828,
+          "z": 0.0
+        },
+        {
+          "x": 232.4507213615384,
+          "y": 299.5931282828828,
+          "z": 0.0
+        },
+        {
+          "x": 212.4507213615384,
+          "y": 299.5931282828828,
+          "z": 0.0
+        },
+        {
+          "x": 212.4507213615384,
+          "y": 284.5931282828828,
+          "z": 0.0
+        }
+      ],
+      "height": 27.628654271135943,
+      "area": 300.0,
+      "created_at": 1768377121.477504,
+      "last_updated": 1768377121.477504
+    },
+    {
+      "id": "663d3164",
+      "name": "residential_townhouse_14",
+      "type": "polygon",
+      "position": {
+        "x": 149,
+        "y": 165,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 159.0,
+          "y": 158.0,
+          "z": 0.0
+        },
+        {
+          "x": 159.0,
+          "y": 172.0,
+          "z": 0.0
+        },
+        {
+          "x": 139.0,
+          "y": 172.0,
+          "z": 0.0
+        },
+        {
+          "x": 139.0,
+          "y": 158.0,
+          "z": 0.0
+        }
+      ],
+      "height": 37.73975467068679,
+      "area": 280.0,
+      "created_at": 1768377123.5976956,
+      "last_updated": 1768377123.5976956
+    },
+    {
+      "id": "805161c4",
+      "name": "residential_apartment_15",
+      "type": "polygon",
+      "position": {
+        "x": 400,
+        "y": 63,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 407.6906899735764,
+          "y": 58.11829016249525,
+          "z": 0.0
+        },
+        {
+          "x": 407.6906899735764,
+          "y": 68.11829016249524,
+          "z": 0.0
+        },
+        {
+          "x": 392.6906899735764,
+          "y": 68.11829016249526,
+          "z": 0.0
+        },
+        {
+          "x": 392.6906899735764,
+          "y": 58.11829016249525,
+          "z": 0.0
+        }
+      ],
+      "height": 22.27607727486979,
+      "area": 150.0,
+      "created_at": 1768377125.7052066,
+      "last_updated": 1768377125.7052066
+    },
+    {
+      "id": "9768aae9",
+      "name": "residential_townhouse_1",
+      "type": "polygon",
+      "position": {
+        "x": -481,
+        "y": 294,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -488.3991651201252,
+          "y": 284.01621795152766,
+          "z": 0.0
+        },
+        {
+          "x": -473.3991651201252,
+          "y": 284.01621795152766,
+          "z": 0.0
+        },
+        {
+          "x": -473.3991651201252,
+          "y": 304.01621795152766,
+          "z": 0.0
+        },
+        {
+          "x": -488.3991651201252,
+          "y": 304.01621795152766,
+          "z": 0.0
+        }
+      ],
+      "height": 25.621969233926077,
+      "area": 300.0,
+      "created_at": 1768377127.837102,
+      "last_updated": 1768377127.837102
+    },
+    {
+      "id": "6d3fa26e",
+      "name": "residential_townhouse_2",
+      "type": "polygon",
+      "position": {
+        "x": -383,
+        "y": 210,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -395.8842129793596,
+          "y": 195.1860514924539,
+          "z": 0.0
+        },
+        {
+          "x": -370.8842129793596,
+          "y": 195.1860514924539,
+          "z": 0.0
+        },
+        {
+          "x": -370.8842129793596,
+          "y": 225.1860514924539,
+          "z": 0.0
+        },
+        {
+          "x": -395.8842129793596,
+          "y": 225.1860514924539,
+          "z": 0.0
+        }
+      ],
+      "height": 34.43758280113339,
+      "area": 750.0,
+      "created_at": 1768377129.9521556,
+      "last_updated": 1768377129.9521556
+    },
+    {
+      "id": "6715d941",
+      "name": "residential_house_3",
+      "type": "polygon",
+      "position": {
+        "x": -339,
+        "y": 243,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -346.27238085075703,
+          "y": 233.39669974330872,
+          "z": 0.0
+        },
+        {
+          "x": -331.27238085075703,
+          "y": 233.39669974330872,
+          "z": 0.0
+        },
+        {
+          "x": -331.27238085075703,
+          "y": 253.39669974330872,
+          "z": 0.0
+        },
+        {
+          "x": -346.27238085075703,
+          "y": 253.39669974330872,
+          "z": 0.0
+        }
+      ],
+      "height": 32.40366306633882,
+      "area": 300.0,
+      "created_at": 1768377132.068682,
+      "last_updated": 1768377132.068682
+    },
+    {
+      "id": "e19b8aa9",
+      "name": "residential_house_4",
+      "type": "polygon",
+      "position": {
+        "x": -97,
+        "y": 170,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -87.24582884459204,
+          "y": 162.23276691705257,
+          "z": 0.0
+        },
+        {
+          "x": -87.24582884459204,
+          "y": 177.23276691705257,
+          "z": 0.0
+        },
+        {
+          "x": -107.24582884459204,
+          "y": 177.23276691705257,
+          "z": 0.0
+        },
+        {
+          "x": -107.24582884459204,
+          "y": 162.23276691705257,
+          "z": 0.0
+        }
+      ],
+      "height": 29.253454919229153,
+      "area": 300.0,
+      "created_at": 1768377134.1697884,
+      "last_updated": 1768377134.1697884
+    },
+    {
+      "id": "e4baf11a",
+      "name": "residential_villa_5",
+      "type": "polygon",
+      "position": {
+        "x": -425,
+        "y": 179,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -410.18093079671746,
+          "y": 166.6241354420098,
+          "z": 0.0
+        },
+        {
+          "x": -410.18093079671746,
+          "y": 191.6241354420098,
+          "z": 0.0
+        },
+        {
+          "x": -440.18093079671746,
+          "y": 191.6241354420098,
+          "z": 0.0
+        },
+        {
+          "x": -440.18093079671746,
+          "y": 166.6241354420098,
+          "z": 0.0
+        }
+      ],
+      "height": 24.907158229087422,
+      "area": 750.0,
+      "created_at": 1768377136.2646756,
+      "last_updated": 1768377136.2646756
+    },
+    {
+      "id": "c036d3d6",
+      "name": "residential_house_6",
+      "type": "polygon",
+      "position": {
+        "x": -256,
+        "y": 254,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -245.99855509554948,
+          "y": 246.65631781406347,
+          "z": 0.0
+        },
+        {
+          "x": -245.99855509554948,
+          "y": 261.65631781406347,
+          "z": 0.0
+        },
+        {
+          "x": -265.9985550955495,
+          "y": 261.65631781406347,
+          "z": 0.0
+        },
+        {
+          "x": -265.9985550955495,
+          "y": 246.65631781406347,
+          "z": 0.0
+        }
+      ],
+      "height": 24.917616348555942,
+      "area": 300.0,
+      "created_at": 1768377138.3603506,
+      "last_updated": 1768377138.3603506
+    },
+    {
+      "id": "461dac2e",
+      "name": "residential_apartment_7",
+      "type": "polygon",
+      "position": {
+        "x": -348,
+        "y": 213,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -360.6432094467506,
+          "y": 197.7737527433413,
+          "z": 0.0
+        },
+        {
+          "x": -335.6432094467506,
+          "y": 197.7737527433413,
+          "z": 0.0
+        },
+        {
+          "x": -335.6432094467506,
+          "y": 227.7737527433413,
+          "z": 0.0
+        },
+        {
+          "x": -360.6432094467506,
+          "y": 227.7737527433413,
+          "z": 0.0
+        }
+      ],
+      "height": 34.44876786102617,
+      "area": 750.0,
+      "created_at": 1768377140.4488335,
+      "last_updated": 1768377140.4488335
+    },
+    {
+      "id": "57c0e566",
+      "name": "playground_7",
+      "type": "circle",
+      "position": {
+        "x": 179.0,
+        "y": 246.0,
+        "z": 0.0
+      },
+      "description": "Children's playground",
+      "radius": 14.812422584625534,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 0.5,
+      "area": 689.2901299925051,
+      "created_at": 1768377142.5521674,
+      "last_updated": 1768377142.5521674
+    },
+    {
+      "id": "09804684",
+      "name": "residential_villa_9",
+      "type": "polygon",
+      "position": {
+        "x": -151,
+        "y": 162,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -143.94944806766222,
+          "y": 156.54559757073702,
+          "z": 0.0
+        },
+        {
+          "x": -143.94944806766222,
+          "y": 166.54559757073702,
+          "z": 0.0
+        },
+        {
+          "x": -158.94944806766222,
+          "y": 166.54559757073702,
+          "z": 0.0
+        },
+        {
+          "x": -158.94944806766222,
+          "y": 156.54559757073702,
+          "z": 0.0
+        }
+      ],
+      "height": 37.190987373750644,
+      "area": 150.0,
+      "created_at": 1768377144.655007,
+      "last_updated": 1768377144.655007
+    },
+    {
+      "id": "522c3893",
+      "name": "residential_apartment_10",
+      "type": "polygon",
+      "position": {
+        "x": -48,
+        "y": 158,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -38.453752865384104,
+          "y": 150.08863712095024,
+          "z": 0.0
+        },
+        {
+          "x": -38.453752865384104,
+          "y": 165.08863712095024,
+          "z": 0.0
+        },
+        {
+          "x": -58.453752865384104,
+          "y": 165.08863712095024,
+          "z": 0.0
+        },
+        {
+          "x": -58.453752865384104,
+          "y": 150.08863712095024,
+          "z": 0.0
+        }
+      ],
+      "height": 38.81051054218937,
+      "area": 300.0,
+      "created_at": 1768377146.7751143,
+      "last_updated": 1768377146.7751143
+    },
+    {
+      "id": "73928844",
+      "name": "fountain_10",
+      "type": "circle",
+      "position": {
+        "x": 81.0,
+        "y": 197.0,
+        "z": 0.0
+      },
+      "description": "Decorative fountain",
+      "radius": 6.04493078637023,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 1.5,
+      "area": 114.79752844028191,
+      "created_at": 1768377148.869205,
+      "last_updated": 1768377148.869205
+    },
+    {
+      "id": "3f716024",
+      "name": "residential_apartment_12",
+      "type": "polygon",
+      "position": {
+        "x": -428,
+        "y": 152,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -418.72970628618856,
+          "y": 145.78891874960524,
+          "z": 0.0
+        },
+        {
+          "x": -418.72970628618856,
+          "y": 157.78891874960524,
+          "z": 0.0
+        },
+        {
+          "x": -436.72970628618856,
+          "y": 157.78891874960524,
+          "z": 0.0
+        },
+        {
+          "x": -436.72970628618856,
+          "y": 145.78891874960524,
+          "z": 0.0
+        }
+      ],
+      "height": 29.582366500924472,
+      "area": 216.0,
+      "created_at": 1768377150.9769814,
+      "last_updated": 1768377150.9769814
+    },
+    {
+      "id": "dbdfad80",
+      "name": "residential_villa_13",
+      "type": "polygon",
+      "position": {
+        "x": -175,
+        "y": 58,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -165.04815005813373,
+          "y": 50.60529453152773,
+          "z": 0.0
+        },
+        {
+          "x": -165.04815005813373,
+          "y": 65.60529453152773,
+          "z": 0.0
+        },
+        {
+          "x": -185.04815005813373,
+          "y": 65.60529453152773,
+          "z": 0.0
+        },
+        {
+          "x": -185.04815005813373,
+          "y": 50.60529453152773,
+          "z": 0.0
+        }
+      ],
+      "height": 23.4126181179981,
+      "area": 300.0,
+      "created_at": 1768377153.0672474,
+      "last_updated": 1768377153.0672474
+    },
+    {
+      "id": "6c72bba4",
+      "name": "residential_house_14",
+      "type": "polygon",
+      "position": {
+        "x": -317,
+        "y": 327,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -329.3742730352708,
+          "y": 312.31034986557137,
+          "z": 0.0
+        },
+        {
+          "x": -304.3742730352708,
+          "y": 312.31034986557137,
+          "z": 0.0
+        },
+        {
+          "x": -304.3742730352708,
+          "y": 342.31034986557137,
+          "z": 0.0
+        },
+        {
+          "x": -329.3742730352708,
+          "y": 342.31034986557137,
+          "z": 0.0
+        }
+      ],
+      "height": 10.162021280275917,
+      "area": 750.0,
+      "created_at": 1768377155.1695902,
+      "last_updated": 1768377155.1695902
+    },
+    {
+      "id": "dd3d73b1",
+      "name": "residential_apartment_15",
+      "type": "polygon",
+      "position": {
+        "x": -140,
+        "y": 52,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -127.31443238498866,
+          "y": 41.524704087555364,
+          "z": 0.0
+        },
+        {
+          "x": -127.31443238498866,
+          "y": 61.524704087555364,
+          "z": 0.0
+        },
+        {
+          "x": -152.31443238498866,
+          "y": 61.524704087555364,
+          "z": 0.0
+        },
+        {
+          "x": -152.31443238498866,
+          "y": 41.524704087555364,
+          "z": 0.0
+        }
+      ],
+      "height": 33.77598032201373,
+      "area": 500.0,
+      "created_at": 1768377157.2906265,
+      "last_updated": 1768377157.2906265
+    },
+    {
+      "id": "d33b51af",
+      "name": "educational_school_1",
+      "type": "polygon",
+      "position": {
+        "x": -390,
+        "y": 73,
+        "z": 0.0
+      },
+      "description": "教育区 - school",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -365.1412374991844,
+          "y": 53.14122072138777,
+          "z": 0.0
+        },
+        {
+          "x": -365.1412374991844,
+          "y": 93.14122072138777,
+          "z": 0.0
+        },
+        {
+          "x": -415.1412374991844,
+          "y": 93.14122072138777,
+          "z": 0.0
+        },
+        {
+          "x": -415.1412374991844,
+          "y": 53.14122072138777,
+          "z": 0.0
+        }
+      ],
+      "height": 18.035302597237973,
+      "area": 2000.0,
+      "created_at": 1768377159.3872678,
+      "last_updated": 1768377159.3872678
+    },
+    {
+      "id": "b8d4450a",
+      "name": "educational_research_2",
+      "type": "polygon",
+      "position": {
+        "x": -257,
+        "y": 185,
+        "z": 0.0
+      },
+      "description": "教育区 - research",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -276.8704063719466,
+          "y": 159.9401789824286,
+          "z": 0.0
+        },
+        {
+          "x": -236.87040637194661,
+          "y": 159.9401789824286,
+          "z": 0.0
+        },
+        {
+          "x": -236.87040637194661,
+          "y": 209.9401789824286,
+          "z": 0.0
+        },
+        {
+          "x": -276.8704063719466,
+          "y": 209.9401789824286,
+          "z": 0.0
+        }
+      ],
+      "height": 34.08602057043311,
+      "area": 2000.0,
+      "created_at": 1768377161.5065339,
+      "last_updated": 1768377161.5065339
+    },
+    {
+      "id": "a4239741",
+      "name": "sports_field_2",
+      "type": "polygon",
+      "position": {
+        "x": 114,
+        "y": 260,
+        "z": 0.0
+      },
+      "description": "Sports field",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 90.0,
+          "y": 247.0,
+          "z": 0.0
+        },
+        {
+          "x": 138.0,
+          "y": 247.0,
+          "z": 0.0
+        },
+        {
+          "x": 138.0,
+          "y": 273.0,
+          "z": 0.0
+        },
+        {
+          "x": 90.0,
+          "y": 273.0,
+          "z": 0.0
+        }
+      ],
+      "height": 0.1,
+      "area": 1248.0,
+      "created_at": 1768377163.642465,
+      "last_updated": 1768377163.642465
+    },
+    {
+      "id": "b67d1260",
+      "name": "educational_university_4",
+      "type": "polygon",
+      "position": {
+        "x": -212,
+        "y": 221,
+        "z": 0.0
+      },
+      "description": "教育区 - university",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -231.84570314673533,
+          "y": 196.10986613369892,
+          "z": 0.0
+        },
+        {
+          "x": -191.84570314673533,
+          "y": 196.10986613369892,
+          "z": 0.0
+        },
+        {
+          "x": -191.84570314673533,
+          "y": 246.10986613369892,
+          "z": 0.0
+        },
+        {
+          "x": -231.84570314673533,
+          "y": 246.10986613369892,
+          "z": 0.0
+        }
+      ],
+      "height": 29.09298484009846,
+      "area": 2000.0,
+      "created_at": 1768377165.744179,
+      "last_updated": 1768377165.744179
+    },
+    {
+      "id": "b9d0e180",
+      "name": "playground_4",
+      "type": "circle",
+      "position": {
+        "x": 127.0,
+        "y": 342.0,
+        "z": 0.0
+      },
+      "description": "Children's playground",
+      "radius": 12.547162507023653,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 0.5,
+      "area": 494.58497461420336,
+      "created_at": 1768377167.869665,
+      "last_updated": 1768377167.869665
+    },
+    {
+      "id": "c3770cb6",
+      "name": "educational_university_6",
+      "type": "polygon",
+      "position": {
+        "x": -484,
+        "y": 151,
+        "z": 0.0
+      },
+      "description": "教育区 - university",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -503.81845081405294,
+          "y": 126.42654427316376,
+          "z": 0.0
+        },
+        {
+          "x": -463.81845081405294,
+          "y": 126.42654427316376,
+          "z": 0.0
+        },
+        {
+          "x": -463.81845081405294,
+          "y": 176.42654427316376,
+          "z": 0.0
+        },
+        {
+          "x": -503.81845081405294,
+          "y": 176.42654427316376,
+          "z": 0.0
+        }
+      ],
+      "height": 39.461650095002014,
+      "area": 2000.0,
+      "created_at": 1768377169.9530027,
+      "last_updated": 1768377169.9530027
+    },
+    {
+      "id": "d6e45592",
+      "name": "educational_research_7",
+      "type": "polygon",
+      "position": {
+        "x": -226,
+        "y": 329,
+        "z": 0.0
+      },
+      "description": "教育区 - research",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -245.55462799578333,
+          "y": 304.19022870913443,
+          "z": 0.0
+        },
+        {
+          "x": -205.55462799578333,
+          "y": 304.19022870913443,
+          "z": 0.0
+        },
+        {
+          "x": -205.55462799578333,
+          "y": 354.19022870913443,
+          "z": 0.0
+        },
+        {
+          "x": -245.55462799578333,
+          "y": 354.19022870913443,
+          "z": 0.0
+        }
+      ],
+      "height": 13.659492337510812,
+      "area": 2000.0,
+      "created_at": 1768377172.0558805,
+      "last_updated": 1768377172.0558805
+    },
+    {
+      "id": "6bc149e3",
+      "name": "educational_university_8",
+      "type": "polygon",
+      "position": {
+        "x": -94,
+        "y": 302,
+        "z": 0.0
+      },
+      "description": "教育区 - university",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -143.61130527188266,
+          "y": 241.94064039692637,
+          "z": 0.0
+        },
+        {
+          "x": -43.61130527188266,
+          "y": 241.94064039692637,
+          "z": 0.0
+        },
+        {
+          "x": -43.61130527188266,
+          "y": 361.94064039692637,
+          "z": 0.0
+        },
+        {
+          "x": -143.61130527188266,
+          "y": 361.94064039692637,
+          "z": 0.0
+        }
+      ],
+      "height": 24.56833265091185,
+      "area": 12000.0,
+      "created_at": 1768377174.1475186,
+      "last_updated": 1768377174.1475186
+    },
+    {
+      "id": "bd1c7236",
+      "name": "sports_field_8",
+      "type": "polygon",
+      "position": {
+        "x": 147,
+        "y": 381,
+        "z": 0.0
+      },
+      "description": "Sports field",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 119.0,
+          "y": 368.0,
+          "z": 0.0
+        },
+        {
+          "x": 175.0,
+          "y": 368.0,
+          "z": 0.0
+        },
+        {
+          "x": 175.0,
+          "y": 394.0,
+          "z": 0.0
+        },
+        {
+          "x": 119.0,
+          "y": 394.0,
+          "z": 0.0
+        }
+      ],
+      "height": 0.1,
+      "area": 1456.0,
+      "created_at": 1768377176.2383034,
+      "last_updated": 1768377176.2383034
+    },
+    {
+      "id": "1096dbec",
+      "name": "recreational_park_1",
+      "type": "polygon",
+      "position": {
+        "x": -251,
+        "y": 121,
+        "z": 0.0
+      },
+      "description": "休闲区 - park",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -266.01086522899413,
+          "y": 101.46206409520315,
+          "z": 0.0
+        },
+        {
+          "x": -236.01086522899416,
+          "y": 101.46206409520315,
+          "z": 0.0
+        },
+        {
+          "x": -236.01086522899416,
+          "y": 141.46206409520315,
+          "z": 0.0
+        },
+        {
+          "x": -266.01086522899413,
+          "y": 141.46206409520315,
+          "z": 0.0
+        }
+      ],
+      "height": 22.2964483324115,
+      "area": 1199.9999999999989,
+      "created_at": 1768377178.3504355,
+      "last_updated": 1768377178.3504355
+    },
+    {
+      "id": "96658633",
+      "name": "recreational_museum_2",
+      "type": "polygon",
+      "position": {
+        "x": -424,
+        "y": 299,
+        "z": 0.0
+      },
+      "description": "休闲区 - museum",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -453.9888620475426,
+          "y": 263.7692034092687,
+          "z": 0.0
+        },
+        {
+          "x": -393.9888620475426,
+          "y": 263.7692034092687,
+          "z": 0.0
+        },
+        {
+          "x": -393.9888620475426,
+          "y": 333.7692034092687,
+          "z": 0.0
+        },
+        {
+          "x": -453.9888620475426,
+          "y": 333.7692034092687,
+          "z": 0.0
+        }
+      ],
+      "height": 11.214281747164831,
+      "area": 4200.0,
+      "created_at": 1768377180.4651737,
+      "last_updated": 1768377180.4651737
+    },
+    {
+      "id": "da94943d",
+      "name": "recreational_park_3",
+      "type": "polygon",
+      "position": {
+        "x": -303,
+        "y": 212,
+        "z": 0.0
+      },
+      "description": "休闲区 - park",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -277.9860274215207,
+          "y": 192.0641868162754,
+          "z": 0.0
+        },
+        {
+          "x": -277.9860274215207,
+          "y": 232.0641868162754,
+          "z": 0.0
+        },
+        {
+          "x": -327.9860274215207,
+          "y": 232.0641868162754,
+          "z": 0.0
+        },
+        {
+          "x": -327.9860274215207,
+          "y": 192.0641868162754,
+          "z": 0.0
+        }
+      ],
+      "height": 19.32777356786039,
+      "area": 2000.0,
+      "created_at": 1768377182.5656574,
+      "last_updated": 1768377182.5656574
+    },
+    {
+      "id": "cecd17b1",
+      "name": "sports_field_3",
+      "type": "polygon",
+      "position": {
+        "x": 88,
+        "y": 166,
+        "z": 0.0
+      },
+      "description": "Sports field",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 61.0,
+          "y": 149.0,
+          "z": 0.0
+        },
+        {
+          "x": 115.0,
+          "y": 149.0,
+          "z": 0.0
+        },
+        {
+          "x": 115.0,
+          "y": 183.0,
+          "z": 0.0
+        },
+        {
+          "x": 61.0,
+          "y": 183.0,
+          "z": 0.0
+        }
+      ],
+      "height": 0.1,
+      "area": 1836.0,
+      "created_at": 1768377184.6887195,
+      "last_updated": 1768377184.6887195
+    },
+    {
+      "id": "f6899c30",
+      "name": "recreational_park_5",
+      "type": "polygon",
+      "position": {
+        "x": -172,
+        "y": 110,
+        "z": 0.0
+      },
+      "description": "休闲区 - park",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -151.71543728951707,
+          "y": 95.28949846770423,
+          "z": 0.0
+        },
+        {
+          "x": -151.71543728951707,
+          "y": 125.28949846770423,
+          "z": 0.0
+        },
+        {
+          "x": -191.71543728951707,
+          "y": 125.28949846770423,
+          "z": 0.0
+        },
+        {
+          "x": -191.71543728951707,
+          "y": 95.28949846770423,
+          "z": 0.0
+        }
+      ],
+      "height": 6.727485144096033,
+      "area": 1200.0,
+      "created_at": 1768377186.8046477,
+      "last_updated": 1768377186.8046477
+    },
+    {
+      "id": "5b058112",
+      "name": "recreational_cinema_6",
+      "type": "polygon",
+      "position": {
+        "x": -355,
+        "y": 145,
+        "z": 0.0
+      },
+      "description": "休闲区 - cinema",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -330.2075303112778,
+          "y": 125.49038233862717,
+          "z": 0.0
+        },
+        {
+          "x": -330.2075303112778,
+          "y": 165.49038233862717,
+          "z": 0.0
+        },
+        {
+          "x": -380.2075303112778,
+          "y": 165.49038233862717,
+          "z": 0.0
+        },
+        {
+          "x": -380.2075303112778,
+          "y": 125.49038233862717,
+          "z": 0.0
+        }
+      ],
+      "height": 22.916185882494894,
+      "area": 2000.0,
+      "created_at": 1768377188.9065874,
+      "last_updated": 1768377188.9065874
+    },
+    {
+      "id": "f5d9758a",
+      "name": "recreational_museum_7",
+      "type": "polygon",
+      "position": {
+        "x": -64,
+        "y": 108,
+        "z": 0.0
+      },
+      "description": "休闲区 - museum",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -94.25358127639782,
+          "y": 73.20322392220243,
+          "z": 0.0
+        },
+        {
+          "x": -34.253581276397824,
+          "y": 73.20322392220243,
+          "z": 0.0
+        },
+        {
+          "x": -34.253581276397824,
+          "y": 143.20322392220243,
+          "z": 0.0
+        },
+        {
+          "x": -94.25358127639782,
+          "y": 143.20322392220243,
+          "z": 0.0
+        }
+      ],
+      "height": 12.605320027728297,
+      "area": 4200.0,
+      "created_at": 1768377191.000247,
+      "last_updated": 1768377191.000247
+    },
+    {
+      "id": "ccf9fea9",
+      "name": "recreational_gym_8",
+      "type": "polygon",
+      "position": {
+        "x": -143,
+        "y": 198,
+        "z": 0.0
+      },
+      "description": "休闲区 - gym",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -117.52664050183455,
+          "y": 178.2238605754399,
+          "z": 0.0
+        },
+        {
+          "x": -117.52664050183455,
+          "y": 218.2238605754399,
+          "z": 0.0
+        },
+        {
+          "x": -167.52664050183455,
+          "y": 218.2238605754399,
+          "z": 0.0
+        },
+        {
+          "x": -167.52664050183455,
+          "y": 178.2238605754399,
+          "z": 0.0
+        }
+      ],
+      "height": 13.214239297488701,
+      "area": 2000.0,
+      "created_at": 1768377193.1214283,
+      "last_updated": 1768377193.1214283
+    },
+    {
+      "id": "52d79da4",
+      "name": "recreational_cinema_9",
+      "type": "polygon",
+      "position": {
+        "x": -312,
+        "y": 84,
+        "z": 0.0
+      },
+      "description": "休闲区 - cinema",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -337.1566076763974,
+          "y": 54.17627328357975,
+          "z": 0.0
+        },
+        {
+          "x": -287.1566076763974,
+          "y": 54.17627328357975,
+          "z": 0.0
+        },
+        {
+          "x": -287.1566076763974,
+          "y": 114.17627328357975,
+          "z": 0.0
+        },
+        {
+          "x": -337.1566076763974,
+          "y": 114.17627328357975,
+          "z": 0.0
+        }
+      ],
+      "height": 5.121297949510897,
+      "area": 3000.0,
+      "created_at": 1768377195.2368991,
+      "last_updated": 1768377195.2368991
+    },
+    {
+      "id": "7fdd8a7f",
+      "name": "industrial_storage_1",
+      "type": "polygon",
+      "position": {
+        "x": -403,
+        "y": -324,
+        "z": 0.0
+      },
+      "description": "工业区 - storage",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -353.38709681844784,
+          "y": -364.07480174688374,
+          "z": 0.0
+        },
+        {
+          "x": -353.38709681844784,
+          "y": -284.07480174688374,
+          "z": 0.0
+        },
+        {
+          "x": -453.38709681844784,
+          "y": -284.07480174688374,
+          "z": 0.0
+        },
+        {
+          "x": -453.38709681844784,
+          "y": -364.07480174688374,
+          "z": 0.0
+        }
+      ],
+      "height": 26.91638944360548,
+      "area": 8000.0,
+      "created_at": 1768377197.345087,
+      "last_updated": 1768377197.345087
+    },
+    {
+      "id": "97441d3c",
+      "name": "industrial_warehouse_2",
+      "type": "polygon",
+      "position": {
+        "x": -302,
+        "y": -169,
+        "z": 0.0
+      },
+      "description": "工业区 - warehouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -271.8346882758078,
+          "y": -194.03097621537725,
+          "z": 0.0
+        },
+        {
+          "x": -271.8346882758078,
+          "y": -144.03097621537725,
+          "z": 0.0
+        },
+        {
+          "x": -331.8346882758078,
+          "y": -144.03097621537725,
+          "z": 0.0
+        },
+        {
+          "x": -331.8346882758078,
+          "y": -194.03097621537725,
+          "z": 0.0
+        }
+      ],
+      "height": 15.506350621325943,
+      "area": 3000.0,
+      "created_at": 1768377199.431359,
+      "last_updated": 1768377199.431359
+    },
+    {
+      "id": "33b1f251",
+      "name": "industrial_factory_3",
+      "type": "polygon",
+      "position": {
+        "x": -104,
+        "y": -257,
+        "z": 0.0
+      },
+      "description": "工业区 - factory",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -64.0,
+          "y": -287.0,
+          "z": 0.0
+        },
+        {
+          "x": -64.0,
+          "y": -227.0,
+          "z": 0.0
+        },
+        {
+          "x": -144.0,
+          "y": -227.0,
+          "z": 0.0
+        },
+        {
+          "x": -144.0,
+          "y": -287.0,
+          "z": 0.0
+        }
+      ],
+      "height": 12.467659249388198,
+      "area": 4800.0,
+      "created_at": 1768377201.555759,
+      "last_updated": 1768377201.555759
+    },
+    {
+      "id": "22c08711",
+      "name": "industrial_workshop_4",
+      "type": "polygon",
+      "position": {
+        "x": -84,
+        "y": -187,
+        "z": 0.0
+      },
+      "description": "工业区 - workshop",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -109.47177605415646,
+          "y": -216.91318440936044,
+          "z": 0.0
+        },
+        {
+          "x": -59.471776054156464,
+          "y": -216.91318440936044,
+          "z": 0.0
+        },
+        {
+          "x": -59.471776054156464,
+          "y": -156.91318440936044,
+          "z": 0.0
+        },
+        {
+          "x": -109.47177605415646,
+          "y": -156.91318440936044,
+          "z": 0.0
+        }
+      ],
+      "height": 17.349579941040197,
+      "area": 3000.0,
+      "created_at": 1768377203.6672513,
+      "last_updated": 1768377203.6672513
+    },
+    {
+      "id": "82d3094d",
+      "name": "industrial_factory_5",
+      "type": "polygon",
+      "position": {
+        "x": -287,
+        "y": -244,
+        "z": 0.0
+      },
+      "description": "工业区 - factory",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -261.82797732385507,
+          "y": -263.8659284679286,
+          "z": 0.0
+        },
+        {
+          "x": -261.82797732385507,
+          "y": -223.8659284679286,
+          "z": 0.0
+        },
+        {
+          "x": -311.82797732385507,
+          "y": -223.8659284679286,
+          "z": 0.0
+        },
+        {
+          "x": -311.82797732385507,
+          "y": -263.8659284679286,
+          "z": 0.0
+        }
+      ],
+      "height": 23.982448430002655,
+      "area": 2000.0,
+      "created_at": 1768377205.7670844,
+      "last_updated": 1768377205.7670844
+    },
+    {
+      "id": "b4b5eec3",
+      "name": "industrial_storage_6",
+      "type": "polygon",
+      "position": {
+        "x": -454,
+        "y": -215,
+        "z": 0.0
+      },
+      "description": "工业区 - storage",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -423.61170374548533,
+          "y": -239.98769311536503,
+          "z": 0.0
+        },
+        {
+          "x": -423.61170374548533,
+          "y": -189.98769311536503,
+          "z": 0.0
+        },
+        {
+          "x": -483.61170374548533,
+          "y": -189.98769311536503,
+          "z": 0.0
+        },
+        {
+          "x": -483.61170374548533,
+          "y": -239.98769311536503,
+          "z": 0.0
+        }
+      ],
+      "height": 27.23286310167763,
+      "area": 3000.0,
+      "created_at": 1768377207.8771336,
+      "last_updated": 1768377207.8771336
+    },
+    {
+      "id": "5f519197",
+      "name": "industrial_warehouse_7",
+      "type": "polygon",
+      "position": {
+        "x": -192,
+        "y": -231,
+        "z": 0.0
+      },
+      "description": "工业区 - warehouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -231.75954945424604,
+          "y": -281.16853544408644,
+          "z": 0.0
+        },
+        {
+          "x": -151.75954945424604,
+          "y": -281.16853544408644,
+          "z": 0.0
+        },
+        {
+          "x": -151.75954945424604,
+          "y": -181.16853544408644,
+          "z": 0.0
+        },
+        {
+          "x": -231.75954945424604,
+          "y": -181.16853544408644,
+          "z": 0.0
+        }
+      ],
+      "height": 15.42251110163194,
+      "area": 8000.0,
+      "created_at": 1768377209.972146,
+      "last_updated": 1768377209.972146
+    },
+    {
+      "id": "faa5268b",
+      "name": "industrial_warehouse_8",
+      "type": "polygon",
+      "position": {
+        "x": -253,
+        "y": -100,
+        "z": 0.0
+      },
+      "description": "工业区 - warehouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -227.6447488198967,
+          "y": -120.02648388513899,
+          "z": 0.0
+        },
+        {
+          "x": -227.6447488198967,
+          "y": -80.02648388513899,
+          "z": 0.0
+        },
+        {
+          "x": -277.6447488198967,
+          "y": -80.02648388513899,
+          "z": 0.0
+        },
+        {
+          "x": -277.6447488198967,
+          "y": -120.02648388513899,
+          "z": 0.0
+        }
+      ],
+      "height": 17.498081573619064,
+      "area": 1999.9999999999989,
+      "created_at": 1768377212.0724876,
+      "last_updated": 1768377212.0724876
+    },
+    {
+      "id": "a5d1f6f4",
+      "name": "industrial_storage_9",
+      "type": "polygon",
+      "position": {
+        "x": -378,
+        "y": -116,
+        "z": 0.0
+      },
+      "description": "工业区 - storage",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -402.9237759042069,
+          "y": -146.40720909520593,
+          "z": 0.0
+        },
+        {
+          "x": -352.9237759042069,
+          "y": -146.40720909520593,
+          "z": 0.0
+        },
+        {
+          "x": -352.9237759042069,
+          "y": -86.40720909520593,
+          "z": 0.0
+        },
+        {
+          "x": -402.9237759042069,
+          "y": -86.40720909520593,
+          "z": 0.0
+        }
+      ],
+      "height": 11.253647751864845,
+      "area": 3000.0,
+      "created_at": 1768377214.1752908,
+      "last_updated": 1768377214.1752908
+    },
+    {
+      "id": "f8a83899",
+      "name": "residential_townhouse_1",
+      "type": "polygon",
+      "position": {
+        "x": -354,
+        "y": -52,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -361.9896482738971,
+          "y": -62.07899255936212,
+          "z": 0.0
+        },
+        {
+          "x": -346.9896482738971,
+          "y": -62.07899255936212,
+          "z": 0.0
+        },
+        {
+          "x": -346.9896482738971,
+          "y": -42.07899255936212,
+          "z": 0.0
+        },
+        {
+          "x": -361.9896482738971,
+          "y": -42.07899255936212,
+          "z": 0.0
+        }
+      ],
+      "height": 13.45535316845907,
+      "area": 300.0,
+      "created_at": 1768377216.2696722,
+      "last_updated": 1768377216.2696722
+    },
+    {
+      "id": "fdb3af8c",
+      "name": "residential_house_2",
+      "type": "polygon",
+      "position": {
+        "x": -364,
+        "y": -204,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -356.1374012431695,
+          "y": -208.8714501435819,
+          "z": 0.0
+        },
+        {
+          "x": -356.1374012431695,
+          "y": -198.8714501435819,
+          "z": 0.0
+        },
+        {
+          "x": -371.1374012431695,
+          "y": -198.8714501435819,
+          "z": 0.0
+        },
+        {
+          "x": -371.1374012431695,
+          "y": -208.8714501435819,
+          "z": 0.0
+        }
+      ],
+      "height": 21.665296138417787,
+      "area": 150.0,
+      "created_at": 1768377218.3644943,
+      "last_updated": 1768377218.3644943
+    },
+    {
+      "id": "0d22ef94",
+      "name": "residential_house_3",
+      "type": "polygon",
+      "position": {
+        "x": -496,
+        "y": -125,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -483.94374397768104,
+          "y": -135.17199910675862,
+          "z": 0.0
+        },
+        {
+          "x": -483.94374397768104,
+          "y": -115.17199910675862,
+          "z": 0.0
+        },
+        {
+          "x": -508.94374397768104,
+          "y": -115.17199910675862,
+          "z": 0.0
+        },
+        {
+          "x": -508.94374397768104,
+          "y": -135.17199910675862,
+          "z": 0.0
+        }
+      ],
+      "height": 32.347199513237676,
+      "area": 500.0,
+      "created_at": 1768377220.4909034,
+      "last_updated": 1768377220.4909034
+    },
+    {
+      "id": "0ee3c7ab",
+      "name": "residential_apartment_4",
+      "type": "polygon",
+      "position": {
+        "x": -194,
+        "y": -159,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -198.5194135001791,
+          "y": -166.95505925798219,
+          "z": 0.0
+        },
+        {
+          "x": -188.5194135001791,
+          "y": -166.95505925798219,
+          "z": 0.0
+        },
+        {
+          "x": -188.5194135001791,
+          "y": -151.95505925798219,
+          "z": 0.0
+        },
+        {
+          "x": -198.5194135001791,
+          "y": -151.95505925798219,
+          "z": 0.0
+        }
+      ],
+      "height": 18.72599172252879,
+      "area": 150.0,
+      "created_at": 1768377222.5975087,
+      "last_updated": 1768377222.5975087
+    },
+    {
+      "id": "bb39a1e0",
+      "name": "residential_apartment_5",
+      "type": "polygon",
+      "position": {
+        "x": -145,
+        "y": -76,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -150.1743326955788,
+          "y": -83.96508943367229,
+          "z": 0.0
+        },
+        {
+          "x": -140.1743326955788,
+          "y": -83.96508943367229,
+          "z": 0.0
+        },
+        {
+          "x": -140.1743326955788,
+          "y": -68.96508943367229,
+          "z": 0.0
+        },
+        {
+          "x": -150.1743326955788,
+          "y": -68.96508943367229,
+          "z": 0.0
+        }
+      ],
+      "height": 32.97111906878456,
+      "area": 150.0,
+      "created_at": 1768377224.7065609,
+      "last_updated": 1768377224.7065609
+    },
+    {
+      "id": "cb8bcdf9",
+      "name": "residential_house_6",
+      "type": "polygon",
+      "position": {
+        "x": -317,
+        "y": -119,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -304.7717742972403,
+          "y": -129.12252304053263,
+          "z": 0.0
+        },
+        {
+          "x": -304.7717742972403,
+          "y": -109.12252304053263,
+          "z": 0.0
+        },
+        {
+          "x": -329.7717742972403,
+          "y": -109.12252304053263,
+          "z": 0.0
+        },
+        {
+          "x": -329.7717742972403,
+          "y": -129.12252304053263,
+          "z": 0.0
+        }
+      ],
+      "height": 21.73779950123678,
+      "area": 500.0,
+      "created_at": 1768377226.8070917,
+      "last_updated": 1768377226.8070917
+    },
+    {
+      "id": "f1e33600",
+      "name": "residential_townhouse_7",
+      "type": "polygon",
+      "position": {
+        "x": -240,
+        "y": -43,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -227.84718899878158,
+          "y": -53.101217778016064,
+          "z": 0.0
+        },
+        {
+          "x": -227.84718899878158,
+          "y": -33.101217778016064,
+          "z": 0.0
+        },
+        {
+          "x": -252.84718899878158,
+          "y": -33.101217778016064,
+          "z": 0.0
+        },
+        {
+          "x": -252.84718899878158,
+          "y": -53.101217778016064,
+          "z": 0.0
+        }
+      ],
+      "height": 36.010594071781156,
+      "area": 500.0,
+      "created_at": 1768377228.9240544,
+      "last_updated": 1768377228.9240544
+    },
+    {
+      "id": "2598a05c",
+      "name": "residential_townhouse_8",
+      "type": "polygon",
+      "position": {
+        "x": -131,
+        "y": -343,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -143.817694148829,
+          "y": -358.06253739604546,
+          "z": 0.0
+        },
+        {
+          "x": -118.81769414882899,
+          "y": -358.06253739604546,
+          "z": 0.0
+        },
+        {
+          "x": -118.81769414882899,
+          "y": -328.06253739604546,
+          "z": 0.0
+        },
+        {
+          "x": -143.817694148829,
+          "y": -328.06253739604546,
+          "z": 0.0
+        }
+      ],
+      "height": 28.051248479510566,
+      "area": 750.0,
+      "created_at": 1768377231.0193915,
+      "last_updated": 1768377231.0193915
+    },
+    {
+      "id": "0b9b6b56",
+      "name": "residential_apartment_9",
+      "type": "polygon",
+      "position": {
+        "x": -325,
+        "y": -54,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -330.2646271027254,
+          "y": -61.27660794253586,
+          "z": 0.0
+        },
+        {
+          "x": -320.2646271027254,
+          "y": -61.27660794253586,
+          "z": 0.0
+        },
+        {
+          "x": -320.2646271027254,
+          "y": -46.27660794253586,
+          "z": 0.0
+        },
+        {
+          "x": -330.2646271027254,
+          "y": -46.27660794253586,
+          "z": 0.0
+        }
+      ],
+      "height": 20.301065107061945,
+      "area": 150.0,
+      "created_at": 1768377233.1132693,
+      "last_updated": 1768377233.1132693
+    },
+    {
+      "id": "f0aca95b",
+      "name": "residential_house_10",
+      "type": "polygon",
+      "position": {
+        "x": -463,
+        "y": -133,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -467.7863766664799,
+          "y": -140.39986261523632,
+          "z": 0.0
+        },
+        {
+          "x": -457.7863766664799,
+          "y": -140.39986261523632,
+          "z": 0.0
+        },
+        {
+          "x": -457.7863766664799,
+          "y": -125.39986261523632,
+          "z": 0.0
+        },
+        {
+          "x": -467.7863766664799,
+          "y": -125.39986261523632,
+          "z": 0.0
+        }
+      ],
+      "height": 25.739858648107713,
+      "area": 150.0,
+      "created_at": 1768377235.2223601,
+      "last_updated": 1768377235.2223601
+    },
+    {
+      "id": "8482f6e6",
+      "name": "residential_house_11",
+      "type": "polygon",
+      "position": {
+        "x": -66,
+        "y": -136,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -73.09881447993337,
+          "y": -146.3139910550693,
+          "z": 0.0
+        },
+        {
+          "x": -58.09881447993337,
+          "y": -146.3139910550693,
+          "z": 0.0
+        },
+        {
+          "x": -58.09881447993337,
+          "y": -126.3139910550693,
+          "z": 0.0
+        },
+        {
+          "x": -73.09881447993337,
+          "y": -126.3139910550693,
+          "z": 0.0
+        }
+      ],
+      "height": 38.7187482669311,
+      "area": 300.0,
+      "created_at": 1768377237.3161263,
+      "last_updated": 1768377237.3161263
+    },
+    {
+      "id": "831856f4",
+      "name": "residential_townhouse_12",
+      "type": "polygon",
+      "position": {
+        "x": -88,
+        "y": -96,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -77.63367725666029,
+          "y": -103.22775670661292,
+          "z": 0.0
+        },
+        {
+          "x": -77.63367725666029,
+          "y": -88.22775670661292,
+          "z": 0.0
+        },
+        {
+          "x": -97.63367725666029,
+          "y": -88.22775670661292,
+          "z": 0.0
+        },
+        {
+          "x": -97.63367725666029,
+          "y": -103.22775670661292,
+          "z": 0.0
+        }
+      ],
+      "height": 26.58667427004549,
+      "area": 300.0,
+      "created_at": 1768377239.4151614,
+      "last_updated": 1768377239.4151614
+    },
+    {
+      "id": "015e3e40",
+      "name": "residential_townhouse_13",
+      "type": "polygon",
+      "position": {
+        "x": -485,
+        "y": -174,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -491.22797612137384,
+          "y": -182.53324852421346,
+          "z": 0.0
+        },
+        {
+          "x": -479.22797612137384,
+          "y": -182.53324852421346,
+          "z": 0.0
+        },
+        {
+          "x": -479.22797612137384,
+          "y": -164.53324852421346,
+          "z": 0.0
+        },
+        {
+          "x": -491.22797612137384,
+          "y": -164.53324852421346,
+          "z": 0.0
+        }
+      ],
+      "height": 29.523682137407793,
+      "area": 216.0,
+      "created_at": 1768377241.5234249,
+      "last_updated": 1768377241.5234249
+    },
+    {
+      "id": "5ce8c975",
+      "name": "residential_apartment_14",
+      "type": "polygon",
+      "position": {
+        "x": -138,
+        "y": -205,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -144.49698992989903,
+          "y": -214.08081257629732,
+          "z": 0.0
+        },
+        {
+          "x": -132.49698992989903,
+          "y": -214.08081257629732,
+          "z": 0.0
+        },
+        {
+          "x": -132.49698992989903,
+          "y": -196.08081257629732,
+          "z": 0.0
+        },
+        {
+          "x": -144.49698992989903,
+          "y": -196.08081257629732,
+          "z": 0.0
+        }
+      ],
+      "height": 37.182907042232046,
+      "area": 216.0,
+      "created_at": 1768377243.6359153,
+      "last_updated": 1768377243.6359153
+    },
+    {
+      "id": "548d7eb3",
+      "name": "residential_townhouse_15",
+      "type": "polygon",
+      "position": {
+        "x": -210,
+        "y": -85,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": -194.8927293022369,
+          "y": -97.41077963618375,
+          "z": 0.0
+        },
+        {
+          "x": -194.8927293022369,
+          "y": -72.41077963618375,
+          "z": 0.0
+        },
+        {
+          "x": -224.8927293022369,
+          "y": -72.41077963618375,
+          "z": 0.0
+        },
+        {
+          "x": -224.8927293022369,
+          "y": -97.41077963618375,
+          "z": 0.0
+        }
+      ],
+      "height": 33.39655667112796,
+      "area": 750.0,
+      "created_at": 1768377245.7393155,
+      "last_updated": 1768377245.7393155
+    },
+    {
+      "id": "e889d5db",
+      "name": "office_insurance_1",
+      "type": "polygon",
+      "position": {
+        "x": 141,
+        "y": -354,
+        "z": 0.0
+      },
+      "description": "办公区 - insurance",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 163.2813685113166,
+          "y": -371.857969719124,
+          "z": 0.0
+        },
+        {
+          "x": 163.2813685113166,
+          "y": -336.857969719124,
+          "z": 0.0
+        },
+        {
+          "x": 118.2813685113166,
+          "y": -336.857969719124,
+          "z": 0.0
+        },
+        {
+          "x": 118.2813685113166,
+          "y": -371.857969719124,
+          "z": 0.0
+        }
+      ],
+      "height": 88.60170846973392,
+      "area": 1575.0,
+      "created_at": 1768377247.842925,
+      "last_updated": 1768377247.842925
+    },
+    {
+      "id": "7dc63e87",
+      "name": "office_insurance_2",
+      "type": "polygon",
+      "position": {
+        "x": 85,
+        "y": -92,
+        "z": 0.0
+      },
+      "description": "办公区 - insurance",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 70.08454231377715,
+          "y": -112.26365657014992,
+          "z": 0.0
+        },
+        {
+          "x": 100.08454231377715,
+          "y": -112.26365657014992,
+          "z": 0.0
+        },
+        {
+          "x": 100.08454231377715,
+          "y": -72.26365657014992,
+          "z": 0.0
+        },
+        {
+          "x": 70.08454231377715,
+          "y": -72.26365657014992,
+          "z": 0.0
+        }
+      ],
+      "height": 87.5916610470523,
+      "area": 1200.0,
+      "created_at": 1768377249.9395006,
+      "last_updated": 1768377249.9395006
+    },
+    {
+      "id": "2053bfb8",
+      "name": "office_insurance_3",
+      "type": "polygon",
+      "position": {
+        "x": 194,
+        "y": -325,
+        "z": 0.0
+      },
+      "description": "办公区 - insurance",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 219.2308055185953,
+          "y": -345.3024928717658,
+          "z": 0.0
+        },
+        {
+          "x": 219.2308055185953,
+          "y": -305.3024928717658,
+          "z": 0.0
+        },
+        {
+          "x": 169.2308055185953,
+          "y": -305.3024928717658,
+          "z": 0.0
+        },
+        {
+          "x": 169.2308055185953,
+          "y": -345.3024928717658,
+          "z": 0.0
+        }
+      ],
+      "height": 74.89212617616643,
+      "area": 2000.0,
+      "created_at": 1768377252.0368245,
+      "last_updated": 1768377252.0368245
+    },
+    {
+      "id": "4d912aa2",
+      "name": "office_government_4",
+      "type": "polygon",
+      "position": {
+        "x": 370,
+        "y": -138,
+        "z": 0.0
+      },
+      "description": "办公区 - government",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 355.15768126681365,
+          "y": -158.06895101098337,
+          "z": 0.0
+        },
+        {
+          "x": 385.15768126681365,
+          "y": -158.06895101098337,
+          "z": 0.0
+        },
+        {
+          "x": 385.15768126681365,
+          "y": -118.06895101098337,
+          "z": 0.0
+        },
+        {
+          "x": 355.15768126681365,
+          "y": -118.06895101098337,
+          "z": 0.0
+        }
+      ],
+      "height": 60.04589292127526,
+      "area": 1200.0,
+      "created_at": 1768377254.1383636,
+      "last_updated": 1768377254.1383636
+    },
+    {
+      "id": "0d23f6ea",
+      "name": "office_government_5",
+      "type": "polygon",
+      "position": {
+        "x": 90,
+        "y": -344,
+        "z": 0.0
+      },
+      "description": "办公区 - government",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 107.05965467164086,
+          "y": -356.86303829833514,
+          "z": 0.0
+        },
+        {
+          "x": 107.05965467164086,
+          "y": -331.86303829833514,
+          "z": 0.0
+        },
+        {
+          "x": 72.05965467164086,
+          "y": -331.86303829833514,
+          "z": 0.0
+        },
+        {
+          "x": 72.05965467164086,
+          "y": -356.86303829833514,
+          "z": 0.0
+        }
+      ],
+      "height": 77.15712264912143,
+      "area": 875.0,
+      "created_at": 1768377256.2427838,
+      "last_updated": 1768377256.2427838
+    },
+    {
+      "id": "76413459",
+      "name": "office_government_6",
+      "type": "polygon",
+      "position": {
+        "x": 419,
+        "y": -55,
+        "z": 0.0
+      },
+      "description": "办公区 - government",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 399.4249015642978,
+          "y": -79.65297116916531,
+          "z": 0.0
+        },
+        {
+          "x": 439.4249015642978,
+          "y": -79.65297116916531,
+          "z": 0.0
+        },
+        {
+          "x": 439.4249015642978,
+          "y": -29.652971169165312,
+          "z": 0.0
+        },
+        {
+          "x": 399.4249015642978,
+          "y": -29.652971169165312,
+          "z": 0.0
+        }
+      ],
+      "height": 46.84268372631756,
+      "area": 2000.0,
+      "created_at": 1768377258.3525174,
+      "last_updated": 1768377258.3525174
+    },
+    {
+      "id": "4040bd5c",
+      "name": "office_bank_7",
+      "type": "polygon",
+      "position": {
+        "x": 71,
+        "y": -183,
+        "z": 0.0
+      },
+      "description": "办公区 - bank",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 58.0,
+          "y": -200.0,
+          "z": 0.0
+        },
+        {
+          "x": 84.0,
+          "y": -200.0,
+          "z": 0.0
+        },
+        {
+          "x": 84.0,
+          "y": -166.0,
+          "z": 0.0
+        },
+        {
+          "x": 58.0,
+          "y": -166.0,
+          "z": 0.0
+        }
+      ],
+      "height": 87.23785535929136,
+      "area": 884.0,
+      "created_at": 1768377260.4618938,
+      "last_updated": 1768377260.4618938
+    },
+    {
+      "id": "0bc906bd",
+      "name": "office_office_8",
+      "type": "polygon",
+      "position": {
+        "x": 372,
+        "y": -281,
+        "z": 0.0
+      },
+      "description": "办公区 - office",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 357.2513348173547,
+          "y": -301.031675423114,
+          "z": 0.0
+        },
+        {
+          "x": 387.2513348173547,
+          "y": -301.031675423114,
+          "z": 0.0
+        },
+        {
+          "x": 387.2513348173547,
+          "y": -261.031675423114,
+          "z": 0.0
+        },
+        {
+          "x": 357.2513348173547,
+          "y": -261.031675423114,
+          "z": 0.0
+        }
+      ],
+      "height": 41.886141060465704,
+      "area": 1200.0,
+      "created_at": 1768377262.5715003,
+      "last_updated": 1768377262.5715003
+    },
+    {
+      "id": "017ad619",
+      "name": "office_bank_9",
+      "type": "polygon",
+      "position": {
+        "x": 122,
+        "y": -174,
+        "z": 0.0
+      },
+      "description": "办公区 - bank",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 97.4419109672035,
+          "y": -206.76043864410386,
+          "z": 0.0
+        },
+        {
+          "x": 147.4419109672035,
+          "y": -206.76043864410386,
+          "z": 0.0
+        },
+        {
+          "x": 147.4419109672035,
+          "y": -141.76043864410386,
+          "z": 0.0
+        },
+        {
+          "x": 97.4419109672035,
+          "y": -141.76043864410386,
+          "z": 0.0
+        }
+      ],
+      "height": 84.44774144593437,
+      "area": 3250.000000000001,
+      "created_at": 1768377264.6773694,
+      "last_updated": 1768377264.6773694
+    },
+    {
+      "id": "3a9bee0e",
+      "name": "commercial_hotel_1",
+      "type": "polygon",
+      "position": {
+        "x": 166,
+        "y": -242,
+        "z": 0.0
+      },
+      "description": "商业区 - hotel",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 150.99614769814178,
+          "y": -261.53861522912337,
+          "z": 0.0
+        },
+        {
+          "x": 180.99614769814178,
+          "y": -261.53861522912337,
+          "z": 0.0
+        },
+        {
+          "x": 180.99614769814178,
+          "y": -221.53861522912337,
+          "z": 0.0
+        },
+        {
+          "x": 150.99614769814178,
+          "y": -221.53861522912337,
+          "z": 0.0
+        }
+      ],
+      "height": 51.68855083151922,
+      "area": 1200.0,
+      "created_at": 1768377266.7907813,
+      "last_updated": 1768377266.7907813
+    },
+    {
+      "id": "f1c086e6",
+      "name": "commercial_mall_2",
+      "type": "polygon",
+      "position": {
+        "x": 442,
+        "y": -264,
+        "z": 0.0
+      },
+      "description": "商业区 - mall",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 462.3545820212734,
+          "y": -279.20088107899807,
+          "z": 0.0
+        },
+        {
+          "x": 462.3545820212734,
+          "y": -249.20088107899807,
+          "z": 0.0
+        },
+        {
+          "x": 422.3545820212734,
+          "y": -249.20088107899807,
+          "z": 0.0
+        },
+        {
+          "x": 422.3545820212734,
+          "y": -279.20088107899807,
+          "z": 0.0
+        }
+      ],
+      "height": 53.00542143465927,
+      "area": 1200.0,
+      "created_at": 1768377268.913465,
+      "last_updated": 1768377268.913465
+    },
+    {
+      "id": "4203cffd",
+      "name": "commercial_hotel_3",
+      "type": "polygon",
+      "position": {
+        "x": 236,
+        "y": -310,
+        "z": 0.0
+      },
+      "description": "商业区 - hotel",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 251.156108242224,
+          "y": -319.9834966854981,
+          "z": 0.0
+        },
+        {
+          "x": 251.156108242224,
+          "y": -299.9834966854981,
+          "z": 0.0
+        },
+        {
+          "x": 221.156108242224,
+          "y": -299.9834966854981,
+          "z": 0.0
+        },
+        {
+          "x": 221.156108242224,
+          "y": -319.9834966854981,
+          "z": 0.0
+        }
+      ],
+      "height": 51.253276795895104,
+      "area": 600.0,
+      "created_at": 1768377271.021913,
+      "last_updated": 1768377271.021913
+    },
+    {
+      "id": "c6cae855",
+      "name": "commercial_mall_4",
+      "type": "polygon",
+      "position": {
+        "x": 177,
+        "y": -150,
+        "z": 0.0
+      },
+      "description": "商业区 - mall",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 156.86027349092785,
+          "y": -174.8276922556359,
+          "z": 0.0
+        },
+        {
+          "x": 196.86027349092785,
+          "y": -174.8276922556359,
+          "z": 0.0
+        },
+        {
+          "x": 196.86027349092785,
+          "y": -124.8276922556359,
+          "z": 0.0
+        },
+        {
+          "x": 156.86027349092785,
+          "y": -124.8276922556359,
+          "z": 0.0
+        }
+      ],
+      "height": 25.75035143429147,
+      "area": 2000.0,
+      "created_at": 1768377273.109678,
+      "last_updated": 1768377273.109678
+    },
+    {
+      "id": "f52cfd1e",
+      "name": "fountain_4",
+      "type": "circle",
+      "position": {
+        "x": 222.10287796519975,
+        "y": 40.0,
+        "z": 0.0
+      },
+      "description": "Decorative fountain",
+      "radius": 4.264391130352493,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 1.5,
+      "area": 57.12996203369272,
+      "created_at": 1768377275.2081213,
+      "last_updated": 1768377275.2081213
+    },
+    {
+      "id": "92484921",
+      "name": "commercial_shop_6",
+      "type": "polygon",
+      "position": {
+        "x": 243,
+        "y": -202,
+        "z": 0.0
+      },
+      "description": "商业区 - shop",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 263.2357336491408,
+          "y": -216.84533157548432,
+          "z": 0.0
+        },
+        {
+          "x": 263.2357336491408,
+          "y": -186.84533157548432,
+          "z": 0.0
+        },
+        {
+          "x": 223.23573364914077,
+          "y": -186.84533157548432,
+          "z": 0.0
+        },
+        {
+          "x": 223.23573364914077,
+          "y": -216.84533157548432,
+          "z": 0.0
+        }
+      ],
+      "height": 22.132365234616728,
+      "area": 1200.000000000001,
+      "created_at": 1768377277.3061,
+      "last_updated": 1768377277.3061
+    },
+    {
+      "id": "da678efb",
+      "name": "commercial_hotel_7",
+      "type": "polygon",
+      "position": {
+        "x": 327,
+        "y": -241,
+        "z": 0.0
+      },
+      "description": "商业区 - hotel",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 352.3824801633558,
+          "y": -260.7143366846078,
+          "z": 0.0
+        },
+        {
+          "x": 352.3824801633558,
+          "y": -220.71433668460782,
+          "z": 0.0
+        },
+        {
+          "x": 302.3824801633558,
+          "y": -220.71433668460782,
+          "z": 0.0
+        },
+        {
+          "x": 302.3824801633558,
+          "y": -260.7143366846078,
+          "z": 0.0
+        }
+      ],
+      "height": 25.354297998742993,
+      "area": 2000.0,
+      "created_at": 1768377279.4009745,
+      "last_updated": 1768377279.4009745
+    },
+    {
+      "id": "5530b6ee",
+      "name": "commercial_mall_8",
+      "type": "polygon",
+      "position": {
+        "x": 298,
+        "y": -302,
+        "z": 0.0
+      },
+      "description": "商业区 - mall",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 283.00295239624734,
+          "y": -321.56032631771444,
+          "z": 0.0
+        },
+        {
+          "x": 313.00295239624734,
+          "y": -321.56032631771444,
+          "z": 0.0
+        },
+        {
+          "x": 313.00295239624734,
+          "y": -281.56032631771444,
+          "z": 0.0
+        },
+        {
+          "x": 283.00295239624734,
+          "y": -281.56032631771444,
+          "z": 0.0
+        }
+      ],
+      "height": 15.308732653338966,
+      "area": 1200.0,
+      "created_at": 1768377281.5273001,
+      "last_updated": 1768377281.5273001
+    },
+    {
+      "id": "bfe252fe",
+      "name": "commercial_shop_9",
+      "type": "polygon",
+      "position": {
+        "x": 447,
+        "y": -175,
+        "z": 0.0
+      },
+      "description": "商业区 - shop",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 466.56193145182465,
+          "y": -189.90252980265635,
+          "z": 0.0
+        },
+        {
+          "x": 466.56193145182465,
+          "y": -159.90252980265635,
+          "z": 0.0
+        },
+        {
+          "x": 426.56193145182465,
+          "y": -159.90252980265635,
+          "z": 0.0
+        },
+        {
+          "x": 426.56193145182465,
+          "y": -189.90252980265635,
+          "z": 0.0
+        }
+      ],
+      "height": 17.35358331671407,
+      "area": 1200.0,
+      "created_at": 1768377283.6237566,
+      "last_updated": 1768377283.6237566
+    },
+    {
+      "id": "7732f8ac",
+      "name": "commercial_mall_10",
+      "type": "polygon",
+      "position": {
+        "x": 460,
+        "y": -117,
+        "z": 0.0
+      },
+      "description": "商业区 - mall",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 490.0590441860384,
+          "y": -142.46252920040837,
+          "z": 0.0
+        },
+        {
+          "x": 490.0590441860384,
+          "y": -92.46252920040837,
+          "z": 0.0
+        },
+        {
+          "x": 430.0590441860384,
+          "y": -92.46252920040837,
+          "z": 0.0
+        },
+        {
+          "x": 430.0590441860384,
+          "y": -142.46252920040837,
+          "z": 0.0
+        }
+      ],
+      "height": 43.02473963074546,
+      "area": 3000.0,
+      "created_at": 1768377285.727512,
+      "last_updated": 1768377285.727512
+    },
+    {
+      "id": "02df9071",
+      "name": "recreational_museum_1",
+      "type": "polygon",
+      "position": {
+        "x": 232,
+        "y": -250,
+        "z": 0.0
+      },
+      "description": "休闲区 - museum",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 217.02969416886327,
+          "y": -270.0239725641974,
+          "z": 0.0
+        },
+        {
+          "x": 247.02969416886327,
+          "y": -270.0239725641974,
+          "z": 0.0
+        },
+        {
+          "x": 247.02969416886327,
+          "y": -230.02397256419738,
+          "z": 0.0
+        },
+        {
+          "x": 217.02969416886327,
+          "y": -230.02397256419738,
+          "z": 0.0
+        }
+      ],
+      "height": 16.27426081734281,
+      "area": 1200.0,
+      "created_at": 1768377287.843688,
+      "last_updated": 1768377287.843688
+    },
+    {
+      "id": "90d34e83",
+      "name": "recreational_cinema_2",
+      "type": "polygon",
+      "position": {
+        "x": 69,
+        "y": -257,
+        "z": 0.0
+      },
+      "description": "休闲区 - cinema",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 49.48174507724029,
+          "y": -281.58834811773266,
+          "z": 0.0
+        },
+        {
+          "x": 89.48174507724029,
+          "y": -281.58834811773266,
+          "z": 0.0
+        },
+        {
+          "x": 89.48174507724029,
+          "y": -231.58834811773266,
+          "z": 0.0
+        },
+        {
+          "x": 49.48174507724029,
+          "y": -231.58834811773266,
+          "z": 0.0
+        }
+      ],
+      "height": 16.025545781209615,
+      "area": 2000.0,
+      "created_at": 1768377289.952295,
+      "last_updated": 1768377289.952295
+    },
+    {
+      "id": "8ad9605c",
+      "name": "recreational_park_3",
+      "type": "polygon",
+      "position": {
+        "x": 279,
+        "y": -135,
+        "z": 0.0
+      },
+      "description": "休闲区 - park",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 303.88469546608394,
+          "y": -155.32674828782737,
+          "z": 0.0
+        },
+        {
+          "x": 303.88469546608394,
+          "y": -115.32674828782737,
+          "z": 0.0
+        },
+        {
+          "x": 253.88469546608394,
+          "y": -115.32674828782737,
+          "z": 0.0
+        },
+        {
+          "x": 253.88469546608394,
+          "y": -155.32674828782737,
+          "z": 0.0
+        }
+      ],
+      "height": 11.620019627054276,
+      "area": 2000.0,
+      "created_at": 1768377292.0700388,
+      "last_updated": 1768377292.0700388
+    },
+    {
+      "id": "36887761",
+      "name": "traffic_signal_1",
+      "type": "point",
+      "position": {
+        "x": -25.0,
+        "y": -25.0,
+        "z": 0.0
+      },
+      "description": "Traffic signal",
+      "radius": 0.5,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 6.0,
+      "area": 0.7853981633974483,
+      "created_at": 1768377294.175584,
+      "last_updated": 1768377294.175584
+    },
+    {
+      "id": "111bfd7c",
+      "name": "traffic_signal_2",
+      "type": "point",
+      "position": {
+        "x": 25.0,
+        "y": -25.0,
+        "z": 0.0
+      },
+      "description": "Traffic signal",
+      "radius": 0.5,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 6.0,
+      "area": 0.7853981633974483,
+      "created_at": 1768377296.2685666,
+      "last_updated": 1768377296.2685666
+    },
+    {
+      "id": "f5f732c2",
+      "name": "traffic_signal_3",
+      "type": "point",
+      "position": {
+        "x": -25.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "description": "Traffic signal",
+      "radius": 0.5,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 6.0,
+      "area": 0.7853981633974483,
+      "created_at": 1768377298.3859499,
+      "last_updated": 1768377298.3859499
+    },
+    {
+      "id": "f3b91078",
+      "name": "traffic_signal_4",
+      "type": "point",
+      "position": {
+        "x": 25.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "description": "Traffic signal",
+      "radius": 0.5,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 6.0,
+      "area": 0.7853981633974483,
+      "created_at": 1768377300.4699728,
+      "last_updated": 1768377300.4699728
+    },
+    {
+      "id": "0535b2ed",
+      "name": "street_light_ns_e_-344",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": -344.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377302.5671058,
+      "last_updated": 1768377302.5671058
+    },
+    {
+      "id": "14ea891b",
+      "name": "street_light_ns_w_-344",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": -344.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377304.670991,
+      "last_updated": 1768377304.670991
+    },
+    {
+      "id": "6019501d",
+      "name": "street_light_ns_e_-294",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": -294.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377306.7990522,
+      "last_updated": 1768377306.7990522
+    },
+    {
+      "id": "8683a5c3",
+      "name": "street_light_ns_w_-294",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": -294.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377308.913926,
+      "last_updated": 1768377308.913926
+    },
+    {
+      "id": "0f9cc0a5",
+      "name": "street_light_ns_e_-244",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": -244.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377311.0354095,
+      "last_updated": 1768377311.0354095
+    },
+    {
+      "id": "2c1b61fc",
+      "name": "street_light_ns_w_-244",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": -244.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377313.145511,
+      "last_updated": 1768377313.145511
+    },
+    {
+      "id": "80956fed",
+      "name": "street_light_ns_e_-194",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": -194.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377315.237796,
+      "last_updated": 1768377315.237796
+    },
+    {
+      "id": "6c007e3a",
+      "name": "street_light_ns_w_-194",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": -194.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377317.3433287,
+      "last_updated": 1768377317.3433287
+    },
+    {
+      "id": "61178a23",
+      "name": "street_light_ns_e_-144",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": -144.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377319.4495397,
+      "last_updated": 1768377319.4495397
+    },
+    {
+      "id": "b82fff8f",
+      "name": "street_light_ns_w_-144",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": -144.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377321.5688593,
+      "last_updated": 1768377321.5688593
+    },
+    {
+      "id": "0bc17dd4",
+      "name": "street_light_ns_e_-94",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": -94.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377323.6973495,
+      "last_updated": 1768377323.6973495
+    },
+    {
+      "id": "e213cdf8",
+      "name": "street_light_ns_w_-94",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": -94.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377325.7987614,
+      "last_updated": 1768377325.7987614
+    },
+    {
+      "id": "9d10bf5b",
+      "name": "street_light_ns_e_106",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": 106.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377327.8988457,
+      "last_updated": 1768377327.8988457
+    },
+    {
+      "id": "a65f18fc",
+      "name": "street_light_ns_w_106",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": 106.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377330.0204399,
+      "last_updated": 1768377330.0204399
+    },
+    {
+      "id": "10dda2be",
+      "name": "street_light_ns_e_156",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": 156.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377332.124227,
+      "last_updated": 1768377332.124227
+    },
+    {
+      "id": "6d0c88a7",
+      "name": "street_light_ns_w_156",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": 156.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377334.2278354,
+      "last_updated": 1768377334.2278354
+    },
+    {
+      "id": "a4e4feab",
+      "name": "street_light_ns_e_206",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": 206.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377336.3275542,
+      "last_updated": 1768377336.3275542
+    },
+    {
+      "id": "bda7a0e5",
+      "name": "street_light_ns_w_206",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": 206.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377338.4388936,
+      "last_updated": 1768377338.4388936
+    },
+    {
+      "id": "fc12cb27",
+      "name": "street_light_ns_e_256",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": 256.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377340.5583587,
+      "last_updated": 1768377340.5583587
+    },
+    {
+      "id": "c3c0654a",
+      "name": "street_light_ns_w_256",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": 256.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377342.649298,
+      "last_updated": 1768377342.649298
+    },
+    {
+      "id": "028d27ae",
+      "name": "street_light_ns_e_306",
+      "type": "circle",
+      "position": {
+        "x": 25.0,
+        "y": 306.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377344.75119,
+      "last_updated": 1768377344.75119
+    },
+    {
+      "id": "0f36cf3c",
+      "name": "street_light_ns_w_306",
+      "type": "circle",
+      "position": {
+        "x": -25.0,
+        "y": 306.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768377346.8569536,
+      "last_updated": 1768377346.8569536
+    }
+  ],
+  "environment": {
+    "id": "7f4e41b8",
+    "name": "Ctiy Street Environment",
+    "weather": "fog",
+    "temperature": 19.39678747453459,
+    "humidity": 37.7,
+    "pressure": 1014.8,
+    "wind_speed": 2.9323473689024526,
+    "wind_direction": "southwest",
+    "visibility": 10164.0,
+    "created_at": 1768291949.6988356,
+    "last_updated": 1769271827.703968
+  },
+  "tasks": [
+    {
+      "id": "79343a03",
+      "name": "Basic Takeoff",
+      "content": "Command drone New Drone 1 to take off to an altitude of 12 meters and hover in place.",
+      "content_aliases": [
+        "make drone New Drone 1 takeoff to 12 meters and hover",
+        "fly drone New Drone 1 up to 12m and hold position",
+        "drone New Drone 1 take off 12 meters and remain airborne",
+        "basic flight: drone New Drone 1 goes up to 12m and hovers",
+        "New Drone 1 takeoff 12m hover"
+      ],
+      "description": "Simple takeoff to altitude and hover - AI Testing Template",
+      "creator": "生命构造",
+      "originated_from": "Task Template Basic Takeoff created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "71c45c5a",
+            "altitude": 12.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "71c45c5a"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_altitude",
+            "parameters": {
+              "drone_id": "71c45c5a",
+              "expected_altitude": 12.0,
+              "tolerance": 2.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "71c45c5a",
+              "tolerance": 1.5
+            },
+            "expect": false
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "hover"
+      ],
+      "is_done": false,
+      "created_at": 1768804499.0681958,
+      "last_updated": 1768804499.0681958
+    },
+    {
+      "id": "f25b38c6",
+      "name": "Randomized Loiter with Photo",
+      "content": "Drone New Drone 1 takes off to 17 meters, flies to (686, 397, 17), loiters for 10 seconds, and captures a photo.",
+      "content_aliases": [
+        "Launch New Drone 1 to random coordinates 686,397 at 17m altitude, pause 10s, take photograph",
+        "New Drone 1 performs randomized observation flight: ascend 17m, navigate to (686,397,17), loiter 10 seconds, capture image",
+        "Random reconnaissance point for New Drone 1: fly to altitude 17m, reach position (686,397), wait 10s, then photograph",
+        "Send New Drone 1 on variable scouting mission to (686,397,17) with 10s hover time, and take a photo"
+      ],
+      "description": "Demonstrates sticky vs per-occurrence random placeholders",
+      "creator": "生命构造",
+      "originated_from": "Task Template Randomized Loiter with Photo created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "71c45c5a",
+            "altitude": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "71c45c5a",
+            "x": 686.0,
+            "y": 397.0,
+            "z": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "71c45c5a",
+            "duration": 10.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "71c45c5a"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "71c45c5a",
+              "x": 686.0,
+              "y": 397.0,
+              "z": 17.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_taken_photo",
+            "parameters": {
+              "drone_id": "71c45c5a",
+              "min_count": 1
+            }
+          },
+          {
+            "endpoint": "/check/drone_hovering",
+            "parameters": {
+              "drone_id": "71c45c5a",
+              "tolerance": 1
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "hover",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768804514.4442194,
+      "last_updated": 1768804514.4442194
+    },
+    {
+      "id": "67c54614",
+      "name": "Set New Home Position",
+      "content": "Drone New Drone 3 takes off to 12 meters, flies to position (179, 394, 12), descends and lands at ground level, sets this ground position as the new home.",
+      "content_aliases": [
+        "New Drone 3 relocate home to ground position 179,394",
+        "make drone New Drone 3 set new home position at coordinates 179 394 on ground",
+        "New Drone 3 home relocation mission to ground coordinates 179 394",
+        "drone New Drone 3 establish new base at (179, 394) on ground"
+      ],
+      "description": "Take off, fly to a new position, and set it as home on the ground",
+      "creator": "生命构造",
+      "originated_from": "Task Template Set New Home Position created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "9102382b",
+            "altitude": 12.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "9102382b",
+            "x": 179.0,
+            "y": 394.0,
+            "z": 12.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "9102382b"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/set_home",
+          "parameters": {
+            "id": "9102382b"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "9102382b",
+              "tolerance": 0.5
+            }
+          },
+          {
+            "endpoint": "/check/drone_at_home",
+            "parameters": {
+              "drone_id": "9102382b",
+              "tolerance": 2.0
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "land",
+        "set_home"
+      ],
+      "is_done": false,
+      "created_at": 1769268137.6581872,
+      "last_updated": 1769268137.6581872
+    },
+    {
+      "id": "bffdc90c",
+      "name": "Quick Checkpoint Visit",
+      "content": "Drone New Drone 2 takes off to 17 meters, flies to checkpoint at (566, 556, 17), and hovers briefly.",
+      "content_aliases": [
+        "Send New Drone 2 to verify checkpoint location: lift off to 17 meters, fly to position (566, 556, 17), then hover briefly.",
+        "Command drone New Drone 2 to ascend to 17m altitude, navigate to waypoint coordinates (566, 556, 17), and maintain hover.",
+        "New Drone 2 checkpoint verification flight: take off reaching 17 meters height, proceed to position x=566 y=556 z=17, pause in place.",
+        "Execute quick point-to-point mission for New Drone 2: departure to 17m elevation, travel to checkpoint (566, 556, 17), hold position briefly.",
+        "Drone New Drone 2 single waypoint visit: take off to altitude 17 meters, move to target location (566, 556, 17), then hover momentarily."
+      ],
+      "description": "Fly to a single checkpoint",
+      "creator": "生命构造",
+      "originated_from": "Task Template Quick Checkpoint Visit created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "464b1fad",
+            "altitude": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "464b1fad",
+            "x": 566.0,
+            "y": 556.0,
+            "z": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "464b1fad"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "464b1fad",
+              "x": 566.0,
+              "y": 556.0,
+              "z": 17.0,
+              "tolerance": 3.0
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "hover"
+      ],
+      "is_done": false,
+      "created_at": 1768804754.4118152,
+      "last_updated": 1768804754.4118152
+    },
+    {
+      "id": "82ef14d8",
+      "name": "Multi-Target Reach Verification",
+      "content": "Drone New Drone 2 multi-target verification mission: take off to 20 meters, visit and reach targets Target 4 and Target 2. Each target must be reached at least once to verify successful visits. Fly within target radius for each visit.",
+      "content_aliases": [
+        "New Drone 2 visit Target 4 and Target 2 at altitude 20m",
+        "make drone New Drone 2 verify reach of two targets",
+        "New Drone 2 multi-visit target verification mission at 20 meters",
+        "drone New Drone 2 dual target reach confirmation"
+      ],
+      "description": "Visit multiple targets with reach verification - complex checks",
+      "creator": "生命构造",
+      "originated_from": "Task Template Multi-Target Reach Verification created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "464b1fad",
+            "altitude": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "464b1fad"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "f4d7b399",
+              "drone_id": "464b1fad"
+            }
+          },
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "47fc7e9c",
+              "drone_id": "464b1fad"
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "hover"
+      ],
+      "is_done": false,
+      "created_at": 1768804885.0600023,
+      "last_updated": 1768804885.0600023
+    },
+    {
+      "id": "05ed2530",
+      "name": "Obstacle Avoidance Navigation",
+      "content": "Drone New Drone 3 takes off to 25 meters altitude, navigates from start point (371, 209, 25) to destination (677, 858, 25) while avoiding obstacle office_instrurance_6. Must fly above obstacle height or around it. After reaching destination, land there.",
+      "content_aliases": [
+        "Navigate New Drone 3 from (371",
+        "209) to (677",
+        "858) at 25m",
+        "avoiding office_instrurance_6",
+        "then land.",
+        "Command New Drone 3 to fly obstacle-aware path: takeoff to 25m",
+        "go to (371",
+        "209)",
+        "avoid office_instrurance_6 en route to (677",
+        "858)",
+        "and land.",
+        "New Drone 3 mission: takeoff 25m",
+        "traverse from (371",
+        "209) to destination (677",
+        "858) bypassing office_instrurance_6",
+        "followed by landing.",
+        "Execute safe passage for New Drone 3: start at (371",
+        "209)",
+        "fly to (677",
+        "858) at 25m avoiding office_instrurance_6",
+        "and conclude with landing."
+      ],
+      "description": "Navigate around obstacles to reach destination",
+      "creator": "生命构造",
+      "originated_from": "Task Template Obstacle Avoidance Navigation created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "9102382b",
+            "altitude": 25.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "9102382b",
+            "x": 371.0,
+            "y": 209.0,
+            "z": 25.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "9102382b",
+            "x": 677.0,
+            "y": 858.0,
+            "z": 25.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "9102382b"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "9102382b",
+              "x": 371.0,
+              "y": 209.0,
+              "z": 25.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "9102382b",
+              "x": 677.0,
+              "y": 858.0,
+              "z": 25.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_position",
+            "parameters": {
+              "drone_id": "9102382b",
+              "x": 677.0,
+              "y": 858.0,
+              "z": 0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "9102382b",
+              "tolerance": 0.5
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "land"
+      ],
+      "is_done": false,
+      "created_at": 1768804907.1658614,
+      "last_updated": 1769270198.9259806
+    },
+    {
+      "id": "bbbd1e8a",
+      "name": "Target Inspection",
+      "content": "Drone New Drone 4 must take off to 18 meters, navigate to target Target 1, and take a photo.",
+      "content_aliases": [
+        "Send New Drone 4 to locate Target 1 at 18m altitude and capture photograph",
+        "Deploy drone New Drone 4 for target Target 1 photography mission at elevation 18 meters",
+        "New Drone 4 reconnaissance task: find and photograph Target 1",
+        "Assign New Drone 4 to survey Target 1 and document with photo"
+      ],
+      "description": "Drone finds and photographs a target",
+      "creator": "生命构造",
+      "originated_from": "Task Template Target Inspection created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "107a8e80",
+            "altitude": 18.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "107a8e80"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "bce0ee04",
+              "drone_id": "107a8e80"
+            }
+          },
+          {
+            "endpoint": "/check/target_in_photo_taken_by_drone",
+            "parameters": {
+              "target_id": "bce0ee04",
+              "drone_id": "107a8e80"
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768804946.2696078,
+      "last_updated": 1768804946.2696078
+    },
+    {
+      "id": "436527c3",
+      "name": "Target Area Complete Coverage and Photography Mission",
+      "content": "Drone New Drone 2 comprehensive area coverage mission: take off to 23 meters altitude, perform systematic coverage of target area Target 2 to achieve at least 99% area coverage. Use efficient search pattern (grid, spiral, or serpentine). Take at least 3 photos periodically for documentation. Continue coverage until 99% threshold is met or exceeded.",
+      "content_aliases": [
+        "Command New Drone 2 to achieve 99% search coverage of Target 2 at 23m with at least 3 periodic photos",
+        "New Drone 2 full area scan: cover 99% of Target 2 at 23 meters using systematic pattern and photography for taking 3 photos",
+        "Initiate high-coverage search (99%) of Target 2 with New Drone 2 at 23m, documenting with at least 3 photos",
+        "Task New Drone 2 with complete 99% sweep of Target 2 at 23m altitude including at least 3 photos capture"
+      ],
+      "description": "Achieve 99% coverage of target area - complex check logic",
+      "creator": "生命构造",
+      "originated_from": "Task Template Target Area Complete Coverage and Photography Mission created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "464b1fad",
+            "altitude": 23.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "464b1fad"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "logic": "or",
+            "checks": [
+              {
+                "endpoint": "/check/target_is_fully_searched",
+                "parameters": {
+                  "target_id": "47fc7e9c",
+                  "coverage_threshold": 0.99
+                }
+              },
+              {
+                "endpoint": "/check/target_searched_area_percentage",
+                "parameters": {
+                  "target_id": "47fc7e9c",
+                  "expected_percentage": 0.99
+                }
+              }
+            ]
+          },
+          {
+            "endpoint": "/check/drone_has_taken_photo",
+            "parameters": {
+              "drone_id": "464b1fad",
+              "min_count": 3
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "move_along_path",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1769268062.0863044,
+      "last_updated": 1769268062.0863044
+    },
+    {
+      "id": "254c1e6a",
+      "name": "Complex Obstacle Course Navigation",
+      "content": "Drone New Drone 4 navigates complex obstacle course from start (269, 236, 20) through waypoints (365, 407, 20), (631, 281, 20), (698, 557, 20), (385, 646, 20) to destination (662, 662, 20). Course includes obstacles commercial_mall_5, office_insurance_6, and commercial_mall_10. Must visit all waypoints in sequence while avoiding all obstacles, adjusting altitude as needed. Reach destination and land safely.",
+      "content_aliases": [
+        "Navigate New Drone 4 through obstacle course: start (269",
+        "236)",
+        "waypoints (365",
+        "407)",
+        "(631",
+        "281)",
+        "(698",
+        "557)",
+        "(385",
+        "646)",
+        "end (662",
+        "662)",
+        "avoiding commercial_mall_5",
+        "office_insurance_6",
+        "commercial_mall_10",
+        "then land.",
+        "Command New Drone 4 to fly complex path at 20m: S->WP1->WP2->WP3->WP4->E",
+        "dodging commercial_mall_4",
+        "residential_house_1",
+        "commercial_hotel_7",
+        "concluding with landing at destination.",
+        "New Drone 4 advanced navigation: traverse waypoints (365",
+        "407) to (385",
+        "646) amidst obstacles",
+        "reaching (662",
+        "662) to land.",
+        "Execute multi-leg mission with New Drone 4: takeoff 20m",
+        "visit 4 waypoints",
+        "avoid 3 obstacles",
+        "reach (662",
+        "662)",
+        "and land."
+      ],
+      "description": "Navigate through multiple obstacles to reach destination via waypoints",
+      "creator": "生命构造",
+      "originated_from": "Task Template Complex Obstacle Course Navigation created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "107a8e80",
+            "altitude": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "107a8e80",
+            "x": 269.0,
+            "y": 236.0,
+            "z": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "107a8e80",
+            "x": 365.0,
+            "y": 407.0,
+            "z": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "107a8e80",
+            "x": 631.0,
+            "y": 281.0,
+            "z": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "107a8e80",
+            "x": 698.0,
+            "y": 557.0,
+            "z": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "107a8e80",
+            "x": 385.0,
+            "y": 646.0,
+            "z": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "107a8e80",
+            "x": 662.0,
+            "y": 662.0,
+            "z": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "107a8e80"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "107a8e80",
+              "x": 365.0,
+              "y": 407.0,
+              "z": 20.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "107a8e80",
+              "x": 631.0,
+              "y": 281.0,
+              "z": 20.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "107a8e80",
+              "x": 698.0,
+              "y": 557.0,
+              "z": 20.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "107a8e80",
+              "x": 385.0,
+              "y": 646.0,
+              "z": 20.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_position",
+            "parameters": {
+              "drone_id": "107a8e80",
+              "x": 662.0,
+              "y": 662.0,
+              "z": 0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "107a8e80",
+              "tolerance": 0.5
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "land"
+      ],
+      "is_done": false,
+      "created_at": 1768804982.0952566,
+      "last_updated": 1769270708.6768472
+    },
+    {
+      "id": "f329c9ca",
+      "name": "Coordinated Search Sweep - 3 Drones",
+      "content": "Drones New Drone 3, New Drone 4, and New Drone 1 execute coordinated search sweep of target area Target 3. All take off to 24 meters. Drones maintain parallel formation 23.8 meters apart and sweep through the target area in synchronized pattern. Each drone takes photos during sweep.",
+      "content_aliases": [
+        "Have New Drone 3, New Drone 4, New Drone 1 take off to 24m and sweep Target 3 in parallel, keeping 23.8m spacing and taking photos.",
+        "Three-drone search line at 24m: New Drone 3, New Drone 4, New Drone 1 maintain 23.8m separation while sweeping across Target 3 and capturing imagery.",
+        "Coordinated sweep of Target 3: New Drone 3, New Drone 4, New Drone 1 fly a parallel pattern at 24m with 23.8m intervals and take photos.",
+        "Launch New Drone 3, New Drone 4, New Drone 1 to 24m, hold 23.8m spacing, and scan Target 3 in a synchronized sweep while each drone captures photos."
+      ],
+      "description": "Three drones perform coordinated parallel search sweep",
+      "creator": "生命构造",
+      "originated_from": "Task Template Coordinated Search Sweep - 3 Drones created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "9102382b",
+            "altitude": 24.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "107a8e80",
+            "altitude": 24.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "71c45c5a",
+            "altitude": 24.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "9102382b"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "107a8e80"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "71c45c5a"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_searched_area_percentage",
+            "parameters": {
+              "target_id": "d7bab5f0",
+              "expected_percentage": 0.85
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_taken_photo",
+            "parameters": {
+              "drone_id": "9102382b",
+              "min_count": 1
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_taken_photo",
+            "parameters": {
+              "drone_id": "107a8e80",
+              "min_count": 1
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_taken_photo",
+            "parameters": {
+              "drone_id": "71c45c5a",
+              "min_count": 1
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "move_along_path",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768805052.329093,
+      "last_updated": 1768805052.329093
+    }
+  ],
+  "history": {
+    "command_history": [],
+    "status_history": {},
+    "path_history": {},
+    "target_reaches": {},
+    "area_coverage": {}
+  }
+}

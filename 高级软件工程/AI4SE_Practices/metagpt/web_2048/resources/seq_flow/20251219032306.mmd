@@ -1,0 +1,61 @@
+
+sequenceDiagram
+    participant M as Main
+    participant G as Game
+    participant GL as GameLogic
+    participant IH as InputHandler
+    participant UI as UI
+    participant LS as LocalStorage
+
+    Note over M: 初始化阶段
+    M->>G: new Game()
+    G->>LS: getItem('bestScore')
+    LS-->>G: 返回存储的最高分或0
+    G->>G: 初始化grid，score=0，bestScore=读取值
+    G->>G: addRandomTile() 两次（初始两个数字）
+    M->>UI: new UI(G)
+    UI->>UI: 根据初始grid构建DOM元素
+    UI->>UI: updateScores()
+    M->>IH: new InputHandler(G, UI)
+    IH->>IH: bindKeyboardEvents()
+    IH->>IH: bindButtonEvents()
+    IH->>IH: bindTouchEvents()
+
+    Note over IH, UI: 游戏进行阶段（以键盘输入为例）
+    IH-->>IH: 用户按下“右箭头”键
+    IH->>IH: handleMove('right')
+    IH->>G: move('right')
+    G->>GL: new GameLogic(currentGrid)
+    G->>GL: move('right')
+    GL->>GL: 执行移动和合并逻辑
+    GL-->>G: 返回 {movedGrid, scoreDelta}
+    alt 移动有效（grid发生变化）
+        G->>G: 更新grid，累加score
+        G->>G: addRandomTile()
+        G->>G: 检查游戏是否结束(hasWon/isGameOver)
+        G->>G: updateBestScore()
+        G->>LS: setItem('bestScore', bestScore)
+        G-->>IH: 返回 true
+        IH->>UI: updateGrid()
+        UI->>UI: 创建/更新所有Tile，添加动画类
+        IH->>UI: updateScores()
+        alt 游戏胜利(hasWon)
+            UI->>UI: showWinAnimation()
+        end
+        alt 游戏结束(isGameOver)
+            UI->>UI: showGameOverMessage()
+        end
+    else 移动无效
+        G-->>IH: 返回 false
+        IH->>UI: （可选）播放一个轻微抖动动画提示
+    end
+
+    Note over IH, UI: 重新开始游戏
+    IH-->>IH: 用户点击“新游戏”按钮
+    IH->>IH: handleRestart()
+    IH->>G: resetGame()
+    G->>G: 重置grid, score
+    G->>G: addRandomTile() 两次
+    G->>UI: hideGameOverMessage()
+    IH->>UI: updateGrid()
+    IH->>UI: updateScores()

@@ -1,0 +1,32 @@
+=== Classification Performance Report ===
+              precision    recall  f1-score   support
+
+       Plane     0.9960    0.9880    0.9920      1000
+         Car     0.9861    0.9910    0.9885      1000
+        Bird     0.9890    0.9870    0.9880      1000
+         Cat     0.9758    0.9680    0.9719      1000
+        Deer     0.9871    0.9930    0.9900      1000
+         Dog     0.9741    0.9770    0.9755      1000
+        Frog     0.9930    0.9960    0.9945      1000
+       Horse     0.9940    0.9930    0.9935      1000
+        Ship     0.9901    0.9970    0.9935      1000
+       Truck     0.9920    0.9870    0.9895      1000
+
+    accuracy                         0.9877     10000
+   macro avg     0.9877    0.9877    0.9877     10000
+weighted avg     0.9877    0.9877    0.9877     10000
+
+
+=== Top 10 Hard Negatives (High Confidence Errors) ===
+Format: Index | True Label | Pred Label | Confidence
+------------------------------------------------------------
+9254     | Horse        | Dog          | 92.38%
+2804     | Cat          | Dog          | 92.33%
+2592     | Bird         | Deer         | 91.85%
+956      | Plane        | Bird         | 91.60%
+2405     | Cat          | Frog         | 91.60%
+2854     | Truck        | Car          | 91.55%
+9551     | Dog          | Cat          | 91.46%
+4152     | Dog          | Cat          | 91.46%
+6669     | Dog          | Deer         | 91.26%
+4906     | Dog          | Cat          | 91.16%

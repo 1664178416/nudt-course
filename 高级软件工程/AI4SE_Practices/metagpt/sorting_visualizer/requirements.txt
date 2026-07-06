@@ -1,0 +1,1 @@
+No third-party packages required. This is a pure front-end project using native HTML, CSS, and JavaScript.

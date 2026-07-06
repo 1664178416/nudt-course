@@ -1,0 +1,1426 @@
+{
+  "id": "26ebce71",
+  "name": "New Session 4",
+  "description": "New Session 4 covers a 1024×768 m mission zone. It is configured for area search with a time agnostic timeline. It will load with the API example data.",
+  "status": "active",
+  "creator": "llm-agent-course",
+  "time_mode": "time_agnostic",
+  "task_type": "area_search",
+  "task_description": "",
+  "is_distance_3d": false,
+  "canvas_width": 1024.0,
+  "canvas_height": 768.0,
+  "created_at": 1768286474.7056158,
+  "last_updated": 1768286534.2604766,
+  "statistics": {
+    "drone_count": 10,
+    "target_count": 2,
+    "obstacle_count": 6,
+    "task_count": 10,
+    "environment_id": "6222746e",
+    "total_commands_executed": 0,
+    "total_flight_time": 0.0,
+    "total_distance_traveled": 0.0,
+    "total_target_reaches": 0,
+    "drones_with_target_reaches": 0,
+    "unique_targets_reached": 0,
+    "session_time": 63.52124238014221,
+    "command_history_size": 0,
+    "task_progress": {
+      "task_type": "area_search",
+      "progress_percentage": 0,
+      "is_completed": false,
+      "status_message": "Task to be Done",
+      "details": {
+        "total_targets": 2
+      },
+      "target_reach_summary": {
+        "total_reaches": 0,
+        "drones_with_reaches": 0,
+        "unique_targets_reached": 0
+      },
+      "area_coverage_summary": {
+        "total_targets_tracked": 0,
+        "average_coverage": 0.0,
+        "fully_covered_targets": 0
+      }
+    }
+  },
+  "drones": [
+    {
+      "id": "31e42431",
+      "name": "Drone 1",
+      "model": "Model-D4",
+      "status": "hovering",
+      "position": {
+        "x": 174.0,
+        "y": 189.0,
+        "z": 9.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 89.0,
+      "battery_capacity": 89.0,
+      "max_speed": 12.0,
+      "max_altitude": 102.0,
+      "home_position": {
+        "x": 674.0,
+        "y": 689.0,
+        "z": 9.0
+      },
+      "created_at": 1761314816.72833,
+      "last_updated": 1761314816.728333
+    },
+    {
+      "id": "78c31c79",
+      "name": "Drone 2",
+      "model": "Model-D4",
+      "status": "idle",
+      "position": {
+        "x": 110.0,
+        "y": 73.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 87.0,
+      "battery_capacity": 87.0,
+      "max_speed": 14.0,
+      "max_altitude": 95.0,
+      "home_position": {
+        "x": 610.0,
+        "y": 573.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.729824,
+      "last_updated": 1761314816.729825
+    },
+    {
+      "id": "0784ceb6",
+      "name": "Drone 3",
+      "model": "Model-C",
+      "status": "idle",
+      "position": {
+        "x": 462.0,
+        "y": 196.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 80.0,
+      "battery_capacity": 80.0,
+      "max_speed": 12.0,
+      "max_altitude": 122.0,
+      "home_position": {
+        "x": 462.0,
+        "y": 196.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.730936,
+      "last_updated": 1761314816.730937
+    },
+    {
+      "id": "ecf0bef3",
+      "name": "Drone 4",
+      "model": "Model-D4",
+      "status": "hovering",
+      "position": {
+        "x": 389.0,
+        "y": 202.0,
+        "z": 11.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 84.0,
+      "battery_capacity": 84.0,
+      "max_speed": 16.0,
+      "max_altitude": 134.0,
+      "home_position": {
+        "x": 389.0,
+        "y": 202.0,
+        "z": 11.0
+      },
+      "created_at": 1761314816.7318668,
+      "last_updated": 1761314816.731869
+    },
+    {
+      "id": "23639881",
+      "name": "Drone 5",
+      "model": "Model-C",
+      "status": "hovering",
+      "position": {
+        "x": 78.0,
+        "y": 14.0,
+        "z": 8.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 64.0,
+      "battery_capacity": 64.0,
+      "max_speed": 13.0,
+      "max_altitude": 145.0,
+      "home_position": {
+        "x": 78.0,
+        "y": 14.0,
+        "z": 8.0
+      },
+      "created_at": 1761314816.732799,
+      "last_updated": 1761314816.732801
+    },
+    {
+      "id": "0f413988",
+      "name": "Drone 6",
+      "model": "Model-A2",
+      "status": "idle",
+      "position": {
+        "x": 323.0,
+        "y": 233.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 67.0,
+      "battery_capacity": 67.0,
+      "max_speed": 17.0,
+      "max_altitude": 144.0,
+      "home_position": {
+        "x": 323.0,
+        "y": 233.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.733762,
+      "last_updated": 1761314816.733763
+    },
+    {
+      "id": "ced563f1",
+      "name": "Drone 7",
+      "model": "Model-B2",
+      "status": "idle",
+      "position": {
+        "x": 265.0,
+        "y": 172.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 73.0,
+      "battery_capacity": 73.0,
+      "max_speed": 23.0,
+      "max_altitude": 98.0,
+      "home_position": {
+        "x": 265.0,
+        "y": 172.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.734627,
+      "last_updated": 1761314816.734627
+    },
+    {
+      "id": "f3df86c7",
+      "name": "Drone 8",
+      "model": "Model-C",
+      "status": "idle",
+      "position": {
+        "x": 141.0,
+        "y": 132.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 84.0,
+      "battery_capacity": 84.0,
+      "max_speed": 16.0,
+      "max_altitude": 131.0,
+      "home_position": {
+        "x": 141.0,
+        "y": 132.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.735404,
+      "last_updated": 1761314816.735404
+    },
+    {
+      "id": "e1d2a97b",
+      "name": "Drone 9",
+      "model": "Model-D4",
+      "status": "idle",
+      "position": {
+        "x": 494.0,
+        "y": 126.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 62.0,
+      "battery_capacity": 62.0,
+      "max_speed": 12.0,
+      "max_altitude": 139.0,
+      "home_position": {
+        "x": 494.0,
+        "y": 126.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.736192,
+      "last_updated": 1761314816.736192
+    },
+    {
+      "id": "3f2e80b0",
+      "name": "Drone 10",
+      "model": "Model-D4",
+      "status": "hovering",
+      "position": {
+        "x": 100.0,
+        "y": 204.0,
+        "z": 8.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 74.0,
+      "battery_capacity": 74.0,
+      "max_speed": 13.0,
+      "max_altitude": 101.0,
+      "home_position": {
+        "x": 100.0,
+        "y": 204.0,
+        "z": 8.0
+      },
+      "created_at": 1761314816.7371662,
+      "last_updated": 1761314816.7371678
+    }
+  ],
+  "targets": [
+    {
+      "id": "b349d182",
+      "name": "Circle Target 1",
+      "type": "circle",
+      "position": {
+        "x": 391.0,
+        "y": 647.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 95,
+      "created_at": 1761314816.723433,
+      "last_updated": 1761314816.723433,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": []
+    },
+    {
+      "id": "42d492ea",
+      "name": "Polygon Target 2",
+      "type": "polygon",
+      "position": {
+        "x": 834.0,
+        "y": 501.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 1,
+      "created_at": 1761314816.725371,
+      "last_updated": 1761314816.7253718,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": [],
+      "vertices": [
+        {
+          "x": 716.0,
+          "y": 384.0,
+          "z": 0.0
+        },
+        {
+          "x": 951.0,
+          "y": 384.0,
+          "z": 0.0
+        },
+        {
+          "x": 951.0,
+          "y": 618.0,
+          "z": 0.0
+        },
+        {
+          "x": 716.0,
+          "y": 618.0,
+          "z": 0.0
+        }
+      ]
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "7738e42e",
+      "name": "Point Obstacle 1",
+      "type": "point",
+      "position": {
+        "x": 252,
+        "y": 512,
+        "z": 0
+      },
+      "description": "",
+      "radius": 50,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 0,
+      "area": 7853.981633974483,
+      "created_at": 1761314816.738118,
+      "last_updated": 1761314816.738118
+    },
+    {
+      "id": "84c1efbb",
+      "name": "Polygon Obstacle 2",
+      "type": "polygon",
+      "position": {
+        "x": 590,
+        "y": 487,
+        "z": 0
+      },
+      "description": "",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 558,
+          "y": 543
+        },
+        {
+          "x": 621,
+          "y": 543
+        },
+        {
+          "x": 621,
+          "y": 431
+        },
+        {
+          "x": 558,
+          "y": 431
+        }
+      ],
+      "height": 0,
+      "area": 7056.0,
+      "created_at": 1761314816.739093,
+      "last_updated": 1761314816.739093
+    },
+    {
+      "id": "7dd93e96",
+      "name": "Polygon Obstacle 3",
+      "type": "polygon",
+      "position": {
+        "x": 398,
+        "y": 416,
+        "z": 0
+      },
+      "description": "",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 351,
+          "y": 470
+        },
+        {
+          "x": 444,
+          "y": 470
+        },
+        {
+          "x": 444,
+          "y": 363
+        },
+        {
+          "x": 351,
+          "y": 363
+        }
+      ],
+      "height": 70,
+      "area": 9951.0,
+      "created_at": 1761314816.739946,
+      "last_updated": 1761314816.739946
+    },
+    {
+      "id": "8f1c099b",
+      "name": "Point Obstacle 4",
+      "type": "point",
+      "position": {
+        "x": 406,
+        "y": 378,
+        "z": 0
+      },
+      "description": "",
+      "radius": 2,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 0,
+      "area": 12.566370614359172,
+      "created_at": 1761314816.740766,
+      "last_updated": 1761314816.740766
+    },
+    {
+      "id": "35fcf445",
+      "name": "Ellipse Obstacle 5",
+      "type": "ellipse",
+      "position": {
+        "x": 520,
+        "y": 380,
+        "z": 0
+      },
+      "description": "",
+      "radius": null,
+      "width": 50,
+      "length": 35,
+      "vertices": [],
+      "height": 0,
+      "area": 5497.787143782139,
+      "created_at": 1761314816.741531,
+      "last_updated": 1761314816.741531
+    },
+    {
+      "id": "f5891e68",
+      "name": "Ellipse Obstacle 6",
+      "type": "ellipse",
+      "position": {
+        "x": 660,
+        "y": 330,
+        "z": 0
+      },
+      "description": "",
+      "radius": null,
+      "width": 26,
+      "length": 13,
+      "vertices": [],
+      "height": 0,
+      "area": 1061.85831691335,
+      "created_at": 1761314816.742267,
+      "last_updated": 1761314816.742267
+    }
+  ],
+  "environment": {
+    "id": "6222746e",
+    "name": "Example Session (Area Search) Environment",
+    "weather": "clear",
+    "temperature": 18.917018864988243,
+    "humidity": 59.7,
+    "pressure": 1024.4,
+    "wind_speed": 1.7464137903836061,
+    "wind_direction": "northwest",
+    "visibility": 13488.2,
+    "created_at": 1761314816.721653,
+    "last_updated": 1768286538.9682803
+  },
+  "tasks": [
+    {
+      "id": "2d2dc855",
+      "name": "Multiple Target Inspection 1",
+      "content": "Drone Drone 6 must take off to 17 meters, navigate to target Circle Target 1, take a photo, then navigate to target Polygon Target 2 and take another photo.",
+      "content_aliases": [
+        "Have Drone 6 take off to 17m, reach Circle Target 1 for a photo, then proceed to Polygon Target 2 for a second photo.",
+        "Drone 6 dual-target inspection: climb to 17 meters, visit Circle Target 1 and Polygon Target 2 in sequence, and capture a photo at each.",
+        "Deploy Drone 6 to photograph Circle Target 1 then Polygon Target 2 after takeoff to 17m altitude.",
+        "Two-target survey for Drone 6: take off to 17m, navigate to Circle Target 1 for imaging, then image Polygon Target 2."
+      ],
+      "description": "One drone finds and photographs two targets",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Multiple Target Inspection created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "0f413988",
+            "altitude": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "0f413988"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "0f413988"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "b349d182",
+              "drone_id": "0f413988"
+            }
+          },
+          {
+            "endpoint": "/check/target_in_photo_taken_by_drone",
+            "parameters": {
+              "target_id": "b349d182",
+              "drone_id": "0f413988"
+            }
+          },
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "42d492ea",
+              "drone_id": "0f413988"
+            }
+          },
+          {
+            "endpoint": "/check/target_in_photo_taken_by_drone",
+            "parameters": {
+              "target_id": "42d492ea",
+              "drone_id": "0f413988"
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "take_photo",
+        "move_to",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768286497.1291537,
+      "last_updated": 1768286497.1291537
+    },
+    {
+      "id": "1b8435c1",
+      "name": "Multiple Target Inspection 2",
+      "content": "Drone Drone 4 must take off to 18 meters, navigate to target Circle Target 1, take a photo, then navigate to target Polygon Target 2 and take another photo.",
+      "content_aliases": [
+        "Have Drone 4 take off to 18m, reach Circle Target 1 for a photo, then proceed to Polygon Target 2 for a second photo.",
+        "Drone 4 dual-target inspection: climb to 18 meters, visit Circle Target 1 and Polygon Target 2 in sequence, and capture a photo at each.",
+        "Deploy Drone 4 to photograph Circle Target 1 then Polygon Target 2 after takeoff to 18m altitude.",
+        "Two-target survey for Drone 4: take off to 18m, navigate to Circle Target 1 for imaging, then image Polygon Target 2."
+      ],
+      "description": "One drone finds and photographs two targets",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Multiple Target Inspection created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "ecf0bef3",
+            "altitude": 18.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "ecf0bef3"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "ecf0bef3"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "b349d182",
+              "drone_id": "ecf0bef3"
+            }
+          },
+          {
+            "endpoint": "/check/target_in_photo_taken_by_drone",
+            "parameters": {
+              "target_id": "b349d182",
+              "drone_id": "ecf0bef3"
+            }
+          },
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "42d492ea",
+              "drone_id": "ecf0bef3"
+            }
+          },
+          {
+            "endpoint": "/check/target_in_photo_taken_by_drone",
+            "parameters": {
+              "target_id": "42d492ea",
+              "drone_id": "ecf0bef3"
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "take_photo",
+        "move_to",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768286497.1468182,
+      "last_updated": 1768286497.1468182
+    },
+    {
+      "id": "44de962c",
+      "name": "Multiple Target Inspection 3",
+      "content": "Drone Drone 2 must take off to 16 meters, navigate to target Circle Target 1, take a photo, then navigate to target Polygon Target 2 and take another photo.",
+      "content_aliases": [
+        "Have Drone 2 take off to 16m, reach Circle Target 1 for a photo, then proceed to Polygon Target 2 for a second photo.",
+        "Drone 2 dual-target inspection: climb to 16 meters, visit Circle Target 1 and Polygon Target 2 in sequence, and capture a photo at each.",
+        "Deploy Drone 2 to photograph Circle Target 1 then Polygon Target 2 after takeoff to 16m altitude.",
+        "Two-target survey for Drone 2: take off to 16m, navigate to Circle Target 1 for imaging, then image Polygon Target 2."
+      ],
+      "description": "One drone finds and photographs two targets",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Multiple Target Inspection created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "78c31c79",
+            "altitude": 16.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "78c31c79"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "78c31c79"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "b349d182",
+              "drone_id": "78c31c79"
+            }
+          },
+          {
+            "endpoint": "/check/target_in_photo_taken_by_drone",
+            "parameters": {
+              "target_id": "b349d182",
+              "drone_id": "78c31c79"
+            }
+          },
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "42d492ea",
+              "drone_id": "78c31c79"
+            }
+          },
+          {
+            "endpoint": "/check/target_in_photo_taken_by_drone",
+            "parameters": {
+              "target_id": "42d492ea",
+              "drone_id": "78c31c79"
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "take_photo",
+        "move_to",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768286497.1579645,
+      "last_updated": 1768286497.1579645
+    },
+    {
+      "id": "d49b1917",
+      "name": "Dual Drone Patrol 1",
+      "content": "Drones Drone 5 and Drone 7 execute coordinated patrol. Both take off to 13 meters. Drone 5 patrols the route through waypoints (180,482,13), (900,412,13) while Drone 7 patrols the route through waypoints (271,295,13), (896,367,13).",
+      "content_aliases": [
+        "Have Drone 5 and Drone 7 take off to 13m; Drone 5 patrols from (180,392,13) to (900,392,13) while Drone 7 patrols from (271,392,13) to (896,392,13).",
+        "Dual patrol at 13m: Drone 5 follows the north route between the two north waypoints, and Drone 7 follows the south route between the two south waypoints.",
+        "Launch Drone 5 and Drone 7 to 13m and run parallel paths: north (180,392,13) to (900,392,13), south (271,392,13) to (896,392,13).",
+        "Coordinated split patrol at 13m: Drone 5 runs the northern leg between the two north points, Drone 7 runs the southern leg between the two south points."
+      ],
+      "description": "Two drones patrol opposite sides of an area",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Dual Drone Patrol created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "23639881",
+            "altitude": 13.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "ced563f1",
+            "altitude": 13.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "23639881",
+            "waypoints": [
+              {
+                "x": "{randx_nstart:150:400}",
+                "y": "{randy_n:350:600}",
+                "z": "{randz_dualalt:12:18}"
+              },
+              {
+                "x": "{randx_nend:650:900}",
+                "y": "{randy_n:350:600}",
+                "z": "{randz_dualalt:12:18}"
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "ced563f1",
+            "waypoints": [
+              {
+                "x": "{randx_sstart:150:400}",
+                "y": "{randy_s:150:400}",
+                "z": "{randz_dualalt:12:18}"
+              },
+              {
+                "x": "{randx_send:650:900}",
+                "y": "{randy_s:150:400}",
+                "z": "{randz_dualalt:12:18}"
+              }
+            ]
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "23639881",
+              "x": 900.0,
+              "y": 392.0,
+              "z": 13.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "ced563f1",
+              "x": 896.0,
+              "y": 392.0,
+              "z": 13.0,
+              "tolerance": 3.0
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_along_path"
+      ],
+      "is_done": false,
+      "created_at": 1768286520.4918592,
+      "last_updated": 1768286520.4918592
+    },
+    {
+      "id": "b10622e1",
+      "name": "Dual Drone Patrol 2",
+      "content": "Drones Drone 2 and Drone 6 execute coordinated patrol. Both take off to 17 meters. Drone 2 patrols the route through waypoints (356,593,17), (812,549,17) while Drone 6 patrols the route through waypoints (287,302,17), (748,357,17).",
+      "content_aliases": [
+        "Have Drone 2 and Drone 6 take off to 17m; Drone 2 patrols from (356,514,17) to (812,514,17) while Drone 6 patrols from (287,233,17) to (748,233,17).",
+        "Dual patrol at 17m: Drone 2 follows the north route between the two north waypoints, and Drone 6 follows the south route between the two south waypoints.",
+        "Launch Drone 2 and Drone 6 to 17m and run parallel paths: north (356,514,17) to (812,514,17), south (287,233,17) to (748,233,17).",
+        "Coordinated split patrol at 17m: Drone 2 runs the northern leg between the two north points, Drone 6 runs the southern leg between the two south points."
+      ],
+      "description": "Two drones patrol opposite sides of an area",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Dual Drone Patrol created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "78c31c79",
+            "altitude": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "0f413988",
+            "altitude": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "78c31c79",
+            "waypoints": [
+              {
+                "x": "{randx_nstart:150:400}",
+                "y": "{randy_n:350:600}",
+                "z": "{randz_dualalt:12:18}"
+              },
+              {
+                "x": "{randx_nend:650:900}",
+                "y": "{randy_n:350:600}",
+                "z": "{randz_dualalt:12:18}"
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "0f413988",
+            "waypoints": [
+              {
+                "x": "{randx_sstart:150:400}",
+                "y": "{randy_s:150:400}",
+                "z": "{randz_dualalt:12:18}"
+              },
+              {
+                "x": "{randx_send:650:900}",
+                "y": "{randy_s:150:400}",
+                "z": "{randz_dualalt:12:18}"
+              }
+            ]
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "78c31c79",
+              "x": 812.0,
+              "y": 514.0,
+              "z": 17.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "0f413988",
+              "x": 748.0,
+              "y": 233.0,
+              "z": 17.0,
+              "tolerance": 3.0
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_along_path"
+      ],
+      "is_done": false,
+      "created_at": 1768286520.528862,
+      "last_updated": 1768286520.528862
+    },
+    {
+      "id": "c0078f36",
+      "name": "Dual Drone Patrol 3",
+      "content": "Drones Drone 4 and Drone 5 execute coordinated patrol. Both take off to 15 meters. Drone 4 patrols the route through waypoints (331,402,15), (895,592,15) while Drone 5 patrols the route through waypoints (152,160,15), (679,274,15).",
+      "content_aliases": [
+        "Have Drone 4 and Drone 5 take off to 15m; Drone 4 patrols from (331,365,15) to (895,365,15) while Drone 5 patrols from (152,310,15) to (679,310,15).",
+        "Dual patrol at 15m: Drone 4 follows the north route between the two north waypoints, and Drone 5 follows the south route between the two south waypoints.",
+        "Launch Drone 4 and Drone 5 to 15m and run parallel paths: north (331,365,15) to (895,365,15), south (152,310,15) to (679,310,15).",
+        "Coordinated split patrol at 15m: Drone 4 runs the northern leg between the two north points, Drone 5 runs the southern leg between the two south points."
+      ],
+      "description": "Two drones patrol opposite sides of an area",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Dual Drone Patrol created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "ecf0bef3",
+            "altitude": 15.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "23639881",
+            "altitude": 15.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "ecf0bef3",
+            "waypoints": [
+              {
+                "x": "{randx_nstart:150:400}",
+                "y": "{randy_n:350:600}",
+                "z": "{randz_dualalt:12:18}"
+              },
+              {
+                "x": "{randx_nend:650:900}",
+                "y": "{randy_n:350:600}",
+                "z": "{randz_dualalt:12:18}"
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "23639881",
+            "waypoints": [
+              {
+                "x": "{randx_sstart:150:400}",
+                "y": "{randy_s:150:400}",
+                "z": "{randz_dualalt:12:18}"
+              },
+              {
+                "x": "{randx_send:650:900}",
+                "y": "{randy_s:150:400}",
+                "z": "{randz_dualalt:12:18}"
+              }
+            ]
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "ecf0bef3",
+              "x": 895.0,
+              "y": 365.0,
+              "z": 15.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "23639881",
+              "x": 679.0,
+              "y": 310.0,
+              "z": 15.0,
+              "tolerance": 3.0
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_along_path"
+      ],
+      "is_done": false,
+      "created_at": 1768286520.54803,
+      "last_updated": 1768286520.54803
+    },
+    {
+      "id": "5e0b2901",
+      "name": "Dual Drone Patrol 4",
+      "content": "Drones Drone 6 and Drone 4 execute coordinated patrol. Both take off to 13 meters. Drone 6 patrols the route through waypoints (239,432,13), (726,586,13) while Drone 4 patrols the route through waypoints (240,395,13), (654,222,13).",
+      "content_aliases": [
+        "Have Drone 6 and Drone 4 take off to 13m; Drone 6 patrols from (239,413,13) to (726,413,13) while Drone 4 patrols from (240,155,13) to (654,155,13).",
+        "Dual patrol at 13m: Drone 6 follows the north route between the two north waypoints, and Drone 4 follows the south route between the two south waypoints.",
+        "Launch Drone 6 and Drone 4 to 13m and run parallel paths: north (239,413,13) to (726,413,13), south (240,155,13) to (654,155,13).",
+        "Coordinated split patrol at 13m: Drone 6 runs the northern leg between the two north points, Drone 4 runs the southern leg between the two south points."
+      ],
+      "description": "Two drones patrol opposite sides of an area",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Dual Drone Patrol created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "0f413988",
+            "altitude": 13.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "ecf0bef3",
+            "altitude": 13.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "0f413988",
+            "waypoints": [
+              {
+                "x": "{randx_nstart:150:400}",
+                "y": "{randy_n:350:600}",
+                "z": "{randz_dualalt:12:18}"
+              },
+              {
+                "x": "{randx_nend:650:900}",
+                "y": "{randy_n:350:600}",
+                "z": "{randz_dualalt:12:18}"
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "ecf0bef3",
+            "waypoints": [
+              {
+                "x": "{randx_sstart:150:400}",
+                "y": "{randy_s:150:400}",
+                "z": "{randz_dualalt:12:18}"
+              },
+              {
+                "x": "{randx_send:650:900}",
+                "y": "{randy_s:150:400}",
+                "z": "{randz_dualalt:12:18}"
+              }
+            ]
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "0f413988",
+              "x": 726.0,
+              "y": 413.0,
+              "z": 13.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "ecf0bef3",
+              "x": 654.0,
+              "y": 155.0,
+              "z": 13.0,
+              "tolerance": 3.0
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_along_path"
+      ],
+      "is_done": false,
+      "created_at": 1768286520.5601163,
+      "last_updated": 1768286520.5601163
+    },
+    {
+      "id": "7c2b7309",
+      "name": "Search Task with Photo 1",
+      "content": "Drone Drone 2 must take off to 23 meters, fly to position (949, 182, 23), hover at that location, and take a photo.",
+      "content_aliases": [
+        "Drone Drone 2 takeoff 23m, go to (949,182), hover and take photo",
+        "Search mission: drone Drone 2 to position x=949 y=182 z=23, capture photo",
+        "make drone Drone 2 fly to coordinates (949, 182) at altitude 23 meters and take picture",
+        "Drone Drone 2 reconnaissance at (949,182,23) with photo capture"
+      ],
+      "description": "Move to specific coordinates and capture photos",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Search Task with Photo created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "78c31c79",
+            "altitude": 23.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "78c31c79",
+            "x": 949.0,
+            "y": 182.0,
+            "z": 23.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "78c31c79"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "78c31c79"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "78c31c79",
+              "x": 949.0,
+              "y": 182.0,
+              "z": 23.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_taken_photo",
+            "parameters": {
+              "drone_id": "78c31c79",
+              "min_count": 1
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "hover",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768286534.236214,
+      "last_updated": 1768286534.236214
+    },
+    {
+      "id": "a4fcd76e",
+      "name": "Search Task with Photo 2",
+      "content": "Drone Drone 4 must take off to 23 meters, fly to position (802, 220, 23), hover at that location, and take a photo.",
+      "content_aliases": [
+        "Drone Drone 4 takeoff 23m, go to (802,220), hover and take photo",
+        "Search mission: drone Drone 4 to position x=802 y=220 z=23, capture photo",
+        "make drone Drone 4 fly to coordinates (802, 220) at altitude 23 meters and take picture",
+        "Drone Drone 4 reconnaissance at (802,220,23) with photo capture"
+      ],
+      "description": "Move to specific coordinates and capture photos",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Search Task with Photo created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "ecf0bef3",
+            "altitude": 23.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "ecf0bef3",
+            "x": 802.0,
+            "y": 220.0,
+            "z": 23.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "ecf0bef3"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "ecf0bef3"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "ecf0bef3",
+              "x": 802.0,
+              "y": 220.0,
+              "z": 23.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_taken_photo",
+            "parameters": {
+              "drone_id": "ecf0bef3",
+              "min_count": 1
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "hover",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768286534.2497163,
+      "last_updated": 1768286534.2497163
+    },
+    {
+      "id": "15f5cf32",
+      "name": "Search Task with Photo 3",
+      "content": "Drone Drone 6 must take off to 24 meters, fly to position (132, 291, 24), hover at that location, and take a photo.",
+      "content_aliases": [
+        "Drone Drone 6 takeoff 24m, go to (132,291), hover and take photo",
+        "Search mission: drone Drone 6 to position x=132 y=291 z=24, capture photo",
+        "make drone Drone 6 fly to coordinates (132, 291) at altitude 24 meters and take picture",
+        "Drone Drone 6 reconnaissance at (132,291,24) with photo capture"
+      ],
+      "description": "Move to specific coordinates and capture photos",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Search Task with Photo created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "0f413988",
+            "altitude": 24.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "0f413988",
+            "x": 132.0,
+            "y": 291.0,
+            "z": 24.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "0f413988"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "0f413988"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "0f413988",
+              "x": 132.0,
+              "y": 291.0,
+              "z": 24.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_taken_photo",
+            "parameters": {
+              "drone_id": "0f413988",
+              "min_count": 1
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "hover",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768286534.2594817,
+      "last_updated": 1768286534.2594817
+    }
+  ],
+  "history": {
+    "command_history": [],
+    "status_history": {},
+    "path_history": {},
+    "target_reaches": {},
+    "area_coverage": {}
+  }
+}

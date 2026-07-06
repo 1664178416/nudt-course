@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#game-canvas {
+    background-color: #1a3c5c;
+    border: 2px solid #555;
+    display: block;
+    cursor: none;
+}
+
+#ui {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px black;
+    pointer-events: none;
+}
+
+#ui div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+.screen h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: gold;
+    text-shadow: 2px 2px 4px black;
+}
+
+.screen p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.menu-options {
+    margin: 30px 0;
+}
+
+.menu-option {
+    font-size: 28px;
+    margin: 15px 0;
+    padding: 10px 30px;
+    background-color: rgba(255, 215, 0, 0.3);
+    border: 2px solid gold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.menu-option:hover {
+    background-color: rgba(255, 215, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.instructions {
+    font-size: 18px !important;
+    margin-top: 40px !important;
+    color: #aaa;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 820px) {
+    #game-container {
+        width: 100vw;
+        height: 75vh;
+    }
+    
+    #game-canvas {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .screen h1 {
+        font-size: 36px;
+    }
+    
+    .screen p {
+        font-size: 18px;
+    }
+    
+    .menu-option {
+        font-size: 22px;
+    }
+}

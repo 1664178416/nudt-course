@@ -1,0 +1,7016 @@
+{
+  "id": "5731c744",
+  "name": "[Test] City Street-easy",
+  "description": "City Street covers a 1024×768 m mission zone. It is configured for area search with a time agnostic timeline. Random seeding will create 3 drones, 6 targets.",
+  "status": "active",
+  "creator": "生命构造",
+  "time_mode": "time_agnostic",
+  "task_type": "area_search",
+  "task_description": "",
+  "is_distance_3d": false,
+  "canvas_width": 1024.0,
+  "canvas_height": 768.0,
+  "created_at": 1768805453.1310353,
+  "last_updated": 1769269832.246481,
+  "statistics": {
+    "drone_count": 3,
+    "target_count": 6,
+    "obstacle_count": 67,
+    "task_count": 10,
+    "environment_id": "e66e3115",
+    "total_commands_executed": 0,
+    "total_flight_time": 0.0,
+    "total_distance_traveled": 0.0,
+    "total_target_reaches": 3,
+    "drones_with_target_reaches": 1,
+    "unique_targets_reached": 1,
+    "session_time": 7.677166938781738,
+    "command_history_size": 22,
+    "task_progress": {
+      "task_type": "area_search",
+      "progress_percentage": 0,
+      "is_completed": false,
+      "status_message": "Task to be Done",
+      "details": {
+        "total_targets": 6
+      },
+      "target_reach_summary": {
+        "total_reaches": 3,
+        "drones_with_reaches": 1,
+        "unique_targets_reached": 1
+      },
+      "area_coverage_summary": {
+        "total_targets_tracked": 6,
+        "average_coverage": 0.4706057046281902,
+        "fully_covered_targets": 0
+      }
+    }
+  },
+  "drones": [
+    {
+      "id": "43b28846",
+      "name": "Drone 1",
+      "model": "Model-X5",
+      "status": "idle",
+      "position": {
+        "x": 642.0,
+        "y": 464.4,
+        "z": 0.0
+      },
+      "heading": 88.4,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 83.0,
+      "battery_capacity": 83.0,
+      "max_speed": 17.0,
+      "max_altitude": 429.0,
+      "home_position": {
+        "x": 385.0,
+        "y": 423.0,
+        "z": 0.0
+      },
+      "created_at": 1768805453.3852448,
+      "last_updated": 1768807205.378994
+    },
+    {
+      "id": "c37c9ac4",
+      "name": "Drone 2",
+      "model": "Model-A",
+      "status": "idle",
+      "position": {
+        "x": 300.0,
+        "y": 159.0,
+        "z": 0.0
+      },
+      "heading": 270.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 95.977156602,
+      "battery_volume": 63.248946200718,
+      "battery_capacity": 65.9,
+      "max_speed": 11.0,
+      "max_altitude": 328.0,
+      "home_position": {
+        "x": 300.0,
+        "y": 159.0,
+        "z": 0.0
+      },
+      "created_at": 1768805453.4159448,
+      "last_updated": 1769267373.853111
+    },
+    {
+      "id": "f490f5da",
+      "name": "Drone 3",
+      "model": "Model-A",
+      "status": "idle",
+      "position": {
+        "x": 753.0,
+        "y": 353.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 83.0,
+      "battery_capacity": 83.0,
+      "max_speed": 23.0,
+      "max_altitude": 468.0,
+      "home_position": {
+        "x": 753.0,
+        "y": 353.0,
+        "z": 0.0
+      },
+      "created_at": 1768805453.450632,
+      "last_updated": 1768807336.3994248
+    }
+  ],
+  "targets": [
+    {
+      "id": "99def5d3",
+      "name": "Polygon Target 1",
+      "type": "polygon",
+      "position": {
+        "x": 829.0,
+        "y": 589.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 1.0,
+      "created_at": 1768805453.2774343,
+      "last_updated": 1768805453.2774343,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": [],
+      "vertices": [
+        {
+          "x": 676.0,
+          "y": 436.0,
+          "z": 0.0
+        },
+        {
+          "x": 982.0,
+          "y": 436.0,
+          "z": 0.0
+        },
+        {
+          "x": 982.0,
+          "y": 742.0,
+          "z": 0.0
+        },
+        {
+          "x": 676.0,
+          "y": 742.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "4cea3494",
+      "name": "Circle Target 1",
+      "type": "circle",
+      "position": {
+        "x": 507.0,
+        "y": 214.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 185.0,
+      "created_at": 1768805453.30347,
+      "last_updated": 1768805453.30347,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": []
+    },
+    {
+      "id": "26e40178",
+      "name": "Polygon Target 2",
+      "type": "polygon",
+      "position": {
+        "x": 426.0,
+        "y": 629.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 1.0,
+      "created_at": 1768805453.3190234,
+      "last_updated": 1768805453.3190234,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": [],
+      "vertices": [
+        {
+          "x": 293.0,
+          "y": 496.0,
+          "z": 0.0
+        },
+        {
+          "x": 559.0,
+          "y": 496.0,
+          "z": 0.0
+        },
+        {
+          "x": 559.0,
+          "y": 762.0,
+          "z": 0.0
+        },
+        {
+          "x": 293.0,
+          "y": 762.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "cb667f6b",
+      "name": "Circle Target 2",
+      "type": "circle",
+      "position": {
+        "x": 883.0,
+        "y": 184.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 89.0,
+      "created_at": 1768805453.334408,
+      "last_updated": 1768805453.334408,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": []
+    },
+    {
+      "id": "549bb601",
+      "name": "Circle Target 3",
+      "type": "circle",
+      "position": {
+        "x": 136.0,
+        "y": 615.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 97.0,
+      "created_at": 1768805453.3465023,
+      "last_updated": 1768805453.3465023,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": []
+    },
+    {
+      "id": "73020e3b",
+      "name": "Circle Target 4",
+      "type": "circle",
+      "position": {
+        "x": 184.0,
+        "y": 97.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 86.0,
+      "created_at": 1768805453.3655376,
+      "last_updated": 1768805453.3655376,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": []
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "cad2c2f1",
+      "name": "commercial_hotel_1",
+      "type": "polygon",
+      "position": {
+        "x": 756,
+        "y": 658,
+        "z": 0.0
+      },
+      "description": "商业区 - hotel",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 781.0553683874325,
+          "y": 637.8811949996322,
+          "z": 0.0
+        },
+        {
+          "x": 781.0553683874325,
+          "y": 677.8811949996322,
+          "z": 0.0
+        },
+        {
+          "x": 731.0553683874325,
+          "y": 677.8811949996322,
+          "z": 0.0
+        },
+        {
+          "x": 731.0553683874325,
+          "y": 637.8811949996322,
+          "z": 0.0
+        }
+      ],
+      "height": 59.851690967265505,
+      "area": 2000.0,
+      "created_at": 1768806430.1976476,
+      "last_updated": 1768806430.1976476
+    },
+    {
+      "id": "31a63c00",
+      "name": "commercial_restaurant_2",
+      "type": "polygon",
+      "position": {
+        "x": 601,
+        "y": 599,
+        "z": 0.0
+      },
+      "description": "商业区 - restaurant",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 591.0497432999284,
+          "y": 584.4163543229138,
+          "z": 0.0
+        },
+        {
+          "x": 611.0497432999284,
+          "y": 584.4163543229138,
+          "z": 0.0
+        },
+        {
+          "x": 611.0497432999284,
+          "y": 614.4163543229138,
+          "z": 0.0
+        },
+        {
+          "x": 591.0497432999284,
+          "y": 614.4163543229138,
+          "z": 0.0
+        }
+      ],
+      "height": 17.230745998135557,
+      "area": 600.0,
+      "created_at": 1768806432.333613,
+      "last_updated": 1768806432.333613
+    },
+    {
+      "id": "74aca302",
+      "name": "commercial_restaurant_3",
+      "type": "polygon",
+      "position": {
+        "x": 829,
+        "y": 511,
+        "z": 0.0
+      },
+      "description": "商业区 - restaurant",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 854.3456678539231,
+          "y": 491.17341786410884,
+          "z": 0.0
+        },
+        {
+          "x": 854.3456678539231,
+          "y": 531.1734178641088,
+          "z": 0.0
+        },
+        {
+          "x": 804.3456678539231,
+          "y": 531.1734178641088,
+          "z": 0.0
+        },
+        {
+          "x": 804.3456678539231,
+          "y": 491.17341786410884,
+          "z": 0.0
+        }
+      ],
+      "height": 16.01943509399291,
+      "area": 2000.0,
+      "created_at": 1768806434.4672186,
+      "last_updated": 1768806434.4672186
+    },
+    {
+      "id": "a4b09a19",
+      "name": "office_government_1",
+      "type": "polygon",
+      "position": {
+        "x": 609,
+        "y": 743,
+        "z": 0.0
+      },
+      "description": "办公区 - government",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 631.1140669248524,
+          "y": 725.1015387132304,
+          "z": 0.0
+        },
+        {
+          "x": 631.1140669248524,
+          "y": 760.1015387132304,
+          "z": 0.0
+        },
+        {
+          "x": 586.1140669248524,
+          "y": 760.1015387132304,
+          "z": 0.0
+        },
+        {
+          "x": 586.1140669248524,
+          "y": 725.1015387132304,
+          "z": 0.0
+        }
+      ],
+      "height": 65.58022555387633,
+      "area": 1575.0,
+      "created_at": 1768806436.5777717,
+      "last_updated": 1768806436.5777717
+    },
+    {
+      "id": "ed1285c6",
+      "name": "office_government_2",
+      "type": "polygon",
+      "position": {
+        "x": 905,
+        "y": 658,
+        "z": 0.0
+      },
+      "description": "办公区 - government",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 879.9795524810094,
+          "y": 625.7126059545942,
+          "z": 0.0
+        },
+        {
+          "x": 929.9795524810094,
+          "y": 625.7126059545942,
+          "z": 0.0
+        },
+        {
+          "x": 929.9795524810094,
+          "y": 690.7126059545942,
+          "z": 0.0
+        },
+        {
+          "x": 879.9795524810094,
+          "y": 690.7126059545942,
+          "z": 0.0
+        }
+      ],
+      "height": 88.46345121313554,
+      "area": 3250.0,
+      "created_at": 1768806438.6894724,
+      "last_updated": 1768806438.6894724
+    },
+    {
+      "id": "9ff0add5",
+      "name": "office_bank_3",
+      "type": "polygon",
+      "position": {
+        "x": 788,
+        "y": 746,
+        "z": 0.0
+      },
+      "description": "办公区 - bank",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 805.5906342025811,
+          "y": 733.4071226209714,
+          "z": 0.0
+        },
+        {
+          "x": 805.5906342025811,
+          "y": 758.4071226209714,
+          "z": 0.0
+        },
+        {
+          "x": 770.5906342025811,
+          "y": 758.4071226209714,
+          "z": 0.0
+        },
+        {
+          "x": 770.5906342025811,
+          "y": 733.4071226209714,
+          "z": 0.0
+        }
+      ],
+      "height": 49.825381577162275,
+      "area": 875.0,
+      "created_at": 1768806440.8011367,
+      "last_updated": 1768806440.8011367
+    },
+    {
+      "id": "0336db21",
+      "name": "residential_house_1",
+      "type": "polygon",
+      "position": {
+        "x": 986,
+        "y": 696,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 995.7496345272596,
+          "y": 688.7105260268786,
+          "z": 0.0
+        },
+        {
+          "x": 995.7496345272596,
+          "y": 703.7105260268786,
+          "z": 0.0
+        },
+        {
+          "x": 975.7496345272596,
+          "y": 703.7105260268786,
+          "z": 0.0
+        },
+        {
+          "x": 975.7496345272596,
+          "y": 688.7105260268786,
+          "z": 0.0
+        }
+      ],
+      "height": 12.451503670613043,
+      "area": 300.0,
+      "created_at": 1768806442.9146962,
+      "last_updated": 1768806442.9146962
+    },
+    {
+      "id": "045991e9",
+      "name": "residential_house_2",
+      "type": "polygon",
+      "position": {
+        "x": 680,
+        "y": 421,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 672.6456726538319,
+          "y": 411.1129854714861,
+          "z": 0.0
+        },
+        {
+          "x": 687.6456726538319,
+          "y": 411.1129854714861,
+          "z": 0.0
+        },
+        {
+          "x": 687.6456726538319,
+          "y": 431.1129854714861,
+          "z": 0.0
+        },
+        {
+          "x": 672.6456726538319,
+          "y": 431.1129854714861,
+          "z": 0.0
+        }
+      ],
+      "height": 23.755203898629752,
+      "area": 300.0,
+      "created_at": 1768806445.007357,
+      "last_updated": 1768806445.007357
+    },
+    {
+      "id": "ed2319be",
+      "name": "residential_apartment_3",
+      "type": "polygon",
+      "position": {
+        "x": 948,
+        "y": 672,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 955.1816239084831,
+          "y": 666.6275550513236,
+          "z": 0.0
+        },
+        {
+          "x": 955.1816239084831,
+          "y": 676.6275550513236,
+          "z": 0.0
+        },
+        {
+          "x": 940.1816239084831,
+          "y": 676.6275550513236,
+          "z": 0.0
+        },
+        {
+          "x": 940.1816239084831,
+          "y": 666.6275550513236,
+          "z": 0.0
+        }
+      ],
+      "height": 22.043899900370796,
+      "area": 150.0,
+      "created_at": 1768806447.1168268,
+      "last_updated": 1768806447.1168268
+    },
+    {
+      "id": "0f8ac915",
+      "name": "residential_villa_4",
+      "type": "polygon",
+      "position": {
+        "x": 647,
+        "y": 584,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 639.115521232557,
+          "y": 574.100591520035,
+          "z": 0.0
+        },
+        {
+          "x": 654.115521232557,
+          "y": 574.100591520035,
+          "z": 0.0
+        },
+        {
+          "x": 654.115521232557,
+          "y": 594.100591520035,
+          "z": 0.0
+        },
+        {
+          "x": 639.115521232557,
+          "y": 594.100591520035,
+          "z": 0.0
+        }
+      ],
+      "height": 30.896799136990083,
+      "area": 300.0,
+      "created_at": 1768806449.2438107,
+      "last_updated": 1768806449.2438107
+    },
+    {
+      "id": "6094c95c",
+      "name": "residential_house_5",
+      "type": "polygon",
+      "position": {
+        "x": 904,
+        "y": 532,
+        "z": 0.0
+      },
+      "description": "住宅区 - house",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 891.2174036954739,
+          "y": 517.1776652867123,
+          "z": 0.0
+        },
+        {
+          "x": 916.2174036954739,
+          "y": 517.1776652867123,
+          "z": 0.0
+        },
+        {
+          "x": 916.2174036954739,
+          "y": 547.1776652867123,
+          "z": 0.0
+        },
+        {
+          "x": 891.2174036954739,
+          "y": 547.1776652867123,
+          "z": 0.0
+        }
+      ],
+      "height": 23.535302141536917,
+      "area": 750.0,
+      "created_at": 1768806451.3407805,
+      "last_updated": 1768806451.3407805
+    },
+    {
+      "id": "940ae622",
+      "name": "residential_villa_1",
+      "type": "polygon",
+      "position": {
+        "x": 189,
+        "y": 667,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 183.43238941376575,
+          "y": 657.8956766115723,
+          "z": 0.0
+        },
+        {
+          "x": 195.43238941376575,
+          "y": 657.8956766115723,
+          "z": 0.0
+        },
+        {
+          "x": 195.43238941376575,
+          "y": 675.8956766115723,
+          "z": 0.0
+        },
+        {
+          "x": 183.43238941376575,
+          "y": 675.8956766115723,
+          "z": 0.0
+        }
+      ],
+      "height": 19.677599982284903,
+      "area": 216.0,
+      "created_at": 1768806453.436794,
+      "last_updated": 1768806453.436794
+    },
+    {
+      "id": "dd5c82d7",
+      "name": "residential_villa_2",
+      "type": "polygon",
+      "position": {
+        "x": 439,
+        "y": 529,
+        "z": 0.0
+      },
+      "description": "住宅区 - villa",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 433.3789528201945,
+          "y": 519.9233491824671,
+          "z": 0.0
+        },
+        {
+          "x": 445.3789528201945,
+          "y": 519.9233491824671,
+          "z": 0.0
+        },
+        {
+          "x": 445.3789528201945,
+          "y": 537.9233491824671,
+          "z": 0.0
+        },
+        {
+          "x": 433.3789528201945,
+          "y": 537.9233491824671,
+          "z": 0.0
+        }
+      ],
+      "height": 28.489742030385578,
+      "area": 216.0,
+      "created_at": 1768806455.5481932,
+      "last_updated": 1768806455.5481932
+    },
+    {
+      "id": "c5d67265",
+      "name": "residential_townhouse_3",
+      "type": "polygon",
+      "position": {
+        "x": 56,
+        "y": 545,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 68.76137170666152,
+          "y": 534.648150067844,
+          "z": 0.0
+        },
+        {
+          "x": 68.76137170666152,
+          "y": 554.648150067844,
+          "z": 0.0
+        },
+        {
+          "x": 43.76137170666152,
+          "y": 554.648150067844,
+          "z": 0.0
+        },
+        {
+          "x": 43.76137170666152,
+          "y": 534.648150067844,
+          "z": 0.0
+        }
+      ],
+      "height": 25.361629611053367,
+      "area": 500.0,
+      "created_at": 1768806457.6760063,
+      "last_updated": 1768806457.6760063
+    },
+    {
+      "id": "e282a50a",
+      "name": "park_3",
+      "type": "ellipse",
+      "position": {
+        "x": 40.0,
+        "y": 510.8911609858604,
+        "z": 0.0
+      },
+      "description": "Small park with trees",
+      "radius": null,
+      "width": 17.404222881004976,
+      "length": 19.188209205572306,
+      "vertices": [],
+      "height": 0.0,
+      "area": 1049.153306876266,
+      "created_at": 1768806459.769894,
+      "last_updated": 1768806459.769894
+    },
+    {
+      "id": "6e245218",
+      "name": "residential_apartment_5",
+      "type": "polygon",
+      "position": {
+        "x": 235,
+        "y": 469,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 242.24230258646418,
+          "y": 464.2547334170956,
+          "z": 0.0
+        },
+        {
+          "x": 242.24230258646418,
+          "y": 474.2547334170956,
+          "z": 0.0
+        },
+        {
+          "x": 227.24230258646418,
+          "y": 474.2547334170956,
+          "z": 0.0
+        },
+        {
+          "x": 227.24230258646418,
+          "y": 464.2547334170956,
+          "z": 0.0
+        }
+      ],
+      "height": 26.227455721635334,
+      "area": 150.0,
+      "created_at": 1768806461.872672,
+      "last_updated": 1768806461.872672
+    },
+    {
+      "id": "00bd85aa",
+      "name": "educational_school_1",
+      "type": "polygon",
+      "position": {
+        "x": 338,
+        "y": 518,
+        "z": 0.0
+      },
+      "description": "教育区 - school",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 367.87208504877185,
+          "y": 493.47894702205804,
+          "z": 0.0
+        },
+        {
+          "x": 367.87208504877185,
+          "y": 543.478947022058,
+          "z": 0.0
+        },
+        {
+          "x": 307.87208504877185,
+          "y": 543.478947022058,
+          "z": 0.0
+        },
+        {
+          "x": 307.87208504877185,
+          "y": 493.47894702205804,
+          "z": 0.0
+        }
+      ],
+      "height": 17.859749028793544,
+      "area": 3000.0,
+      "created_at": 1768806463.979127,
+      "last_updated": 1768806463.979127
+    },
+    {
+      "id": "3de88055",
+      "name": "playground_1",
+      "type": "circle",
+      "position": {
+        "x": 268.1143231382812,
+        "y": 495.41457877967684,
+        "z": 0.0
+      },
+      "description": "Children's playground",
+      "radius": 12.814523565909937,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 0.5,
+      "area": 515.8872575086965,
+      "created_at": 1768806466.0939293,
+      "last_updated": 1768806466.0939293
+    },
+    {
+      "id": "57efc771",
+      "name": "educational_library_3",
+      "type": "polygon",
+      "position": {
+        "x": 445,
+        "y": 731,
+        "z": 0.0
+      },
+      "description": "教育区 - library",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 470.0780431225389,
+          "y": 711.4006892346576,
+          "z": 0.0
+        },
+        {
+          "x": 470.0780431225389,
+          "y": 751.4006892346576,
+          "z": 0.0
+        },
+        {
+          "x": 420.0780431225389,
+          "y": 751.4006892346576,
+          "z": 0.0
+        },
+        {
+          "x": 420.0780431225389,
+          "y": 711.4006892346576,
+          "z": 0.0
+        }
+      ],
+      "height": 14.649171460174205,
+      "area": 2000.0,
+      "created_at": 1768806468.2192168,
+      "last_updated": 1768806468.2192168
+    },
+    {
+      "id": "15febd92",
+      "name": "recreational_park_1",
+      "type": "polygon",
+      "position": {
+        "x": 356,
+        "y": 674,
+        "z": 0.0
+      },
+      "description": "休闲区 - park",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 330.6622765132916,
+          "y": 644.306645174889,
+          "z": 0.0
+        },
+        {
+          "x": 380.6622765132916,
+          "y": 644.306645174889,
+          "z": 0.0
+        },
+        {
+          "x": 380.6622765132916,
+          "y": 704.306645174889,
+          "z": 0.0
+        },
+        {
+          "x": 330.6622765132916,
+          "y": 704.306645174889,
+          "z": 0.0
+        }
+      ],
+      "height": 10.105049923087881,
+      "area": 3000.0,
+      "created_at": 1768806470.344114,
+      "last_updated": 1768806470.344114
+    },
+    {
+      "id": "92bebbef",
+      "name": "recreational_park_2",
+      "type": "polygon",
+      "position": {
+        "x": 144,
+        "y": 539,
+        "z": 0.0
+      },
+      "description": "休闲区 - park",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 103.79523808180994,
+          "y": 489.4727129666079,
+          "z": 0.0
+        },
+        {
+          "x": 183.79523808180994,
+          "y": 489.4727129666079,
+          "z": 0.0
+        },
+        {
+          "x": 183.79523808180994,
+          "y": 589.4727129666079,
+          "z": 0.0
+        },
+        {
+          "x": 103.79523808180994,
+          "y": 589.4727129666079,
+          "z": 0.0
+        }
+      ],
+      "height": 9.692027720497613,
+      "area": 8000.0,
+      "created_at": 1768806472.4421208,
+      "last_updated": 1768806472.4421208
+    },
+    {
+      "id": "0aa8681e",
+      "name": "recreational_cinema_3",
+      "type": "polygon",
+      "position": {
+        "x": 249,
+        "y": 613,
+        "z": 0.0
+      },
+      "description": "休闲区 - cinema",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 299.11408257197866,
+          "y": 573.2524385233202,
+          "z": 0.0
+        },
+        {
+          "x": 299.11408257197866,
+          "y": 653.2524385233202,
+          "z": 0.0
+        },
+        {
+          "x": 199.11408257197863,
+          "y": 653.2524385233202,
+          "z": 0.0
+        },
+        {
+          "x": 199.11408257197863,
+          "y": 573.2524385233202,
+          "z": 0.0
+        }
+      ],
+      "height": 10.501905131653926,
+      "area": 8000.000000000002,
+      "created_at": 1768806474.5537822,
+      "last_updated": 1768806474.5537822
+    },
+    {
+      "id": "c074b687",
+      "name": "industrial_storage_1",
+      "type": "polygon",
+      "position": {
+        "x": 279,
+        "y": 214,
+        "z": 0.0
+      },
+      "description": "工业区 - storage",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 318.8148386545272,
+          "y": 183.6301044089373,
+          "z": 0.0
+        },
+        {
+          "x": 318.8148386545272,
+          "y": 243.6301044089373,
+          "z": 0.0
+        },
+        {
+          "x": 238.8148386545272,
+          "y": 243.6301044089373,
+          "z": 0.0
+        },
+        {
+          "x": 238.8148386545272,
+          "y": 183.6301044089373,
+          "z": 0.0
+        }
+      ],
+      "height": 17.430281863098468,
+      "area": 4800.0,
+      "created_at": 1768806476.6567926,
+      "last_updated": 1768806476.6567926
+    },
+    {
+      "id": "669a225f",
+      "name": "industrial_factory_2",
+      "type": "polygon",
+      "position": {
+        "x": 431,
+        "y": 66,
+        "z": 0.0
+      },
+      "description": "工业区 - factory",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 481.06602152043047,
+          "y": 26.35033775519412,
+          "z": 0.0
+        },
+        {
+          "x": 481.06602152043047,
+          "y": 106.35033775519412,
+          "z": 0.0
+        },
+        {
+          "x": 381.06602152043047,
+          "y": 106.35033775519412,
+          "z": 0.0
+        },
+        {
+          "x": 381.06602152043047,
+          "y": 26.35033775519412,
+          "z": 0.0
+        }
+      ],
+      "height": 24.34846925470017,
+      "area": 8000.0,
+      "created_at": 1768806478.767067,
+      "last_updated": 1768806478.767067
+    },
+    {
+      "id": "4617d650",
+      "name": "industrial_workshop_3",
+      "type": "polygon",
+      "position": {
+        "x": 74,
+        "y": 30,
+        "z": 0.0
+      },
+      "description": "工业区 - workshop",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 59.10015999949141,
+          "y": 9.858048707560375,
+          "z": 0.0
+        },
+        {
+          "x": 89.10015999949141,
+          "y": 9.858048707560375,
+          "z": 0.0
+        },
+        {
+          "x": 89.10015999949141,
+          "y": 49.85804870756037,
+          "z": 0.0
+        },
+        {
+          "x": 59.10015999949141,
+          "y": 49.85804870756037,
+          "z": 0.0
+        }
+      ],
+      "height": 22.496277915468024,
+      "area": 1200.0,
+      "created_at": 1768806480.87149,
+      "last_updated": 1768806480.87149
+    },
+    {
+      "id": "166666ee",
+      "name": "industrial_workshop_4",
+      "type": "polygon",
+      "position": {
+        "x": 227,
+        "y": 333,
+        "z": 0.0
+      },
+      "description": "工业区 - workshop",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 246.83121991045476,
+          "y": 318.0913700081451,
+          "z": 0.0
+        },
+        {
+          "x": 246.83121991045476,
+          "y": 348.0913700081451,
+          "z": 0.0
+        },
+        {
+          "x": 206.83121991045476,
+          "y": 348.0913700081451,
+          "z": 0.0
+        },
+        {
+          "x": 206.83121991045476,
+          "y": 318.0913700081451,
+          "z": 0.0
+        }
+      ],
+      "height": 8.587553000341751,
+      "area": 1200.0,
+      "created_at": 1768806482.960704,
+      "last_updated": 1768806482.960704
+    },
+    {
+      "id": "c14a665d",
+      "name": "industrial_factory_5",
+      "type": "polygon",
+      "position": {
+        "x": 60,
+        "y": 179,
+        "z": 0.0
+      },
+      "description": "工业区 - factory",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 90.46086364197026,
+          "y": 154.00442179147112,
+          "z": 0.0
+        },
+        {
+          "x": 90.46086364197026,
+          "y": 204.00442179147112,
+          "z": 0.0
+        },
+        {
+          "x": 30.46086364197027,
+          "y": 204.00442179147112,
+          "z": 0.0
+        },
+        {
+          "x": 30.46086364197027,
+          "y": 154.00442179147112,
+          "z": 0.0
+        }
+      ],
+      "height": 24.489231723689695,
+      "area": 2999.9999999999995,
+      "created_at": 1768806485.071129,
+      "last_updated": 1768806485.071129
+    },
+    {
+      "id": "45c14036",
+      "name": "residential_townhouse_1",
+      "type": "polygon",
+      "position": {
+        "x": 112,
+        "y": 59,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 107.25568326172822,
+          "y": 51.97417746508131,
+          "z": 0.0
+        },
+        {
+          "x": 117.25568326172822,
+          "y": 51.97417746508131,
+          "z": 0.0
+        },
+        {
+          "x": 117.25568326172822,
+          "y": 66.97417746508131,
+          "z": 0.0
+        },
+        {
+          "x": 107.25568326172822,
+          "y": 66.97417746508131,
+          "z": 0.0
+        }
+      ],
+      "height": 36.51948969283662,
+      "area": 150.0,
+      "created_at": 1768806487.184228,
+      "last_updated": 1768806487.184228
+    },
+    {
+      "id": "0bd09f35",
+      "name": "residential_apartment_2",
+      "type": "polygon",
+      "position": {
+        "x": 113,
+        "y": 314,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 106,
+          "y": 304,
+          "z": 0.0
+        },
+        {
+          "x": 120,
+          "y": 304,
+          "z": 0.0
+        },
+        {
+          "x": 120,
+          "y": 324,
+          "z": 0.0
+        },
+        {
+          "x": 106,
+          "y": 324,
+          "z": 0.0
+        }
+      ],
+      "height": 16.463465092350557,
+      "area": 280.0,
+      "created_at": 1768806489.288367,
+      "last_updated": 1768806489.288367
+    },
+    {
+      "id": "e87a6e8f",
+      "name": "park_2",
+      "type": "ellipse",
+      "position": {
+        "x": 187.47700413267486,
+        "y": 363.3432350849534,
+        "z": 0.0
+      },
+      "description": "Small park with trees",
+      "radius": null,
+      "width": 29.272460593075934,
+      "length": 18.900840046564337,
+      "vertices": [],
+      "height": 0.0,
+      "area": 1738.161833652971,
+      "created_at": 1768806491.3993254,
+      "last_updated": 1768806491.3993254
+    },
+    {
+      "id": "6fab3dd6",
+      "name": "residential_apartment_4",
+      "type": "polygon",
+      "position": {
+        "x": 309,
+        "y": 82,
+        "z": 0.0
+      },
+      "description": "住宅区 - apartment",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 316.0411804612487,
+          "y": 76.94214018231897,
+          "z": 0.0
+        },
+        {
+          "x": 316.0411804612487,
+          "y": 86.94214018231897,
+          "z": 0.0
+        },
+        {
+          "x": 301.0411804612487,
+          "y": 86.94214018231897,
+          "z": 0.0
+        },
+        {
+          "x": 301.0411804612487,
+          "y": 76.94214018231897,
+          "z": 0.0
+        }
+      ],
+      "height": 34.908401203668674,
+      "area": 150.0,
+      "created_at": 1768806493.4967916,
+      "last_updated": 1768806493.4967916
+    },
+    {
+      "id": "338b4331",
+      "name": "residential_townhouse_5",
+      "type": "polygon",
+      "position": {
+        "x": 438,
+        "y": 338,
+        "z": 0.0
+      },
+      "description": "住宅区 - townhouse",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 432.3496114924685,
+          "y": 329.2185970795447,
+          "z": 0.0
+        },
+        {
+          "x": 444.3496114924685,
+          "y": 329.2185970795447,
+          "z": 0.0
+        },
+        {
+          "x": 444.3496114924685,
+          "y": 347.2185970795447,
+          "z": 0.0
+        },
+        {
+          "x": 432.3496114924685,
+          "y": 347.2185970795447,
+          "z": 0.0
+        }
+      ],
+      "height": 31.996704792850892,
+      "area": 216.0,
+      "created_at": 1768806495.5944126,
+      "last_updated": 1768806495.5944126
+    },
+    {
+      "id": "a4b9f160",
+      "name": "office_insurance_1",
+      "type": "polygon",
+      "position": {
+        "x": 904,
+        "y": 40,
+        "z": 0.0
+      },
+      "description": "办公区 - insurance",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 936.9718794250139,
+          "y": 15.438675139504443,
+          "z": 0.0
+        },
+        {
+          "x": 936.9718794250139,
+          "y": 65.43867513950444,
+          "z": 0.0
+        },
+        {
+          "x": 871.9718794250139,
+          "y": 65.43867513950445,
+          "z": 0.0
+        },
+        {
+          "x": 871.9718794250139,
+          "y": 15.43867513950445,
+          "z": 0.0
+        }
+      ],
+      "height": 81.37522605055919,
+      "area": 3250.0,
+      "created_at": 1768806497.6920993,
+      "last_updated": 1768806497.6920993
+    },
+    {
+      "id": "03079fc6",
+      "name": "office_bank_2",
+      "type": "polygon",
+      "position": {
+        "x": 898,
+        "y": 109,
+        "z": 0.0
+      },
+      "description": "办公区 - bank",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 915.548887931209,
+          "y": 96.77021938306784,
+          "z": 0.0
+        },
+        {
+          "x": 915.548887931209,
+          "y": 121.77021938306784,
+          "z": 0.0
+        },
+        {
+          "x": 880.548887931209,
+          "y": 121.77021938306784,
+          "z": 0.0
+        },
+        {
+          "x": 880.548887931209,
+          "y": 96.77021938306784,
+          "z": 0.0
+        }
+      ],
+      "height": 88.64499318843525,
+      "area": 875.0,
+      "created_at": 1768806499.791326,
+      "last_updated": 1768806499.791326
+    },
+    {
+      "id": "13b2c77e",
+      "name": "office_office_3",
+      "type": "polygon",
+      "position": {
+        "x": 758,
+        "y": 187,
+        "z": 0.0
+      },
+      "description": "办公区 - office",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 790.0716523378896,
+          "y": 162.26475625797423,
+          "z": 0.0
+        },
+        {
+          "x": 790.0716523378896,
+          "y": 212.26475625797423,
+          "z": 0.0
+        },
+        {
+          "x": 725.0716523378896,
+          "y": 212.26475625797423,
+          "z": 0.0
+        },
+        {
+          "x": 725.0716523378896,
+          "y": 162.26475625797423,
+          "z": 0.0
+        }
+      ],
+      "height": 39.955241721169635,
+      "area": 3250.0,
+      "created_at": 1768806501.8908684,
+      "last_updated": 1768806501.8908684
+    },
+    {
+      "id": "64336817",
+      "name": "commercial_restaurant_1",
+      "type": "polygon",
+      "position": {
+        "x": 642,
+        "y": 146,
+        "z": 0.0
+      },
+      "description": "商业区 - restaurant",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 662.3220353750105,
+          "y": 130.91373547157633,
+          "z": 0.0
+        },
+        {
+          "x": 662.3220353750105,
+          "y": 160.91373547157633,
+          "z": 0.0
+        },
+        {
+          "x": 622.3220353750105,
+          "y": 160.91373547157633,
+          "z": 0.0
+        },
+        {
+          "x": 622.3220353750105,
+          "y": 130.91373547157633,
+          "z": 0.0
+        }
+      ],
+      "height": 17.83588454358562,
+      "area": 1200.0,
+      "created_at": 1768806503.9976816,
+      "last_updated": 1768806503.9976816
+    },
+    {
+      "id": "6abc7ddb",
+      "name": "commercial_mall_2",
+      "type": "polygon",
+      "position": {
+        "x": 636,
+        "y": 104,
+        "z": 0.0
+      },
+      "description": "商业区 - mall",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 656.241304214213,
+          "y": 88.77137021623828,
+          "z": 0.0
+        },
+        {
+          "x": 656.241304214213,
+          "y": 118.77137021623828,
+          "z": 0.0
+        },
+        {
+          "x": 616.241304214213,
+          "y": 118.77137021623828,
+          "z": 0.0
+        },
+        {
+          "x": 616.241304214213,
+          "y": 88.77137021623828,
+          "z": 0.0
+        }
+      ],
+      "height": 43.67863732745738,
+      "area": 1200.0,
+      "created_at": 1768806506.11054,
+      "last_updated": 1768806506.11054
+    },
+    {
+      "id": "aa06bad9",
+      "name": "parking_lot_2",
+      "type": "polygon",
+      "position": {
+        "x": 681,
+        "y": 152,
+        "z": 0.0
+      },
+      "description": "Parking lot",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 670.4628686380378,
+          "y": 143.0171361194191,
+          "z": 0.0
+        },
+        {
+          "x": 691.7789425439022,
+          "y": 143.0171361194191,
+          "z": 0.0
+        },
+        {
+          "x": 691.7789425439022,
+          "y": 161.3552379715603,
+          "z": 0.0
+        },
+        {
+          "x": 670.4628686380378,
+          "y": 161.3552379715603,
+          "z": 0.0
+        }
+      ],
+      "height": 0.2,
+      "area": 390.89633437351137,
+      "created_at": 1768806508.2073224,
+      "last_updated": 1768806508.2073224
+    },
+    {
+      "id": "85277c68",
+      "name": "recreational_gym_1",
+      "type": "polygon",
+      "position": {
+        "x": 991,
+        "y": 190,
+        "z": 0.0
+      },
+      "description": "休闲区 - gym",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 1011.3616174436179,
+          "y": 175.0705057380633,
+          "z": 0.0
+        },
+        {
+          "x": 1011.3616174436179,
+          "y": 205.0705057380633,
+          "z": 0.0
+        },
+        {
+          "x": 971.3616174436179,
+          "y": 205.0705057380633,
+          "z": 0.0
+        },
+        {
+          "x": 971.3616174436179,
+          "y": 175.0705057380633,
+          "z": 0.0
+        }
+      ],
+      "height": 23.92649908525996,
+      "area": 1200.0,
+      "created_at": 1768806510.3332872,
+      "last_updated": 1768806510.3332872
+    },
+    {
+      "id": "16f1e579",
+      "name": "recreational_cinema_2",
+      "type": "polygon",
+      "position": {
+        "x": 608,
+        "y": 317,
+        "z": 0.0
+      },
+      "description": "休闲区 - cinema",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 592.8529874243164,
+          "y": 296.877819029024,
+          "z": 0.0
+        },
+        {
+          "x": 622.8529874243164,
+          "y": 296.877819029024,
+          "z": 0.0
+        },
+        {
+          "x": 622.8529874243164,
+          "y": 336.877819029024,
+          "z": 0.0
+        },
+        {
+          "x": 592.8529874243164,
+          "y": 336.877819029024,
+          "z": 0.0
+        }
+      ],
+      "height": 18.79749231266241,
+      "area": 1200.0,
+      "created_at": 1768806512.4399984,
+      "last_updated": 1768806512.4399984
+    },
+    {
+      "id": "986bc00c",
+      "name": "recreational_museum_3",
+      "type": "polygon",
+      "position": {
+        "x": 771,
+        "y": 260,
+        "z": 0.0
+      },
+      "description": "休闲区 - museum",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 796.0037498373011,
+          "y": 239.51247409553469,
+          "z": 0.0
+        },
+        {
+          "x": 796.0037498373011,
+          "y": 279.5124740955347,
+          "z": 0.0
+        },
+        {
+          "x": 746.0037498373011,
+          "y": 279.5124740955347,
+          "z": 0.0
+        },
+        {
+          "x": 746.0037498373011,
+          "y": 239.51247409553469,
+          "z": 0.0
+        }
+      ],
+      "height": 7.751558982347449,
+      "area": 2000.0,
+      "created_at": 1768806514.5325427,
+      "last_updated": 1768806514.5325427
+    },
+    {
+      "id": "159ee732",
+      "name": "traffic_signal_1",
+      "type": "point",
+      "position": {
+        "x": 487.0,
+        "y": 359.0,
+        "z": 0.0
+      },
+      "description": "Traffic signal",
+      "radius": 0.5,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 6.0,
+      "area": 0.7853981633974483,
+      "created_at": 1768806516.6460104,
+      "last_updated": 1768806516.6460104
+    },
+    {
+      "id": "50c4a5ca",
+      "name": "traffic_signal_2",
+      "type": "point",
+      "position": {
+        "x": 537.0,
+        "y": 359.0,
+        "z": 0.0
+      },
+      "description": "Traffic signal",
+      "radius": 0.5,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 6.0,
+      "area": 0.7853981633974483,
+      "created_at": 1768806518.7507544,
+      "last_updated": 1768806518.7507544
+    },
+    {
+      "id": "e6ba0652",
+      "name": "traffic_signal_3",
+      "type": "point",
+      "position": {
+        "x": 487.0,
+        "y": 409.0,
+        "z": 0.0
+      },
+      "description": "Traffic signal",
+      "radius": 0.5,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 6.0,
+      "area": 0.7853981633974483,
+      "created_at": 1768806520.8722749,
+      "last_updated": 1768806520.8722749
+    },
+    {
+      "id": "4c5f6c47",
+      "name": "traffic_signal_4",
+      "type": "point",
+      "position": {
+        "x": 537.0,
+        "y": 409.0,
+        "z": 0.0
+      },
+      "description": "Traffic signal",
+      "radius": 0.5,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 6.0,
+      "area": 0.7853981633974483,
+      "created_at": 1768806522.9846547,
+      "last_updated": 1768806522.9846547
+    },
+    {
+      "id": "1fbcb382",
+      "name": "street_light_ns_e_-344",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 40.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806525.110725,
+      "last_updated": 1768806525.110725
+    },
+    {
+      "id": "fc208a35",
+      "name": "street_light_ns_w_-344",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 40.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806527.210184,
+      "last_updated": 1768806527.210184
+    },
+    {
+      "id": "89cdaa3c",
+      "name": "street_light_ns_e_-294",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 90.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806529.3007739,
+      "last_updated": 1768806529.3007739
+    },
+    {
+      "id": "f198be72",
+      "name": "street_light_ns_w_-294",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 90.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806531.4267268,
+      "last_updated": 1768806531.4267268
+    },
+    {
+      "id": "84c737f8",
+      "name": "street_light_ns_e_-244",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 140.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806533.5306158,
+      "last_updated": 1768806533.5306158
+    },
+    {
+      "id": "6e79324c",
+      "name": "street_light_ns_w_-244",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 140.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806535.6502213,
+      "last_updated": 1768806535.6502213
+    },
+    {
+      "id": "76f8bf08",
+      "name": "street_light_ns_e_-194",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 190.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806537.7456932,
+      "last_updated": 1768806537.7456932
+    },
+    {
+      "id": "ba2371e3",
+      "name": "street_light_ns_w_-194",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 190.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806539.8441246,
+      "last_updated": 1768806539.8441246
+    },
+    {
+      "id": "78db6c0a",
+      "name": "street_light_ns_e_-144",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 240.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806541.9515548,
+      "last_updated": 1768806541.9515548
+    },
+    {
+      "id": "81f7465f",
+      "name": "street_light_ns_w_-144",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 240.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806544.0774121,
+      "last_updated": 1768806544.0774121
+    },
+    {
+      "id": "eb96161c",
+      "name": "street_light_ns_e_-94",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 290.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806546.183815,
+      "last_updated": 1768806546.183815
+    },
+    {
+      "id": "31de3b22",
+      "name": "street_light_ns_w_-94",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 290.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806548.2825089,
+      "last_updated": 1768806548.2825089
+    },
+    {
+      "id": "9fd4ad5c",
+      "name": "street_light_ns_e_106",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 490.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806550.388863,
+      "last_updated": 1768806550.388863
+    },
+    {
+      "id": "c3aef2f3",
+      "name": "street_light_ns_w_106",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 490.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806552.4760036,
+      "last_updated": 1768806552.4760036
+    },
+    {
+      "id": "4f3c7a5a",
+      "name": "street_light_ns_e_156",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 540.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806554.5991998,
+      "last_updated": 1768806554.5991998
+    },
+    {
+      "id": "b4ffd267",
+      "name": "street_light_ns_w_156",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 540.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806556.6673944,
+      "last_updated": 1768806556.6673944
+    },
+    {
+      "id": "223bc460",
+      "name": "street_light_ns_e_206",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 590.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806558.766112,
+      "last_updated": 1768806558.766112
+    },
+    {
+      "id": "f5b49d00",
+      "name": "street_light_ns_w_206",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 590.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806560.8679018,
+      "last_updated": 1768806560.8679018
+    },
+    {
+      "id": "ece6d5b7",
+      "name": "street_light_ns_e_256",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 640.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806562.9681146,
+      "last_updated": 1768806562.9681146
+    },
+    {
+      "id": "344067d6",
+      "name": "street_light_ns_w_256",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 640.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806565.0630755,
+      "last_updated": 1768806565.0630755
+    },
+    {
+      "id": "d75798b4",
+      "name": "street_light_ns_e_306",
+      "type": "circle",
+      "position": {
+        "x": 537.0,
+        "y": 690.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806567.1761825,
+      "last_updated": 1768806567.1761825
+    },
+    {
+      "id": "28eafd42",
+      "name": "street_light_ns_w_306",
+      "type": "circle",
+      "position": {
+        "x": 487.0,
+        "y": 690.0,
+        "z": 0.0
+      },
+      "description": "Street light",
+      "radius": 0.3,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 12.0,
+      "area": 0.2827433388230814,
+      "created_at": 1768806569.2654836,
+      "last_updated": 1768806569.2654836
+    }
+  ],
+  "environment": {
+    "id": "e66e3115",
+    "name": "City Street Environment",
+    "weather": "partly_cloudy",
+    "temperature": 17.704470966879235,
+    "humidity": 53.5,
+    "pressure": 1027.5,
+    "wind_speed": 6.872565776734387,
+    "wind_direction": "north",
+    "visibility": 14886.3,
+    "created_at": 1768805453.1869843,
+    "last_updated": 1769269832.789995
+  },
+  "tasks": [
+    {
+      "id": "677a8158",
+      "name": "Basic Takeoff",
+      "content": "Command drone Drone 3 to take off to an altitude of 8 meters and hover in place.",
+      "content_aliases": [
+        "make drone Drone 3 takeoff to 8 meters and hover",
+        "fly drone Drone 3 up to 8m and hold position",
+        "drone Drone 3 take off 8 meters and remain airborne",
+        "basic flight: drone Drone 3 goes up to 8m and hovers",
+        "Drone 3 takeoff 8m hover"
+      ],
+      "description": "Simple takeoff to altitude and hover - AI Testing Template",
+      "creator": "生命构造",
+      "originated_from": "Task Template Basic Takeoff created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "f490f5da",
+            "altitude": 8.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "f490f5da"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_altitude",
+            "parameters": {
+              "drone_id": "f490f5da",
+              "expected_altitude": 8.0,
+              "tolerance": 2.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "f490f5da",
+              "tolerance": 1.5
+            },
+            "expect": false
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "hover"
+      ],
+      "is_done": false,
+      "created_at": 1768806623.0421104,
+      "last_updated": 1768806623.0421104
+    },
+    {
+      "id": "90b5ec49",
+      "name": "Simple Altitude Change",
+      "content": "Drone Drone 3 should take off to 11 meters, then climb to 26 meters altitude and hover.",
+      "content_aliases": [
+        "Drone 3 takeoff 11m then climb to 26m",
+        "make drone Drone 3 go up to 11 meters then higher to 26",
+        "Drone 3 altitude test: start 11m, end 26m",
+        "drone Drone 3 two-step climb to 26 meters"
+      ],
+      "description": "Take off and change altitude to a specific height",
+      "creator": "生命构造",
+      "originated_from": "Task Template Simple Altitude Change created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "f490f5da",
+            "altitude": 11.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/change_altitude",
+          "parameters": {
+            "id": "f490f5da",
+            "altitude": 26.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "f490f5da"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_altitude",
+            "parameters": {
+              "drone_id": "f490f5da",
+              "expected_altitude": 26.0,
+              "tolerance": 2.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_hovering",
+            "parameters": {
+              "drone_id": "f490f5da",
+              "tolerance": 0.5
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "change_altitude",
+        "hover"
+      ],
+      "is_done": false,
+      "created_at": 1768806645.5584738,
+      "last_updated": 1768806645.5584738
+    },
+    {
+      "id": "0672fa9c",
+      "name": "Set New Home Position",
+      "content": "Drone Drone 2 takes off to 11 meters, flies to position (300, 159, 11), descends and lands at ground level, sets this ground position as the new home.",
+      "content_aliases": [
+        "Drone 2 relocate home to ground position 300,159",
+        "make drone Drone 2 set new home position at coordinates 300 159 on ground",
+        "Drone 2 home relocation mission to ground coordinates 300 159",
+        "drone Drone 2 establish new base at (300, 159) on ground"
+      ],
+      "description": "Take off, fly to a new position, and set it as home on the ground",
+      "creator": "生命构造",
+      "originated_from": "Task Template Set New Home Position created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "c37c9ac4",
+            "altitude": 11.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "c37c9ac4",
+            "x": 300.0,
+            "y": 159.0,
+            "z": 11.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "c37c9ac4"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/set_home",
+          "parameters": {
+            "id": "c37c9ac4"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "tolerance": 0.5
+            }
+          },
+          {
+            "endpoint": "/check/drone_at_home",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "tolerance": 2.0
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "land",
+        "set_home"
+      ],
+      "is_done": false,
+      "created_at": 1768806663.9207773,
+      "last_updated": 1769269832.2464561
+    },
+    {
+      "id": "87f0bd73",
+      "name": "Emergency Return to Home",
+      "content": "Drone Drone 3 must immediately execute return to home procedure and land. This is an emergency abort mission command.",
+      "content_aliases": [
+        "Drone 3 emergency return home now",
+        "abort mission for drone Drone 3 and return to base",
+        "RTH for Drone 3 immediate landing",
+        "drone Drone 3 come back home and land immediately",
+        "emergency: Drone 3 return and land"
+      ],
+      "description": "Immediate RTH and landing",
+      "creator": "生命构造",
+      "originated_from": "Task Template Emergency Return to Home created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/return_home",
+          "parameters": {
+            "id": "f490f5da"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "f490f5da"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_at_home",
+            "parameters": {
+              "drone_id": "f490f5da",
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "f490f5da",
+              "tolerance": 0.5
+            }
+          }
+        ]
+      },
+      "commands": [
+        "return_home",
+        "land"
+      ],
+      "is_done": false,
+      "created_at": 1768806672.2155726,
+      "last_updated": 1769269830.130993
+    },
+    {
+      "id": "567844eb",
+      "name": "Multi-Target Survey Mission",
+      "content": "Survey mission: Drone Drone 3 surveys target Polygon Target 1 while drone Drone 1 surveys target Polygon Target 2. Both drones take off to 18 meters, fly to their respective targets, hover and capture photos.",
+      "content_aliases": [
+        "Have Drone 3 and Drone 1 take off to 18m; Drone 3 surveys Polygon Target 1 and Drone 1 surveys Polygon Target 2, each hovering to take photos.",
+        "Parallel survey at 18m: Drone 3 goes to Polygon Target 1 and Drone 1 goes to Polygon Target 2, with hover and photo capture at each target.",
+        "Split reconnaissance at 18m: Drone 3 heads to Polygon Target 1 and hovers for photos while Drone 1 heads to Polygon Target 2 and does the same.",
+        "Dual-target documentation: ascend to 18m, send Drone 3 to Polygon Target 1 and Drone 1 to Polygon Target 2, hover and photograph both."
+      ],
+      "description": "Two drones survey two different targets",
+      "creator": "生命构造",
+      "originated_from": "Task Template Multi-Target Survey Mission created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "f490f5da",
+            "altitude": 18.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "43b28846",
+            "altitude": 18.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "f490f5da"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "43b28846"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "f490f5da"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "43b28846"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "99def5d3",
+              "drone_id": "f490f5da"
+            }
+          },
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "26e40178",
+              "drone_id": "43b28846"
+            }
+          },
+          {
+            "endpoint": "/check/target_in_photo_taken_by_drone",
+            "parameters": {
+              "target_id": "99def5d3",
+              "drone_id": "f490f5da"
+            }
+          },
+          {
+            "endpoint": "/check/target_in_photo_taken_by_drone",
+            "parameters": {
+              "target_id": "26e40178",
+              "drone_id": "43b28846"
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "hover",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768806699.900778,
+      "last_updated": 1768806699.900778
+    },
+    {
+      "id": "3179d971",
+      "name": "Triangle Formation - 3 Drones",
+      "content": "Drones Drone 3, Drone 1, and Drone 2 should take off to 19 meters altitude and form a triangle formation around target at position (495, 436, 19). Drone 3 positions at (495, 415, 19), Drone 1 at (515, 517, 19), and Drone 2 at (368, 623, 19). After formation is established, all drones maintain hovering.",
+      "content_aliases": [
+        "Have Drone 3, Drone 1, Drone 2 take off to 19m, form a triangle around target (495, 436, 19), with Drone 3 at (495,415,19), Drone 1 at (515,517,19), and Drone 2 at (368,623,19), then hover.",
+        "Triangle formation at 19m around target (495, 436, 19): Drone 3 holds (495,415,19), Drone 1 holds (515,517,19), Drone 2 holds (368,623,19), all hovering.",
+        "Three-drone triangulation: take off to 19m, form a triangle around (495, 436, 19) with positions Drone 3 (495,415,19), Drone 1 (515,517,19), Drone 2 (368,623,19), then hover.",
+        "Form a three-point hover after takeoff to 19m around target (495, 436, 19): Drone 3 at (495,415,19), Drone 1 at (515,517,19), Drone 2 at (368,623,19), then hover."
+      ],
+      "description": "Three drones form a triangle formation around a target",
+      "creator": "生命构造",
+      "originated_from": "Task Template Triangle Formation - 3 Drones created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "f490f5da",
+            "altitude": 19.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "43b28846",
+            "altitude": 19.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "c37c9ac4",
+            "altitude": 19.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "f490f5da",
+            "x": 495.0,
+            "y": 415.0,
+            "z": 19.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "43b28846",
+            "x": 515.0,
+            "y": 517.0,
+            "z": 19.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "c37c9ac4",
+            "x": 368.0,
+            "y": 623.0,
+            "z": 19.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "f490f5da"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "43b28846"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "c37c9ac4"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "f490f5da",
+              "x": 495.0,
+              "y": 415.0,
+              "z": 19.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "43b28846",
+              "x": 515.0,
+              "y": 517.0,
+              "z": 19.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "x": 368.0,
+              "y": 623.0,
+              "z": 19.0,
+              "tolerance": 3.0
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "hover"
+      ],
+      "is_done": false,
+      "created_at": 1768806726.5457325,
+      "last_updated": 1768806726.5457325
+    },
+    {
+      "id": "a7e8efd1",
+      "name": "Obstacle Avoidance Navigation",
+      "content": "Drone Drone 2 takes off to 20 meters altitude, navigates from start point (194, 312, 20) to destination (830, 661, 20) while avoiding obstacle street_light_ns_e_206. Must fly above obstacle height or around it. After reaching destination, land there.",
+      "content_aliases": [
+        "Navigate Drone 2 from (194,312) to (830,661) at 20m, avoiding street_light_ns_e_206, then land.",
+        "Command Drone 2 to fly obstacle-aware path: takeoff to 20m, go to (194,312), avoid street_light_ns_e_206 en route to (830,661), and land.",
+        "Drone 2 mission: takeoff 20m, traverse from (194,312) to destination (830,661) bypassing street_light_ns_e_206, followed by landing.",
+        "Execute safe passage for Drone 2: start at (194,312), fly to (830,661) at 20m avoiding street_light_ns_e_206, and conclude with landing."
+      ],
+      "description": "Navigate around obstacles to reach destination",
+      "creator": "生命构造",
+      "originated_from": "Task Template Obstacle Avoidance Navigation created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "c37c9ac4",
+            "altitude": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "c37c9ac4",
+            "x": 194.0,
+            "y": 312.0,
+            "z": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "c37c9ac4",
+            "x": 830.0,
+            "y": 661.0,
+            "z": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "c37c9ac4"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "x": 194.0,
+              "y": 312.0,
+              "z": 20.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "x": 830.0,
+              "y": 661.0,
+              "z": 20.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_position",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "x": 830.0,
+              "y": 661.0,
+              "z": 0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "tolerance": 0.5
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "land"
+      ],
+      "is_done": false,
+      "created_at": 1768806739.331221,
+      "last_updated": 1768806739.331221
+    },
+    {
+      "id": "815d8c0e",
+      "name": "Sequential Multi-Target Visit",
+      "content": "Drone Drone 3 performs sequential multi-target mission: take off to 20 meters, visit targets Circle Target 2, Polygon Target 1, and Circle Target 4 in sequence. At each target, get within the target radius, hover for observation, and take a photo. Plan optimal route to minimize flight distance.",
+      "content_aliases": [
+        "Have Drone 3 climb to 20m and visit Circle Target 2, Polygon Target 1, Circle Target 4 in order; at each, enter the target radius, hover to observe, and capture a photo while following the shortest route.",
+        "Drone 3 sequential inspection run: take off to 20 meters, proceed Circle Target 2 → Polygon Target 1 → Circle Target 4, and for each target hover within range and take a photo, optimizing the path length.",
+        "Plan an efficient three-target tour for Drone 3 at 20m: visit Circle Target 2, then Polygon Target 1, then Circle Target 4, hovering inside each target radius for observation and photo capture.",
+        "Sequential coverage for Drone 3: ascend to 20m, reach Circle Target 2, Polygon Target 1, Circle Target 4 in order, hover at each to observe, and take a photo while minimizing travel distance."
+      ],
+      "description": "Visit multiple targets in optimal sequence",
+      "creator": "生命构造",
+      "originated_from": "Task Template Sequential Multi-Target Visit created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "f490f5da",
+            "altitude": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "f490f5da"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_photo",
+          "parameters": {
+            "id": "f490f5da"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_reached",
+            "parameters": {
+              "target_id": "cb667f6b"
+            }
+          },
+          {
+            "endpoint": "/check/target_is_reached",
+            "parameters": {
+              "target_id": "99def5d3"
+            }
+          },
+          {
+            "endpoint": "/check/target_is_reached",
+            "parameters": {
+              "target_id": "73020e3b"
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "hover",
+        "take_photo"
+      ],
+      "is_done": false,
+      "created_at": 1768806761.1096036,
+      "last_updated": 1768806761.1096036
+    },
+    {
+      "id": "23c8dd07",
+      "name": "Fleet Target Sweep (3 Drones)",
+      "content": "Three-drone target sweep: Drone 1, Drone 2, and Drone 3 take off together to 22 meters altitude. Drone 1 flies to target Polygon Target 1, Drone 2 flies to target Circle Target 4, and Drone 3 flies to target Circle Target 2. After reaching the targets, all three drones move west for 64m, then south for 51m, then north for 40m together. Each drone must complete the specified directional movements (west 64m, south 51m, north 40m) regardless of starting position - if obstacles block the path, drones should adjust position as needed to complete the full directed distance in each heading.",
+      "content_aliases": [
+        "Coordinate Drone 1, Drone 2, and Drone 3: ascend together to 22 meters altitude, send Drone 1 to target Polygon Target 1, Drone 2 to target Circle Target 4, and Drone 3 to target Circle Target 2, then execute coordinated sweep movement west 64m, south 51m, and north 40m. All drones must complete the full directional distance (west 64m, south 51m, north 40m) from their respective positions, adjusting as needed to avoid obstacles.",
+        "Three-drone target sweep operation: launch Drone 1, Drone 2, and Drone 3 to altitude 22m, navigate to targets Polygon Target 1, Circle Target 4, Circle Target 2 respectively, then shift west by 64 meters, south by 51 meters, and north by 40 meters in synchronized operation. Each drone travels the specified distance in each direction regardless of obstacles encountered.",
+        "Execute three-drone sweep mission: Drone 1, Drone 2, Drone 3 take off reaching 22 meters height, fly to targets Polygon Target 1, Circle Target 4, Circle Target 2 respectively, then proceed west for 64m, subsequently south for 51m, and finally north for 40m together, with each drone completing the full directed movements by repositioning around obstacles if necessary.",
+        "Three-drone coordinated target mission: Drone 1, Drone 2, and Drone 3 lift off to 22m elevation, reach targets Polygon Target 1, Circle Target 4, Circle Target 2 respectively, then travel west 64 meters, south 51 meters, and north 40 meters in sequence. The specified directional distances must be achieved by each drone, adapting position to circumvent any obstacles."
+      ],
+      "description": "Three drones visit targets, then sweep west, south, and north",
+      "creator": "生命构造",
+      "originated_from": "Task Template Fleet Target Sweep (3 Drones) created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "43b28846",
+            "altitude": 22.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "c37c9ac4",
+            "altitude": 22.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "f490f5da",
+            "altitude": 22.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_towards",
+          "parameters": {
+            "id": "43b28846",
+            "distance": 64.0,
+            "heading": 270
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_towards",
+          "parameters": {
+            "id": "c37c9ac4",
+            "distance": 64.0,
+            "heading": 270
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_towards",
+          "parameters": {
+            "id": "f490f5da",
+            "distance": 64.0,
+            "heading": 270
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_towards",
+          "parameters": {
+            "id": "43b28846",
+            "distance": 51.0,
+            "heading": 180
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_towards",
+          "parameters": {
+            "id": "c37c9ac4",
+            "distance": 51.0,
+            "heading": 180
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_towards",
+          "parameters": {
+            "id": "f490f5da",
+            "distance": 51.0,
+            "heading": 180
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_towards",
+          "parameters": {
+            "id": "43b28846",
+            "distance": 40.0,
+            "heading": 0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_towards",
+          "parameters": {
+            "id": "c37c9ac4",
+            "distance": 40.0,
+            "heading": 0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_towards",
+          "parameters": {
+            "id": "f490f5da",
+            "distance": 40.0,
+            "heading": 0
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "99def5d3",
+              "drone_id": "43b28846"
+            }
+          },
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "73020e3b",
+              "drone_id": "c37c9ac4"
+            }
+          },
+          {
+            "endpoint": "/check/target_is_reached_by_drone",
+            "parameters": {
+              "target_id": "cb667f6b",
+              "drone_id": "f490f5da"
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_moved_directed_distance",
+            "parameters": {
+              "drone_id": "43b28846",
+              "min_distance": 64.0,
+              "heading": 270,
+              "tolerance": 5.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_moved_directed_distance",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "min_distance": 64.0,
+              "heading": 270,
+              "tolerance": 5.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_moved_directed_distance",
+            "parameters": {
+              "drone_id": "f490f5da",
+              "min_distance": 64.0,
+              "heading": 270,
+              "tolerance": 5.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_moved_directed_distance",
+            "parameters": {
+              "drone_id": "43b28846",
+              "min_distance": 51.0,
+              "heading": 180,
+              "tolerance": 5.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_moved_directed_distance",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "min_distance": 51.0,
+              "heading": 180,
+              "tolerance": 5.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_moved_directed_distance",
+            "parameters": {
+              "drone_id": "f490f5da",
+              "min_distance": 51.0,
+              "heading": 180,
+              "tolerance": 5.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_moved_directed_distance",
+            "parameters": {
+              "drone_id": "43b28846",
+              "min_distance": 40.0,
+              "heading": 0,
+              "tolerance": 5.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_moved_directed_distance",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "min_distance": 40.0,
+              "heading": 0,
+              "tolerance": 5.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_moved_directed_distance",
+            "parameters": {
+              "drone_id": "f490f5da",
+              "min_distance": 40.0,
+              "heading": 0,
+              "tolerance": 5.0
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "move_towards"
+      ],
+      "is_done": false,
+      "created_at": 1769266887.6467505,
+      "last_updated": 1769266887.6467505
+    },
+    {
+      "id": "6fd34997",
+      "name": "Complex Obstacle Course Navigation",
+      "content": "Drone Drone 2 navigates complex obstacle course from start (384, 358, 17) through waypoints (334, 380, 17), (575, 431, 17), (679, 601, 17), (424, 645, 17) to destination (791, 855, 17). Course includes obstacles residential_villa_1, street_light_ns_w_-94, and office_government_1. Must visit all waypoints in sequence while avoiding all obstacles, adjusting altitude as needed. Reach destination and land safely.",
+      "content_aliases": [
+        "Navigate Drone 2 through obstacle course: start (384,358), waypoints (334,380), (575,431), (679,601), (424,645), end (791,855), avoiding residential_villa_1, street_light_ns_w_-94, office_government_1, then land.",
+        "Command Drone 2 to fly complex path at 17m: S->WP1->WP2->WP3->WP4->E, dodging residential_villa_1, street_light_ns_w_-94, office_government_1, concluding with landing at destination.",
+        "Drone 2 advanced navigation: traverse waypoints (334,380) to (424,645) amidst obstacles, reaching (791,855) to land.",
+        "Execute multi-leg mission with Drone 2: takeoff 17m, visit 4 waypoints, avoid 3 obstacles, reach (791,855), and land."
+      ],
+      "description": "Navigate through multiple obstacles to reach destination via waypoints",
+      "creator": "生命构造",
+      "originated_from": "Task Template Complex Obstacle Course Navigation created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "c37c9ac4",
+            "altitude": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "c37c9ac4",
+            "x": 384.0,
+            "y": 358.0,
+            "z": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "c37c9ac4",
+            "x": 334.0,
+            "y": 380.0,
+            "z": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "c37c9ac4",
+            "x": 575.0,
+            "y": 431.0,
+            "z": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "c37c9ac4",
+            "x": 679.0,
+            "y": 601.0,
+            "z": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "c37c9ac4",
+            "x": 424.0,
+            "y": 645.0,
+            "z": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_to",
+          "parameters": {
+            "id": "c37c9ac4",
+            "x": 791.0,
+            "y": 855.0,
+            "z": 17.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "c37c9ac4"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "x": 334.0,
+              "y": 380.0,
+              "z": 17.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "x": 575.0,
+              "y": 431.0,
+              "z": 17.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "x": 679.0,
+              "y": 601.0,
+              "z": 17.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_has_visited_position",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "x": 424.0,
+              "y": 645.0,
+              "z": 17.0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_position",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "x": 791.0,
+              "y": 855.0,
+              "z": 0,
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "c37c9ac4",
+              "tolerance": 0.5
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "move_along_path",
+        "change_altitude",
+        "land"
+      ],
+      "is_done": false,
+      "created_at": 1768806805.413459,
+      "last_updated": 1768806805.413459
+    }
+  ],
+  "history": {
+    "command_history": [
+      {
+        "command_id": "345ec3a7",
+        "drone_id": "43b28846",
+        "command": "take_off",
+        "parameters": {
+          "altitude": 5.0
+        },
+        "status": "success",
+        "message": "Drone taking off to altitude 5.0m (battery: -0.5%/-0mAh, remaining: 99.5%/84mAh)",
+        "timestamp": 1768806908.9348488
+      },
+      {
+        "command_id": "8d1f62ee",
+        "drone_id": "43b28846",
+        "command": "move_to",
+        "parameters": {
+          "x": -25.10714285714296,
+          "y": 655.8571428571429,
+          "z": 5.0
+        },
+        "status": "error",
+        "message": "Path to waypoint 1 blocked: Flight path intersects with ObstacleType.POLYGON obstacle 'recreational_park_2'",
+        "timestamp": 1768806926.0649822
+      },
+      {
+        "command_id": "078ad0bf",
+        "drone_id": "43b28846",
+        "command": "move_to",
+        "parameters": {
+          "x": 383.4642857142856,
+          "y": 423.00000000000006,
+          "z": 5.0
+        },
+        "status": "success",
+        "message": "Drone moved to position (383.4642857142856, 423.00000000000006, 5.0), heading: 270.0° (battery: -0.2%/-0mAh, remaining: 99.3%/83mAh)",
+        "timestamp": 1768806931.521321
+      },
+      {
+        "command_id": "c7f3c9e0",
+        "drone_id": "43b28846",
+        "command": "move_to",
+        "parameters": {
+          "x": 90.60714285714276,
+          "y": 448.7142857142858,
+          "z": 5.0
+        },
+        "status": "success",
+        "message": "Drone moved to position (90.60714285714276, 448.7142857142858, 5.0), heading: 275.0° (battery: -3.3%/-3mAh, remaining: 95.9%/81mAh)",
+        "timestamp": 1768806933.3918197
+      },
+      {
+        "command_id": "bea1fab8",
+        "drone_id": "43b28846",
+        "command": "move_to",
+        "parameters": {
+          "x": 2.035714285714178,
+          "y": 548.7142857142858,
+          "z": 5.0
+        },
+        "status": "error",
+        "message": "Path to waypoint 1 blocked: Flight path intersects with ObstacleType.ELLIPSE obstacle 'park_3'",
+        "timestamp": 1768806970.7810094
+      },
+      {
+        "command_id": "e9c78b15",
+        "drone_id": "f490f5da",
+        "command": "take_off",
+        "parameters": {
+          "altitude": 10.0
+        },
+        "status": "success",
+        "message": "Drone taking off to altitude 10.0m (battery: -0.5%/-0mAh, remaining: 99.5%/83mAh)",
+        "timestamp": 1768806997.5880249
+      },
+      {
+        "command_id": "e8c4c4e4",
+        "drone_id": "f490f5da",
+        "command": "move_to",
+        "parameters": {
+          "x": 753.0,
+          "y": 353.0,
+          "z": 10.0
+        },
+        "status": "success",
+        "message": "Drone moved to position (753.0, 353.0, 10.0), heading: 0.0° (battery: -0.2%/-0mAh, remaining: 99.3%/82mAh)",
+        "timestamp": 1768807003.738519
+      },
+      {
+        "command_id": "58bfdf19",
+        "drone_id": "43b28846",
+        "command": "move_to",
+        "parameters": {
+          "x": 642.0357142857142,
+          "y": 464.42857142857144,
+          "z": 5.0
+        },
+        "status": "success",
+        "message": "Drone moved to position (642.0357142857142, 464.42857142857144, 5.0), heading: 88.4° (battery: -6.1%/-5mAh, remaining: 89.9%/76mAh)",
+        "timestamp": 1768807044.8714857
+      },
+      {
+        "command_id": "909ef5c0",
+        "drone_id": "43b28846",
+        "command": "land",
+        "parameters": {},
+        "status": "success",
+        "message": "Drone landed successfully (battery: -0.0%/-0mAh, remaining: 89.9%/76mAh)",
+        "timestamp": 1768807053.5732923
+      },
+      {
+        "command_id": "83bed4f4",
+        "drone_id": "f490f5da",
+        "command": "move_to",
+        "parameters": {
+          "x": 900.0,
+          "y": 80.0,
+          "z": 10.0
+        },
+        "status": "error",
+        "message": "Path to waypoint 1 blocked: Flight path intersects with ObstacleType.POLYGON obstacle 'office_bank_2'",
+        "timestamp": 1768807080.0853865
+      },
+      {
+        "command_id": "ce91fc8f",
+        "drone_id": "43b28846",
+        "command": "return_home",
+        "parameters": {},
+        "status": "error",
+        "message": "Cannot return home from current status: DroneStatus.IDLE",
+        "timestamp": 1768807134.2564392
+      },
+      {
+        "command_id": "60e8122a",
+        "drone_id": "f490f5da",
+        "command": "land",
+        "parameters": {},
+        "status": "success",
+        "message": "Drone landed successfully (battery: -0.0%/-0mAh, remaining: 99.3%/82mAh)",
+        "timestamp": 1768807208.7117968
+      },
+      {
+        "command_id": "b4544066",
+        "drone_id": "c37c9ac4",
+        "command": "change_altitude",
+        "parameters": {
+          "altitude": 11.0
+        },
+        "status": "error",
+        "message": "Cannot change altitude from current status: DroneStatus.IDLE",
+        "timestamp": 1769267251.0306525
+      },
+      {
+        "command_id": "f544516b",
+        "drone_id": "c37c9ac4",
+        "command": "take_off",
+        "parameters": {
+          "altitude": 11.0
+        },
+        "status": "success",
+        "message": "Drone taking off to altitude 11.0m (battery: -0.5%/-0mAh, remaining: 99.5%/66mAh)",
+        "timestamp": 1769267256.7581446
+      },
+      {
+        "command_id": "bf0821c0",
+        "drone_id": "c37c9ac4",
+        "command": "move_to",
+        "parameters": {
+          "x": 350.0,
+          "y": 301.0,
+          "z": 11.0
+        },
+        "status": "success",
+        "message": "Drone moved to position (350.0, 301.0, 11.0), heading: 90.0° (battery: -1.2%/-1mAh, remaining: 98.3%/65mAh) - Reached target(s): Circle Target 1",
+        "timestamp": 1769267294.4465058
+      },
+      {
+        "command_id": "feb98fcc",
+        "drone_id": "c37c9ac4",
+        "command": "move_to",
+        "parameters": {
+          "x": 350.0,
+          "y": 159.0,
+          "z": 11.0
+        },
+        "status": "success",
+        "message": "Drone moved to position (350.0, 159.0, 11.0), heading: 180.0° (battery: -1.5%/-1mAh, remaining: 96.8%/64mAh) - Reached target(s): Circle Target 1",
+        "timestamp": 1769267308.619959
+      },
+      {
+        "command_id": "9f3964a6",
+        "drone_id": "c37c9ac4",
+        "command": "move_to",
+        "parameters": {
+          "x": 300.0,
+          "y": 159.0,
+          "z": 11.0
+        },
+        "status": "success",
+        "message": "Drone moved to position (300.0, 159.0, 11.0), heading: 270.0° (battery: -0.7%/-0mAh, remaining: 96.2%/63mAh) - Reached target(s): Circle Target 1",
+        "timestamp": 1769267332.9801657
+      },
+      {
+        "command_id": "e2aaa757",
+        "drone_id": "c37c9ac4",
+        "command": "change_altitude",
+        "parameters": {
+          "altitude": 0.0
+        },
+        "status": "success",
+        "message": "Drone altitude changed to 0.0m (battery: -0.2%/-0mAh, remaining: 96.0%/63mAh)",
+        "timestamp": 1769267357.0035179
+      },
+      {
+        "command_id": "acdaf0f7",
+        "drone_id": "c37c9ac4",
+        "command": "land",
+        "parameters": {},
+        "status": "success",
+        "message": "Drone landed successfully (battery: -0.0%/-0mAh, remaining: 96.0%/63mAh)",
+        "timestamp": 1769267368.3608725
+      },
+      {
+        "command_id": "5269e529",
+        "drone_id": "c37c9ac4",
+        "command": "set_home",
+        "parameters": {},
+        "status": "success",
+        "message": "Home position set to current position (300.0, 159.0, 0.0)",
+        "timestamp": 1769267373.853316
+      },
+      {
+        "command_id": "425ae3b1",
+        "drone_id": "f490f5da",
+        "command": "return_home",
+        "parameters": {},
+        "status": "error",
+        "message": "Cannot return home from current status: DroneStatus.IDLE",
+        "timestamp": 1769267435.6191404
+      },
+      {
+        "command_id": "099c5a1d",
+        "drone_id": "f490f5da",
+        "command": "land",
+        "parameters": {},
+        "status": "error",
+        "message": "Cannot land from current status: DroneStatus.IDLE",
+        "timestamp": 1769267441.5896947
+      }
+    ],
+    "status_history": {
+      "43b28846": [
+        {
+          "status": "hovering",
+          "position": {
+            "x": 385.0,
+            "y": 423.0,
+            "z": 5.0
+          },
+          "battery_level": 99.5,
+          "battery_volume": 83.67949999999999,
+          "timestamp": 1768806908.9349992
+        },
+        {
+          "status": "hovering",
+          "position": {
+            "x": 383.4642857142856,
+            "y": 423.00000000000006,
+            "z": 5.0
+          },
+          "battery_level": 99.27149203014285,
+          "battery_volume": 83.48732479735013,
+          "timestamp": 1768806931.5214531
+        },
+        {
+          "status": "hovering",
+          "position": {
+            "x": 90.60714285714276,
+            "y": 448.7142857142858,
+            "z": 5.0
+          },
+          "battery_level": 95.93991818501728,
+          "battery_volume": 80.68547119359953,
+          "timestamp": 1768806933.3919535
+        },
+        {
+          "status": "hovering",
+          "position": {
+            "x": 642.0357142857142,
+            "y": 464.42857142857144,
+            "z": 5.0
+          },
+          "battery_level": 89.87431314072509,
+          "battery_volume": 75.5842973513498,
+          "timestamp": 1768807044.8716202
+        },
+        {
+          "status": "idle",
+          "position": {
+            "x": 642.0357142857142,
+            "y": 464.42857142857144,
+            "z": 0.0
+          },
+          "battery_level": 89.87431314072509,
+          "battery_volume": 75.5842973513498,
+          "timestamp": 1768807053.5734375
+        }
+      ],
+      "f490f5da": [
+        {
+          "status": "hovering",
+          "position": {
+            "x": 753.0,
+            "y": 353.0,
+            "z": 10.0
+          },
+          "battery_level": 99.5,
+          "battery_volume": 82.585,
+          "timestamp": 1768806997.5881736
+        },
+        {
+          "status": "hovering",
+          "position": {
+            "x": 753.0,
+            "y": 353.0,
+            "z": 10.0
+          },
+          "battery_level": 99.30502256,
+          "battery_volume": 82.42316872480001,
+          "timestamp": 1768807003.7386487
+        },
+        {
+          "status": "idle",
+          "position": {
+            "x": 753.0,
+            "y": 353.0,
+            "z": 0.0
+          },
+          "battery_level": 99.30502256,
+          "battery_volume": 82.42316872480001,
+          "timestamp": 1768807208.7119417
+        },
+        {
+          "status": "idle",
+          "position": {
+            "x": 753.0,
+            "y": 353.0,
+            "z": 0.0
+          },
+          "battery_level": 100.0,
+          "battery_volume": 83.0,
+          "timestamp": 1769267435.6193063
+        }
+      ],
+      "c37c9ac4": [
+        {
+          "status": "idle",
+          "position": {
+            "x": 227.0,
+            "y": 301.0,
+            "z": 96.0
+          },
+          "battery_level": 100.0,
+          "battery_volume": 65.9,
+          "timestamp": 1769267251.030805
+        },
+        {
+          "status": "hovering",
+          "position": {
+            "x": 227.0,
+            "y": 301.0,
+            "z": 11.0
+          },
+          "battery_level": 99.5,
+          "battery_volume": 65.57050000000001,
+          "timestamp": 1769267256.7582998
+        },
+        {
+          "status": "hovering",
+          "position": {
+            "x": 350.0,
+            "y": 301.0,
+            "z": 11.0
+          },
+          "battery_level": 98.338201362,
+          "battery_volume": 64.804874697558,
+          "timestamp": 1769267294.4466562
+        },
+        {
+          "status": "hovering",
+          "position": {
+            "x": 350.0,
+            "y": 159.0,
+            "z": 11.0
+          },
+          "battery_level": 96.846981642,
+          "battery_volume": 63.82216090207801,
+          "timestamp": 1769267308.620091
+        },
+        {
+          "status": "hovering",
+          "position": {
+            "x": 300.0,
+            "y": 159.0,
+            "z": 11.0
+          },
+          "battery_level": 96.170409732,
+          "battery_volume": 63.376300013388004,
+          "timestamp": 1769267332.9802997
+        },
+        {
+          "status": "hovering",
+          "position": {
+            "x": 300.0,
+            "y": 159.0,
+            "z": 0.0
+          },
+          "battery_level": 95.977156602,
+          "battery_volume": 63.248946200718,
+          "timestamp": 1769267357.003665
+        },
+        {
+          "status": "idle",
+          "position": {
+            "x": 300.0,
+            "y": 159.0,
+            "z": 0.0
+          },
+          "battery_level": 95.977156602,
+          "battery_volume": 63.248946200718,
+          "timestamp": 1769267368.3610206
+        }
+      ]
+    },
+    "path_history": {
+      "43b28846": [
+        {
+          "x": 385.0,
+          "y": 423.0,
+          "z": 5.0
+        },
+        {
+          "x": 383.4642857142856,
+          "y": 423.00000000000006,
+          "z": 5.0
+        },
+        {
+          "x": 90.60714285714276,
+          "y": 448.7142857142858,
+          "z": 5.0
+        },
+        {
+          "x": 642.0357142857142,
+          "y": 464.42857142857144,
+          "z": 5.0
+        }
+      ],
+      "f490f5da": [
+        {
+          "x": 753.0,
+          "y": 353.0,
+          "z": 10.0
+        },
+        {
+          "x": 753.0,
+          "y": 353.0,
+          "z": 10.0
+        }
+      ],
+      "c37c9ac4": [
+        {
+          "x": 227.0,
+          "y": 301.0,
+          "z": 11.0
+        },
+        {
+          "x": 350.0,
+          "y": 301.0,
+          "z": 11.0
+        },
+        {
+          "x": 350.0,
+          "y": 159.0,
+          "z": 11.0
+        },
+        {
+          "x": 300.0,
+          "y": 159.0,
+          "z": 11.0
+        }
+      ]
+    },
+    "target_reaches": {
+      "c37c9ac4": {
+        "4cea3494": [
+          1769267294.4459114,
+          1769267308.6193922,
+          1769267332.9795883
+        ]
+      }
+    },
+    "area_coverage": {
+      "99def5d3": {
+        "area_type": "polygon",
+        "total_area": 93636.0,
+        "covered_area": 0.0,
+        "coverage_percentage": 0.0,
+        "covered_points": []
+      },
+      "4cea3494": {
+        "area_type": "circle",
+        "total_area": 107521.00856911067,
+        "covered_area": 3036.0,
+        "coverage_percentage": 2.823634227769141,
+        "covered_points": [
+          [
+            344.0,
+            178.0
+          ],
+          [
+            352.0,
+            280.0
+          ],
+          [
+            356.0,
+            152.0
+          ],
+          [
+            342.0,
+            254.0
+          ],
+          [
+            344.0,
+            196.0
+          ],
+          [
+            352.0,
+            298.0
+          ],
+          [
+            354.0,
+            228.0
+          ],
+          [
+            356.0,
+            170.0
+          ],
+          [
+            342.0,
+            272.0
+          ],
+          [
+            348.0,
+            166.0
+          ],
+          [
+            344.0,
+            214.0
+          ],
+          [
+            340.0,
+            162.0
+          ],
+          [
+            354.0,
+            246.0
+          ],
+          [
+            346.0,
+            242.0
+          ],
+          [
+            342.0,
+            290.0
+          ],
+          [
+            356.0,
+            188.0
+          ],
+          [
+            348.0,
+            184.0
+          ],
+          [
+            358.0,
+            216.0
+          ],
+          [
+            354.0,
+            264.0
+          ],
+          [
+            346.0,
+            260.0
+          ],
+          [
+            352.0,
+            154.0
+          ],
+          [
+            358.0,
+            234.0
+          ],
+          [
+            350.0,
+            230.0
+          ],
+          [
+            352.0,
+            172.0
+          ],
+          [
+            358.0,
+            252.0
+          ],
+          [
+            350.0,
+            248.0
+          ],
+          [
+            356.0,
+            282.0
+          ],
+          [
+            356.0,
+            300.0
+          ],
+          [
+            334.0,
+            160.0
+          ],
+          [
+            348.0,
+            296.0
+          ],
+          [
+            340.0,
+            292.0
+          ],
+          [
+            344.0,
+            164.0
+          ],
+          [
+            352.0,
+            266.0
+          ],
+          [
+            342.0,
+            240.0
+          ],
+          [
+            344.0,
+            182.0
+          ],
+          [
+            352.0,
+            284.0
+          ],
+          [
+            356.0,
+            156.0
+          ],
+          [
+            342.0,
+            258.0
+          ],
+          [
+            348.0,
+            152.0
+          ],
+          [
+            344.0,
+            200.0
+          ],
+          [
+            352.0,
+            302.0
+          ],
+          [
+            354.0,
+            232.0
+          ],
+          [
+            346.0,
+            228.0
+          ],
+          [
+            342.0,
+            276.0
+          ],
+          [
+            356.0,
+            174.0
+          ],
+          [
+            348.0,
+            170.0
+          ],
+          [
+            358.0,
+            202.0
+          ],
+          [
+            354.0,
+            250.0
+          ],
+          [
+            340.0,
+            166.0
+          ],
+          [
+            346.0,
+            246.0
+          ],
+          [
+            348.0,
+            188.0
+          ],
+          [
+            358.0,
+            220.0
+          ],
+          [
+            350.0,
+            216.0
+          ],
+          [
+            346.0,
+            264.0
+          ],
+          [
+            352.0,
+            158.0
+          ],
+          [
+            344.0,
+            294.0
+          ],
+          [
+            358.0,
+            238.0
+          ],
+          [
+            350.0,
+            234.0
+          ],
+          [
+            356.0,
+            268.0
+          ],
+          [
+            356.0,
+            286.0
+          ],
+          [
+            348.0,
+            282.0
+          ],
+          [
+            356.0,
+            304.0
+          ],
+          [
+            348.0,
+            300.0
+          ],
+          [
+            344.0,
+            168.0
+          ],
+          [
+            352.0,
+            270.0
+          ],
+          [
+            336.0,
+            164.0
+          ],
+          [
+            342.0,
+            244.0
+          ],
+          [
+            344.0,
+            186.0
+          ],
+          [
+            352.0,
+            288.0
+          ],
+          [
+            354.0,
+            218.0
+          ],
+          [
+            346.0,
+            214.0
+          ],
+          [
+            342.0,
+            262.0
+          ],
+          [
+            356.0,
+            160.0
+          ],
+          [
+            348.0,
+            156.0
+          ],
+          [
+            340.0,
+            152.0
+          ],
+          [
+            354.0,
+            236.0
+          ],
+          [
+            346.0,
+            232.0
+          ],
+          [
+            348.0,
+            174.0
+          ],
+          [
+            358.0,
+            206.0
+          ],
+          [
+            350.0,
+            202.0
+          ],
+          [
+            346.0,
+            250.0
+          ],
+          [
+            344.0,
+            280.0
+          ],
+          [
+            358.0,
+            224.0
+          ],
+          [
+            350.0,
+            220.0
+          ],
+          [
+            352.0,
+            162.0
+          ],
+          [
+            344.0,
+            298.0
+          ],
+          [
+            350.0,
+            238.0
+          ],
+          [
+            356.0,
+            272.0
+          ],
+          [
+            348.0,
+            268.0
+          ],
+          [
+            356.0,
+            290.0
+          ],
+          [
+            348.0,
+            286.0
+          ],
+          [
+            344.0,
+            154.0
+          ],
+          [
+            352.0,
+            256.0
+          ],
+          [
+            348.0,
+            304.0
+          ],
+          [
+            336.0,
+            150.0
+          ],
+          [
+            342.0,
+            230.0
+          ],
+          [
+            344.0,
+            172.0
+          ],
+          [
+            352.0,
+            274.0
+          ],
+          [
+            354.0,
+            204.0
+          ],
+          [
+            336.0,
+            168.0
+          ],
+          [
+            342.0,
+            248.0
+          ],
+          [
+            354.0,
+            222.0
+          ],
+          [
+            346.0,
+            218.0
+          ],
+          [
+            356.0,
+            164.0
+          ],
+          [
+            348.0,
+            160.0
+          ],
+          [
+            358.0,
+            192.0
+          ],
+          [
+            354.0,
+            240.0
+          ],
+          [
+            340.0,
+            156.0
+          ],
+          [
+            350.0,
+            188.0
+          ],
+          [
+            346.0,
+            236.0
+          ],
+          [
+            358.0,
+            210.0
+          ],
+          [
+            350.0,
+            206.0
+          ],
+          [
+            344.0,
+            284.0
+          ],
+          [
+            350.0,
+            224.0
+          ],
+          [
+            356.0,
+            258.0
+          ],
+          [
+            348.0,
+            254.0
+          ],
+          [
+            356.0,
+            276.0
+          ],
+          [
+            348.0,
+            272.0
+          ],
+          [
+            332.0,
+            166.0
+          ],
+          [
+            352.0,
+            242.0
+          ],
+          [
+            348.0,
+            290.0
+          ],
+          [
+            342.0,
+            216.0
+          ],
+          [
+            344.0,
+            158.0
+          ],
+          [
+            352.0,
+            260.0
+          ],
+          [
+            354.0,
+            190.0
+          ],
+          [
+            336.0,
+            154.0
+          ],
+          [
+            342.0,
+            234.0
+          ],
+          [
+            344.0,
+            176.0
+          ],
+          [
+            354.0,
+            208.0
+          ],
+          [
+            346.0,
+            204.0
+          ],
+          [
+            342.0,
+            252.0
+          ],
+          [
+            358.0,
+            178.0
+          ],
+          [
+            354.0,
+            226.0
+          ],
+          [
+            350.0,
+            174.0
+          ],
+          [
+            346.0,
+            222.0
+          ],
+          [
+            358.0,
+            196.0
+          ],
+          [
+            340.0,
+            160.0
+          ],
+          [
+            350.0,
+            192.0
+          ],
+          [
+            344.0,
+            270.0
+          ],
+          [
+            358.0,
+            214.0
+          ],
+          [
+            350.0,
+            210.0
+          ],
+          [
+            356.0,
+            244.0
+          ],
+          [
+            348.0,
+            240.0
+          ],
+          [
+            344.0,
+            288.0
+          ],
+          [
+            356.0,
+            262.0
+          ],
+          [
+            348.0,
+            258.0
+          ],
+          [
+            356.0,
+            280.0
+          ],
+          [
+            352.0,
+            228.0
+          ],
+          [
+            348.0,
+            276.0
+          ],
+          [
+            342.0,
+            202.0
+          ],
+          [
+            350.0,
+            304.0
+          ],
+          [
+            352.0,
+            246.0
+          ],
+          [
+            342.0,
+            220.0
+          ],
+          [
+            344.0,
+            162.0
+          ],
+          [
+            352.0,
+            264.0
+          ],
+          [
+            354.0,
+            194.0
+          ],
+          [
+            336.0,
+            158.0
+          ],
+          [
+            346.0,
+            190.0
+          ],
+          [
+            342.0,
+            238.0
+          ],
+          [
+            358.0,
+            164.0
+          ],
+          [
+            354.0,
+            212.0
+          ],
+          [
+            346.0,
+            208.0
+          ],
+          [
+            348.0,
+            150.0
+          ],
+          [
+            358.0,
+            182.0
+          ],
+          [
+            350.0,
+            178.0
+          ],
+          [
+            344.0,
+            256.0
+          ],
+          [
+            358.0,
+            200.0
+          ],
+          [
+            350.0,
+            196.0
+          ],
+          [
+            356.0,
+            230.0
+          ],
+          [
+            344.0,
+            274.0
+          ],
+          [
+            354.0,
+            306.0
+          ],
+          [
+            356.0,
+            248.0
+          ],
+          [
+            348.0,
+            244.0
+          ],
+          [
+            344.0,
+            292.0
+          ],
+          [
+            356.0,
+            266.0
+          ],
+          [
+            352.0,
+            214.0
+          ],
+          [
+            348.0,
+            262.0
+          ],
+          [
+            332.0,
+            156.0
+          ],
+          [
+            358.0,
+            294.0
+          ],
+          [
+            342.0,
+            188.0
+          ],
+          [
+            350.0,
+            290.0
+          ],
+          [
+            352.0,
+            232.0
+          ],
+          [
+            342.0,
+            206.0
+          ],
+          [
+            350.0,
+            308.0
+          ],
+          [
+            352.0,
+            250.0
+          ],
+          [
+            354.0,
+            180.0
+          ],
+          [
+            346.0,
+            176.0
+          ],
+          [
+            342.0,
+            224.0
+          ],
+          [
+            354.0,
+            198.0
+          ],
+          [
+            346.0,
+            194.0
+          ],
+          [
+            358.0,
+            168.0
+          ],
+          [
+            350.0,
+            164.0
+          ],
+          [
+            346.0,
+            212.0
+          ],
+          [
+            344.0,
+            242.0
+          ],
+          [
+            358.0,
+            186.0
+          ],
+          [
+            350.0,
+            182.0
+          ],
+          [
+            344.0,
+            260.0
+          ],
+          [
+            354.0,
+            292.0
+          ],
+          [
+            356.0,
+            234.0
+          ],
+          [
+            348.0,
+            230.0
+          ],
+          [
+            344.0,
+            278.0
+          ],
+          [
+            354.0,
+            310.0
+          ],
+          [
+            356.0,
+            252.0
+          ],
+          [
+            348.0,
+            248.0
+          ],
+          [
+            358.0,
+            280.0
+          ],
+          [
+            352.0,
+            218.0
+          ],
+          [
+            332.0,
+            160.0
+          ],
+          [
+            358.0,
+            298.0
+          ],
+          [
+            342.0,
+            192.0
+          ],
+          [
+            350.0,
+            294.0
+          ],
+          [
+            352.0,
+            236.0
+          ],
+          [
+            354.0,
+            166.0
+          ],
+          [
+            346.0,
+            162.0
+          ],
+          [
+            342.0,
+            210.0
+          ],
+          [
+            354.0,
+            184.0
+          ],
+          [
+            346.0,
+            180.0
+          ],
+          [
+            358.0,
+            154.0
+          ],
+          [
+            350.0,
+            150.0
+          ],
+          [
+            346.0,
+            198.0
+          ],
+          [
+            344.0,
+            228.0
+          ],
+          [
+            358.0,
+            172.0
+          ],
+          [
+            350.0,
+            168.0
+          ],
+          [
+            344.0,
+            246.0
+          ],
+          [
+            350.0,
+            186.0
+          ],
+          [
+            356.0,
+            220.0
+          ],
+          [
+            348.0,
+            216.0
+          ],
+          [
+            344.0,
+            264.0
+          ],
+          [
+            354.0,
+            296.0
+          ],
+          [
+            346.0,
+            292.0
+          ],
+          [
+            356.0,
+            238.0
+          ],
+          [
+            348.0,
+            234.0
+          ],
+          [
+            358.0,
+            266.0
+          ],
+          [
+            352.0,
+            204.0
+          ],
+          [
+            348.0,
+            252.0
+          ],
+          [
+            358.0,
+            284.0
+          ],
+          [
+            342.0,
+            178.0
+          ],
+          [
+            350.0,
+            280.0
+          ],
+          [
+            352.0,
+            222.0
+          ],
+          [
+            354.0,
+            152.0
+          ],
+          [
+            358.0,
+            302.0
+          ],
+          [
+            342.0,
+            196.0
+          ],
+          [
+            350.0,
+            298.0
+          ],
+          [
+            354.0,
+            170.0
+          ],
+          [
+            346.0,
+            166.0
+          ],
+          [
+            338.0,
+            162.0
+          ],
+          [
+            354.0,
+            188.0
+          ],
+          [
+            346.0,
+            184.0
+          ],
+          [
+            358.0,
+            158.0
+          ],
+          [
+            350.0,
+            154.0
+          ],
+          [
+            344.0,
+            232.0
+          ],
+          [
+            350.0,
+            172.0
+          ],
+          [
+            356.0,
+            206.0
+          ],
+          [
+            348.0,
+            202.0
+          ],
+          [
+            344.0,
+            250.0
+          ],
+          [
+            354.0,
+            282.0
+          ],
+          [
+            346.0,
+            278.0
+          ],
+          [
+            356.0,
+            224.0
+          ],
+          [
+            348.0,
+            220.0
+          ],
+          [
+            354.0,
+            300.0
+          ],
+          [
+            346.0,
+            296.0
+          ],
+          [
+            352.0,
+            190.0
+          ],
+          [
+            348.0,
+            238.0
+          ],
+          [
+            358.0,
+            270.0
+          ],
+          [
+            342.0,
+            164.0
+          ],
+          [
+            350.0,
+            266.0
+          ],
+          [
+            352.0,
+            208.0
+          ],
+          [
+            358.0,
+            288.0
+          ],
+          [
+            342.0,
+            182.0
+          ],
+          [
+            350.0,
+            284.0
+          ],
+          [
+            352.0,
+            226.0
+          ],
+          [
+            354.0,
+            156.0
+          ],
+          [
+            346.0,
+            152.0
+          ],
+          [
+            342.0,
+            200.0
+          ],
+          [
+            350.0,
+            302.0
+          ],
+          [
+            354.0,
+            174.0
+          ],
+          [
+            346.0,
+            170.0
+          ],
+          [
+            338.0,
+            166.0
+          ],
+          [
+            344.0,
+            218.0
+          ],
+          [
+            358.0,
+            162.0
+          ],
+          [
+            350.0,
+            158.0
+          ],
+          [
+            342.0,
+            294.0
+          ],
+          [
+            356.0,
+            192.0
+          ],
+          [
+            344.0,
+            236.0
+          ],
+          [
+            354.0,
+            268.0
+          ],
+          [
+            356.0,
+            210.0
+          ],
+          [
+            348.0,
+            206.0
+          ],
+          [
+            354.0,
+            286.0
+          ],
+          [
+            346.0,
+            282.0
+          ],
+          [
+            356.0,
+            228.0
+          ],
+          [
+            352.0,
+            176.0
+          ],
+          [
+            348.0,
+            224.0
+          ],
+          [
+            358.0,
+            256.0
+          ],
+          [
+            354.0,
+            304.0
+          ],
+          [
+            342.0,
+            150.0
+          ],
+          [
+            350.0,
+            252.0
+          ],
+          [
+            346.0,
+            300.0
+          ],
+          [
+            352.0,
+            194.0
+          ],
+          [
+            358.0,
+            274.0
+          ],
+          [
+            342.0,
+            168.0
+          ],
+          [
+            350.0,
+            270.0
+          ],
+          [
+            334.0,
+            164.0
+          ],
+          [
+            352.0,
+            212.0
+          ],
+          [
+            342.0,
+            186.0
+          ],
+          [
+            350.0,
+            288.0
+          ],
+          [
+            354.0,
+            160.0
+          ],
+          [
+            346.0,
+            156.0
+          ],
+          [
+            338.0,
+            152.0
+          ],
+          [
+            346.0,
+            174.0
+          ],
+          [
+            344.0,
+            204.0
+          ],
+          [
+            352.0,
+            306.0
+          ],
+          [
+            356.0,
+            178.0
+          ],
+          [
+            342.0,
+            280.0
+          ],
+          [
+            344.0,
+            222.0
+          ],
+          [
+            354.0,
+            254.0
+          ],
+          [
+            356.0,
+            196.0
+          ],
+          [
+            348.0,
+            192.0
+          ],
+          [
+            344.0,
+            240.0
+          ],
+          [
+            354.0,
+            272.0
+          ],
+          [
+            346.0,
+            268.0
+          ],
+          [
+            356.0,
+            214.0
+          ],
+          [
+            330.0,
+            162.0
+          ],
+          [
+            348.0,
+            210.0
+          ],
+          [
+            358.0,
+            242.0
+          ],
+          [
+            354.0,
+            290.0
+          ],
+          [
+            346.0,
+            286.0
+          ],
+          [
+            352.0,
+            180.0
+          ],
+          [
+            358.0,
+            260.0
+          ],
+          [
+            342.0,
+            154.0
+          ],
+          [
+            350.0,
+            256.0
+          ],
+          [
+            334.0,
+            150.0
+          ],
+          [
+            352.0,
+            198.0
+          ],
+          [
+            358.0,
+            278.0
+          ],
+          [
+            342.0,
+            172.0
+          ],
+          [
+            356.0,
+            308.0
+          ],
+          [
+            350.0,
+            274.0
+          ],
+          [
+            334.0,
+            168.0
+          ],
+          [
+            346.0,
+            160.0
+          ],
+          [
+            344.0,
+            190.0
+          ],
+          [
+            352.0,
+            292.0
+          ],
+          [
+            338.0,
+            156.0
+          ],
+          [
+            342.0,
+            266.0
+          ],
+          [
+            344.0,
+            208.0
+          ],
+          [
+            352.0,
+            310.0
+          ],
+          [
+            356.0,
+            182.0
+          ],
+          [
+            342.0,
+            284.0
+          ],
+          [
+            348.0,
+            178.0
+          ],
+          [
+            344.0,
+            226.0
+          ],
+          [
+            354.0,
+            258.0
+          ],
+          [
+            346.0,
+            254.0
+          ],
+          [
+            356.0,
+            200.0
+          ],
+          [
+            348.0,
+            196.0
+          ],
+          [
+            358.0,
+            228.0
+          ],
+          [
+            354.0,
+            276.0
+          ],
+          [
+            346.0,
+            272.0
+          ],
+          [
+            352.0,
+            166.0
+          ],
+          [
+            348.0,
+            214.0
+          ],
+          [
+            330.0,
+            166.0
+          ],
+          [
+            358.0,
+            246.0
+          ],
+          [
+            350.0,
+            242.0
+          ],
+          [
+            346.0,
+            290.0
+          ],
+          [
+            352.0,
+            184.0
+          ],
+          [
+            358.0,
+            264.0
+          ],
+          [
+            342.0,
+            158.0
+          ],
+          [
+            356.0,
+            294.0
+          ],
+          [
+            350.0,
+            260.0
+          ],
+          [
+            334.0,
+            154.0
+          ],
+          [
+            348.0,
+            308.0
+          ],
+          [
+            354.0,
+            150.0
+          ],
+          [
+            352.0,
+            278.0
+          ],
+          [
+            344.0,
+            194.0
+          ],
+          [
+            352.0,
+            296.0
+          ],
+          [
+            356.0,
+            168.0
+          ],
+          [
+            342.0,
+            270.0
+          ],
+          [
+            348.0,
+            164.0
+          ],
+          [
+            344.0,
+            212.0
+          ],
+          [
+            354.0,
+            244.0
+          ],
+          [
+            346.0,
+            240.0
+          ],
+          [
+            342.0,
+            288.0
+          ],
+          [
+            356.0,
+            186.0
+          ],
+          [
+            348.0,
+            182.0
+          ],
+          [
+            354.0,
+            262.0
+          ],
+          [
+            346.0,
+            258.0
+          ],
+          [
+            352.0,
+            152.0
+          ],
+          [
+            348.0,
+            200.0
+          ],
+          [
+            358.0,
+            232.0
+          ],
+          [
+            350.0,
+            228.0
+          ],
+          [
+            346.0,
+            276.0
+          ],
+          [
+            352.0,
+            170.0
+          ],
+          [
+            358.0,
+            250.0
+          ],
+          [
+            350.0,
+            246.0
+          ],
+          [
+            342.0,
+            162.0
+          ],
+          [
+            356.0,
+            298.0
+          ],
+          [
+            334.0,
+            158.0
+          ],
+          [
+            348.0,
+            294.0
+          ],
+          [
+            344.0,
+            180.0
+          ],
+          [
+            352.0,
+            282.0
+          ],
+          [
+            356.0,
+            154.0
+          ],
+          [
+            342.0,
+            256.0
+          ],
+          [
+            344.0,
+            198.0
+          ],
+          [
+            352.0,
+            300.0
+          ],
+          [
+            354.0,
+            230.0
+          ],
+          [
+            346.0,
+            226.0
+          ],
+          [
+            342.0,
+            274.0
+          ],
+          [
+            356.0,
+            172.0
+          ],
+          [
+            348.0,
+            168.0
+          ],
+          [
+            340.0,
+            164.0
+          ],
+          [
+            354.0,
+            248.0
+          ],
+          [
+            346.0,
+            244.0
+          ],
+          [
+            356.0,
+            190.0
+          ],
+          [
+            348.0,
+            186.0
+          ],
+          [
+            358.0,
+            218.0
+          ],
+          [
+            354.0,
+            266.0
+          ],
+          [
+            350.0,
+            214.0
+          ],
+          [
+            346.0,
+            262.0
+          ],
+          [
+            352.0,
+            156.0
+          ],
+          [
+            358.0,
+            236.0
+          ],
+          [
+            350.0,
+            232.0
+          ],
+          [
+            352.0,
+            174.0
+          ],
+          [
+            350.0,
+            250.0
+          ],
+          [
+            356.0,
+            284.0
+          ],
+          [
+            348.0,
+            280.0
+          ],
+          [
+            356.0,
+            302.0
+          ],
+          [
+            348.0,
+            298.0
+          ],
+          [
+            344.0,
+            166.0
+          ],
+          [
+            352.0,
+            268.0
+          ],
+          [
+            336.0,
+            162.0
+          ],
+          [
+            342.0,
+            242.0
+          ],
+          [
+            344.0,
+            184.0
+          ],
+          [
+            352.0,
+            286.0
+          ],
+          [
+            354.0,
+            216.0
+          ],
+          [
+            356.0,
+            158.0
+          ],
+          [
+            342.0,
+            260.0
+          ],
+          [
+            348.0,
+            154.0
+          ],
+          [
+            344.0,
+            202.0
+          ],
+          [
+            340.0,
+            150.0
+          ],
+          [
+            354.0,
+            234.0
+          ],
+          [
+            346.0,
+            230.0
+          ],
+          [
+            356.0,
+            176.0
+          ],
+          [
+            348.0,
+            172.0
+          ],
+          [
+            358.0,
+            204.0
+          ],
+          [
+            354.0,
+            252.0
+          ],
+          [
+            340.0,
+            168.0
+          ],
+          [
+            350.0,
+            200.0
+          ],
+          [
+            346.0,
+            248.0
+          ],
+          [
+            358.0,
+            222.0
+          ],
+          [
+            350.0,
+            218.0
+          ],
+          [
+            352.0,
+            160.0
+          ],
+          [
+            344.0,
+            296.0
+          ],
+          [
+            350.0,
+            236.0
+          ],
+          [
+            356.0,
+            270.0
+          ],
+          [
+            348.0,
+            266.0
+          ],
+          [
+            356.0,
+            288.0
+          ],
+          [
+            348.0,
+            284.0
+          ],
+          [
+            356.0,
+            306.0
+          ],
+          [
+            344.0,
+            152.0
+          ],
+          [
+            352.0,
+            254.0
+          ],
+          [
+            348.0,
+            302.0
+          ],
+          [
+            342.0,
+            228.0
+          ],
+          [
+            344.0,
+            170.0
+          ],
+          [
+            352.0,
+            272.0
+          ],
+          [
+            354.0,
+            202.0
+          ],
+          [
+            336.0,
+            166.0
+          ],
+          [
+            342.0,
+            246.0
+          ],
+          [
+            344.0,
+            188.0
+          ],
+          [
+            352.0,
+            290.0
+          ],
+          [
+            354.0,
+            220.0
+          ],
+          [
+            346.0,
+            216.0
+          ],
+          [
+            342.0,
+            264.0
+          ],
+          [
+            356.0,
+            162.0
+          ],
+          [
+            348.0,
+            158.0
+          ],
+          [
+            358.0,
+            190.0
+          ],
+          [
+            354.0,
+            238.0
+          ],
+          [
+            340.0,
+            154.0
+          ],
+          [
+            346.0,
+            234.0
+          ],
+          [
+            358.0,
+            208.0
+          ],
+          [
+            350.0,
+            204.0
+          ],
+          [
+            344.0,
+            282.0
+          ],
+          [
+            358.0,
+            226.0
+          ],
+          [
+            350.0,
+            222.0
+          ],
+          [
+            356.0,
+            256.0
+          ],
+          [
+            344.0,
+            300.0
+          ],
+          [
+            356.0,
+            274.0
+          ],
+          [
+            348.0,
+            270.0
+          ],
+          [
+            332.0,
+            164.0
+          ],
+          [
+            356.0,
+            292.0
+          ],
+          [
+            352.0,
+            240.0
+          ],
+          [
+            348.0,
+            288.0
+          ],
+          [
+            342.0,
+            214.0
+          ],
+          [
+            344.0,
+            156.0
+          ],
+          [
+            352.0,
+            258.0
+          ],
+          [
+            336.0,
+            152.0
+          ],
+          [
+            342.0,
+            232.0
+          ],
+          [
+            344.0,
+            174.0
+          ],
+          [
+            352.0,
+            276.0
+          ],
+          [
+            354.0,
+            206.0
+          ],
+          [
+            346.0,
+            202.0
+          ],
+          [
+            342.0,
+            250.0
+          ],
+          [
+            358.0,
+            176.0
+          ],
+          [
+            354.0,
+            224.0
+          ],
+          [
+            346.0,
+            220.0
+          ],
+          [
+            348.0,
+            162.0
+          ],
+          [
+            358.0,
+            194.0
+          ],
+          [
+            340.0,
+            158.0
+          ],
+          [
+            350.0,
+            190.0
+          ],
+          [
+            346.0,
+            238.0
+          ],
+          [
+            344.0,
+            268.0
+          ],
+          [
+            358.0,
+            212.0
+          ],
+          [
+            350.0,
+            208.0
+          ],
+          [
+            356.0,
+            242.0
+          ],
+          [
+            344.0,
+            286.0
+          ],
+          [
+            356.0,
+            260.0
+          ],
+          [
+            348.0,
+            256.0
+          ],
+          [
+            356.0,
+            278.0
+          ],
+          [
+            348.0,
+            274.0
+          ],
+          [
+            332.0,
+            168.0
+          ],
+          [
+            358.0,
+            306.0
+          ],
+          [
+            352.0,
+            244.0
+          ],
+          [
+            342.0,
+            218.0
+          ],
+          [
+            344.0,
+            160.0
+          ],
+          [
+            352.0,
+            262.0
+          ],
+          [
+            354.0,
+            192.0
+          ],
+          [
+            336.0,
+            156.0
+          ],
+          [
+            346.0,
+            188.0
+          ],
+          [
+            342.0,
+            236.0
+          ],
+          [
+            354.0,
+            210.0
+          ],
+          [
+            346.0,
+            206.0
+          ],
+          [
+            358.0,
+            180.0
+          ],
+          [
+            350.0,
+            176.0
+          ],
+          [
+            346.0,
+            224.0
+          ],
+          [
+            344.0,
+            254.0
+          ],
+          [
+            358.0,
+            198.0
+          ],
+          [
+            350.0,
+            194.0
+          ],
+          [
+            344.0,
+            272.0
+          ],
+          [
+            350.0,
+            212.0
+          ],
+          [
+            356.0,
+            246.0
+          ],
+          [
+            348.0,
+            242.0
+          ],
+          [
+            344.0,
+            290.0
+          ],
+          [
+            356.0,
+            264.0
+          ],
+          [
+            348.0,
+            260.0
+          ],
+          [
+            358.0,
+            292.0
+          ],
+          [
+            352.0,
+            230.0
+          ],
+          [
+            348.0,
+            278.0
+          ],
+          [
+            342.0,
+            204.0
+          ],
+          [
+            350.0,
+            306.0
+          ],
+          [
+            352.0,
+            248.0
+          ],
+          [
+            354.0,
+            178.0
+          ],
+          [
+            342.0,
+            222.0
+          ],
+          [
+            354.0,
+            196.0
+          ],
+          [
+            336.0,
+            160.0
+          ],
+          [
+            346.0,
+            192.0
+          ],
+          [
+            358.0,
+            166.0
+          ],
+          [
+            354.0,
+            214.0
+          ],
+          [
+            350.0,
+            162.0
+          ],
+          [
+            346.0,
+            210.0
+          ],
+          [
+            358.0,
+            184.0
+          ],
+          [
+            350.0,
+            180.0
+          ],
+          [
+            344.0,
+            258.0
+          ],
+          [
+            350.0,
+            198.0
+          ],
+          [
+            356.0,
+            232.0
+          ],
+          [
+            348.0,
+            228.0
+          ],
+          [
+            344.0,
+            276.0
+          ],
+          [
+            354.0,
+            308.0
+          ],
+          [
+            346.0,
+            304.0
+          ],
+          [
+            356.0,
+            250.0
+          ],
+          [
+            348.0,
+            246.0
+          ],
+          [
+            352.0,
+            216.0
+          ],
+          [
+            348.0,
+            264.0
+          ],
+          [
+            332.0,
+            158.0
+          ],
+          [
+            358.0,
+            296.0
+          ],
+          [
+            342.0,
+            190.0
+          ],
+          [
+            350.0,
+            292.0
+          ],
+          [
+            352.0,
+            234.0
+          ],
+          [
+            354.0,
+            164.0
+          ],
+          [
+            342.0,
+            208.0
+          ],
+          [
+            350.0,
+            310.0
+          ],
+          [
+            344.0,
+            150.0
+          ],
+          [
+            352.0,
+            252.0
+          ],
+          [
+            354.0,
+            182.0
+          ],
+          [
+            346.0,
+            178.0
+          ],
+          [
+            342.0,
+            226.0
+          ],
+          [
+            354.0,
+            200.0
+          ],
+          [
+            346.0,
+            196.0
+          ],
+          [
+            358.0,
+            170.0
+          ],
+          [
+            350.0,
+            166.0
+          ],
+          [
+            344.0,
+            244.0
+          ],
+          [
+            358.0,
+            188.0
+          ],
+          [
+            350.0,
+            184.0
+          ],
+          [
+            356.0,
+            218.0
+          ],
+          [
+            344.0,
+            262.0
+          ],
+          [
+            354.0,
+            294.0
+          ],
+          [
+            356.0,
+            236.0
+          ],
+          [
+            348.0,
+            232.0
+          ],
+          [
+            356.0,
+            254.0
+          ],
+          [
+            352.0,
+            202.0
+          ],
+          [
+            348.0,
+            250.0
+          ],
+          [
+            358.0,
+            282.0
+          ],
+          [
+            342.0,
+            176.0
+          ],
+          [
+            350.0,
+            278.0
+          ],
+          [
+            352.0,
+            220.0
+          ],
+          [
+            332.0,
+            162.0
+          ],
+          [
+            358.0,
+            300.0
+          ],
+          [
+            342.0,
+            194.0
+          ],
+          [
+            350.0,
+            296.0
+          ],
+          [
+            352.0,
+            238.0
+          ],
+          [
+            354.0,
+            168.0
+          ],
+          [
+            346.0,
+            164.0
+          ],
+          [
+            342.0,
+            212.0
+          ],
+          [
+            338.0,
+            160.0
+          ],
+          [
+            354.0,
+            186.0
+          ],
+          [
+            346.0,
+            182.0
+          ],
+          [
+            358.0,
+            156.0
+          ],
+          [
+            350.0,
+            152.0
+          ],
+          [
+            346.0,
+            200.0
+          ],
+          [
+            344.0,
+            230.0
+          ],
+          [
+            358.0,
+            174.0
+          ],
+          [
+            350.0,
+            170.0
+          ],
+          [
+            356.0,
+            204.0
+          ],
+          [
+            344.0,
+            248.0
+          ],
+          [
+            354.0,
+            280.0
+          ],
+          [
+            356.0,
+            222.0
+          ],
+          [
+            348.0,
+            218.0
+          ],
+          [
+            344.0,
+            266.0
+          ],
+          [
+            354.0,
+            298.0
+          ],
+          [
+            346.0,
+            294.0
+          ],
+          [
+            356.0,
+            240.0
+          ],
+          [
+            352.0,
+            188.0
+          ],
+          [
+            348.0,
+            236.0
+          ],
+          [
+            358.0,
+            268.0
+          ],
+          [
+            350.0,
+            264.0
+          ],
+          [
+            352.0,
+            206.0
+          ],
+          [
+            358.0,
+            286.0
+          ],
+          [
+            342.0,
+            180.0
+          ],
+          [
+            350.0,
+            282.0
+          ],
+          [
+            352.0,
+            224.0
+          ],
+          [
+            354.0,
+            154.0
+          ],
+          [
+            358.0,
+            304.0
+          ],
+          [
+            346.0,
+            150.0
+          ],
+          [
+            342.0,
+            198.0
+          ],
+          [
+            350.0,
+            300.0
+          ],
+          [
+            354.0,
+            172.0
+          ],
+          [
+            346.0,
+            168.0
+          ],
+          [
+            338.0,
+            164.0
+          ],
+          [
+            346.0,
+            186.0
+          ],
+          [
+            344.0,
+            216.0
+          ],
+          [
+            358.0,
+            160.0
+          ],
+          [
+            350.0,
+            156.0
+          ],
+          [
+            342.0,
+            292.0
+          ],
+          [
+            344.0,
+            234.0
+          ],
+          [
+            356.0,
+            208.0
+          ],
+          [
+            348.0,
+            204.0
+          ],
+          [
+            344.0,
+            252.0
+          ],
+          [
+            354.0,
+            284.0
+          ],
+          [
+            346.0,
+            280.0
+          ],
+          [
+            356.0,
+            226.0
+          ],
+          [
+            348.0,
+            222.0
+          ],
+          [
+            358.0,
+            254.0
+          ],
+          [
+            354.0,
+            302.0
+          ],
+          [
+            346.0,
+            298.0
+          ],
+          [
+            352.0,
+            192.0
+          ],
+          [
+            358.0,
+            272.0
+          ],
+          [
+            342.0,
+            166.0
+          ],
+          [
+            350.0,
+            268.0
+          ],
+          [
+            334.0,
+            162.0
+          ],
+          [
+            352.0,
+            210.0
+          ],
+          [
+            358.0,
+            290.0
+          ],
+          [
+            342.0,
+            184.0
+          ],
+          [
+            350.0,
+            286.0
+          ],
+          [
+            354.0,
+            158.0
+          ],
+          [
+            346.0,
+            154.0
+          ],
+          [
+            338.0,
+            150.0
+          ],
+          [
+            354.0,
+            176.0
+          ],
+          [
+            346.0,
+            172.0
+          ],
+          [
+            338.0,
+            168.0
+          ],
+          [
+            352.0,
+            304.0
+          ],
+          [
+            342.0,
+            278.0
+          ],
+          [
+            344.0,
+            220.0
+          ],
+          [
+            350.0,
+            160.0
+          ],
+          [
+            342.0,
+            296.0
+          ],
+          [
+            356.0,
+            194.0
+          ],
+          [
+            348.0,
+            190.0
+          ],
+          [
+            344.0,
+            238.0
+          ],
+          [
+            354.0,
+            270.0
+          ],
+          [
+            346.0,
+            266.0
+          ],
+          [
+            356.0,
+            212.0
+          ],
+          [
+            348.0,
+            208.0
+          ],
+          [
+            358.0,
+            240.0
+          ],
+          [
+            354.0,
+            288.0
+          ],
+          [
+            346.0,
+            284.0
+          ],
+          [
+            352.0,
+            178.0
+          ],
+          [
+            348.0,
+            226.0
+          ],
+          [
+            358.0,
+            258.0
+          ],
+          [
+            342.0,
+            152.0
+          ],
+          [
+            350.0,
+            254.0
+          ],
+          [
+            346.0,
+            302.0
+          ],
+          [
+            352.0,
+            196.0
+          ],
+          [
+            358.0,
+            276.0
+          ],
+          [
+            342.0,
+            170.0
+          ],
+          [
+            350.0,
+            272.0
+          ],
+          [
+            334.0,
+            166.0
+          ],
+          [
+            354.0,
+            162.0
+          ],
+          [
+            346.0,
+            158.0
+          ],
+          [
+            338.0,
+            154.0
+          ],
+          [
+            344.0,
+            206.0
+          ],
+          [
+            352.0,
+            308.0
+          ],
+          [
+            356.0,
+            180.0
+          ],
+          [
+            342.0,
+            282.0
+          ],
+          [
+            348.0,
+            176.0
+          ],
+          [
+            344.0,
+            224.0
+          ],
+          [
+            354.0,
+            256.0
+          ],
+          [
+            346.0,
+            252.0
+          ],
+          [
+            356.0,
+            198.0
+          ],
+          [
+            348.0,
+            194.0
+          ],
+          [
+            354.0,
+            274.0
+          ],
+          [
+            346.0,
+            270.0
+          ],
+          [
+            356.0,
+            216.0
+          ],
+          [
+            352.0,
+            164.0
+          ],
+          [
+            348.0,
+            212.0
+          ],
+          [
+            330.0,
+            164.0
+          ],
+          [
+            358.0,
+            244.0
+          ],
+          [
+            350.0,
+            240.0
+          ],
+          [
+            346.0,
+            288.0
+          ],
+          [
+            352.0,
+            182.0
+          ],
+          [
+            358.0,
+            262.0
+          ],
+          [
+            342.0,
+            156.0
+          ],
+          [
+            350.0,
+            258.0
+          ],
+          [
+            334.0,
+            152.0
+          ],
+          [
+            352.0,
+            200.0
+          ],
+          [
+            342.0,
+            174.0
+          ],
+          [
+            350.0,
+            276.0
+          ],
+          [
+            348.0,
+            306.0
+          ],
+          [
+            344.0,
+            192.0
+          ],
+          [
+            352.0,
+            294.0
+          ],
+          [
+            338.0,
+            158.0
+          ],
+          [
+            356.0,
+            166.0
+          ],
+          [
+            342.0,
+            268.0
+          ],
+          [
+            344.0,
+            210.0
+          ],
+          [
+            354.0,
+            242.0
+          ],
+          [
+            356.0,
+            184.0
+          ],
+          [
+            342.0,
+            286.0
+          ],
+          [
+            348.0,
+            180.0
+          ],
+          [
+            354.0,
+            260.0
+          ],
+          [
+            346.0,
+            256.0
+          ],
+          [
+            356.0,
+            202.0
+          ],
+          [
+            352.0,
+            150.0
+          ],
+          [
+            348.0,
+            198.0
+          ],
+          [
+            358.0,
+            230.0
+          ],
+          [
+            354.0,
+            278.0
+          ],
+          [
+            350.0,
+            226.0
+          ],
+          [
+            346.0,
+            274.0
+          ],
+          [
+            352.0,
+            168.0
+          ],
+          [
+            330.0,
+            168.0
+          ],
+          [
+            358.0,
+            248.0
+          ],
+          [
+            350.0,
+            244.0
+          ],
+          [
+            352.0,
+            186.0
+          ],
+          [
+            342.0,
+            160.0
+          ],
+          [
+            356.0,
+            296.0
+          ],
+          [
+            350.0,
+            262.0
+          ],
+          [
+            334.0,
+            156.0
+          ],
+          [
+            348.0,
+            292.0
+          ]
+        ]
+      },
+      "26e40178": {
+        "area_type": "polygon",
+        "total_area": 70756.0,
+        "covered_area": 0.0,
+        "coverage_percentage": 0.0,
+        "covered_points": []
+      },
+      "cb667f6b": {
+        "area_type": "circle",
+        "total_area": 24884.555409084755,
+        "covered_area": 0.0,
+        "coverage_percentage": 0.0,
+        "covered_points": []
+      },
+      "549bb601": {
+        "area_type": "circle",
+        "total_area": 29559.245277626364,
+        "covered_area": 0.0,
+        "coverage_percentage": 0.0,
+        "covered_points": []
+      },
+      "73020e3b": {
+        "area_type": "circle",
+        "total_area": 23235.21926595011,
+        "covered_area": 0.0,
+        "coverage_percentage": 0.0,
+        "covered_points": []
+      }
+    }
+  }
+}

@@ -1,0 +1,1270 @@
+{
+  "id": "6c275ceb",
+  "name": "New Session 1",
+  "description": "New Session 1 covers a 1024×768 m mission zone. It is configured for area search with a time agnostic timeline. It will load with the API example data.",
+  "status": "active",
+  "creator": "llm-agent-course",
+  "time_mode": "time_agnostic",
+  "task_type": "area_search",
+  "task_description": "",
+  "is_distance_3d": false,
+  "canvas_width": 1024.0,
+  "canvas_height": 768.0,
+  "created_at": 1768285605.2847779,
+  "last_updated": 1768285854.261925,
+  "statistics": {
+    "drone_count": 10,
+    "target_count": 2,
+    "obstacle_count": 6,
+    "task_count": 10,
+    "environment_id": "6222746e",
+    "total_commands_executed": 0,
+    "total_flight_time": 0.0,
+    "total_distance_traveled": 0.0,
+    "total_target_reaches": 0,
+    "drones_with_target_reaches": 0,
+    "unique_targets_reached": 0,
+    "session_time": 253.47701597213745,
+    "command_history_size": 0,
+    "task_progress": {
+      "task_type": "area_search",
+      "progress_percentage": 0,
+      "is_completed": false,
+      "status_message": "Task to be Done",
+      "details": {
+        "total_targets": 2
+      },
+      "target_reach_summary": {
+        "total_reaches": 0,
+        "drones_with_reaches": 0,
+        "unique_targets_reached": 0
+      },
+      "area_coverage_summary": {
+        "total_targets_tracked": 0,
+        "average_coverage": 0.0,
+        "fully_covered_targets": 0
+      }
+    }
+  },
+  "drones": [
+    {
+      "id": "31e42431",
+      "name": "Drone 1",
+      "model": "Model-D4",
+      "status": "hovering",
+      "position": {
+        "x": 174.0,
+        "y": 189.0,
+        "z": 9.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 89.0,
+      "battery_capacity": 89.0,
+      "max_speed": 12.0,
+      "max_altitude": 102.0,
+      "home_position": {
+        "x": 674.0,
+        "y": 689.0,
+        "z": 9.0
+      },
+      "created_at": 1761314816.72833,
+      "last_updated": 1761314816.728333
+    },
+    {
+      "id": "78c31c79",
+      "name": "Drone 2",
+      "model": "Model-D4",
+      "status": "idle",
+      "position": {
+        "x": 110.0,
+        "y": 73.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 87.0,
+      "battery_capacity": 87.0,
+      "max_speed": 14.0,
+      "max_altitude": 95.0,
+      "home_position": {
+        "x": 610.0,
+        "y": 573.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.729824,
+      "last_updated": 1761314816.729825
+    },
+    {
+      "id": "0784ceb6",
+      "name": "Drone 3",
+      "model": "Model-C",
+      "status": "idle",
+      "position": {
+        "x": 462.0,
+        "y": 196.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 80.0,
+      "battery_capacity": 80.0,
+      "max_speed": 12.0,
+      "max_altitude": 122.0,
+      "home_position": {
+        "x": 462.0,
+        "y": 196.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.730936,
+      "last_updated": 1761314816.730937
+    },
+    {
+      "id": "ecf0bef3",
+      "name": "Drone 4",
+      "model": "Model-D4",
+      "status": "hovering",
+      "position": {
+        "x": 389.0,
+        "y": 202.0,
+        "z": 11.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 84.0,
+      "battery_capacity": 84.0,
+      "max_speed": 16.0,
+      "max_altitude": 134.0,
+      "home_position": {
+        "x": 389.0,
+        "y": 202.0,
+        "z": 11.0
+      },
+      "created_at": 1761314816.7318668,
+      "last_updated": 1761314816.731869
+    },
+    {
+      "id": "23639881",
+      "name": "Drone 5",
+      "model": "Model-C",
+      "status": "hovering",
+      "position": {
+        "x": 78.0,
+        "y": 14.0,
+        "z": 8.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 64.0,
+      "battery_capacity": 64.0,
+      "max_speed": 13.0,
+      "max_altitude": 145.0,
+      "home_position": {
+        "x": 78.0,
+        "y": 14.0,
+        "z": 8.0
+      },
+      "created_at": 1761314816.732799,
+      "last_updated": 1761314816.732801
+    },
+    {
+      "id": "0f413988",
+      "name": "Drone 6",
+      "model": "Model-A2",
+      "status": "idle",
+      "position": {
+        "x": 323.0,
+        "y": 233.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 67.0,
+      "battery_capacity": 67.0,
+      "max_speed": 17.0,
+      "max_altitude": 144.0,
+      "home_position": {
+        "x": 323.0,
+        "y": 233.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.733762,
+      "last_updated": 1761314816.733763
+    },
+    {
+      "id": "ced563f1",
+      "name": "Drone 7",
+      "model": "Model-B2",
+      "status": "idle",
+      "position": {
+        "x": 265.0,
+        "y": 172.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 73.0,
+      "battery_capacity": 73.0,
+      "max_speed": 23.0,
+      "max_altitude": 98.0,
+      "home_position": {
+        "x": 265.0,
+        "y": 172.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.734627,
+      "last_updated": 1761314816.734627
+    },
+    {
+      "id": "f3df86c7",
+      "name": "Drone 8",
+      "model": "Model-C",
+      "status": "idle",
+      "position": {
+        "x": 141.0,
+        "y": 132.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 84.0,
+      "battery_capacity": 84.0,
+      "max_speed": 16.0,
+      "max_altitude": 131.0,
+      "home_position": {
+        "x": 141.0,
+        "y": 132.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.735404,
+      "last_updated": 1761314816.735404
+    },
+    {
+      "id": "e1d2a97b",
+      "name": "Drone 9",
+      "model": "Model-D4",
+      "status": "idle",
+      "position": {
+        "x": 494.0,
+        "y": 126.0,
+        "z": 0.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 62.0,
+      "battery_capacity": 62.0,
+      "max_speed": 12.0,
+      "max_altitude": 139.0,
+      "home_position": {
+        "x": 494.0,
+        "y": 126.0,
+        "z": 0.0
+      },
+      "created_at": 1761314816.736192,
+      "last_updated": 1761314816.736192
+    },
+    {
+      "id": "3f2e80b0",
+      "name": "Drone 10",
+      "model": "Model-D4",
+      "status": "hovering",
+      "position": {
+        "x": 100.0,
+        "y": 204.0,
+        "z": 8.0
+      },
+      "heading": 0.0,
+      "speed": 0.0,
+      "perceived_radius": 100.0,
+      "task_radius": 10.0,
+      "battery_level": 100.0,
+      "battery_volume": 74.0,
+      "battery_capacity": 74.0,
+      "max_speed": 13.0,
+      "max_altitude": 101.0,
+      "home_position": {
+        "x": 100.0,
+        "y": 204.0,
+        "z": 8.0
+      },
+      "created_at": 1761314816.7371662,
+      "last_updated": 1761314816.7371678
+    }
+  ],
+  "targets": [
+    {
+      "id": "b349d182",
+      "name": "Circle Target 1",
+      "type": "circle",
+      "position": {
+        "x": 391.0,
+        "y": 647.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 95,
+      "created_at": 1761314816.723433,
+      "last_updated": 1761314816.723433,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": []
+    },
+    {
+      "id": "42d492ea",
+      "name": "Polygon Target 2",
+      "type": "polygon",
+      "position": {
+        "x": 834.0,
+        "y": 501.0,
+        "z": 0.0
+      },
+      "description": "",
+      "radius": 1,
+      "created_at": 1761314816.725371,
+      "last_updated": 1761314816.7253718,
+      "velocity": null,
+      "moving_path": null,
+      "moving_duration": null,
+      "current_path_index": null,
+      "path_direction": null,
+      "time_in_direction": null,
+      "calculated_speed": null,
+      "charge_amount": null,
+      "is_reached": false,
+      "reached_by": [],
+      "vertices": [
+        {
+          "x": 716.0,
+          "y": 384.0,
+          "z": 0.0
+        },
+        {
+          "x": 951.0,
+          "y": 384.0,
+          "z": 0.0
+        },
+        {
+          "x": 951.0,
+          "y": 618.0,
+          "z": 0.0
+        },
+        {
+          "x": 716.0,
+          "y": 618.0,
+          "z": 0.0
+        }
+      ]
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "7738e42e",
+      "name": "Point Obstacle 1",
+      "type": "point",
+      "position": {
+        "x": 252,
+        "y": 512,
+        "z": 0
+      },
+      "description": "",
+      "radius": 50,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 0,
+      "area": 7853.981633974483,
+      "created_at": 1761314816.738118,
+      "last_updated": 1761314816.738118
+    },
+    {
+      "id": "84c1efbb",
+      "name": "Polygon Obstacle 2",
+      "type": "polygon",
+      "position": {
+        "x": 590,
+        "y": 487,
+        "z": 0
+      },
+      "description": "",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 558,
+          "y": 543
+        },
+        {
+          "x": 621,
+          "y": 543
+        },
+        {
+          "x": 621,
+          "y": 431
+        },
+        {
+          "x": 558,
+          "y": 431
+        }
+      ],
+      "height": 0,
+      "area": 7056.0,
+      "created_at": 1761314816.739093,
+      "last_updated": 1761314816.739093
+    },
+    {
+      "id": "7dd93e96",
+      "name": "Polygon Obstacle 3",
+      "type": "polygon",
+      "position": {
+        "x": 398,
+        "y": 416,
+        "z": 0
+      },
+      "description": "",
+      "radius": null,
+      "width": null,
+      "length": null,
+      "vertices": [
+        {
+          "x": 351,
+          "y": 470
+        },
+        {
+          "x": 444,
+          "y": 470
+        },
+        {
+          "x": 444,
+          "y": 363
+        },
+        {
+          "x": 351,
+          "y": 363
+        }
+      ],
+      "height": 70,
+      "area": 9951.0,
+      "created_at": 1761314816.739946,
+      "last_updated": 1761314816.739946
+    },
+    {
+      "id": "8f1c099b",
+      "name": "Point Obstacle 4",
+      "type": "point",
+      "position": {
+        "x": 406,
+        "y": 378,
+        "z": 0
+      },
+      "description": "",
+      "radius": 2,
+      "width": null,
+      "length": null,
+      "vertices": [],
+      "height": 0,
+      "area": 12.566370614359172,
+      "created_at": 1761314816.740766,
+      "last_updated": 1761314816.740766
+    },
+    {
+      "id": "35fcf445",
+      "name": "Ellipse Obstacle 5",
+      "type": "ellipse",
+      "position": {
+        "x": 520,
+        "y": 380,
+        "z": 0
+      },
+      "description": "",
+      "radius": null,
+      "width": 50,
+      "length": 35,
+      "vertices": [],
+      "height": 0,
+      "area": 5497.787143782139,
+      "created_at": 1761314816.741531,
+      "last_updated": 1761314816.741531
+    },
+    {
+      "id": "f5891e68",
+      "name": "Ellipse Obstacle 6",
+      "type": "ellipse",
+      "position": {
+        "x": 660,
+        "y": 330,
+        "z": 0
+      },
+      "description": "",
+      "radius": null,
+      "width": 26,
+      "length": 13,
+      "vertices": [],
+      "height": 0,
+      "area": 1061.85831691335,
+      "created_at": 1761314816.742267,
+      "last_updated": 1761314816.742267
+    }
+  ],
+  "environment": {
+    "id": "6222746e",
+    "name": "Example Session (Area Search) Environment",
+    "weather": "clear",
+    "temperature": 15.775933694361592,
+    "humidity": 59.7,
+    "pressure": 1024.4,
+    "wind_speed": 3.315810036763287,
+    "wind_direction": "south",
+    "visibility": 13488.2,
+    "created_at": 1761314816.721653,
+    "last_updated": 1768285866.1057696
+  },
+  "tasks": [
+    {
+      "id": "ffc8d78c",
+      "name": "Battery Management Mission 1",
+      "content": "Drone Drone 10 performs extended patrol: take off to 18 meters, patrol rectangular area with corners (384, 338), (868, 338), (868, 770), (384, 770) at altitude 18m. Monitor battery throughout mission. Return home when battery drops below 30% or mission complete, then land.",
+      "content_aliases": [
+        "Assign Drone 10 to an extended patrol at 18m, covering the area from (384, 338) to (868, 770), with critical battery monitoring and automatic return at 30% charge.",
+        "Task Drone 10 with continuous area search at 18 meters, patrolling between (384, 338) and (868, 770), ensuring RTH if battery drops below 30%.",
+        "Drone 10 performs an endurance mission at 18m, patrolling the region defined by (384, 338) and (868, 770), prioritizing battery longevity and safe return home.",
+        "Manage Drone 10 for prolonged operation at 18 meters, sweeping the area between (384, 338) and (868, 770), initiating return_home protocol upon low battery detection."
+      ],
+      "description": "Monitor battery and return before critical level",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Battery Management Mission created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "3f2e80b0",
+            "altitude": 18.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "3f2e80b0",
+            "waypoints": [
+              {
+                "x": "{randx_batt1:150:400}",
+                "y": "{randy_batt1:150:400}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt2:650:900}",
+                "y": "{randy_batt1:150:400}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt2:650:900}",
+                "y": "{randy_batt2:650:900}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt1:150:400}",
+                "y": "{randy_batt2:650:900}",
+                "z": "{randz_battalt:15:20}"
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/return_home",
+          "parameters": {
+            "id": "3f2e80b0"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "3f2e80b0"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_battery_level",
+            "parameters": {
+              "drone_id": "3f2e80b0",
+              "min_level": 20.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_at_home",
+            "parameters": {
+              "drone_id": "3f2e80b0",
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "3f2e80b0",
+              "tolerance": 0.5
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_along_path",
+        "return_home",
+        "land"
+      ],
+      "is_done": false,
+      "created_at": 1768285801.6263504,
+      "last_updated": 1768285801.6263504
+    },
+    {
+      "id": "1e2d7798",
+      "name": "Battery Management Mission 2",
+      "content": "Drone Drone 2 performs extended patrol: take off to 16 meters, patrol rectangular area with corners (286, 203), (849, 203), (849, 796), (286, 796) at altitude 16m. Monitor battery throughout mission. Return home when battery drops below 30% or mission complete, then land.",
+      "content_aliases": [
+        "Assign Drone 2 to an extended patrol at 16m, covering the area from (286, 203) to (849, 796), with critical battery monitoring and automatic return at 30% charge.",
+        "Task Drone 2 with continuous area search at 16 meters, patrolling between (286, 203) and (849, 796), ensuring RTH if battery drops below 30%.",
+        "Drone 2 performs an endurance mission at 16m, patrolling the region defined by (286, 203) and (849, 796), prioritizing battery longevity and safe return home.",
+        "Manage Drone 2 for prolonged operation at 16 meters, sweeping the area between (286, 203) and (849, 796), initiating return_home protocol upon low battery detection."
+      ],
+      "description": "Monitor battery and return before critical level",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Battery Management Mission created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "78c31c79",
+            "altitude": 16.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "78c31c79",
+            "waypoints": [
+              {
+                "x": "{randx_batt1:150:400}",
+                "y": "{randy_batt1:150:400}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt2:650:900}",
+                "y": "{randy_batt1:150:400}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt2:650:900}",
+                "y": "{randy_batt2:650:900}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt1:150:400}",
+                "y": "{randy_batt2:650:900}",
+                "z": "{randz_battalt:15:20}"
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/return_home",
+          "parameters": {
+            "id": "78c31c79"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "78c31c79"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_battery_level",
+            "parameters": {
+              "drone_id": "78c31c79",
+              "min_level": 20.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_at_home",
+            "parameters": {
+              "drone_id": "78c31c79",
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "78c31c79",
+              "tolerance": 0.5
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_along_path",
+        "return_home",
+        "land"
+      ],
+      "is_done": false,
+      "created_at": 1768285801.6496148,
+      "last_updated": 1768285801.6496148
+    },
+    {
+      "id": "0250b734",
+      "name": "Battery Management Mission 3",
+      "content": "Drone Drone 3 performs extended patrol: take off to 20 meters, patrol rectangular area with corners (154, 265), (714, 265), (714, 737), (154, 737) at altitude 20m. Monitor battery throughout mission. Return home when battery drops below 30% or mission complete, then land.",
+      "content_aliases": [
+        "Assign Drone 3 to an extended patrol at 20m, covering the area from (154, 265) to (714, 737), with critical battery monitoring and automatic return at 30% charge.",
+        "Task Drone 3 with continuous area search at 20 meters, patrolling between (154, 265) and (714, 737), ensuring RTH if battery drops below 30%.",
+        "Drone 3 performs an endurance mission at 20m, patrolling the region defined by (154, 265) and (714, 737), prioritizing battery longevity and safe return home.",
+        "Manage Drone 3 for prolonged operation at 20 meters, sweeping the area between (154, 265) and (714, 737), initiating return_home protocol upon low battery detection."
+      ],
+      "description": "Monitor battery and return before critical level",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Battery Management Mission created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "0784ceb6",
+            "altitude": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "0784ceb6",
+            "waypoints": [
+              {
+                "x": "{randx_batt1:150:400}",
+                "y": "{randy_batt1:150:400}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt2:650:900}",
+                "y": "{randy_batt1:150:400}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt2:650:900}",
+                "y": "{randy_batt2:650:900}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt1:150:400}",
+                "y": "{randy_batt2:650:900}",
+                "z": "{randz_battalt:15:20}"
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/return_home",
+          "parameters": {
+            "id": "0784ceb6"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "0784ceb6"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_battery_level",
+            "parameters": {
+              "drone_id": "0784ceb6",
+              "min_level": 20.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_at_home",
+            "parameters": {
+              "drone_id": "0784ceb6",
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "0784ceb6",
+              "tolerance": 0.5
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_along_path",
+        "return_home",
+        "land"
+      ],
+      "is_done": false,
+      "created_at": 1768285801.6870093,
+      "last_updated": 1768285801.6870093
+    },
+    {
+      "id": "cd63eefb",
+      "name": "Battery Management Mission 4",
+      "content": "Drone Drone 3 performs extended patrol: take off to 20 meters, patrol rectangular area with corners (278, 233), (681, 233), (681, 786), (278, 786) at altitude 20m. Monitor battery throughout mission. Return home when battery drops below 30% or mission complete, then land.",
+      "content_aliases": [
+        "Assign Drone 3 to an extended patrol at 20m, covering the area from (278, 233) to (681, 786), with critical battery monitoring and automatic return at 30% charge.",
+        "Task Drone 3 with continuous area search at 20 meters, patrolling between (278, 233) and (681, 786), ensuring RTH if battery drops below 30%.",
+        "Drone 3 performs an endurance mission at 20m, patrolling the region defined by (278, 233) and (681, 786), prioritizing battery longevity and safe return home.",
+        "Manage Drone 3 for prolonged operation at 20 meters, sweeping the area between (278, 233) and (681, 786), initiating return_home protocol upon low battery detection."
+      ],
+      "description": "Monitor battery and return before critical level",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Battery Management Mission created by Built-in template",
+      "difficulty": "medium",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "0784ceb6",
+            "altitude": 20.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/move_along_path",
+          "parameters": {
+            "id": "0784ceb6",
+            "waypoints": [
+              {
+                "x": "{randx_batt1:150:400}",
+                "y": "{randy_batt1:150:400}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt2:650:900}",
+                "y": "{randy_batt1:150:400}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt2:650:900}",
+                "y": "{randy_batt2:650:900}",
+                "z": "{randz_battalt:15:20}"
+              },
+              {
+                "x": "{randx_batt1:150:400}",
+                "y": "{randy_batt2:650:900}",
+                "z": "{randz_battalt:15:20}"
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/return_home",
+          "parameters": {
+            "id": "0784ceb6"
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/land",
+          "parameters": {
+            "id": "0784ceb6"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_battery_level",
+            "parameters": {
+              "drone_id": "0784ceb6",
+              "min_level": 20.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_at_home",
+            "parameters": {
+              "drone_id": "0784ceb6",
+              "tolerance": 3.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "0784ceb6",
+              "tolerance": 0.5
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_along_path",
+        "return_home",
+        "land"
+      ],
+      "is_done": false,
+      "created_at": 1768285801.7194707,
+      "last_updated": 1768285801.7194707
+    },
+    {
+      "id": "5c8ec959",
+      "name": "Complete Area Coverage Search 1",
+      "content": "Drone Drone 8 executes comprehensive area search of target area Circle Target 1. Take off to 24 meters and perform a systematic coverage pattern to search at least 95% of the target area using an efficient serpentine or spiral pattern.",
+      "content_aliases": [
+        "Task Drone 8 to perform a 95% coverage search of Circle Target 1 at 24m altitude",
+        "Execute systematic search with Drone 8 over Circle Target 1 at 24m, ensuring 95% area coverage",
+        "Drone 8 mission: scan Circle Target 1 completely (95%+) using an efficient pattern at 24 meters",
+        "Deploy Drone 8 for comprehensive 95% sweep of Circle Target 1 at 24m"
+      ],
+      "description": "Systematically search and cover a target area completely",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Complete Area Coverage Search created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "f3df86c7",
+            "altitude": 24.0
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_fully_searched",
+            "parameters": {
+              "target_id": "b349d182",
+              "coverage_threshold": 0.95
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "move_along_path"
+      ],
+      "is_done": false,
+      "created_at": 1768285828.6656852,
+      "last_updated": 1768285828.6656852
+    },
+    {
+      "id": "09acec39",
+      "name": "Complete Area Coverage Search 2",
+      "content": "Drone Drone 5 executes comprehensive area search of target area Circle Target 1. Take off to 22 meters and perform a systematic coverage pattern to search at least 95% of the target area using an efficient serpentine or spiral pattern.",
+      "content_aliases": [
+        "Task Drone 5 to perform a 95% coverage search of Circle Target 1 at 22m altitude",
+        "Execute systematic search with Drone 5 over Circle Target 1 at 22m, ensuring 95% area coverage",
+        "Drone 5 mission: scan Circle Target 1 completely (95%+) using an efficient pattern at 22 meters",
+        "Deploy Drone 5 for comprehensive 95% sweep of Circle Target 1 at 22m"
+      ],
+      "description": "Systematically search and cover a target area completely",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Complete Area Coverage Search created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "23639881",
+            "altitude": 22.0
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_fully_searched",
+            "parameters": {
+              "target_id": "b349d182",
+              "coverage_threshold": 0.95
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "move_along_path"
+      ],
+      "is_done": false,
+      "created_at": 1768285828.6804078,
+      "last_updated": 1768285828.6804078
+    },
+    {
+      "id": "2dd7b253",
+      "name": "Complete Area Coverage Search 3",
+      "content": "Drone Drone 7 executes comprehensive area search of target area Circle Target 1. Take off to 20 meters and perform a systematic coverage pattern to search at least 95% of the target area using an efficient serpentine or spiral pattern.",
+      "content_aliases": [
+        "Task Drone 7 to perform a 95% coverage search of Circle Target 1 at 20m altitude",
+        "Execute systematic search with Drone 7 over Circle Target 1 at 20m, ensuring 95% area coverage",
+        "Drone 7 mission: scan Circle Target 1 completely (95%+) using an efficient pattern at 20 meters",
+        "Deploy Drone 7 for comprehensive 95% sweep of Circle Target 1 at 20m"
+      ],
+      "description": "Systematically search and cover a target area completely",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Complete Area Coverage Search created by Built-in template",
+      "difficulty": "hard",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "ced563f1",
+            "altitude": 20.0
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/target_is_fully_searched",
+            "parameters": {
+              "target_id": "b349d182",
+              "coverage_threshold": 0.95
+            }
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "move_to",
+        "move_along_path"
+      ],
+      "is_done": false,
+      "created_at": 1768285828.6897116,
+      "last_updated": 1768285828.6897116
+    },
+    {
+      "id": "a6ec4268",
+      "name": "Basic Takeoff 1",
+      "content": "Command drone Drone 6 to take off to an altitude of 8 meters and hover in place.",
+      "content_aliases": [
+        "make drone Drone 6 takeoff to 8 meters and hover",
+        "fly drone Drone 6 up to 8m and hold position",
+        "drone Drone 6 take off 8 meters and remain airborne",
+        "basic flight: drone Drone 6 goes up to 8m and hovers",
+        "Drone 6 takeoff 8m hover"
+      ],
+      "description": "Simple takeoff to altitude and hover - AI Testing Template",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Basic Takeoff created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "0f413988",
+            "altitude": 8.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "0f413988"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_altitude",
+            "parameters": {
+              "drone_id": "0f413988",
+              "expected_altitude": 8.0,
+              "tolerance": 2.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "0f413988",
+              "tolerance": 1.5
+            },
+            "expect": false
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "hover"
+      ],
+      "is_done": false,
+      "created_at": 1768285839.9393973,
+      "last_updated": 1768285854.261925
+    },
+    {
+      "id": "e9fb58bc",
+      "name": "Basic Takeoff 2",
+      "content": "Command drone Drone 8 to take off to an altitude of 11 meters and hover in place.",
+      "content_aliases": [
+        "make drone Drone 8 takeoff to 11 meters and hover",
+        "fly drone Drone 8 up to 11m and hold position",
+        "drone Drone 8 take off 11 meters and remain airborne",
+        "basic flight: drone Drone 8 goes up to 11m and hovers",
+        "Drone 8 takeoff 11m hover"
+      ],
+      "description": "Simple takeoff to altitude and hover - AI Testing Template",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Basic Takeoff created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "f3df86c7",
+            "altitude": 11.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "f3df86c7"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_altitude",
+            "parameters": {
+              "drone_id": "f3df86c7",
+              "expected_altitude": 11.0,
+              "tolerance": 2.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "f3df86c7",
+              "tolerance": 1.5
+            },
+            "expect": false
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "hover"
+      ],
+      "is_done": false,
+      "created_at": 1768285839.954057,
+      "last_updated": 1768285839.954057
+    },
+    {
+      "id": "b8c188e3",
+      "name": "Basic Takeoff 3",
+      "content": "Command drone Drone 10 to take off to an altitude of 8 meters and hover in place.",
+      "content_aliases": [
+        "make drone Drone 10 takeoff to 8 meters and hover",
+        "fly drone Drone 10 up to 8m and hold position",
+        "drone Drone 10 take off 8 meters and remain airborne",
+        "basic flight: drone Drone 10 goes up to 8m and hovers",
+        "Drone 10 takeoff 8m hover"
+      ],
+      "description": "Simple takeoff to altitude and hover - AI Testing Template",
+      "creator": "llm-agent-course",
+      "originated_from": "Task Template Basic Takeoff created by Built-in template",
+      "difficulty": "easy",
+      "related_apis": [
+        {
+          "endpoint": "/drones/{id}/command/take_off",
+          "parameters": {
+            "id": "3f2e80b0",
+            "altitude": 8.0
+          }
+        },
+        {
+          "endpoint": "/drones/{id}/command/hover",
+          "parameters": {
+            "id": "3f2e80b0"
+          }
+        }
+      ],
+      "execution_check_apis": {
+        "logic": "and",
+        "checks": [
+          {
+            "endpoint": "/check/drone_altitude",
+            "parameters": {
+              "drone_id": "3f2e80b0",
+              "expected_altitude": 8.0,
+              "tolerance": 2.0
+            }
+          },
+          {
+            "endpoint": "/check/drone_on_ground",
+            "parameters": {
+              "drone_id": "3f2e80b0",
+              "tolerance": 1.5
+            },
+            "expect": false
+          }
+        ]
+      },
+      "commands": [
+        "take_off",
+        "hover"
+      ],
+      "is_done": false,
+      "created_at": 1768285839.980078,
+      "last_updated": 1768285839.980078
+    }
+  ],
+  "history": {
+    "command_history": [],
+    "status_history": {},
+    "path_history": {},
+    "target_reaches": {},
+    "area_coverage": {}
+  }
+}

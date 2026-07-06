@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-sort-amount-down"></i> Sorting Algorithm Visualizer</h1>
+        <p>Visualize how different sorting algorithms work in real-time with interactive controls</p>
+    </header>
+
+    <main class="main-container">
+        <!-- Left Column: Controls and Info -->
+        <div class="control-panel">
+            <div class="control-group">
+                <h3><i class="fas fa-cogs"></i> Algorithm Selection</h3>
+                <select id="algorithm-select">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="merge">Merge Sort</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <h3><i class="fas fa-sliders-h"></i> Array Configuration</h3>
+                <div class="range-container mb-md">
+                    <label for="size-slider">Array Size:</label>
+                    <input type="range" id="size-slider" min="5" max="100" value="30">
+                    <span id="size-value" class="range-value">30</span>
+                </div>
+                
+                <div class="button-group">
+                    <button id="generate-random" class="generate">
+                        <i class="fas fa-random"></i> Random
+                    </button>
+                    <button id="generate-reversed" class="generate">
+                        <i class="fas fa-sort-numeric-down-alt"></i> Reversed
+                    </button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3><i class="fas fa-edit"></i> Custom Array</h3>
+                <div class="custom-input-group">
+                    <label for="custom-array-input" class="visually-hidden">Custom Array Input</label>
+                    <input type="text" id="custom-array-input" 
+                           placeholder="Enter numbers separated by commas (e.g., 5,3,8,1)">
+                    <button id="load-custom" class="generate mt-sm">
+                        <i class="fas fa-upload"></i> Load Custom Array
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Visualization -->
+        <div class="visualization-container">
+            <div class="canvas-wrapper">
+                <canvas id="visualization-canvas"></canvas>
+            </div>
+            <div class="status-indicators mt-md">
+                <span>Status: <span id="status-indicator" class="status-indicator status-idle">Idle</span></span>
+                <span id="step-counter" class="ml-auto">Step: 0/0</span>
+            </div>
+        </div>
+
+        <!-- Info Panel -->
+        <div class="info-panel">
+            <div class="info-group">
+                <div class="info-item">
+                    <div class="info-label">Comparisons</div>
+                    <div id="comparisons-count" class="info-value">0</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Swaps</div>
+                    <div id="swaps-count" class="info-value">0</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Array Size</div>
+                    <div id="array-size" class="info-value">30</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Current Algorithm</div>
+                    <div id="current-algorithm" class="info-value">Bubble Sort</div>
+                </div>
+            </div>
+            <div class="description-box">
+                <div id="step-description">Select an algorithm and click "Start" to begin visualization.</div>
+            </div>
+        </div>
+
+        <!-- Playback Controls -->
+        <div class="playback-controls">
+            <div class="playback-buttons">
+                <button id="play-btn" class="generate">
+                    <i class="fas fa-play"></i> Start
+                </button>
+                <button id="pause-btn" class="warning" disabled>
+                    <i class="fas fa-pause"></i> Pause
+                </button>
+                <button id="prev-btn" disabled>
+                    <i class="fas fa-step-backward"></i> Prev
+                </button>
+                <button id="next-btn" disabled>
+                    <i class="fas fa-step-forward"></i> Next
+                </button>
+                <button id="reset-btn" class="danger">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
+            
+            <div class="speed-control mt-lg">
+                <h3><i class="fas fa-tachometer-alt"></i> Speed Control</h3>
+                <div class="range-container">
+                    <label for="speed-slider">Speed:</label>
+                    <input type="range" id="speed-slider" min="1" max="10" value="5">
+                    <span id="speed-value" class="range-value">5</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Color Legend -->
+    <footer class="legend mt-lg">
+        <div class="legend-items">
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #3498db;"></span>
+                <span class="legend-label">Normal Element</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #e74c3c;"></span>
+                <span class="legend-label">Currently Swapping/Comparing</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #f39c12;"></span>
+                <span class="legend-label">Being Compared</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #2ecc71;"></span>
+                <span class="legend-label">Sorted Element</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Modules - Reordered for logical dependency loading -->
+    <!-- Base utilities and core data -->
+    <script type="module" src="js/utils/EventEmitter.js"></script>
+    <script type="module" src="js/visualizer/ArrayData.js"></script>
+    
+    <!-- Algorithm abstraction and implementations -->
+    <script type="module" src="js/algorithms/SortingAlgorithm.js"></script>
+    <script type="module" src="js/algorithms/BubbleSort.js"></script>
+    <script type="module" src="js/algorithms/SelectionSort.js"></script>
+    <script type="module" src="js/algorithms/InsertionSort.js"></script>
+    <script type="module" src="js/algorithms/QuickSort.js"></script>
+    <script type="module" src="js/algorithms/MergeSort.js"></script>
+    
+    <!-- Visualization and controllers -->
+    <script type="module" src="js/visualizer/Visualizer.js"></script>
+    <script type="module" src="js/controller/PlaybackController.js"></script>
+    <script type="module" src="js/controller/UIController.js"></script>
+    
+    <!-- Application main entry point (should load last) -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

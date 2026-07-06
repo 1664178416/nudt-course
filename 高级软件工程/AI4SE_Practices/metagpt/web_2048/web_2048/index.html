@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clear+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔢</text></svg>">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header with Title and Scores -->
+        <header class="header">
+            <h1>2048</h1>
+            <div class="scores-container">
+                <div class="score-box">
+                    <div class="score-title">Score</div>
+                    <div id="current-score" class="score-value">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="score-title">Best</div>
+                    <div id="best-score" class="score-value">0</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Game Information and Controls -->
+        <div class="game-info">
+            <p class="game-intro">
+                <strong>How to play:</strong> Use your <strong>arrow keys</strong> or <strong>swipe</strong> to move the tiles. Tiles with the same number <strong>merge into one</strong> when they touch. Add them up to reach <strong>2048!</strong>
+            </p>
+            <div class="controls">
+                <button id="restart-button" class="restart-button">New Game</button>
+                <p class="shortcut-hint">(Press <kbd>R</kbd> to restart)</p>
+            </div>
+        </div>
+
+        <!-- Main Game Board -->
+        <div class="game-board">
+            <!-- Grid Container for Empty Cells -->
+            <div id="grid-container" class="grid-container">
+                <!-- Grid cells will be generated dynamically by JavaScript -->
+            </div>
+            <!-- Tiles will be positioned absolutely within .game-board by JavaScript -->
+        </div>
+
+        <!-- Game Over Overlay -->
+        <div id="game-over-msg" class="game-message hidden">
+            <p>Game Over!</p>
+            <p>No more moves left.</p>
+            <button class="restart-button" onclick="document.getElementById('restart-button').click()">Try Again</button>
+        </div>
+
+        <!-- Win Overlay -->
+        <div id="win-msg" class="game-message hidden">
+            <p>You Win!</p>
+            <p>You reached the 2048 tile!</p>
+            <button class="restart-button" onclick="document.getElementById('restart-button').click()">New Game</button>
+        </div>
+
+        <!-- Footer with Credits -->
+        <footer class="footer">
+            <p>
+                Created with ❤️. This is a clone of the original <a href="https://play2048.co/" target="_blank" rel="noopener">2048 game</a> by Gabriele Cirulli.
+            </p>
+            <p class="footer-note">
+                Use <kbd>W</kbd>, <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> keys as alternatives to arrow keys.
+            </p>
+        </footer>
+    </div>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="game-logic.js"></script>
+    <script type="module" src="game.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="input-handler.js"></script>
+
+    <!-- Fallback for older browsers without module support -->
+    <script type="module">
+        if (!window.nomodule) {
+            document.body.innerHTML = '<div style="text-align:center; padding: 50px; font-family: sans-serif;"><h2>Browser Update Required</h2><p>This game requires a modern browser that supports JavaScript modules (ES6).</p><p>Please update your browser or try a different one like Chrome, Firefox, or Edge.</p></div>';
+        }
+    </script>
+    <noscript>
+        <div style="text-align:center; padding: 50px; font-family: sans-serif;">
+            <h2>JavaScript Required</h2>
+            <p>This 2048 game requires JavaScript to play. Please enable JavaScript in your browser settings.</p>
+        </div>
+    </noscript>
+</body>
+</html>

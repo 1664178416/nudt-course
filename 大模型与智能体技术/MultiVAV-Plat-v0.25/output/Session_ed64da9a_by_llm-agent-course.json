@@ -1,0 +1,3389 @@
+{
+  "id": "ae10818228e07ed106f1b8b617ad7211",
+  "session_id": "ed64da9a",
+  "username": "llm-agent-course",
+  "export_timestamp": "2026-01-26T16:34:17.030590",
+  "statistics": {
+    "total_tasks": 27,
+    "passed_tasks_count": 21,
+    "failed_tasks_count": 6,
+    "total_failed_tasks_count": 0,
+    "task_pass_rate": 0.7778,
+    "average_task_check_pass_rate": 0.9599,
+    "total_failed_rate": 0.0
+  },
+  "results": [
+    {
+      "task_id": "45025fba",
+      "task_name": "Basic Takeoff 1",
+      "status": "passed",
+      "timestamp": "2026-01-25T22:52:38.401243",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_altitude",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "expected_altitude": 12.0,
+            "tolerance": 2.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 12.0,
+            "drone_id": "cf84ae19",
+            "expected_altitude": 12.0,
+            "difference": 0.0,
+            "tolerance": 2.0
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_on_ground",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "tolerance": 1.5
+          },
+          "expect": false,
+          "actual": false,
+          "result": true,
+          "response": {
+            "result": false,
+            "value": 12.0,
+            "drone_id": "cf84ae19",
+            "status": "hovering",
+            "tolerance": 1.5
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "886766c2",
+      "task_name": "Basic Takeoff 2",
+      "status": "passed",
+      "timestamp": "2026-01-25T23:59:28.175491",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_altitude",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "expected_altitude": 11.0,
+            "tolerance": 2.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 11.0,
+            "drone_id": "f0fe5adc",
+            "expected_altitude": 11.0,
+            "difference": 0.0,
+            "tolerance": 2.0
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_on_ground",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "tolerance": 1.5
+          },
+          "expect": false,
+          "actual": false,
+          "result": true,
+          "response": {
+            "result": false,
+            "value": 11.0,
+            "drone_id": "f0fe5adc",
+            "status": "hovering",
+            "tolerance": 1.5
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "cdd15a31",
+      "task_name": "Basic Takeoff 3",
+      "status": "passed",
+      "timestamp": "2026-01-25T23:59:57.103553",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_altitude",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "expected_altitude": 9.0,
+            "tolerance": 2.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9.0,
+            "drone_id": "f0fe5adc",
+            "expected_altitude": 9.0,
+            "difference": 0.0,
+            "tolerance": 2.0
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_on_ground",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "tolerance": 1.5
+          },
+          "expect": false,
+          "actual": false,
+          "result": true,
+          "response": {
+            "result": false,
+            "value": 9.0,
+            "drone_id": "f0fe5adc",
+            "status": "hovering",
+            "tolerance": 1.5
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "6e775786",
+      "task_name": "Complete Flight Cycle Verification 1",
+      "status": "passed",
+      "timestamp": "2026-01-26T00:09:40.983983",
+      "statistics": {
+        "total_checks_apis": 3,
+        "passed_checks_apis": 3,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 3
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_taken_off",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_altitude": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 3,
+            "drone_id": "f0fe5adc",
+            "takeoff_count": 3,
+            "last_takeoff_time": 1769357353.3034794,
+            "max_altitude_reached": 60.0,
+            "min_altitude_threshold": 5.0
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_landed",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "max_altitude": 1.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 2,
+            "drone_id": "f0fe5adc",
+            "min_count": 1,
+            "last_landing_time": 1769357374.0017612,
+            "last_landing_position": {
+              "x": 344.0,
+              "y": 30.0,
+              "z": 0.0
+            }
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_at_home",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 0.0,
+            "drone_id": "f0fe5adc",
+            "home_position": {
+              "x": 344.0,
+              "y": 30.0,
+              "z": 0.0
+            },
+            "tolerance": 3.0
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "18a9c31d",
+      "task_name": "Complete Flight Cycle Verification 2",
+      "status": "passed",
+      "timestamp": "2026-01-26T00:10:36.412399",
+      "statistics": {
+        "total_checks_apis": 3,
+        "passed_checks_apis": 3,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 3
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_taken_off",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_altitude": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 2,
+            "drone_id": "cf84ae19",
+            "takeoff_count": 2,
+            "last_takeoff_time": 1769357405.0558197,
+            "max_altitude_reached": 63.0,
+            "min_altitude_threshold": 5.0
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_landed",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "max_altitude": 1.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "drone_id": "cf84ae19",
+            "min_count": 1,
+            "last_landing_time": 1769357430.7601914,
+            "last_landing_position": {
+              "x": 746.0,
+              "y": 296.0,
+              "z": 0.0
+            }
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_at_home",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 0.0,
+            "drone_id": "cf84ae19",
+            "home_position": {
+              "x": 746.0,
+              "y": 296.0,
+              "z": 0.0
+            },
+            "tolerance": 3.0
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "13e03951",
+      "task_name": "Complete Flight Cycle Verification 3",
+      "status": "passed",
+      "timestamp": "2026-01-26T00:11:15.668178",
+      "statistics": {
+        "total_checks_apis": 3,
+        "passed_checks_apis": 3,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 3
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_taken_off",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_altitude": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 4,
+            "drone_id": "f0fe5adc",
+            "takeoff_count": 4,
+            "last_takeoff_time": 1769357451.5295162,
+            "max_altitude_reached": 60.0,
+            "min_altitude_threshold": 5.0
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_landed",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "max_altitude": 1.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 3,
+            "drone_id": "f0fe5adc",
+            "min_count": 1,
+            "last_landing_time": 1769357469.2189589,
+            "last_landing_position": {
+              "x": 344.0,
+              "y": 30.0,
+              "z": 0.0
+            }
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_at_home",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 0.0,
+            "drone_id": "f0fe5adc",
+            "home_position": {
+              "x": 344.0,
+              "y": 30.0,
+              "z": 0.0
+            },
+            "tolerance": 3.0
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "c1e302db",
+      "task_name": "Set New Home Position 1",
+      "status": "passed",
+      "timestamp": "2026-01-26T00:23:15.915009",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_on_ground",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 0.0,
+            "drone_id": "04d6cfe7",
+            "status": "idle",
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_at_home",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "tolerance": 2.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 0.0,
+            "drone_id": "04d6cfe7",
+            "home_position": {
+              "x": 567.0,
+              "y": 442.0,
+              "z": 0.0
+            },
+            "tolerance": 2.0
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "acf1c2e9",
+      "task_name": "Set New Home Position 2",
+      "status": "passed",
+      "timestamp": "2026-01-26T00:32:11.069495",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_on_ground",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 0.0,
+            "drone_id": "cf84ae19",
+            "status": "idle",
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_at_home",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "tolerance": 2.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 0.0,
+            "drone_id": "cf84ae19",
+            "home_position": {
+              "x": 167.0,
+              "y": 177.0,
+              "z": 0.0
+            },
+            "tolerance": 2.0
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "275515f8",
+      "task_name": "Set New Home Position 3",
+      "status": "passed",
+      "timestamp": "2026-01-26T00:33:00.252634",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_on_ground",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 0.0,
+            "drone_id": "f0fe5adc",
+            "status": "idle",
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_at_home",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "tolerance": 2.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 0.0,
+            "drone_id": "f0fe5adc",
+            "home_position": {
+              "x": 241.0,
+              "y": 366.0,
+              "z": 0.0
+            },
+            "tolerance": 2.0
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "908c26f0",
+      "task_name": "Simple Rotation Test 1",
+      "status": "passed",
+      "timestamp": "2026-01-26T00:33:49.208913",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_heading",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "expected_heading": 94.0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 94.0,
+            "drone_id": "04d6cfe7",
+            "expected_heading": 94.0,
+            "heading_delta": 0.0,
+            "tolerance": 5.0
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_altitude",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "expected_altitude": 11.0,
+            "tolerance": 2.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 11.0,
+            "drone_id": "04d6cfe7",
+            "expected_altitude": 11.0,
+            "difference": 0.0,
+            "tolerance": 2.0
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "bbd0ec9d",
+      "task_name": "Simple Rotation Test 2",
+      "status": "passed",
+      "timestamp": "2026-01-26T00:34:28.004820",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_heading",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "expected_heading": 259.0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 259.0,
+            "drone_id": "cf84ae19",
+            "expected_heading": 259.0,
+            "heading_delta": 0.0,
+            "tolerance": 5.0
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_altitude",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "expected_altitude": 12.0,
+            "tolerance": 2.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 12.0,
+            "drone_id": "cf84ae19",
+            "expected_altitude": 12.0,
+            "difference": 0.0,
+            "tolerance": 2.0
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "5cf1430e",
+      "task_name": "Simple Rotation Test 3",
+      "status": "passed",
+      "timestamp": "2026-01-26T12:50:57.952564",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_heading",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "expected_heading": 215.0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 215.0,
+            "drone_id": "04d6cfe7",
+            "expected_heading": 215.0,
+            "heading_delta": 0.0,
+            "tolerance": 5.0
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_altitude",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "expected_altitude": 11.0,
+            "tolerance": 2.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 11.0,
+            "drone_id": "04d6cfe7",
+            "expected_altitude": 11.0,
+            "difference": 0.0,
+            "tolerance": 2.0
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "6e632287",
+      "task_name": "Quick Checkpoint Visit 1",
+      "status": "passed",
+      "timestamp": "2026-01-26T12:52:32.188170",
+      "statistics": {
+        "total_checks_apis": 1,
+        "passed_checks_apis": 1,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "x": 429.0,
+            "y": 596.0,
+            "z": 13.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "drone_id": "04d6cfe7",
+            "target_position": {
+              "x": 429.0,
+              "y": 596.0,
+              "z": 13.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769403078.1523333,
+            "last_visit_time": 1769403078.1523333
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "5c9ebad6",
+      "task_name": "Quick Checkpoint Visit 2",
+      "status": "passed",
+      "timestamp": "2026-01-26T13:05:52.073469",
+      "statistics": {
+        "total_checks_apis": 1,
+        "passed_checks_apis": 1,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "x": 597.0,
+            "y": 498.0,
+            "z": 16.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "drone_id": "f0fe5adc",
+            "target_position": {
+              "x": 597.0,
+              "y": 498.0,
+              "z": 16.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769403943.1750774,
+            "last_visit_time": 1769403943.1750774
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "9ed92239",
+      "task_name": "Quick Checkpoint Visit 3",
+      "status": "passed",
+      "timestamp": "2026-01-26T13:15:38.368792",
+      "statistics": {
+        "total_checks_apis": 1,
+        "passed_checks_apis": 1,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "x": 516.0,
+            "y": 350.0,
+            "z": 18.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "drone_id": "04d6cfe7",
+            "target_position": {
+              "x": 516.0,
+              "y": 350.0,
+              "z": 18.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769404505.6363084,
+            "last_visit_time": 1769404505.6363084
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "2b737e67",
+      "task_name": "Extended Hover Observation 1",
+      "status": "passed",
+      "timestamp": "2026-01-25T22:55:04.999884",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_hovered",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_duration": 16.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "drone_id": "04d6cfe7",
+            "min_duration": 16.0,
+            "min_count": 1,
+            "total_hover_duration": 16.0,
+            "average_duration": 16.0,
+            "last_hover_time": 1769352836.590801
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "x": 570.0,
+            "y": 423.0,
+            "z": 2.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "drone_id": "04d6cfe7",
+            "target_position": {
+              "x": 570.0,
+              "y": 423.0,
+              "z": 2.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769352827.345263,
+            "last_visit_time": 1769352827.345263
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "43fc0a5d",
+      "task_name": "Extended Hover Observation 2",
+      "status": "passed",
+      "timestamp": "2026-01-26T13:43:01.911583",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_hovered",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_duration": 13.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "drone_id": "cf84ae19",
+            "min_duration": 13.0,
+            "min_count": 1,
+            "total_hover_duration": 13.0,
+            "average_duration": 13.0,
+            "last_hover_time": 1769406142.6490858
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "x": 646.0,
+            "y": 634.0,
+            "z": 58.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "drone_id": "cf84ae19",
+            "target_position": {
+              "x": 646.0,
+              "y": 634.0,
+              "z": 58.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769406139.154561,
+            "last_visit_time": 1769406139.154561
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "c67c107c",
+      "task_name": "Extended Hover Observation 3",
+      "status": "passed",
+      "timestamp": "2026-01-26T13:44:46.221644",
+      "statistics": {
+        "total_checks_apis": 2,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 2
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_hovered",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_duration": 13.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 2,
+            "drone_id": "04d6cfe7",
+            "min_duration": 13.0,
+            "min_count": 1,
+            "total_hover_duration": 29.0,
+            "average_duration": 14.5,
+            "last_hover_time": 1769406280.052324
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "x": 414.0,
+            "y": 479.0,
+            "z": 82.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "drone_id": "04d6cfe7",
+            "target_position": {
+              "x": 414.0,
+              "y": 479.0,
+              "z": 82.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769406277.9697032,
+            "last_visit_time": 1769406277.9697032
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "1a15bcfa",
+      "task_name": "Multiple Target Inspection 1",
+      "status": "passed",
+      "timestamp": "2026-01-25T22:57:51.857154",
+      "statistics": {
+        "total_checks_apis": 4,
+        "passed_checks_apis": 4,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 4
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "c57ec7a4",
+            "drone_id": "cf84ae19"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 2,
+            "session_id": "ed64da9a",
+            "target_id": "c57ec7a4",
+            "drone_id": "cf84ae19"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_in_photo_taken_by_drone",
+          "parameters": {
+            "target_id": "c57ec7a4",
+            "drone_id": "cf84ae19"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "drone_id": "cf84ae19",
+            "target_id": "c57ec7a4",
+            "perceived_radius": 100.0,
+            "matching_photos": [
+              {
+                "photo_id": "55474264",
+                "timestamp": 1769352993.1286073,
+                "drone_position": {
+                  "x": 586.0,
+                  "y": 252.0,
+                  "z": 17.0
+                },
+                "distance": 0.0
+              }
+            ]
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "b309b48b",
+            "drone_id": "cf84ae19"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "session_id": "ed64da9a",
+            "target_id": "b309b48b",
+            "drone_id": "cf84ae19"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_in_photo_taken_by_drone",
+          "parameters": {
+            "target_id": "b309b48b",
+            "drone_id": "cf84ae19"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "drone_id": "cf84ae19",
+            "target_id": "b309b48b",
+            "perceived_radius": 100.0,
+            "matching_photos": [
+              {
+                "photo_id": "350b0da8",
+                "timestamp": 1769353052.5458636,
+                "drone_position": {
+                  "x": 746.0,
+                  "y": 247.0,
+                  "z": 17.0
+                },
+                "distance": 0.0
+              }
+            ]
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "a47eeabf",
+      "task_name": "Multiple Target Inspection 2",
+      "status": "passed",
+      "timestamp": "2026-01-26T14:53:05.836641",
+      "statistics": {
+        "total_checks_apis": 4,
+        "passed_checks_apis": 4,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 4
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "95c78f91",
+            "drone_id": "04d6cfe7"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 22,
+            "session_id": "ed64da9a",
+            "target_id": "95c78f91",
+            "drone_id": "04d6cfe7"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_in_photo_taken_by_drone",
+          "parameters": {
+            "target_id": "95c78f91",
+            "drone_id": "04d6cfe7"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "drone_id": "04d6cfe7",
+            "target_id": "95c78f91",
+            "perceived_radius": 100.0,
+            "matching_photos": [
+              {
+                "photo_id": "655371fa",
+                "timestamp": 1769353436.822111,
+                "drone_position": {
+                  "x": 517.0,
+                  "y": 442.0,
+                  "z": 17.0
+                },
+                "distance": 0.0
+              },
+              {
+                "photo_id": "309851fe",
+                "timestamp": 1769356299.3838346,
+                "drone_position": {
+                  "x": 517.0,
+                  "y": 442.0,
+                  "z": 0.0
+                },
+                "distance": 0.0
+              },
+              {
+                "photo_id": "429f7fd0",
+                "timestamp": 1769406337.8436801,
+                "drone_position": {
+                  "x": 517.0,
+                  "y": 442.0,
+                  "z": 0.0
+                },
+                "distance": 0.0
+              },
+              {
+                "photo_id": "7c0c052d",
+                "timestamp": 1769407028.2646391,
+                "drone_position": {
+                  "x": 517.0,
+                  "y": 442.0,
+                  "z": 17.0
+                },
+                "distance": 0.0
+              },
+              {
+                "photo_id": "12763a69",
+                "timestamp": 1769410345.2450902,
+                "drone_position": {
+                  "x": 517.0,
+                  "y": 442.0,
+                  "z": 17.0
+                },
+                "distance": 0.0
+              }
+            ]
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "26478892",
+            "drone_id": "04d6cfe7"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 2,
+            "session_id": "ed64da9a",
+            "target_id": "26478892",
+            "drone_id": "04d6cfe7"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_in_photo_taken_by_drone",
+          "parameters": {
+            "target_id": "26478892",
+            "drone_id": "04d6cfe7"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "drone_id": "04d6cfe7",
+            "target_id": "26478892",
+            "perceived_radius": 100.0,
+            "matching_photos": [
+              {
+                "photo_id": "bba77574",
+                "timestamp": 1769410377.7574365,
+                "drone_position": {
+                  "x": 563.0,
+                  "y": 129.0,
+                  "z": 17.0
+                },
+                "distance": 0.0
+              }
+            ]
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "16a8ce6a",
+      "task_name": "Multiple Target Inspection 3",
+      "status": "failed",
+      "timestamp": "2026-01-26T14:54:58.431364",
+      "statistics": {
+        "total_checks_apis": 4,
+        "passed_checks_apis": 2,
+        "failed_checks_apis": 2,
+        "pass_rate": 0.5
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 4
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "95c78f91",
+            "drone_id": "f0fe5adc"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 22,
+            "session_id": "ed64da9a",
+            "target_id": "95c78f91",
+            "drone_id": "f0fe5adc"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_in_photo_taken_by_drone",
+          "parameters": {
+            "target_id": "95c78f91",
+            "drone_id": "f0fe5adc"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "drone_id": "f0fe5adc",
+            "target_id": "95c78f91",
+            "perceived_radius": 100.0,
+            "matching_photos": [
+              {
+                "photo_id": "2d48969e",
+                "timestamp": 1769407196.1476383,
+                "drone_position": {
+                  "x": 517.0,
+                  "y": 442.0,
+                  "z": 19.0
+                },
+                "distance": 0.0
+              },
+              {
+                "photo_id": "ce517acd",
+                "timestamp": 1769407366.2261493,
+                "drone_position": {
+                  "x": 517.0,
+                  "y": 442.0,
+                  "z": 19.0
+                },
+                "distance": 0.0
+              }
+            ]
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "d4911186",
+            "drone_id": "f0fe5adc"
+          },
+          "expect": true,
+          "actual": false,
+          "result": false,
+          "response": {
+            "result": false,
+            "value": 0,
+            "session_id": "ed64da9a",
+            "target_id": "d4911186",
+            "drone_id": "f0fe5adc"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_in_photo_taken_by_drone",
+          "parameters": {
+            "target_id": "d4911186",
+            "drone_id": "f0fe5adc"
+          },
+          "expect": true,
+          "actual": false,
+          "result": false,
+          "response": {
+            "result": false,
+            "drone_id": "f0fe5adc",
+            "target_id": "d4911186",
+            "perceived_radius": 100.0,
+            "matching_photos": []
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "7caa791c",
+      "task_name": "Fleet Coordinated Takeoff and Formation (3 Drones) 1",
+      "status": "failed",
+      "timestamp": "2026-01-26T16:09:41.028351",
+      "statistics": {
+        "total_checks_apis": 12,
+        "passed_checks_apis": 10,
+        "failed_checks_apis": 2,
+        "pass_rate": 0.8333
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 12
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_hovering",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": "hovering",
+            "drone_id": "cf84ae19",
+            "altitude": 19.0,
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_hovering",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": "hovering",
+            "drone_id": "f0fe5adc",
+            "altitude": 19.0,
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_hovering",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": "hovering",
+            "drone_id": "04d6cfe7",
+            "altitude": 19.0,
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "x": 502.0,
+            "y": 473.0,
+            "z": 19.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": false,
+          "result": false,
+          "response": {
+            "result": false,
+            "value": 0,
+            "drone_id": "cf84ae19",
+            "target_position": {
+              "x": 502.0,
+              "y": 473.0,
+              "z": 19.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": null,
+            "first_visit_time": null,
+            "last_visit_time": null
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "x": 824.0,
+            "y": 556.0,
+            "z": 19.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 13,
+            "drone_id": "f0fe5adc",
+            "target_position": {
+              "x": 824.0,
+              "y": 556.0,
+              "z": 19.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769410534.2993217,
+            "last_visit_time": 1769414944.326856
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "x": 574.0,
+            "y": 716.0,
+            "z": 19.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": false,
+          "result": false,
+          "response": {
+            "result": false,
+            "value": 0,
+            "drone_id": "04d6cfe7",
+            "target_position": {
+              "x": 574.0,
+              "y": 716.0,
+              "z": 19.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": null,
+            "first_visit_time": null,
+            "last_visit_time": null
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 97.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 8284.09,
+            "drone_id": "cf84ae19",
+            "min_distance": 97.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 258,
+            "average_distance_per_move": 32.11
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 97.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9610.08,
+            "drone_id": "f0fe5adc",
+            "min_distance": 97.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 290,
+            "average_distance_per_move": 33.14
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 97.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9123.22,
+            "drone_id": "04d6cfe7",
+            "min_distance": 97.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 420,
+            "average_distance_per_move": 21.72
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 73.0,
+            "heading": 90,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 4866.0,
+            "drone_id": "cf84ae19",
+            "min_distance": 73.0,
+            "heading": 90.0,
+            "tolerance": 5.0,
+            "movement_count": 258,
+            "average_distance_per_move": 18.86
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 73.0,
+            "heading": 90,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6432.0,
+            "drone_id": "f0fe5adc",
+            "min_distance": 73.0,
+            "heading": 90.0,
+            "tolerance": 5.0,
+            "movement_count": 290,
+            "average_distance_per_move": 22.18
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 73.0,
+            "heading": 90,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6553.0,
+            "drone_id": "04d6cfe7",
+            "min_distance": 73.0,
+            "heading": 90.0,
+            "tolerance": 5.0,
+            "movement_count": 420,
+            "average_distance_per_move": 15.6
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "68e41dd9",
+      "task_name": "Fleet Coordinated Takeoff and Formation (3 Drones) 2",
+      "status": "failed",
+      "timestamp": "2026-01-26T16:10:49.794775",
+      "statistics": {
+        "total_checks_apis": 12,
+        "passed_checks_apis": 10,
+        "failed_checks_apis": 2,
+        "pass_rate": 0.8333
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 12
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_hovering",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": "hovering",
+            "drone_id": "cf84ae19",
+            "altitude": 16.0,
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_hovering",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": "hovering",
+            "drone_id": "f0fe5adc",
+            "altitude": 16.0,
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_hovering",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": "hovering",
+            "drone_id": "04d6cfe7",
+            "altitude": 16.0,
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "x": 542.0,
+            "y": 514.0,
+            "z": 16.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": false,
+          "result": false,
+          "response": {
+            "result": false,
+            "value": 0,
+            "drone_id": "cf84ae19",
+            "target_position": {
+              "x": 542.0,
+              "y": 514.0,
+              "z": 16.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": null,
+            "first_visit_time": null,
+            "last_visit_time": null
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "x": 831.0,
+            "y": 560.0,
+            "z": 16.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 2,
+            "drone_id": "f0fe5adc",
+            "target_position": {
+              "x": 831.0,
+              "y": 560.0,
+              "z": 16.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769411358.720838,
+            "last_visit_time": 1769415019.7733247
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "x": 647.0,
+            "y": 899.0,
+            "z": 16.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": false,
+          "result": false,
+          "response": {
+            "result": false,
+            "value": 0,
+            "drone_id": "04d6cfe7",
+            "target_position": {
+              "x": 647.0,
+              "y": 899.0,
+              "z": 16.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": null,
+            "first_visit_time": null,
+            "last_visit_time": null
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 62.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 8432.09,
+            "drone_id": "cf84ae19",
+            "min_distance": 62.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 263,
+            "average_distance_per_move": 32.06
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 62.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9672.08,
+            "drone_id": "f0fe5adc",
+            "min_distance": 62.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 295,
+            "average_distance_per_move": 32.79
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 62.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9185.22,
+            "drone_id": "04d6cfe7",
+            "min_distance": 62.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 425,
+            "average_distance_per_move": 21.61
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 84.0,
+            "heading": 90,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 4950.0,
+            "drone_id": "cf84ae19",
+            "min_distance": 84.0,
+            "heading": 90.0,
+            "tolerance": 5.0,
+            "movement_count": 263,
+            "average_distance_per_move": 18.82
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 84.0,
+            "heading": 90,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6516.0,
+            "drone_id": "f0fe5adc",
+            "min_distance": 84.0,
+            "heading": 90.0,
+            "tolerance": 5.0,
+            "movement_count": 295,
+            "average_distance_per_move": 22.09
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 84.0,
+            "heading": 90,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6637.0,
+            "drone_id": "04d6cfe7",
+            "min_distance": 84.0,
+            "heading": 90.0,
+            "tolerance": 5.0,
+            "movement_count": 425,
+            "average_distance_per_move": 15.62
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "d8379835",
+      "task_name": "Fleet Coordinated Takeoff and Formation (3 Drones) 3",
+      "status": "passed",
+      "timestamp": "2026-01-26T16:03:35.151690",
+      "statistics": {
+        "total_checks_apis": 12,
+        "passed_checks_apis": 12,
+        "failed_checks_apis": 0,
+        "pass_rate": 1.0
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 12
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_hovering",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": "hovering",
+            "drone_id": "cf84ae19",
+            "altitude": 18.0,
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_hovering",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": "hovering",
+            "drone_id": "04d6cfe7",
+            "altitude": 18.0,
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_hovering",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "tolerance": 0.5
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": "hovering",
+            "drone_id": "f0fe5adc",
+            "altitude": 18.0,
+            "tolerance": 0.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "x": 428.0,
+            "y": 614.0,
+            "z": 18.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 7,
+            "drone_id": "cf84ae19",
+            "target_position": {
+              "x": 428.0,
+              "y": 614.0,
+              "z": 18.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769413015.681649,
+            "last_visit_time": 1769413656.3178904
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "x": 699.0,
+            "y": 489.0,
+            "z": 18.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9,
+            "drone_id": "04d6cfe7",
+            "target_position": {
+              "x": 699.0,
+              "y": 489.0,
+              "z": 18.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769412999.8829281,
+            "last_visit_time": 1769413330.1391766
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_visited_position",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "x": 424.0,
+            "y": 703.0,
+            "z": 18.0,
+            "tolerance": 3.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 7,
+            "drone_id": "f0fe5adc",
+            "target_position": {
+              "x": 424.0,
+              "y": 703.0,
+              "z": 18.0
+            },
+            "tolerance": 3.0,
+            "closest_distance": 0.0,
+            "first_visit_time": 1769413008.9370892,
+            "last_visit_time": 1769413332.432852
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 76.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 8187.09,
+            "drone_id": "cf84ae19",
+            "min_distance": 76.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 253,
+            "average_distance_per_move": 32.36
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 76.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9026.22,
+            "drone_id": "04d6cfe7",
+            "min_distance": 76.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 414,
+            "average_distance_per_move": 21.8
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 76.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9513.08,
+            "drone_id": "f0fe5adc",
+            "min_distance": 76.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 284,
+            "average_distance_per_move": 33.5
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 63.0,
+            "heading": 90,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 4793.0,
+            "drone_id": "cf84ae19",
+            "min_distance": 63.0,
+            "heading": 90.0,
+            "tolerance": 5.0,
+            "movement_count": 253,
+            "average_distance_per_move": 18.94
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 63.0,
+            "heading": 90,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6480.0,
+            "drone_id": "04d6cfe7",
+            "min_distance": 63.0,
+            "heading": 90.0,
+            "tolerance": 5.0,
+            "movement_count": 414,
+            "average_distance_per_move": 15.65
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 63.0,
+            "heading": 90,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6359.0,
+            "drone_id": "f0fe5adc",
+            "min_distance": 63.0,
+            "heading": 90.0,
+            "tolerance": 5.0,
+            "movement_count": 284,
+            "average_distance_per_move": 22.39
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "8554aa95",
+      "task_name": "Fleet Target Sweep (3 Drones) 1",
+      "status": "failed",
+      "timestamp": "2026-01-26T16:17:58.963446",
+      "statistics": {
+        "total_checks_apis": 12,
+        "passed_checks_apis": 11,
+        "failed_checks_apis": 1,
+        "pass_rate": 0.9167
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 12
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "26478892",
+            "drone_id": "f0fe5adc"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 1,
+            "session_id": "ed64da9a",
+            "target_id": "26478892",
+            "drone_id": "f0fe5adc"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "b309b48b",
+            "drone_id": "04d6cfe7"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 2,
+            "session_id": "ed64da9a",
+            "target_id": "b309b48b",
+            "drone_id": "04d6cfe7"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "95c78f91",
+            "drone_id": "cf84ae19"
+          },
+          "expect": true,
+          "actual": false,
+          "result": false,
+          "response": {
+            "result": false,
+            "value": 0,
+            "session_id": "ed64da9a",
+            "target_id": "95c78f91",
+            "drone_id": "cf84ae19"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 46.0,
+            "heading": 270,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 5855.12,
+            "drone_id": "f0fe5adc",
+            "min_distance": 46.0,
+            "heading": 270.0,
+            "tolerance": 5.0,
+            "movement_count": 301,
+            "average_distance_per_move": 19.45
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 46.0,
+            "heading": 270,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 5919.0,
+            "drone_id": "04d6cfe7",
+            "min_distance": 46.0,
+            "heading": 270.0,
+            "tolerance": 5.0,
+            "movement_count": 431,
+            "average_distance_per_move": 13.73
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 46.0,
+            "heading": 270,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 4960.0,
+            "drone_id": "cf84ae19",
+            "min_distance": 46.0,
+            "heading": 270.0,
+            "tolerance": 5.0,
+            "movement_count": 269,
+            "average_distance_per_move": 18.44
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 82.0,
+            "heading": 180,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9728.08,
+            "drone_id": "f0fe5adc",
+            "min_distance": 82.0,
+            "heading": 180.0,
+            "tolerance": 5.0,
+            "movement_count": 301,
+            "average_distance_per_move": 32.32
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 82.0,
+            "heading": 180,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 8910.84,
+            "drone_id": "04d6cfe7",
+            "min_distance": 82.0,
+            "heading": 180.0,
+            "tolerance": 5.0,
+            "movement_count": 431,
+            "average_distance_per_move": 20.67
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 82.0,
+            "heading": 180,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6272.0,
+            "drone_id": "cf84ae19",
+            "min_distance": 82.0,
+            "heading": 180.0,
+            "tolerance": 5.0,
+            "movement_count": 269,
+            "average_distance_per_move": 23.32
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 90.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9762.08,
+            "drone_id": "f0fe5adc",
+            "min_distance": 90.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 301,
+            "average_distance_per_move": 32.43
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 90.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9275.22,
+            "drone_id": "04d6cfe7",
+            "min_distance": 90.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 431,
+            "average_distance_per_move": 21.52
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 90.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 8522.09,
+            "drone_id": "cf84ae19",
+            "min_distance": 90.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 269,
+            "average_distance_per_move": 31.68
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "3203b838",
+      "task_name": "Fleet Target Sweep (3 Drones) 2",
+      "status": "failed",
+      "timestamp": "2026-01-26T16:26:24.612917",
+      "statistics": {
+        "total_checks_apis": 12,
+        "passed_checks_apis": 11,
+        "failed_checks_apis": 1,
+        "pass_rate": 0.9167
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 12
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "b309b48b",
+            "drone_id": "04d6cfe7"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9,
+            "session_id": "ed64da9a",
+            "target_id": "b309b48b",
+            "drone_id": "04d6cfe7"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "c57ec7a4",
+            "drone_id": "cf84ae19"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6,
+            "session_id": "ed64da9a",
+            "target_id": "c57ec7a4",
+            "drone_id": "cf84ae19"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "d4911186",
+            "drone_id": "f0fe5adc"
+          },
+          "expect": true,
+          "actual": false,
+          "result": false,
+          "response": {
+            "result": false,
+            "value": 0,
+            "session_id": "ed64da9a",
+            "target_id": "d4911186",
+            "drone_id": "f0fe5adc"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 53.0,
+            "heading": 270,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6092.0,
+            "drone_id": "04d6cfe7",
+            "min_distance": 53.0,
+            "heading": 270.0,
+            "tolerance": 5.0,
+            "movement_count": 474,
+            "average_distance_per_move": 12.85
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 53.0,
+            "heading": 270,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 5066.0,
+            "drone_id": "cf84ae19",
+            "min_distance": 53.0,
+            "heading": 270.0,
+            "tolerance": 5.0,
+            "movement_count": 292,
+            "average_distance_per_move": 17.35
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 53.0,
+            "heading": 270,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 7241.12,
+            "drone_id": "f0fe5adc",
+            "min_distance": 53.0,
+            "heading": 270.0,
+            "tolerance": 5.0,
+            "movement_count": 350,
+            "average_distance_per_move": 20.69
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 74.0,
+            "heading": 180,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9552.84,
+            "drone_id": "04d6cfe7",
+            "min_distance": 74.0,
+            "heading": 180.0,
+            "tolerance": 5.0,
+            "movement_count": 474,
+            "average_distance_per_move": 20.15
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 74.0,
+            "heading": 180,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6931.75,
+            "drone_id": "cf84ae19",
+            "min_distance": 74.0,
+            "heading": 180.0,
+            "tolerance": 5.0,
+            "movement_count": 292,
+            "average_distance_per_move": 23.74
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 74.0,
+            "heading": 180,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 11002.08,
+            "drone_id": "f0fe5adc",
+            "min_distance": 74.0,
+            "heading": 180.0,
+            "tolerance": 5.0,
+            "movement_count": 350,
+            "average_distance_per_move": 31.43
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 65.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9713.22,
+            "drone_id": "04d6cfe7",
+            "min_distance": 65.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 474,
+            "average_distance_per_move": 20.49
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 65.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9002.09,
+            "drone_id": "cf84ae19",
+            "min_distance": 65.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 292,
+            "average_distance_per_move": 30.83
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 65.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 11587.08,
+            "drone_id": "f0fe5adc",
+            "min_distance": 65.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 350,
+            "average_distance_per_move": 33.11
+          },
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "task_id": "c2fb3a6f",
+      "task_name": "Fleet Target Sweep (3 Drones) 3",
+      "status": "failed",
+      "timestamp": "2026-01-26T16:34:13.494149",
+      "statistics": {
+        "total_checks_apis": 12,
+        "passed_checks_apis": 11,
+        "failed_checks_apis": 1,
+        "pass_rate": 0.9167
+      },
+      "details": [
+        {
+          "type": "group",
+          "logic": "AND",
+          "depth": 0,
+          "count": 12
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "26478892",
+            "drone_id": "04d6cfe7"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 4,
+            "session_id": "ed64da9a",
+            "target_id": "26478892",
+            "drone_id": "04d6cfe7"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "3b0b23f4",
+            "drone_id": "f0fe5adc"
+          },
+          "expect": true,
+          "actual": false,
+          "result": false,
+          "response": {
+            "result": false,
+            "value": 0,
+            "session_id": "ed64da9a",
+            "target_id": "3b0b23f4",
+            "drone_id": "f0fe5adc"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/target_is_reached_by_drone",
+          "parameters": {
+            "target_id": "c57ec7a4",
+            "drone_id": "cf84ae19"
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 8,
+            "session_id": "ed64da9a",
+            "target_id": "c57ec7a4",
+            "drone_id": "cf84ae19"
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 74.0,
+            "heading": 270,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 6166.0,
+            "drone_id": "04d6cfe7",
+            "min_distance": 74.0,
+            "heading": 270.0,
+            "tolerance": 5.0,
+            "movement_count": 478,
+            "average_distance_per_move": 12.9
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 74.0,
+            "heading": 270,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 7315.12,
+            "drone_id": "f0fe5adc",
+            "min_distance": 74.0,
+            "heading": 270.0,
+            "tolerance": 5.0,
+            "movement_count": 356,
+            "average_distance_per_move": 20.55
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 74.0,
+            "heading": 270,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 5140.0,
+            "drone_id": "cf84ae19",
+            "min_distance": 74.0,
+            "heading": 270.0,
+            "tolerance": 5.0,
+            "movement_count": 299,
+            "average_distance_per_move": 17.19
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 79.0,
+            "heading": 180,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9631.84,
+            "drone_id": "04d6cfe7",
+            "min_distance": 79.0,
+            "heading": 180.0,
+            "tolerance": 5.0,
+            "movement_count": 478,
+            "average_distance_per_move": 20.15
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 79.0,
+            "heading": 180,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 11081.08,
+            "drone_id": "f0fe5adc",
+            "min_distance": 79.0,
+            "heading": 180.0,
+            "tolerance": 5.0,
+            "movement_count": 356,
+            "average_distance_per_move": 31.13
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 79.0,
+            "heading": 180,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 7060.75,
+            "drone_id": "cf84ae19",
+            "min_distance": 79.0,
+            "heading": 180.0,
+            "tolerance": 5.0,
+            "movement_count": 299,
+            "average_distance_per_move": 23.61
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "04d6cfe7",
+            "min_distance": 74.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9713.22,
+            "drone_id": "04d6cfe7",
+            "min_distance": 74.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 478,
+            "average_distance_per_move": 20.32
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "f0fe5adc",
+            "min_distance": 74.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 11587.08,
+            "drone_id": "f0fe5adc",
+            "min_distance": 74.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 356,
+            "average_distance_per_move": 32.55
+          },
+          "depth": 1
+        },
+        {
+          "type": "leaf",
+          "endpoint": "/check/drone_has_moved_directed_distance",
+          "parameters": {
+            "drone_id": "cf84ae19",
+            "min_distance": 74.0,
+            "heading": 0,
+            "tolerance": 5.0
+          },
+          "expect": true,
+          "actual": true,
+          "result": true,
+          "response": {
+            "result": true,
+            "value": 9002.09,
+            "drone_id": "cf84ae19",
+            "min_distance": 74.0,
+            "heading": 0.0,
+            "tolerance": 5.0,
+            "movement_count": 299,
+            "average_distance_per_move": 30.11
+          },
+          "depth": 1
+        }
+      ]
+    }
+  ]
+}

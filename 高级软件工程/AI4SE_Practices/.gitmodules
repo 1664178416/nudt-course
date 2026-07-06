@@ -1,0 +1,15 @@
+[submodule "research/smolagents"]
+	path = research/smolagents
+	url = https://github.com/huggingface/smolagents.git
+[submodule "research/autogen"]
+	path = research/autogen
+	url = https://github.com/microsoft/autogen.git
+[submodule "research/MetaGPT"]
+	path = research/MetaGPT
+	url = https://github.com/FoundationAgents/MetaGPT.git
+[submodule "research/crewAI"]
+	path = research/crewAI
+	url = https://github.com/crewAIInc/crewAI.git
+[submodule "research/langgraph"]
+	path = research/langgraph
+	url = https://github.com/langchain-ai/langgraph.git

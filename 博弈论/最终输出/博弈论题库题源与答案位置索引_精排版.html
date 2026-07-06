@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>博弈论题库题源与答案位置索引</title>
+  <style>
+:root {
+  --bg: #f6f7f9;
+  --paper: #ffffff;
+  --ink: #172033;
+  --muted: #657184;
+  --line: #d9dee7;
+  --soft: #edf1f6;
+  --primary: #245b74;
+  --primary-soft: #e3f1f5;
+  --accent: #9a6a13;
+  --ok: #216e4e;
+  --warn: #8a4b16;
+  --shadow: 0 12px 32px rgba(23, 32, 51, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 28px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.toc {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.toc-title {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.toc ol {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.toc li {
+  margin: 7px 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.document {
+  min-width: 0;
+}
+
+.hero,
+.problem,
+.content-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  padding: 28px 32px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: #17485d;
+  border: 1px solid #c6e1ea;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pill.warn {
+  background: #fff2db;
+  color: var(--warn);
+  border-color: #f1d39c;
+}
+
+.problem {
+  padding: 26px 30px;
+  margin: 18px 0;
+  break-inside: avoid;
+}
+
+.problem h2,
+.content-card h2 {
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--soft);
+  font-size: 22px;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin: 24px 0 10px;
+  font-size: 17px;
+  color: var(--primary);
+  letter-spacing: 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul,
+ol {
+  padding-left: 24px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+blockquote {
+  margin: 14px 0;
+  padding: 10px 14px;
+  border-left: 4px solid var(--primary);
+  background: var(--primary-soft);
+}
+
+code {
+  font-family: "Cascadia Mono", Consolas, "SFMono-Regular", monospace;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+pre {
+  overflow: auto;
+  padding: 14px;
+  background: #111827;
+  color: #f8fafc;
+  border-radius: 8px;
+}
+
+pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.MathJax,
+mjx-container {
+  font-size: 108% !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  vertical-align: top;
+}
+
+th {
+  background: #eef4f7;
+  color: #18384a;
+  font-weight: 700;
+}
+
+tr:nth-child(even) td {
+  background: #fbfcfd;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 14px 0;
+}
+
+.content-card {
+  padding: 26px 30px;
+  margin: 18px 0;
+}
+
+.study-paper {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 30px 38px;
+}
+
+.study-paper h1 {
+  margin: 30px 0 16px;
+  padding-top: 8px;
+  font-size: 25px;
+  line-height: 1.35;
+  border-top: 2px solid var(--soft);
+  letter-spacing: 0;
+}
+
+.study-paper h2 {
+  margin: 30px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: 21px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.study-paper h4 {
+  margin: 20px 0 8px;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--primary);
+  letter-spacing: 0;
+}
+
+.study-paper > h1:first-child {
+  margin-top: 0;
+  border-top: 0;
+}
+
+.callout {
+  margin: 18px 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #b9dacd;
+  background: #edf8f3;
+  color: var(--ok);
+}
+
+.source-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 18px;
+  padding: 12px 14px;
+  background: #fbfcfd;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.source-list li {
+  margin: 0;
+}
+
+.footer-note {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 24px 0 0;
+}
+
+@media (max-width: 980px) {
+  .layout {
+    display: block;
+    padding: 16px;
+  }
+
+  .toc {
+    position: static;
+    max-height: none;
+    margin-bottom: 16px;
+  }
+
+  .hero,
+  .problem,
+  .content-card,
+  .study-paper {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff;
+    font-size: 12pt;
+  }
+
+  .layout {
+    display: block;
+    max-width: none;
+    padding: 0;
+  }
+
+  .toc {
+    display: none;
+  }
+
+  .hero,
+  .problem,
+  .content-card,
+  .study-paper {
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+    margin: 0 0 18pt;
+  }
+
+  .problem {
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+}
+</style>
+  
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  },
+  options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+<body>
+  <div class="layout">
+    <nav class="toc" aria-label="目录">
+      <p class="toc-title">目录</p>
+      <ol><li><a href="#idx01">题库二：26春研究生课程《博弈论》练习题库（6-9章内容）.pdf</a></li>
+<li><a href="#idx02">题库一：研究生课程《博弈论》练习题库(1).pdf</a></li>
+<li><a href="#idx03">第1-3章</a></li>
+<li><a href="#idx04">第4-5章</a></li>
+<li><a href="#idx05">第6-7章</a></li>
+<li><a href="#idx06">第8-10章</a></li>
+<li><a href="#idx07">核查提醒</a></li></ol>
+    </nav>
+    <main class="document">
+      
+<section class="hero">
+  <h1>博弈论题库题源与答案位置索引</h1>
+  <p>用于手动核查题源：优先看“主定位”，再按“补充定位”和 Solutions.pdf 页码复核。</p>
+  <div class="meta">
+    <span class="pill">表格索引</span>
+    <span class="pill">教材P + PDF页</span>
+    <span class="pill warn">题库一/题库二分开</span>
+  </div>
+</section>
+<section class="content-card">
+
+<p>说明：<code>教材P</code> 是书内印刷页码，括号内 <code>PDF</code> 是对应 PDF 阅读器页码；<code>题库P</code> 是题库 PDF 页码。<code>Solutions.pdf / 备注</code> 列里的 <code>PDF</code> 页码专指 <code>Solutions.pdf</code> 的 PDF 阅读器页码，已用 PaddleOCR-VL 任务 <code>t-123a42b5736a</code> 重新核对。<br/>
+表中“主定位”优先写最该翻看的教材原题、定义、定理或例题；“补充定位”写证明依赖、方法页或相关定义。</p>
+<h2 id="idx01">题库二：26春研究生课程《博弈论》练习题库（6-9章内容）.pdf</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>题号</th>
+<th style="text-align: right;">题库页</th>
+<th>主定位</th>
+<th>补充定位</th>
+<th>Solutions.pdf / 备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>习题1.1</td>
+<td style="text-align: right;">P1</td>
+<td>教材P199（PDF222）<br/>6.3 行为策略均衡<br/>定理6.16</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题1.2</td>
+<td style="text-align: right;">P1</td>
+<td>教材P215（PDF238）<br/>定理7.5<br/>正概率子博弈上的均衡限制</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题1.3</td>
+<td style="text-align: right;">P1</td>
+<td>教材P227（PDF250）<br/>定理7.34<br/>扰动行为策略逼近</td>
+<td>教材P246（PDF269）<br/>练习7.34</td>
+<td>Ex.7.35（PDF168）</td>
+</tr>
+<tr>
+<td>习题1.4</td>
+<td style="text-align: right;">P1</td>
+<td>教材P272（PDF295）<br/>9.1 奥曼模型<br/>定义9.4/9.5</td>
+<td>教材P284（PDF307）<br/>定理9.29/9.30<br/>教材P376（PDF399）<br/>11.1 信念层级</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题1.5</td>
+<td style="text-align: right;">P1-P2</td>
+<td>教材P293（PDF316）<br/>例9.38<br/>海萨伊状态博弈</td>
+<td>教材P294（PDF317）<br/>定义9.39<br/>教材P300（PDF323）<br/>定义9.49/9.50、定理9.51</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="idx02">题库一：研究生课程《博弈论》练习题库(1).pdf</h2>
+<h3 id="idx03">第1-3章</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>题号</th>
+<th style="text-align: right;">题库页</th>
+<th>主定位</th>
+<th>补充定位</th>
+<th>Solutions.pdf / 备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>习题1.1</td>
+<td style="text-align: right;">P1</td>
+<td>教材P3（PDF26）<br/>定理1.4<br/>棋类游戏三择一结论</td>
+<td>教材P4（PDF27）<br/>定理1.5<br/>证明</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题1.2</td>
+<td style="text-align: right;">P1</td>
+<td>教材P41（PDF64）<br/>定理3.16<br/>有限 Chomp 先手必胜</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题2.1</td>
+<td style="text-align: right;">P1</td>
+<td>教材P19（PDF42）<br/>定理2.21<br/>正仿射变换</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题2.2</td>
+<td style="text-align: right;">P1</td>
+<td>教材P13（PDF36）<br/>vNM 公理<br/>公理2.12/2.13/2.16/2.17</td>
+<td>教材P16（PDF39）<br/>定理2.18<br/>线性效用表示</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题2.3</td>
+<td style="text-align: right;">P1</td>
+<td>教材P20（PDF43）<br/>定理2.22<br/>两个表示只差正仿射变换</td>
+<td>教材P30（PDF53）<br/>练习2.21</td>
+<td>Ex.2.21（PDF11）</td>
+</tr>
+<tr>
+<td>习题2.4</td>
+<td style="text-align: right;">P1</td>
+<td>教材P21（PDF44）<br/>定义2.24、定理2.25<br/>风险厌恶与凹效用</td>
+<td>教材P22（PDF45）<br/>定理2.27<br/>教材P31（PDF54）<br/>练习2.23</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题3.1</td>
+<td style="text-align: right;">P1</td>
+<td>教材P37（PDF60）<br/>3.3 博弈树<br/>定义3.7</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题3.2</td>
+<td style="text-align: right;">P1</td>
+<td>教材P42（PDF65）<br/>3.5 随机行动</td>
+<td>教材P37（PDF60）<br/>定义3.7</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题3.3</td>
+<td style="text-align: right;">P2</td>
+<td>教材P45（PDF68）<br/>3.6 不完全信息博弈</td>
+<td>教材P37（PDF60）<br/>定义3.7</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题3.4</td>
+<td style="text-align: right;">P2</td>
+<td>教材P42（PDF65）<br/>3.5 随机行动</td>
+<td>教材P45（PDF68）<br/>3.6 不完全信息博弈</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="idx04">第4-5章</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>题号</th>
+<th style="text-align: right;">题库页</th>
+<th>主定位</th>
+<th>补充定位</th>
+<th>Solutions.pdf / 备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>习题4.1</td>
+<td style="text-align: right;">P2</td>
+<td>教材P111（PDF134）<br/>练习4.18<br/>三人策略式博弈</td>
+<td>-</td>
+<td>Ex.4.18（PDF54）</td>
+</tr>
+<tr>
+<td>习题4.2</td>
+<td style="text-align: right;">P2</td>
+<td>教材P81（PDF104）<br/>定义4.17<br/>纳什均衡、有利偏离</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题4.3</td>
+<td style="text-align: right;">P2</td>
+<td>教材P82（PDF105）<br/>定义4.18/4.19<br/>最佳应对刻画</td>
+<td>教材P111（PDF134）<br/>练习4.15</td>
+<td>Ex.4.15（PDF53）</td>
+</tr>
+<tr>
+<td>习题4.4</td>
+<td style="text-align: right;">P3</td>
+<td>教材P91（PDF114）<br/>定理4.35<br/>同页推论4.36</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题4.5</td>
+<td style="text-align: right;">P3</td>
+<td>教材P84（PDF107）<br/>例4.23<br/>Cournot 产量竞争</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题5.1</td>
+<td style="text-align: right;">P3</td>
+<td>教材P166（PDF189）<br/>练习5.10(4)<br/>给定双线性混合扩展</td>
+<td>教材P128（PDF151）<br/>5.2.1 直接方法</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题5.2</td>
+<td style="text-align: right;">P3-P4</td>
+<td>教材P128（PDF151）<br/>5.2/5.2.1<br/>混合均衡计算</td>
+<td>教材P129（PDF152）<br/>例5.14</td>
+<td>方法源；非同一道原题</td>
+</tr>
+<tr>
+<td>习题5.3</td>
+<td style="text-align: right;">P4</td>
+<td>教材P128（PDF151）<br/>5.2/5.2.1<br/>混合均衡计算</td>
+<td>教材P129（PDF152）<br/>例5.14</td>
+<td>方法源；非同一道原题</td>
+</tr>
+<tr>
+<td>习题5.4</td>
+<td style="text-align: right;">P4</td>
+<td>教材P103（PDF126）<br/>4.14.2 方格二人非零和博弈</td>
+<td>-</td>
+<td>题库函数与正文例题一致</td>
+</tr>
+<tr>
+<td>习题5.5</td>
+<td style="text-align: right;">P4</td>
+<td>教材P101（PDF124）<br/>4.14.1 单位正方形二人零和博弈</td>
+<td>教材P102（PDF125）<br/>续页</td>
+<td>题库函数与正文例题一致</td>
+</tr>
+<tr>
+<td>习题5.6</td>
+<td style="text-align: right;">P4</td>
+<td>教材P161（PDF184）<br/>定义5.50<br/>ESS</td>
+<td>同页定理5.51<br/>ESS 与对称纳什均衡</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="idx05">第6-7章</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>题号</th>
+<th style="text-align: right;">题库页</th>
+<th>主定位</th>
+<th>补充定位</th>
+<th>Solutions.pdf / 备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>习题6.1</td>
+<td style="text-align: right;">P4-P5</td>
+<td>教材P569（PDF592）<br/>定理16.5<br/>策略等价是等价关系</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题6.2</td>
+<td style="text-align: right;">P5</td>
+<td>教材P570（PDF593）<br/>定义16.6<br/>定理16.7(1)</td>
+<td>-</td>
+<td>0-1 标准化</td>
+</tr>
+<tr>
+<td>习题6.3</td>
+<td style="text-align: right;">P5</td>
+<td>教材P570（PDF593）<br/>定义16.6<br/>定理16.7(2)</td>
+<td>-</td>
+<td>0-0 标准化</td>
+</tr>
+<tr>
+<td>习题6.4</td>
+<td style="text-align: right;">P5</td>
+<td>教材P570（PDF593）<br/>定理16.7</td>
+<td>-</td>
+<td>0 标准化</td>
+</tr>
+<tr>
+<td>习题6.5</td>
+<td style="text-align: right;">P5</td>
+<td>教材P570（PDF593）<br/>定理16.7<br/>策略等价规范化</td>
+<td>教材P571（PDF594）<br/>定义16.10<br/>单调博弈</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题7.1</td>
+<td style="text-align: right;">P5</td>
+<td>教材P583（PDF606）<br/>定义17.1/17.2<br/>核心与配置</td>
+<td>教材P590（PDF613）<br/>17.3 Bondareva-Shapley 定理</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题7.2</td>
+<td style="text-align: right;">P5</td>
+<td>教材P623（PDF646）<br/>练习17.8<br/>博弈 <code>f_k</code> 的核心</td>
+<td>-</td>
+<td>Ex.18.8（PDF464）</td>
+</tr>
+<tr>
+<td>习题7.3</td>
+<td style="text-align: right;">P6</td>
+<td>教材P623（PDF646）<br/>练习17.9<br/>三人 0 标准化博弈</td>
+<td>-</td>
+<td>Ex.18.9（PDF464）</td>
+</tr>
+<tr>
+<td>习题7.4</td>
+<td style="text-align: right;">P6</td>
+<td>教材P607（PDF630）<br/>17.7 凸博弈<br/>定义17.51</td>
+<td>教材P608（PDF631）<br/>定理17.54<br/>等价特征</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题7.5</td>
+<td style="text-align: right;">P6</td>
+<td>教材P585（PDF608）<br/>定理17.7<br/>核心在策略等价下协变</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="idx06">第8-10章</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>题号</th>
+<th style="text-align: right;">题库页</th>
+<th>主定位</th>
+<th>补充定位</th>
+<th>Solutions.pdf / 备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>习题8.1</td>
+<td style="text-align: right;">P6</td>
+<td>教材P633（PDF656）<br/>18.1 沙普利特征<br/>效率/对称/无效/加法</td>
+<td>教材P638-P639（PDF661-PDF662）<br/>定义18.14、18.19-18.21<br/>Shapley公式与承载博弈<br/>教材P643（PDF666）<br/>定义18.26 边际性</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题8.2</td>
+<td style="text-align: right;">P6</td>
+<td>教材P657（PDF680）<br/>练习18.12<br/><code>v(S)=(sum a_i)^2</code></td>
+<td>-</td>
+<td>Ex.19.14（PDF505）</td>
+</tr>
+<tr>
+<td>习题8.3</td>
+<td style="text-align: right;">P6</td>
+<td>教材P643（PDF666）<br/>例18.24<br/>三人手套博弈</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题8.4</td>
+<td style="text-align: right;">P6</td>
+<td>教材P638-P639（PDF661-PDF662）<br/>定义18.19<br/>定理18.20/18.21</td>
+<td>-</td>
+<td>承载博弈</td>
+</tr>
+<tr>
+<td>习题8.5</td>
+<td style="text-align: right;">P6</td>
+<td>教材P650（PDF673）<br/>定理18.32<br/>凸博弈 Shapley 值属于核心</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题9.1</td>
+<td style="text-align: right;">P6</td>
+<td>教材P665（PDF688）<br/>定义19.3<br/>异议</td>
+<td>教材P666（PDF689）<br/>定义19.7/19.9/19.10<br/>反驳、合理异议、谈判集</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题9.2</td>
+<td style="text-align: right;">P6</td>
+<td>教材P667（PDF690）<br/>定理19.11<br/>单人联盟结构</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题9.3</td>
+<td style="text-align: right;">P6</td>
+<td>教材P668（PDF691）<br/>19.2 二人博弈谈判集<br/>式(19.12)/(19.13)</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题9.4</td>
+<td style="text-align: right;">P7</td>
+<td>教材P669（PDF692）<br/>定理19.15<br/>三人谈判集</td>
+<td>-</td>
+<td>联盟结构 <code>{1,2},{3}</code></td>
+</tr>
+<tr>
+<td>习题9.5</td>
+<td style="text-align: right;">P7</td>
+<td>教材P667（PDF690）<br/>定理19.11<br/>单人联盟结构</td>
+<td>教材P668（PDF691）<br/>19.3 三人博弈谈判集</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题10.1</td>
+<td style="text-align: right;">P7</td>
+<td>教材P682（PDF705）<br/>定义20.2<br/>字典顺序关系</td>
+<td>-</td>
+<td>Ex.21.2（PDF538）</td>
+</tr>
+<tr>
+<td>习题10.2</td>
+<td style="text-align: right;">P7</td>
+<td>教材P681（PDF704）<br/>定义20.1<br/>余额向量</td>
+<td>教材P683（PDF706）<br/>定义20.4/20.6<br/>核仁及记号</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题10.3</td>
+<td style="text-align: right;">P7</td>
+<td>教材P692（PDF715）<br/>20.4 计算核仁</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>习题10.4</td>
+<td style="text-align: right;">P7</td>
+<td>教材P684（PDF707）<br/>定理20.9<br/>非空紧集上核仁非空紧致</td>
+<td>-</td>
+<td>Ex.21.3（PDF538）</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="idx07">核查提醒</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>标记</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>方法源</td>
+<td>题库矩阵/函数不是教材正文同一道原题，只给最贴近的教材解法位置。</td>
+</tr>
+<tr>
+<td>Solutions</td>
+<td><code>Solutions.pdf</code> 中可直接参考的英文解答位置。</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+      <p class="footer-note">生成日期：2026-06-25；公式由 MathJax 渲染，离线时仍保留 LaTeX 原文。</p>
+    </main>
+  </div>
+</body>
+</html>

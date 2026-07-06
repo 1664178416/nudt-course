@@ -1,0 +1,66 @@
+
+sequenceDiagram
+    participant User as 用户代码
+    participant Session as Session
+    participant Agent1 as SimpleAgent
+    participant Agent2 as SimpleAgent
+    participant LLM as OpenAIClient
+    participant Memory as SimpleMemory
+    participant ToolReg as ToolRegistry
+    
+    Note over User: 1. 初始化阶段
+    User->>Session: __init__(agents=[agent1, agent2])
+    Session->>Memory: __init__(max_messages=100)
+    Session->>Session: 存储agents和shared_memory
+    
+    User->>Agent1: __init__(name='分析师', system_prompt='...')
+    Agent1->>LLM: __init__(api_key='sk-...', model='gpt-4')
+    Agent1->>Memory: __init__(max_messages=50)
+    Agent1->>Agent1: 设置默认属性和工具
+    
+    User->>Agent2: __init__(name='程序员', system_prompt='...')
+    
+    Note over User: 2. 添加工具（可选）
+    User->>ToolReg: register_tool(search_web)
+    User->>Agent1: add_tool(search_web)
+    
+    Note over User: 3. 运行多智能体任务
+    User->>Session: run(task='分析AI趋势并生成代码')
+    
+    Note over Session: 4. 任务执行循环
+    loop 每个对话轮次
+        Session->>Session: _select_next_agent()
+        Session->>Memory: get_messages(limit=10)
+        Memory-->>Session: 返回历史消息
+        
+        Session->>Agent1: generate_response(input_text, context)
+        Agent1->>Agent1: _process_messages(context)
+        Agent1->>LLM: chat_completion(messages)
+        LLM-->>Agent1: 返回LLM响应
+        
+        Agent1->>Agent1: 检查工具调用
+        alt 需要调用工具
+            Agent1->>ToolReg: get_tool(tool_name)
+            ToolReg-->>Agent1: 返回工具函数
+            Agent1->>Agent1: 执行工具函数
+            Agent1-->>Agent1: 工具结果
+            Agent1->>LLM: chat_completion(带工具结果)
+            LLM-->>Agent1: 返回最终响应
+        end
+        
+        Agent1->>Agent1: 创建Message对象
+        Agent1-->>Session: 返回Message
+        
+        Session->>Memory: add_message(message)
+        Session->>Session: _broadcast_to_agents(message)
+        
+        Session->>Session: 检查停止条件
+    end
+    
+    Session-->>User: 返回最终结果
+    
+    Note over User: 5. 获取历史记录
+    User->>Session: get_message_history()
+    Session->>Memory: get_messages(limit=None)
+    Memory-->>Session: 返回所有消息
+    Session-->>User: 返回消息历史

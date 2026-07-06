@@ -1,0 +1,42 @@
+# Runtime/cache output
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+node_modules/
+dist/
+build/
+Release/
+Debug/
+.vs/
+ipch/
+
+# Logs and local databases
+*.log
+*.db
+*.sqlite
+*.sdf
+
+# Binary build/model artifacts
+*.exe
+*.dll
+*.pdb
+*.ipch
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Archives and videos
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.mp4
+*.avi
+*.mov
+
+# Office temporary lock files
+~$*

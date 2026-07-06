@@ -1,0 +1,230 @@
+<!DOCTYPE html><html><head>
+      <title>课堂汇报-多智能体SE应用_new</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\L5C\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="多智能体系统在软件工程中的应用研究">多智能体系统在软件工程中的应用研究 </h1>
+<hr>
+<h2 id="1-引言与研究动机">1. 引言与研究动机 </h2>
+<h3 id="11-研究背景从单点工具到整体编排">1.1 研究背景：从单点工具到整体编排 </h3>
+<p>在本次高级软件工程课程的调研初期，我们观察到现有的 AI 辅助工具大多集中在软件开发的<strong>特定孤立阶段</strong>。例如，Copilot 专注于代码补全，各类单元测试生成工具专注于测试阶段。</p>
+<p>然而，真实的软件工程是一个<strong>长链路、高耦合</strong>的系统性过程。<br>
+<strong>核心问题</strong>：现有的解决方案是分散的。需求分析、架构设计、代码编写、测试验证往往需要在不同的工具间切换，导致上下文（Context）在流转中丢失，人工协同的成本依然很高。</p>
+<h3 id="12-解决方案多智能体系统-mas">1.2 解决方案：多智能体系统 (MAS) </h3>
+<p>鉴于此，本小组<strong>转换了调研思路</strong>，从关注单一工具转向关注<strong>整体解决方案</strong>。我们提出利用 <strong>多智能体系统 (Multi-Agent Systems)</strong> 对软件工程进行整体编排。</p>
+<p>通过大模型（LLM）的规划能力，我们可以模拟一个完整的软件开发团队：</p>
+<ul>
+<li><strong>产品经理智能体 (PM Agent)</strong>：负责理解模糊需求，输出标准文档。</li>
+<li><strong>架构师智能体 (Architect Agent)</strong>：负责系统设计，划分模块与接口。</li>
+<li><strong>开发者智能体 (Developer Agent)</strong>：负责编写具体业务代码。</li>
+<li><strong>测试员智能体 (QA Agent)</strong>：负责编写测试用例，保证质量。</li>
+</ul>
+<hr>
+<p>这是为您优化后的版本。</p>
+<p>本次修改重点：</p>
+<ol>
+<li><strong>去口语化</strong>：使用更严谨的学术和工程术语（如“范式”、“编排”、“抽象层”、“闭环”）。</li>
+<li><strong>结构标准化</strong>：统一采用“核心定位 + 技术特性 + 综合评价”的三段式结构。</li>
+<li><strong>深度提升</strong>：从简单的功能描述上升到架构设计和技术原理的层面。</li>
+</ol>
+<hr>
+<h2 id="2-核心框架与平台调研综述">2. 核心框架与平台调研综述 </h2>
+<p>为了寻求最优的智能体编排方案，本研究小组对当前 GitHub 上高星的开源框架及业界领先的应用平台进行了深度调研。根据<strong>抽象层级</strong>与<strong>交付形态</strong>的差异，我们将调研对象划分为“底层开发框架”与“应用级协作平台”两类。</p>
+<h3 id="21-底层开发框架-developer-frameworks">2.1 底层开发框架 (Developer Frameworks) </h3>
+<p>此类工具提供原子化的智能体构建能力与通信协议，主要面向具备编码能力的开发者，用于构建高定制化的多智能体系统 (MAS)。</p>
+<h4 id="1-autogen-microsoft"><strong>1. AutoGen (Microsoft)</strong> </h4>
+<ul>
+<li>
+<p><strong>核心定位</strong>：<strong>基于对话范式的多智能体编排框架 (Conversational Orchestration Framework)</strong></p>
+</li>
+<li>
+<p><strong>技术特性</strong>：</p>
+</li>
+<li>
+<p><strong>对话即计算</strong>：采用“可对话代理 (Conversable Agent)”架构，将工具调用、记忆检索及逻辑推理统一封装为消息传递接口。</p>
+</li>
+<li>
+<p><strong>灵活拓扑</strong>：支持构建复杂的通信拓扑结构，包括双人协作、群组聊天 (GroupChat) 及分层对话。</p>
+</li>
+<li>
+<p><strong>人机回环 (Human-in-the-loop)</strong>：内置人类介入机制，允许在自动化流程的关键节点插入人工反馈，修正模型推理路径。</p>
+</li>
+<li>
+<p><strong>综合评价</strong>：</p>
+</li>
+<li>
+<p><strong>优势</strong>：灵活性极高，适用于需要复杂交互逻辑和非确定性流程的实验性任务。</p>
+</li>
+<li>
+<p><strong>局限</strong>：状态管理较为发散，对于严格遵循 SOP 的工程任务，需要大量的 Prompt 工程调优。</p>
+</li>
+</ul>
+<h4 id="2-metagpt-deepwisdom"><strong>2. MetaGPT (DeepWisdom)</strong> </h4>
+<ul>
+<li>
+<p><strong>核心定位</strong>：<strong>基于 SOP 的软件工程专用多智能体框架 (SOP-based MAS for SE)</strong></p>
+</li>
+<li>
+<p><strong>技术特性</strong>：</p>
+</li>
+<li>
+<p><strong>流程标准化 (Code = SOP)</strong>：将软件工程的标准作业程序 (Standard Operating Procedure) 映射为智能体协作流，预设了产品经理、架构师、工程师等标准角色。</p>
+</li>
+<li>
+<p><strong>结构化通信</strong>：摒弃纯自然语言对话，强制智能体通过标准化文档（如 PRD、类图、API 接口定义）共享上下文，显著降低了信息熵减。</p>
+</li>
+<li>
+<p><strong>综合评价</strong>：</p>
+</li>
+<li>
+<p><strong>优势</strong>：在端到端软件开发场景下表现出极高的稳定性与可用性，能够生成结构完整的项目仓库。</p>
+</li>
+<li>
+<p><strong>局限</strong>：框架抽象度较高，角色与流程相对固化，扩展至非软件工程领域的通用性较弱。</p>
+</li>
+</ul>
+<h4 id="3-smolagents-hugging-face"><strong>3. smolagents (Hugging Face)</strong> </h4>
+<ul>
+<li>
+<p><strong>核心定位</strong>：<strong>代码驱动的轻量级智能体构建库 (Code-Centric Agent Library)</strong></p>
+</li>
+<li>
+<p><strong>技术特性</strong>：</p>
+</li>
+<li>
+<p><strong>代码即思维 (Code as Thought)</strong>：不同于基于 JSON 的工具调用范式，该框架让 LLM 直接生成并执行 Python 代码来进行推理与动作，提升了逻辑表达的精确度。</p>
+</li>
+<li>
+<p><strong>极简抽象</strong>：核心逻辑代码量极少（&lt;1000 LOC），去除了复杂的中间件抽象，提供最底层的 ReAct 模式实现。</p>
+</li>
+<li>
+<p><strong>综合评价</strong>：</p>
+</li>
+<li>
+<p><strong>优势</strong>：透明度与可解释性极高，执行效率高，非常适合学术研究、算法验证及构建本地化的小型智能体。</p>
+</li>
+<li>
+<p><strong>局限</strong>：缺乏内置的高级多智能体编排模式（如群聊、层级调度），开发者需自行实现复杂的协作逻辑。</p>
+</li>
+</ul>
+<hr>
+<h3 id="22-应用级协作平台-application-platforms">2.2 应用级协作平台 (Application Platforms) </h3>
+<p>此类工具将智能体能力封装为 SaaS/PaaS 产品，面向终端用户提供开箱即用的解决方案。</p>
+<h4 id="4-thingo-武汉大学思高科技"><strong>4. Thingo (武汉大学/思高科技)</strong> </h4>
+<ul>
+<li>
+<p><strong>核心定位</strong>：<strong>基于动态调度的通用智能体协作平台 (Dynamic Agent Collaboration Platform)</strong></p>
+</li>
+<li>
+<p><strong>技术特性</strong>：</p>
+</li>
+<li>
+<p><strong>动态组队 (Dynamic Coalition)</strong>：基于语义理解自动拆解用户意图，从智能体库中动态调度文案、数据、排版等异构 Agent 组成临时任务团队。</p>
+</li>
+<li>
+<p><strong>领域适配</strong>：针对中文语境下的政企办公、公文处理及复杂工作流进行了深度优化，具备较强的垂直领域知识库集成能力。</p>
+</li>
+<li>
+<p><strong>综合评价</strong>：</p>
+</li>
+<li>
+<p><strong>优势</strong>：极大地降低了多智能体协作的使用门槛，在文档处理与办公自动化场景具有显著优势。</p>
+</li>
+<li>
+<p><strong>局限</strong>：作为闭源平台，用户难以介入底层逻辑修改，定制化能力受限于平台预设。</p>
+</li>
+</ul>
+<h4 id="5-百度秒哒-baidu"><strong>5. 百度秒哒 (Baidu)</strong> </h4>
+<ul>
+<li>
+<p><strong>核心定位</strong>：<strong>生成式零代码应用开发平台 (Generative No-Code Platform)</strong></p>
+</li>
+<li>
+<p><strong>技术特性</strong>：</p>
+</li>
+<li>
+<p><strong>Prompt-to-App</strong>：基于文心大模型构建的多模型混合架构 (MoE)，后台集成前端生成、后端逻辑、数据库设计等专用模型。</p>
+</li>
+<li>
+<p><strong>全栈自动化</strong>：实现了从自然语言需求到可运行 Web 应用的全链路自动化，覆盖了 UI 设计、逻辑编写与云端部署。</p>
+</li>
+<li>
+<p><strong>综合评价</strong>：</p>
+</li>
+<li>
+<p><strong>优势</strong>：将应用开发的边际成本降至最低，非常适合非技术人员进行快速原型验证 (MVP) 与展示型应用开发。</p>
+</li>
+<li>
+<p><strong>局限</strong>：生成的代码通常为“黑盒”或难以二次维护，不具备系统级软件工程所需的复杂逻辑处理与持续迭代能力。</p>
+</li>
+</ul>
+<hr>
+<h2 id="3-关键技术深钻smolagents">3. 关键技术深钻：smolagents </h2>
+<p>虽然我们调研了多个框架，但我们重点深入研究了 <strong>smolagents</strong>，原因如下：</p>
+<ol>
+<li><strong>极简与透明</strong>：相比于其他重型框架，smolagents 的核心代码逻辑非常少，我们阅读了其源码，发现其主要基于 <strong>ReAct (Reason + Act)</strong> 模式进行编排。</li>
+<li><strong>实现机制</strong>：对于一个任务，主模型会先将其分解为多个子任务，然后编排不同的工具去执行。每次执行的结果会回馈给模型，形成闭环。</li>
+<li><strong>易用性</strong>：接口清晰，学习成本最低。虽然它可能不是功能最全面的，但在理解 Agent 本质逻辑上是最好的教材。</li>
+</ol>
+<p><strong>后续计划</strong>：在接下来的作业任务中，我们小组打算在 smolagents 框架的基础上进行二次开发。</p>
+<hr>
+<h2 id="4-应用场景设想与挑战">4. 应用场景设想与挑战 </h2>
+<h3 id="41-典型场景代码开发与审查闭环系统">4.1 典型场景：代码开发与审查闭环系统 </h3>
+<p>我们构想了一个双智能体对抗系统：</p>
+<ol>
+<li><strong>输入</strong>：用户需求。</li>
+<li><strong>开发者智能体</strong>：调用工具生成初版代码。</li>
+<li><strong>审查者智能体</strong>：根据代码规范、安全规则进行扫描，生成审查报告。</li>
+<li><strong>迭代</strong>：开发者根据报告修改代码，这是一个反复迭代、优化的过程，直到通过审查。</li>
+</ol>
+<h3 id="42-核心优势">4.2 核心优势 </h3>
+<ul>
+<li><strong>分而治之</strong>：将复杂问题拆解。</li>
+<li><strong>专业分工</strong>：每个智能体自带不同工具（如 Web 搜索、数据库连接）。</li>
+<li><strong>自动化</strong>：实现 7x24 小时不间断工作。</li>
+</ul>
+<h3 id="43-面临挑战">4.3 面临挑战 </h3>
+<ul>
+<li><strong>开销问题</strong>：多智能体反复对话会导致 Token 消耗巨大。</li>
+<li><strong>上下文窗口</strong>：随着项目变大，LLM 的窗口容易溢出。</li>
+<li><strong>死循环</strong>：智能体之间可能陷入互相推诿或无法达成一致的僵局。</li>
+</ul>
+<hr>
+<h2 id="5-实测报告三大典型任务横向对比">5. 实测报告：三大典型任务横向对比 </h2>
+<p>为了验证上述调研的真实效果，我们设计了三个不同维度的任务，对这五个工具进行了<strong>实际测试</strong>。</p>
+<h3 id="任务-1web-前端开发--写一个网页做排序算法可视化">任务 1：Web 前端开发 —— "写一个网页做排序算法可视化" </h3>
+<h3 id="任务-2游戏逻辑开发--做一个-2048-小游戏">任务 2：游戏逻辑开发 —— "做一个 2048 小游戏" </h3>
+<h3 id="任务-3自我进化与元编程--写一个脚本实现简单的多智能体框架">任务 3：自我进化与元编程 —— "写一个脚本实现简单的多智能体框架" </h3>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

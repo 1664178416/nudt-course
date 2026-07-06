@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄金矿工 - 升级版</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        
+        <!-- 游戏UI -->
+        <div id="ui">
+            <div id="score">分数: $0</div>
+            <div id="level">关卡: 1</div>
+            <div id="target">目标: $1000</div>
+            <div id="time">时间: 60秒</div>
+        </div>
+        
+        <!-- 开始菜单 -->
+        <div id="start-menu" class="screen">
+            <h1>黄金矿工</h1>
+            <div class="menu-options">
+                <div class="menu-option" data-level="1">关卡 1 - 初学者</div>
+                <div class="menu-option" data-level="2">关卡 2 - 熟练者</div>
+                <div class="menu-option" data-level="3">关卡 3 - 高手</div>
+                <div class="menu-option" data-level="4">关卡 4 - 专家</div>
+                <div class="menu-option" data-level="5">关卡 5 - 大师</div>
+            </div>
+            <p class="instructions">
+                使用鼠标控制方向，点击左键抛出钩子<br>
+                收集黄金和宝石获得分数，避开炸弹<br>
+                特殊物品: 宝箱(随机奖励)、钥匙(额外奖励)、时钟(增加时间)、炸药(清除周围物品)、磁铁(吸引物品)、超级黄金(高额奖励)
+            </p>
+        </div>
+        
+        <!-- 关卡完成界面 -->
+        <div id="level-complete-screen" class="screen hidden">
+            <h1>关卡完成!</h1>
+            <p id="level-complete-text">准备进入下一关</p>
+            <div class="menu-options">
+                <div class="menu-option" id="next-level-btn">下一关</div>
+                <div class="menu-option" id="back-to-menu-btn">返回菜单</div>
+            </div>
+        </div>
+        
+        <!-- 游戏结束界面 -->
+        <div id="game-over-screen" class="screen hidden">
+            <h1>游戏结束</h1>
+            <p id="final-score">最终分数: $0</p>
+            <div class="menu-options">
+                <div class="menu-option" id="restart-btn">重新开始</div>
+                <div class="menu-option" id="menu-btn">返回菜单</div>
+            </div>
+        </div>
+        
+        <!-- 游戏胜利界面 -->
+        <div id="game-win-screen" class="screen hidden">
+            <h1>恭喜通关!</h1>
+            <p id="win-score">最终分数: $0</p>
+            <div class="menu-options">
+                <div class="menu-option" id="win-restart-btn">重新开始</div>
+                <div class="menu-option" id="win-menu-btn">返回菜单</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/hook.js"></script>
+    <script src="js/items.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

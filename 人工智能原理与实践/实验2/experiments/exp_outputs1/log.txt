@@ -1,0 +1,72 @@
+==> 实验目录已创建: experiments/exp_20251230_134302
+==> 运行设备: NVIDIA A100X
+==> Classes: ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+
+==> Start Training (40 epochs)...
+Epoch 01 | LR: 1.00e-05 | Train Loss: 0.7771 Acc: 89.35% | Test Loss: 0.5753 Acc: 97.05%
+    >>> New Best Model Saved! (Acc: 97.05%)
+Epoch 02 | LR: 9.98e-06 | Train Loss: 0.6248 Acc: 94.87% | Test Loss: 0.5547 Acc: 97.97%
+    >>> New Best Model Saved! (Acc: 97.97%)
+Epoch 03 | LR: 9.94e-06 | Train Loss: 0.6045 Acc: 95.68% | Test Loss: 0.5548 Acc: 97.85%
+Epoch 04 | LR: 9.86e-06 | Train Loss: 0.5934 Acc: 96.11% | Test Loss: 0.5482 Acc: 98.04%
+    >>> New Best Model Saved! (Acc: 98.04%)
+Epoch 05 | LR: 9.76e-06 | Train Loss: 0.5853 Acc: 96.44% | Test Loss: 0.5412 Acc: 98.36%
+    >>> New Best Model Saved! (Acc: 98.36%)
+Epoch 06 | LR: 9.62e-06 | Train Loss: 0.5772 Acc: 96.76% | Test Loss: 0.5470 Acc: 98.01%
+Epoch 07 | LR: 9.46e-06 | Train Loss: 0.5709 Acc: 97.08% | Test Loss: 0.5451 Acc: 98.11%
+Epoch 08 | LR: 9.26e-06 | Train Loss: 0.5673 Acc: 97.23% | Test Loss: 0.5429 Acc: 98.25%
+Epoch 09 | LR: 9.05e-06 | Train Loss: 0.5646 Acc: 97.24% | Test Loss: 0.5454 Acc: 98.17%
+Epoch 10 | LR: 8.80e-06 | Train Loss: 0.5613 Acc: 97.45% | Test Loss: 0.5373 Acc: 98.40%
+    >>> New Best Model Saved! (Acc: 98.40%)
+Epoch 11 | LR: 8.54e-06 | Train Loss: 0.5591 Acc: 97.55% | Test Loss: 0.5387 Acc: 98.38%
+Epoch 12 | LR: 8.25e-06 | Train Loss: 0.5581 Acc: 97.52% | Test Loss: 0.5433 Acc: 98.23%
+Epoch 13 | LR: 7.94e-06 | Train Loss: 0.5536 Acc: 97.69% | Test Loss: 0.5399 Acc: 98.40%
+Epoch 14 | LR: 7.61e-06 | Train Loss: 0.5538 Acc: 97.71% | Test Loss: 0.5390 Acc: 98.42%
+    >>> New Best Model Saved! (Acc: 98.42%)
+Epoch 15 | LR: 7.27e-06 | Train Loss: 0.5488 Acc: 97.95% | Test Loss: 0.5406 Acc: 98.36%
+Epoch 16 | LR: 6.91e-06 | Train Loss: 0.5490 Acc: 97.93% | Test Loss: 0.5392 Acc: 98.37%
+Epoch 17 | LR: 6.55e-06 | Train Loss: 0.5466 Acc: 98.00% | Test Loss: 0.5401 Acc: 98.43%
+    >>> New Best Model Saved! (Acc: 98.43%)
+Epoch 18 | LR: 6.17e-06 | Train Loss: 0.5483 Acc: 97.95% | Test Loss: 0.5370 Acc: 98.61%
+    >>> New Best Model Saved! (Acc: 98.61%)
+Epoch 19 | LR: 5.78e-06 | Train Loss: 0.5442 Acc: 98.13% | Test Loss: 0.5467 Acc: 98.18%
+Epoch 20 | LR: 5.39e-06 | Train Loss: 0.5451 Acc: 98.08% | Test Loss: 0.5372 Acc: 98.38%
+Epoch 21 | LR: 5.00e-06 | Train Loss: 0.5416 Acc: 98.26% | Test Loss: 0.5384 Acc: 98.40%
+Epoch 22 | LR: 4.61e-06 | Train Loss: 0.5420 Acc: 98.22% | Test Loss: 0.5359 Acc: 98.58%
+Epoch 23 | LR: 4.22e-06 | Train Loss: 0.5410 Acc: 98.29% | Test Loss: 0.5355 Acc: 98.61%
+Epoch 24 | LR: 3.83e-06 | Train Loss: 0.5399 Acc: 98.31% | Test Loss: 0.5379 Acc: 98.49%
+Epoch 25 | LR: 3.45e-06 | Train Loss: 0.5395 Acc: 98.32% | Test Loss: 0.5354 Acc: 98.61%
+Epoch 26 | LR: 3.09e-06 | Train Loss: 0.5384 Acc: 98.38% | Test Loss: 0.5347 Acc: 98.61%
+Epoch 27 | LR: 2.73e-06 | Train Loss: 0.5368 Acc: 98.39% | Test Loss: 0.5367 Acc: 98.57%
+Epoch 28 | LR: 2.39e-06 | Train Loss: 0.5354 Acc: 98.50% | Test Loss: 0.5338 Acc: 98.72%
+    >>> New Best Model Saved! (Acc: 98.72%)
+Epoch 29 | LR: 2.06e-06 | Train Loss: 0.5375 Acc: 98.39% | Test Loss: 0.5352 Acc: 98.64%
+Epoch 30 | LR: 1.75e-06 | Train Loss: 0.5350 Acc: 98.50% | Test Loss: 0.5344 Acc: 98.62%
+Epoch 31 | LR: 1.46e-06 | Train Loss: 0.5342 Acc: 98.51% | Test Loss: 0.5328 Acc: 98.75%
+    >>> New Best Model Saved! (Acc: 98.75%)
+Epoch 32 | LR: 1.20e-06 | Train Loss: 0.5336 Acc: 98.53% | Test Loss: 0.5325 Acc: 98.77%
+    >>> New Best Model Saved! (Acc: 98.77%)
+Epoch 33 | LR: 9.55e-07 | Train Loss: 0.5332 Acc: 98.55% | Test Loss: 0.5336 Acc: 98.62%
+Epoch 34 | LR: 7.37e-07 | Train Loss: 0.5320 Acc: 98.61% | Test Loss: 0.5337 Acc: 98.64%
+Epoch 35 | LR: 5.45e-07 | Train Loss: 0.5326 Acc: 98.63% | Test Loss: 0.5333 Acc: 98.64%
+Epoch 36 | LR: 3.81e-07 | Train Loss: 0.5321 Acc: 98.62% | Test Loss: 0.5337 Acc: 98.74%
+Epoch 37 | LR: 2.45e-07 | Train Loss: 0.5333 Acc: 98.57% | Test Loss: 0.5332 Acc: 98.65%
+Epoch 38 | LR: 1.38e-07 | Train Loss: 0.5339 Acc: 98.50% | Test Loss: 0.5329 Acc: 98.65%
+Epoch 39 | LR: 6.16e-08 | Train Loss: 0.5340 Acc: 98.53% | Test Loss: 0.5327 Acc: 98.69%
+Epoch 40 | LR: 1.54e-08 | Train Loss: 0.5309 Acc: 98.71% | Test Loss: 0.5328 Acc: 98.69%
+
+==> Training Finished.
+==> Best Validation Accuracy: 98.77%
+
+========================================
+==> Starting Full Data Analysis...
+========================================
+==> 训练曲线图已保存至: experiments/exp_20251230_134302/training_analysis_curves.png
+==> Loading best weights from experiments/exp_20251230_134302/best_model.pth
+==> 样本预测图已保存: experiments/exp_20251230_134302/test_samples.png
+==> Inferencing on [TEST SET] (Clean)...
+==> Test Results saved to 'results_test.pt' (Acc: 98.77%)
+==> Inferencing on [TRAIN SET] (Clean, No Augment)...
+==> Train Results saved to 'results_train.pt' (Acc: 100.00%)
+
+==> All Done! Data saved in: experiments/exp_20251230_134302
