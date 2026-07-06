@@ -10,10 +10,18 @@ build/
 Release/
 Debug/
 .vs/
+.vscode/
+.idea/
 ipch/
+logs/
+server_logs/
+output/
+outputs/
+.gradio/
 
 # Logs and local databases
 *.log
+*.jsonl
 *.db
 *.sqlite
 *.sdf
