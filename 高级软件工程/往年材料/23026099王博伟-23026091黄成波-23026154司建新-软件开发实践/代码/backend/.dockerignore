@@ -1,8 +1,0 @@
-.git
-node_modules
-docker-compose.yaml
-Dockerfile
-.prettierrc
-.gitignore
-README.md
-.env

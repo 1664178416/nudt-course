@@ -1,9 +1,0 @@
-prl_changes:		0.05
-commit_num:		0.11
-commit_density:		0.03
-file_edits:		0.08
-line_edits:		0.14
-dev_num:		0.15
-keywords:		0.2
-message:		0.11
-duration:		0.12

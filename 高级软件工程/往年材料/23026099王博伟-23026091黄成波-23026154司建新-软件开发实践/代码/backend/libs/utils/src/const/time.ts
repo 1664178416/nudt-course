@@ -1,4 +1,0 @@
-export const DAY_MILLISECONDS = 24 * 60 * 60 * 1000
-export const HOUR_MILLISECONDS = 60 * 60 * 1000
-export const MINUTE_MILLISECONDS = 60 * 1000
-export const SECOND_MILLISECONDS = 1000
